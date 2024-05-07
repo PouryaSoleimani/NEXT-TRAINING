@@ -13,7 +13,7 @@ const SearchInput: NextPage<Props> = ({ }) => {
   function searchHandler(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     if (searchInfo.trim()) {
-      router.push(`/search/query?query=${searchInfo}`)
+      router.push(`/search/${searchInfo}`)
     }
     setSearchInfo('')
   }
