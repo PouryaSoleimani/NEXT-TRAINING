@@ -25,13 +25,13 @@ const SWR: NextPage<Props> = ({ }) => {
             <Link key={product.id} href={`/swr/${product.id}`}  >
               <h2> {product.id} - {product.title} || {product.price} $</h2>
             </Link>
-            
+
           ))
         )}
 
-      </div>
+      </div> 
     </div >
-  )
+  ) 
 }
 
 
