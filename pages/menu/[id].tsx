@@ -1,3 +1,4 @@
+//^ MENU DYNAMIC SINGLE ITEM PAGE
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
 import { useState } from 'react'
 import db from '@/data/db.json'
@@ -12,7 +13,7 @@ const SingleItemMenu: NextPage<Props> = ({ productID }) => {
   const mainProduct = PRODUCTS.find(item => item.id === String(productID))
   const router = useRouter()
 
-
+  
   function backHandler() { router.back() }
 
 
@@ -29,6 +30,7 @@ const SingleItemMenu: NextPage<Props> = ({ productID }) => {
       <div>
         <button onClick={backHandler} className='bg-zinc-700 p-2 text-xl ml-2 font-bold rounded-lg'>BACK</button>
       </div>
+
     </div>
   )
 
