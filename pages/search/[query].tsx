@@ -20,7 +20,7 @@ const Query: NextPage<Props> = ({ searchQuery }) => {
 
   return (
     <>
-    
+
       <h1 className='pb-4 border-b-4 border-white'> RESULTS FOR <span className='text-yellow-400 font-bold text-3xl px-2  underline urderline-2 decoration-white'>{searchQuery}</span> </h1>
       {!results.length && (
         <div className='flex flex-col space-y-4 items-center justify-center'>
@@ -30,7 +30,7 @@ const Query: NextPage<Props> = ({ searchQuery }) => {
       )}
       <h2 className='px-2 font-bold text-sky-800 text-4xl mt-10 flex flex-col items-start justify-center space-y-10'>
         {results.map(item => <p>{item.title}</p>)}
-        <button onClick={backHandler} className='bg-blue-700/40 text-white p-4 text-lg font-bold'>GO BACK</button>
+        {results.length !== 0 && (<button onClick={backHandler} className='bg-blue-700/40 text-white p-4 text-lg font-bold'>GO BACK</button>)}
       </h2>
 
     </>
