@@ -8,11 +8,7 @@ interface Props { }
 const SearchInput: NextPage<Props> = ({ }) => {
 
   const [searchInfo, setSearchInfo] = useState('')
-
   const router = useRouter()
-
-
-
 
   function searchHandler(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
