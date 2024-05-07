@@ -30,17 +30,13 @@ const Index: NextPage<PropsType> = ({ products }) => {
             <div className='flex flex-col border-2 border-white bg-zinc-900 items-start space-y-2 text-xl p-10 text-slate-200 justify-center font-bold h-full my-10'>
                 {products.map(item =>
                     <div key={item.id}>
-
                         <h1 className='py-2' >
-
                             <Link href={`/ssg/${item.id}`}>
                                 {item.id} - {item.title.slice(0, 30)} - {item.price}$ -
                                 {Array(Math.ceil(item.rating.rate)).fill(0).map(item => ('🤍'))}
                                 {Array((5 - Math.ceil(item.rating.rate))).fill(0).map(item => ('🖤'))}
                             </Link>
-
                         </h1>
-
                     </div>
                 )}
 
@@ -51,7 +47,6 @@ const Index: NextPage<PropsType> = ({ products }) => {
         </>
     )
 }
-
 
 
 //STATIC SITE GENERATION ( SSG ) 
@@ -69,4 +64,3 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 export default Index
 
 
- 
