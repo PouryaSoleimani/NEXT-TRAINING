@@ -1,0 +1,46 @@
+{
+ "products": [
+  {
+   "id": "1",
+   "title": "TSHIRT",
+   "price": 100
+  },
+  {
+   "id": "2",
+   "title": "PANTS",
+   "price": 200
+  },
+  {
+   "id": "3",
+   "title": "SHOES",
+   "price": 300
+  },
+  {
+   "id": "4",
+   "title": "ACCESSORIES",
+   "price": 400
+  },
+  {
+   "id": "5",
+   "title": "HOODIES",
+   "price": 500
+  },
+  {
+   "id": "6",
+   "title": "JACKETS",
+   "price": 600
+  }
+ ],
+ "users": [
+  {
+   "email": "pori@gmail.com",
+   "password": "$2a$10$ghV4.FJcSohxyBqkY1eWWOXs6cC95sZ.vAEkDbXlloR89Yv/f5WjW",
+   "id": 1
+  },
+  {
+   "email": "alireza@gmail.com",
+   "password": "$2a$10$BRV3IcIsvsfDxsignpaGaO2vmsSHUWeGcaH1QS3xFOmmvSn7iOmCm",
+   "id": 2
+  }
+ ]
+}
