@@ -1,7 +1,7 @@
 //^ SEARCH INPUT PAGE
 import { NextPage, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
-import { FormEvent, useState } from 'react'
+import { FormEvent, useEffect, useState } from 'react'
 
 interface Props { }
 
@@ -12,6 +12,8 @@ const SearchInput: NextPage<Props> = ({ }) => {
   const router = useRouter()
 
 
+
+
   function searchHandler(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     if (searchInfo.trim()) {
@@ -19,6 +21,7 @@ const SearchInput: NextPage<Props> = ({ }) => {
       setSearchInfo('')
     }
   }
+
 
   // RETURN ----------------------------------------------------------------------------------------------------------------------------------------------------
   return (
