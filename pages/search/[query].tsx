@@ -23,11 +23,12 @@ const Query: NextPage<Props> = ({ searchQuery }) => {
 
       {!results.length && (
         <div className='flex flex-col space-y-4 items-center justify-center'>
-          <h2 className='bg-red-700/50 p-8 font-semibold text-4xl mt-32 w-fit mx-auto'>NO RESULTS FOR YOUR SEARCH</h2>
+          <h2 className='bg-red-700/40 p-8 font-semibold text-4xl mt-32 w-fit mx-auto'>NO RESULTS FOR YOUR SEARCH</h2>
           <button onClick={backHandler} className='bg-blue-700/40 p-4 text-lg font-bold'>GO BACK</button>
         </div>
       )}
-      <h2 className='px-2 font-bold text-slate-200 text-4xl mt-10 flex flex-col items-start justify-center space-y-10'>
+      
+      <h2 className='px-2 font-bold text-emerald-400 text-4xl mt-10 flex flex-col items-start justify-center space-y-10'>
         {results.map(item => <p key={item.id} >- {item.title}</p>)}
         {results.length !== 0 && (<button onClick={backHandler} className='bg-blue-700/40 text-white p-4 text-lg font-bold'>GO BACK</button>)}
       </h2>
