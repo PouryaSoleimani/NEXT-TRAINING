@@ -21,7 +21,7 @@ const Index: NextPage<Props> = ({ }) => {
 
       <div className='flex flex-col px-4 space-y-4 text-2xl py-4 '>
         {PRODUCTS.map(item => (
-          <Link href={`/products/${item.id}`} >
+          <Link href={`/menu/${item.id}`} >
             <p>{item.title}</p>
           </Link>
         ))}
