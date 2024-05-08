@@ -9,13 +9,13 @@ const Sort: React.FC = () => {
 
     //FUNCTIONS
     const sortAscending = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-        const sortedProducts = db.products.sort((a, b) => a.views - b.views)
+        const sortedProducts = db.products.sort((a, b) => a.price - b.price)
         setSort(`Ascending`)
         setPRODUCTS(sortedProducts)
     }
-    
+
     const sortDescending = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-        const sortedProducts = db.products.sort((a, b) => a.views + b.views)
+        const sortedProducts = db.products.sort((a, b) => a.price + b.price)
         setSort(`Descending`)
         setPRODUCTS(sortedProducts)
     }
@@ -27,7 +27,7 @@ const Sort: React.FC = () => {
             <div className='w-full my-10 bg-zinc-300 h-fit grid place-items-center p-4 grid-cols-3 gap-y-10'>
                 {PRODUCTS.map(product => (
                     <div key={product.id} className='bg-zinc-950 w-[17rem] py-8 px-4 font-bold text-2xl text-center rounded-md '>
-                        <h2>{product.title} - {product.views}</h2>
+                        <h2>{product.title} - {product.price}</h2>
                     </div>
                 ))}
             </div>
