@@ -9,8 +9,9 @@
 
 // 1 - GLOBAL CSS FILES AT _app.tsx
 // 2 - CSS MODULES : 
-// 3 - CSS-IN-JS : STYLED.JSX or STYLED.COMPONENTS
-
+// 3 - CSS-IN-JS : STYLED.JSX 
+// 4 - CSS-IN-JS : STYLED.COMPONENTS
+// 5 - USING BOOTSTRAP
 import styles from '@/styles/styling.module.css'
 
 import React from 'react'
@@ -40,6 +41,8 @@ const Styling = () => {
           `}
         </style>
       </button>
+
+      <button className='alert alert-info text-3xl font-bold m-auto'>BOOTSTRAP BUTTON</button>
     </div>
   )
 }
