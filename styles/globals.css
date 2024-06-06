@@ -29,7 +29,7 @@ body {
   }
 }
 
-h1 {
+#stylingTitle {
   color: red;
   font-size: 120px;
   font-weight: 900;

@@ -15,9 +15,9 @@ import React from 'react'
 const Styling = () => {
   return (
     <div>
-      <h1>STYLING PAGE</h1>
+      <h1 id='stylingTitle'>STYLING PAGE</h1>
     </div>
   )
 }
 
-export default Styling
+export default Styling 
