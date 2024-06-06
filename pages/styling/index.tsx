@@ -7,13 +7,17 @@
 // 4 - SASS
 // 5 - CSS-IN-JS
 
+// 1 - GLOBAL CSS FILES 
+
 
 import React from 'react'
 
-const index = () => {
+const Styling = () => {
   return (
-    <div>index</div>
+    <div>
+      <h1>STYLING PAGE</h1>
+    </div>
   )
 }
 
-export default index
+export default Styling
