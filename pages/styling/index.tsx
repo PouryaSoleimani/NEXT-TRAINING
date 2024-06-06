@@ -17,7 +17,7 @@ const Styling = () => {
   return (
     <div>
       <h1 id='stylingTitle'>STYLING PAGE</h1>
-      <h2 className={styles.stylingText}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum, exercitationem laudantium suscipit animi cum velit voluptates assumenda quibusdam nemo vitae eligendi modi, aliquam reiciendis similique dolorum consequatur nulla! Ab?</h2>
+      <h2 className={styles.stylingText}>Lorem ipsum, dolor sit amet  modi, aliquam reiciendis similique dolorum consequatur nulla! Ab?</h2>
     </div>
   )
 }
