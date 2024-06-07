@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 
 const index: React.FC = () => {
-  // STATES 
+  //^ STATES 
   const [PRODUCTS, setPRODUCTS] = useState([...db.products])
   const [searchInfo, setSearchInfo] = useState('')
   const [isShowError, setIsShowError] = useState(false)
