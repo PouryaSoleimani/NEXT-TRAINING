@@ -23,7 +23,7 @@ const index: React.FC = () => {
 
   function goToSearchInput() { router.push('/search/searchinput') }
   //RETURN  
-  
+
   return (
     <div>
       <div className='flex items-center justify-evenly flex-col space-y-6 w-[30rem] rounded-b-md h-[14rem] px-6 pt-2 pb-2 bg-zinc-600 mx-auto mt-10'>
