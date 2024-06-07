@@ -9,6 +9,11 @@ type DatasType = DataItemType[]
 // COMPONENT
 const DataFetching = () => {
   const DATAS: DatasType = products
+
+
+
+
+  // RETURN
   return (
     <div>
       <h1 className='text-yellow-400 text-6xl font-bold text-center py-4'>DATA FETCHING PAGE</h1>
