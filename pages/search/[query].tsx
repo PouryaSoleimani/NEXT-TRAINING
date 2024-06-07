@@ -4,10 +4,9 @@ import db from '@/data/db.json'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 
-
-
 interface Props { searchQuery: string | number }
 
+//COMPONENT
 const Query: NextPage<Props> = ({ searchQuery }) => {
 
   const router = useRouter()
@@ -37,6 +36,8 @@ const Query: NextPage<Props> = ({ searchQuery }) => {
   )
 }
 
+
+
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const searchQuery = ctx.params?.query
 
@@ -44,7 +45,6 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     props: { searchQuery, },
   }
 }
-
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
