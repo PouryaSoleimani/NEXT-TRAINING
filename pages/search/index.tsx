@@ -22,11 +22,15 @@ const index: React.FC = () => {
   const searchHandler = (event: React.ChangeEvent<HTMLInputElement>) => { event.preventDefault(); setSearchInfo(event.target.value) }
 
   function goToSearchInput() { router.push('/search/searchinput') }
-  //RETURN  
 
+
+
+
+  //RETURN  
   return (
     <div>
       <div className='flex items-center justify-evenly flex-col space-y-6 w-[30rem] rounded-b-md h-[14rem] px-6 pt-2 pb-2 bg-zinc-600 mx-auto mt-10'>
+        {/* sdad */}
         <input className='w-full p-2 font-bold outline-none rounded-md text-black' type="search" id='searchInput' value={searchInfo} onChange={searchHandler} />
         <button className='bg-lime-600 px-2 py-1 rounded-md font-bold text-xl'>SEARCH</button>
       </div>
