@@ -5,14 +5,14 @@ import { useRouter } from 'next/router'
 
 
 const index: React.FC = () => {
-  //STATES 
+  // STATES 
   const [PRODUCTS, setPRODUCTS] = useState([...db.products])
   const [searchInfo, setSearchInfo] = useState('')
   const [isShowError, setIsShowError] = useState(false)
   const router = useRouter()
 
 
-  //FUNCTIONS 
+  // FUNCTIONS 
   useEffect(() => {
     const searchedProducts = db.products.filter((product) => product.title.toLowerCase().includes(searchInfo.toLowerCase()))
     setPRODUCTS(searchedProducts)
@@ -26,7 +26,7 @@ const index: React.FC = () => {
 
 
 
-  //RETURN  
+  // RETURN  
   return (
     <div>
       <div className='flex items-center justify-evenly flex-col space-y-6 w-[30rem] rounded-b-md h-[14rem] px-6 pt-2 pb-2 bg-zinc-600 mx-auto mt-10'>
