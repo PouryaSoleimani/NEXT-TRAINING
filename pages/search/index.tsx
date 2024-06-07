@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 
 const index: React.FC = () => {
-  //^ STATES 
+  // STATES 
   const [PRODUCTS, setPRODUCTS] = useState([...db.products])
   const [searchInfo, setSearchInfo] = useState('')
   const [isShowError, setIsShowError] = useState(false)
@@ -33,7 +33,7 @@ const index: React.FC = () => {
         <input className='w-full p-2 font-bold outline-none rounded-md text-black' type="search" id='searchInput' value={searchInfo} onChange={searchHandler} />
         <button className='bg-lime-600 px-2 py-1 rounded-md font-bold text-xl'>SEARCH</button>
       </div>
-      <button onClick={goToSearchInput}>GO TO SEARCH INPUT</button>
+      <button onClick={goToSearchInput} className='bg-blue-700 p-2 text-xl font-bold ml-10 rounded-lg hover:bg-blue-400'>GO TO SEARCH INPUT</button>
       <div className='w-full my-10 bg-zinc-300 h-fit grid place-items-center p-4 grid-cols-3 gap-y-10'>
         {isShowError ? (
           <h1 className='text-4xl bg-red-200 mx-auto text-red-700 font-bold text-center p-4 rounded-md w-full border-2 border-red-800 h-fit'>NO PRODUCTS FOUND</h1>
