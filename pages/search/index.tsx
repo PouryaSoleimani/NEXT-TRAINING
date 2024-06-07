@@ -18,7 +18,7 @@ const index: React.FC = () => {
     setPRODUCTS(searchedProducts)
     !searchedProducts.length ? setIsShowError(true) : setIsShowError(false)
   }, [searchInfo])
-
+ 
 
   const searchHandler = (event: React.ChangeEvent<HTMLInputElement>) => { event.preventDefault(); setSearchInfo(event.target.value) }
 
