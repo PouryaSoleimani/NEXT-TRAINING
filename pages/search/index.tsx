@@ -1,4 +1,4 @@
-//^ SEARCH PAGE
+//^ SEARCH PAGE =============================================================================================================================================================================
 import React, { useEffect, useState } from 'react'
 import db from '@/data/db.json'
 import { useRouter } from 'next/router'
@@ -20,14 +20,13 @@ const index: React.FC = () => {
   }, [searchInfo])
 
 
-
-
   const searchHandler = (event: React.ChangeEvent<HTMLInputElement>) => { event.preventDefault(); setSearchInfo(event.target.value) }
 
   function goToSearchInput() { router.push('/search/searchinput') }
 
 
-  // RETURN  
+
+  //^ RETURN  =============================================================================================================================================================================
   return (
     <div>
       {/* SEARCH BOX */}
