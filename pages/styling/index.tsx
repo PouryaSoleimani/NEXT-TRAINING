@@ -29,10 +29,10 @@ const Styling = () => {
           padding : 1rem 2rem;
           font-size : 30px;
           font-weight : 800;
-          border : 6px solid white ;
-          border-radius : 30px;
-          margin : 0 auto;
-          width : 100%;
+          border : 7px solid yellow ;
+          border-radius : 20px;
+          margin : 1rem 10rem;
+          width : 20%;
           cursor : pointer;
           }
           button:hover{
