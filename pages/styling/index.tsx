@@ -1,4 +1,7 @@
 //^ STYLINGS PAGE =================================================================================================================================
+import React from 'react'
+import styles from '@/styles/styling.module.css'
+
 //& TUTORIAL
 // STYLING IN NEXT JS :
 // 1 - GLOBAL CSS
@@ -7,15 +10,15 @@
 // 4 - SASS
 // 5 - CSS-IN-JS
 
+// & HOW TO USE :
 // 1 - GLOBAL CSS FILES AT _app.tsx
 // 2 - CSS MODULES : 
 // 3 - CSS-IN-JS : STYLED.JSX 
 // 4 - CSS-IN-JS : STYLED.COMPONENTS
 // 5 - USING BOOTSTRAP
-import styles from '@/styles/styling.module.css'
 
-import React from 'react'
 
+// COMPONENT
 const Styling = () => {
   return (
     <div>
