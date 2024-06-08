@@ -17,11 +17,13 @@ interface PropsType {
     }],
     age: number,
     name: string
+    ,
+    sampleText: string
 }
 
 
 //COMPONENT
-const Index: NextPage<PropsType> = ({ products }) => {
+const Index: NextPage<PropsType> = ({ products, sampleText }) => {
 
 
     //RETURN
@@ -41,8 +43,9 @@ const Index: NextPage<PropsType> = ({ products }) => {
                 )}
 
             </div>
-            <div className='flex itmes-center'>
+            <div className='flex itmes-center flex-col justify-center'>
                 <Link href='/' className='bg-green-400 flex gap-2 rounded-md p-4 border-8 border-zinc-600 text-black text-2xl font-bold mx-auto'><Home size={32} strokeWidth={2.5} />HOME PAGE</Link>
+                <h1 className='text-center mt-2 text-6xl font-extrabold'>{sampleText}</h1>
             </div>
         </>
     )
@@ -54,10 +57,10 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
     const request = axios.get('https://fakestoreapi.com/products?limit=7');
     const response = (await request).data
-
-    // RETURN PROPS
+    const sampleText = 'HELLO WORLD'
+    // RETURN PROPS 
     return {
-        props: { products: response },
+        props: { products: response, sampleText },
     }
 }
 
