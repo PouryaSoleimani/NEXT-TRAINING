@@ -12,7 +12,7 @@ const products = () => {
   function goBackHandler() { router.back() }
   // PUSH
   function pushHandler() { router.push('/courses') }
-  //REPLACE
+  // REPLACE
   function replaceHandler() { router.replace('/courses') }
 
   // RETURN 
