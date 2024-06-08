@@ -1,5 +1,5 @@
 // DYNAMIC SSG ROUTE
-import axios, { type AxiosResponse } from 'axios';
+import axios from 'axios';
 import { NextPage, GetStaticProps, type GetStaticPaths, type GetStaticPropsContext, type PreviewData } from 'next'
 import { useRouter } from 'next/router'
 import type { ParsedUrlQuery } from 'querystring'
@@ -27,7 +27,7 @@ const StaticPage: NextPage<Props> = ({ product }) => {
     )
 }
 
-// GET STATIC PATH : THIS FUNCTIONS IS JUST LIKE {GET STATIC PROPS} -- BUT IT GET USED IN DYNAMIC ROUTES ==> [id].tsx 
+//^ GET STATIC PATH : THIS FUNCTIONS IS JUST LIKE {GET STATIC PROPS} -- BUT IT GET USED IN DYNAMIC ROUTES ==> [id].tsx 
 export const getStaticPaths: GetStaticPaths = async () => {
 
     const request = axios.get('https://fakestoreapi.com/products?limit=7');
@@ -35,27 +35,20 @@ export const getStaticPaths: GetStaticPaths = async () => {
     const paths = response.map((product: { id: number }) => { return { params: { id: String(product.id) } } })
 
     //RETURN
-    return {
-        paths: paths,
-        fallback: false,
-    }
+    return { paths: paths, fallback: false, }
 
 }
 
-
-
-// GET STATIC PROPS 
+//^ GET STATIC PROPS 
 export const getStaticProps = async (context: GetStaticPropsContext<ParsedUrlQuery, PreviewData>) => {
 
-    const productID = context.params?.id // THIS WILL GIVE US THE NAME OF OUR [DYNAMIC] ROUTE
-    const request = axios.get(`https://fakestoreapi.com/products/${productID}`) // WE HAVE ACCESSED THE {PRODUCTID} IN THE UPPER LINE
+    const productID = context.params?.id
+    const request = axios.get(`https://fakestoreapi.com/products/${productID}`)
     const data = (await request).data
 
     return {
-        props: {
-            product: data // RETURNING THE PRODUCTS THAT WE HAVE GOT FROM THE API
-        },
-        revalidate: 5, // USING ISR : THIS PAGE WILL RE-RENDER AFTER 10 SECONDS OF UNACTIVENESS
+        props: { product: data },
+        revalidate: 5,
     }
 }
 
