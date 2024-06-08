@@ -36,7 +36,7 @@ const Index: NextPage<PropsType> = ({ products }) => {
                                 {Array(Math.ceil(item.rating.rate)).fill(0).map(item => ('🤍'))}
                                 {Array((5 - Math.ceil(item.rating.rate))).fill(0).map(item => ('🖤'))}
                             </Link>
-                        </h1>
+                        </h1> 
                     </div>
                 )}
 
