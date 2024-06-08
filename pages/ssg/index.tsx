@@ -31,8 +31,8 @@ const Index: NextPage<PropsType> = ({ products, age }) => {
                         </h1>
                     </div>
                 )}
-
             </div>
+
             <div className='flex itmes-center flex-col justify-center'>
                 <Link href='/' className='bg-green-400 flex gap-2 rounded-md p-4 border-8 border-zinc-600 text-black text-2xl font-bold mx-auto'><Home size={32} strokeWidth={2.5} />HOME PAGE</Link>
                 <h1 className='text-7xl text-center mt-4 bg-zinc-600 w-fit mx-auto p-3 rounded-full flex items-center justify-center leading-[5.5rem] font-bold text-white'>{age}</h1>
@@ -48,6 +48,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     const request = axios.get('https://fakestoreapi.com/products?limit=7');
     const response = (await request).data
     const age = 30
+
     // RETURN PROPS 
     return {
         props: { products: response, age },
