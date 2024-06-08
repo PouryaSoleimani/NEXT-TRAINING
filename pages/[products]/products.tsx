@@ -5,8 +5,8 @@ import React from 'react'
 
 const products = () => {
   const router = useRouter()
-  console.log(router)
-  // FUNCTIONS 
+  
+  //^ FUNCTIONS 
 
   // BACK
   function goBackHandler() { router.back() }

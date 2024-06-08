@@ -1,4 +1,4 @@
-//^ DATA-FETCHING PAGE ==============================================================================================================================
+//^ DATA-FETCHING PAGE =========================================================================================================================================================
 import React from 'react'
 import { products } from '@/data/db.json'
 
@@ -8,7 +8,7 @@ type DatasType = DataItemType[]
 
 // COMPONENT
 const DataFetching = () => {
-  
+
   const DATAS: DatasType = products
 
 
@@ -26,3 +26,5 @@ const DataFetching = () => {
 }
 
 export default DataFetching
+
+
