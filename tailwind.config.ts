@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import { plugins } from './postcss.config'
 
 const config: Config = {
   content: [
