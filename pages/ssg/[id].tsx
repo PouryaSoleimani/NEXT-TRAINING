@@ -16,7 +16,7 @@ const StaticPage: NextPage<Props> = ({ product }) => {
 
 
     //RETURN  
-    return (    
+    return (
         <>
             <div className='flex items-center justify-center h-screen flex-col space-y-6'>
                 <h1 className='bg-zinc-700 text-4xl font-bold p-8 text-zinc-200'>{product.id} - {product.title.slice(0, 30)}  || {product.price}$</h1>
