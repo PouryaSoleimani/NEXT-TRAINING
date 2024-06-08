@@ -8,6 +8,7 @@ type DatasType = DataItemType[]
 
 // COMPONENT
 const DataFetching = () => {
+  
   const DATAS: DatasType = products
 
 
