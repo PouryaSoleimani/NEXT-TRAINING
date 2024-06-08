@@ -36,7 +36,7 @@ const Index: NextPage<PropsType> = ({ products }) => {
                                 {Array(Math.ceil(item.rating.rate)).fill(0).map(item => ('🤍'))}
                                 {Array((5 - Math.ceil(item.rating.rate))).fill(0).map(item => ('🖤'))}
                             </Link>
-                        </h1> 
+                        </h1>
                     </div>
                 )}
 
@@ -49,7 +49,7 @@ const Index: NextPage<PropsType> = ({ products }) => {
 }
 
 
-//STATIC SITE GENERATION ( SSG ) 
+//^ STATIC SITE GENERATION ( SSG ) 
 export const getStaticProps: GetStaticProps = async (ctx) => {
 
     const request = axios.get('https://fakestoreapi.com/products?limit=7');
