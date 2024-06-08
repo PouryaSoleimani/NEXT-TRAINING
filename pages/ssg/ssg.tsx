@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 
 interface Props { name: string, age: number, job: string, res: [] }
 
+//^ COMPONENT
 const Ssg: NextPage<Props> = ({ name, age, job, res }) => {
     // TYPES
     type resType = { [props: string]: string }
@@ -20,6 +21,7 @@ const Ssg: NextPage<Props> = ({ name, age, job, res }) => {
                 <h1 className='bg-zinc-800  p-4 box-border font-bold text-3xl text-center text-yellow-400 underline decoration-black decoration-8  border-4'>{name} - {age} - {job}</h1>
             </div>
 
+            {/* RESPONSE */}
             <div>
                 <ul className='flex flex-col space-y-4 text-2xl font-bold px-4 py-2 text-zinc-300'>
                     {res.map((item: resType) => (<li key={item.id} className='border-b border-zinc-700'>{item.title.slice(0, 15).toLocaleUpperCase()}</li>))}
