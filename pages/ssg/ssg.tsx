@@ -1,61 +1,48 @@
 import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
-import { useEffect } from 'react'
 
-interface Props { name: string, age: number, job: string, res: [] }
+interface Props { response: [{ id: number, title: string, price: number }] }
+type SingleItemType = { id: number, title: string, price: number }
 
-//^ COMPONENT
-const Ssg: NextPage<Props> = ({ name, age, job, res }) => {
-    // TYPES
-    type resType = { [props: string]: string }
-
-    //FUNCTIONS
-    function logger(name: string, age: number, job: string) { console.log(name, age, job) }
-
-    useEffect(() => { logger('pourya', 30, 'developer') }, [])
-
-    // RETURN =============================================================================================================================================================
+const Ssg: NextPage<Props> = ({ response }) => {
     return (
         <>
-            <div>
-                <h1 className='bg-zinc-800  p-4 box-border font-bold text-3xl text-center text-yellow-400 underline decoration-black decoration-8  border-4'>{name} - {age} - {job}</h1>
+            <h1 className='text-4xl font-extrabold text-center py-5 bg-yellow-400'>SSG PAGE</h1>
+
+
+            <div className='text-xl space-y-2 font-semibold'>
+                {response.map((item: SingleItemType) =>
+                    <p key={item.id}>{item.id} - {item.title.slice(0, 12)} : <span className='text-red-500'>${item.price}</span>
+                    </p>)
+                }
             </div>
 
-            {/* RESPONSE */}
-            <div>
-                <ul className='flex flex-col space-y-4 text-2xl font-bold px-4 py-2 text-zinc-300'>
-                    {res.map((item: resType) => (<li key={item.id} className='border-b border-zinc-700'>{item.title.slice(0, 15).toLocaleUpperCase()}</li>))}
-                </ul>
-            </div>
+
         </>
     )
 }
 
 
-// GET STATIC PROPS
-export const getStaticProps: GetStaticProps = async () => {
-
-    let name: string = 'Pourya'
-    let age: number = 30
-    let job: string = "Web Developer"
-
-    const req = axios.get('https://fakestoreapi.com/products')
-    const res = (await req).data
+// ^ STATIC PROPS
+export const getStaticProps: GetStaticProps = async (ctx) => {
+    const request = axios.get('https://fakestoreapi.com/products')
+    const response = (await request).data
 
 
     return {
-        props: { name, age, job, res },
+        props: { response },
     }
 }
+
+export default Ssg
+
+
+
+
+// ? SSG TUTORIAL :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 // GET STATIC PROPS :
 // 1 - ONLY RUNS IN SERVER-SIDE
 // 2 - VERY SECURE
 // 3 - CAN RUN NODE.JS CODES IN IT
 // 4 - CAN ONLY BE USERD IN {pages} FOLDER AND NOT IN COMPONENTS
 // 5 - MUST ALWAYS RETURN AN OBJECT{} WITH A props PROPERTY
-// 6 - 
-
-
-
-
-export default Ssg
