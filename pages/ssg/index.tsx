@@ -6,18 +6,9 @@ import { Home } from 'lucide-react';
 
 //PROPS TYPE
 interface PropsType {
-    products: [{
-        id: number,
-        title: string,
-        price: number,
-        description: string,
-        category: string,
-        image: string,
-        rating: { rate: number, count: number }
-    }],
+    products: [{ id: number, title: string, price: number, description: string, category: string, image: string, rating: { rate: number, count: number } }],
     age: number,
-    name: string
-    ,
+    name: string,
     sampleText: string
 }
 
