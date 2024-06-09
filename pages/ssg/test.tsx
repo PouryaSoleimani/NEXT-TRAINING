@@ -11,7 +11,7 @@ const SsgTest: NextPage<Props> = ({ data }) => {
   return (
     <>
       <h1 className='text-5xl font-extrabold bg-slate-900 text-center py-4'>SSG TEST PAGE</h1>
-      <div className='text-2xl font-semibold space-y-1.5'>
+      <div className='text-2xl font-semibold space-y-4'>
         {data.map((item: SingleItemType) => <h2 key={item.id} className='hover:bg-slate-100 hover:text-black duration-300 cursor-pointer'>{item.id} - {item.title} : <span className='text-emerald-600'>${item.price}</span></h2>)}
       </div>
     </>
