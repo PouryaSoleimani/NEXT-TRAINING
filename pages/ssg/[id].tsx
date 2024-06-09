@@ -35,6 +35,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     const response = (await request).data
     const paths = response.map((item: { id: number }) => { return { params: { id: String(item.id) } } })
 
+
     //RETURN
     return {
         paths: paths,
