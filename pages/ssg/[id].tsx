@@ -1,4 +1,4 @@
-// DYNAMIC SSG ROUTE
+//^ DYNAMIC SSG ROUTE
 import axios from 'axios';
 import { NextPage, GetStaticProps, type GetStaticPaths, type GetStaticPropsContext, type PreviewData } from 'next'
 import { useRouter } from 'next/router'
