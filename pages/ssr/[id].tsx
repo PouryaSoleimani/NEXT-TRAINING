@@ -11,7 +11,7 @@ const SingleUser: NextPage<Props> = ({ data, name, age }) => {
   function backHandler() { router.back() }
 
   return (
-    <div className='h-fit'>
+    <div className='h-fit pl-4'>
       <h1 className=' font-extrabold text-4xl  p-4'>{data.id}</h1>
       <h1 className='font-extrabold text-4xl p-4'>{data.name}</h1>
       <h1 className='font-extrabold text-4xl p-4 text-blue-700'>{data.email}</h1>
