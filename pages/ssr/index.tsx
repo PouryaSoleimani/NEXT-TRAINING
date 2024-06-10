@@ -1,3 +1,4 @@
+//^ SSR PAGE _____________________________________________________________________________________________________________________________________________________________________
 import axios from 'axios'
 import { NextPage, GetServerSideProps } from 'next'
 import Link from 'next/link'
@@ -13,7 +14,7 @@ const SSR: NextPage<Props> = ({ Response }) => {
       <h1 className='p-2 rounded-md text-center bg-pink-400 flex items-center justify-center text-pink-700 font-bold text-3xl'>SSR RENDERING PAGE</h1>
       {Response.map(item => (
         <Link key={item.id} href={`/ssr/${item.id}`}>
-          <h2>{item.id}--{item.name}</h2>
+          <h2 className='text-xl hover:bg-zinc-800'>{item.id}--{item.name}</h2>
         </Link>
       ))}
     </div>
