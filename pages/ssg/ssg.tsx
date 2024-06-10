@@ -9,18 +9,14 @@ type SingleItemType = { id: number, title: string, price: number }
 //COMPONENT
 const Ssg: NextPage<Props> = ({ response }) => {
     return (
-        <>
-            <div className='text-2xl flex flex-col space-y-2 font-semibold'>
-                {response.map((item: SingleItemType) => (
-                    <>
-                        <Link href={`/ssg/${item.id}`} key={item.id}>
-                            <h2>{item.id} - {item.title} : <span className='text-red-600'>"${item.price}"</span></h2>
-                        </Link>
-                    </>
-                )
-                )}
-            </div>
-        </>
+        <div className='text-2xl flex flex-col space-y-2 font-semibold'>
+            {response.map((item: SingleItemType) => (
+                <Link href={`/ssg/${item.id}`} key={item.id}>
+                    <h2>{item.id} - {item.title} : <span className='text-red-600'>"${item.price}"</span></h2>
+                </Link>
+            )
+            )}
+        </div>
 
     )
 }
