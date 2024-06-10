@@ -27,9 +27,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   const Request = axios.get('https://jsonplaceholder.typicode.com/users')
   const Response = (await Request).data
 
-  return {
-    props: { Response }
-  }
+  return { props: { Response } }
 
 }
 
