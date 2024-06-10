@@ -7,23 +7,16 @@ interface Props { Response: [{ id: number, name: string, username: string, email
 // COMPONENT
 const SSR: NextPage<Props> = ({ Response }) => {
 
-
   // RETURN
   return (
-
     <div className='p-4 flex flex-col items-start justify-center space-y-4 font-extrabold '>
       <h1 className='p-2 rounded-md text-center bg-pink-400 flex items-center justify-center text-pink-700 font-bold text-3xl'>SSR RENDERING PAGE</h1>
-
       {Response.map(item => (
-
         <Link key={item.id} href={`/ssr/${item.id}`}>
           <h2>{item.id}--{item.name}</h2>
         </Link>
-
       ))}
-
     </div>
-
   )
 }
 
@@ -34,7 +27,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   const Response = (await Request).data
 
   return {
-    props: { Response: Response }
+    props: { Response }
   }
 
 }
