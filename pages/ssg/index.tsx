@@ -8,7 +8,7 @@ import { Home } from 'lucide-react';
 interface PropsType { products: [{ id: number, title: string, price: number, description: string, category: string, image: string, rating: { rate: number, count: number } }], age: number, name: string, myName: string }
 
 
-//^COMPONENT
+//^ COMPONENT
 const Index: NextPage<PropsType> = ({ products, age, myName }) => {
 
     //RETURN
