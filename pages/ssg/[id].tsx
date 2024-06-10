@@ -25,7 +25,7 @@ const StaticPage: NextPage<Props> = ({ product }) => {
 }
 
 
-//^GET STATIC PATHS : 
+//^GET STATIC PATHS : (SSG-DYNAMIC)
 //THIS FUNCTIONS IS JUST LIKE {GET STATIC PROPS} -- BUT IT GET USED IN DYNAMIC ROUTES ==> [id].tsx 
 export const getStaticPaths: GetStaticPaths = async () => {
 
@@ -42,7 +42,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 }
 
-//^GET STATIC PROPS 
+//^GET STATIC PROPS (SSG)
 export const getStaticProps = async (context: GetStaticPropsContext<ParsedUrlQuery, PreviewData>) => {
 
     const productID = context.params?.id
@@ -57,9 +57,9 @@ export const getStaticProps = async (context: GetStaticPropsContext<ParsedUrlQue
     }
     return {
         props: { product: data },
-        revalidate: 5,
+        revalidate: 10,
     }
 
-}   
+}
 
 export default StaticPage
