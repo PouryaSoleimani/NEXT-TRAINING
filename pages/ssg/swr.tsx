@@ -5,10 +5,12 @@ import useSWR from 'swr'
 type SingleUserType = { id: number, username: string, email: string }
 
 
-const swr = () => {
+const Swr = () => {
 
   const fetcher = () => axios.get('https://fakestoreapi.com/users').then(data => data.data)
   const { data, error, isLoading } = useSWR('https://fakestoreapi.com/users', fetcher)
+  console.log(error)
+
 
 
 
@@ -23,4 +25,4 @@ const swr = () => {
   )
 
 }
-export default swr
+export default Swr
