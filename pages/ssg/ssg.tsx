@@ -29,8 +29,6 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     const request = axios.get('https://fakestoreapi.com/products')
     const response = (await request).data
 
-
-
     return { props: { response }, }
 }
 
