@@ -25,7 +25,6 @@ const SingleUser: NextPage<Props> = ({ data, name, age }) => {
 // GET SERVERSIDE PROPS
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
-
   console.log(ctx.req, ctx.res)
   // HERE WE CAN ACCESS REQEUST AND RESPONSE DATAS BY USING {CTX} , INCLUDING COOKIES AND ...
 
@@ -33,13 +32,11 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   // AND ALSO WE CAN HAVE {QUERY} FROM THE {CTX} , WHICH GIVES US THE PATH NAME OF OUR MAIN ROUTE --> {id : '2'}
   // TO ADD A QUERY , WE MUST USE ? IN THE PATH NAME IN OUR BROWSER
 
-
   const userID = ctx.params?.id
   const req = await fetch(`https://jsonplaceholder.typicode.com/users/${userID}`)
   const data = await req.json()
   const name: string = 'ALRIEZA'
   const age: number = 10
-
 
   // REDIRECTING THE USER TO THE {404 PAGE} IF THERE IS NO DATA FOR THAT ROUTE
   if (!Object.keys(data).length) {
