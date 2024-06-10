@@ -20,7 +20,6 @@ const SingleUser: NextPage<Props> = ({ data, name, age }) => {
       <button onClick={backHandler} className='bg-emerald-400 text-black p-2 ml-4 mt-4 text-xl font-bold outline-4 outline outline-zinc-600'>BACK</button>
     </div>
   )
-
 }
 
 // GET SERVERSIDE PROPS
