@@ -1,7 +1,7 @@
 //^ DYNAMIC SSG SINGLE PAGE
 import axios from 'axios';
 import { NextPage, GetStaticProps, type GetStaticPaths, type GetStaticPropsContext, type PreviewData } from 'next'
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { useRouter } from 'next/router'
 import type { ParsedUrlQuery } from 'querystring'
 
@@ -50,11 +50,17 @@ export const getStaticProps = async (context: GetStaticPropsContext<ParsedUrlQue
     const request = axios.get(`https://fakestoreapi.com/products/${productID}`)
     const data = (await request).data
 
+    if (!data) {
+        return {
+            // notFound: true
+            redirect: { destination: '/ssg/product-notfound' }
+        }
+    }
     return {
         props: { product: data },
         revalidate: 5,
-        notFound: true
     }
+
 }
 
 export default StaticPage
