@@ -1,4 +1,4 @@
-//^ SSG PAGE
+//^ SSG PAGE ________________________________________________________________________________________________________________________________________________________________
 import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
 import Link from 'next/link'
