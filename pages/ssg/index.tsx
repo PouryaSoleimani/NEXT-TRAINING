@@ -16,7 +16,6 @@ interface PropsType {
 //COMPONENT
 const Index: NextPage<PropsType> = ({ products, age, myName }) => {
 
-
     //RETURN
     return (
         <>

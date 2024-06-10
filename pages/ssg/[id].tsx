@@ -17,16 +17,14 @@ const StaticPage: NextPage<Props> = ({ product }) => {
 
     //RETURN  
     return (
-        <>
-            <div className='flex items-center justify-center h-screen flex-col space-y-6'>
-                <h1 className='bg-zinc-700 text-4xl font-bold p-8 text-zinc-200'>{product.id} - {product.title.slice(0, 30)}  || {product.price}$</h1>
-                <button onClick={backHandler} className='bg-yellow-400 text-2xl p-2 text-black font-bold rounded-md'>⬅ BACK</button>
-                <h1>{myAge}</h1>
-            </div>
-        </>
-
+        <div className='flex items-center justify-center h-screen flex-col space-y-6'>
+            <h1 className='bg-zinc-700 text-4xl font-bold p-8 text-zinc-200'>{product.id} - {product.title.slice(0, 30)}  || {product.price}$</h1>
+            <button onClick={backHandler} className='bg-yellow-400 text-2xl p-2 text-black font-bold rounded-md'>⬅ BACK</button>
+            <h1>{myAge}</h1>
+        </div>
     )
 }
+
 
 //GET STATIC PATH : THIS FUNCTIONS IS JUST LIKE {GET STATIC PROPS} -- BUT IT GET USED IN DYNAMIC ROUTES ==> [id].tsx 
 export const getStaticPaths: GetStaticPaths = async () => {
