@@ -1,3 +1,4 @@
+//^ SSG TEST PAGE _____________________________________________________________________________________________________________________________
 import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
 
