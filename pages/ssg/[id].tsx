@@ -26,7 +26,7 @@ const StaticPage: NextPage<Props> = ({ product }) => {
 }
 
 
-//GET STATIC PATH : THIS FUNCTIONS IS JUST LIKE {GET STATIC PROPS} -- BUT IT GET USED IN DYNAMIC ROUTES ==> [id].tsx 
+//^GET STATIC PATH : THIS FUNCTIONS IS JUST LIKE {GET STATIC PROPS} -- BUT IT GET USED IN DYNAMIC ROUTES ==> [id].tsx 
 export const getStaticPaths: GetStaticPaths = async () => {
 
     const request = axios.get('https://fakestoreapi.com/products?limit=7');
@@ -37,12 +37,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
     //RETURN
     return {
         paths: paths,
-        fallback: false,
+        fallback: true,
     }
 
 }
 
-//GET STATIC PROPS 
+//^GET STATIC PROPS 
 export const getStaticProps = async (context: GetStaticPropsContext<ParsedUrlQuery, PreviewData>) => {
 
     const productID = context.params?.id
