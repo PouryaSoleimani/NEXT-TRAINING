@@ -42,3 +42,6 @@ const Sort: React.FC = () => {
 }
 
 export default Sort
+
+
+// SSR => Server Side Rendering
