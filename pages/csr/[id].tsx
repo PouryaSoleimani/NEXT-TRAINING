@@ -17,7 +17,7 @@ const SingePageCSR: NextPage<Props> = ({ }) => {
 
   useEffect(() => { getData() }, [])
 
-  const router = useRouter() 
+  const router = useRouter()
 
 
   return (
