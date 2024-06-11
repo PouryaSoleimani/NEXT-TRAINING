@@ -1,5 +1,4 @@
 //^ DYNAMIC SSR SINGLE ITEM PAGE
-import axios from 'axios'
 import { NextPage, GetServerSideProps, type GetStaticPropsContext, type PreviewData } from 'next'
 import { useRouter } from 'next/router'
 
