@@ -23,9 +23,9 @@ const SSR: NextPage<Props> = ({ Response }) => {
   )
 }
 
-// GET SERVERSIDE PROPS => RUN AT SERVER SIDE ONLY
+//^ GET SERVERSIDE PROPS => RUN AT SERVER SIDE ONLY
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  
+  console.log(context.query)
   const Request = axios.get('https://jsonplaceholder.typicode.com/users')
   const Response = (await Request).data
 
