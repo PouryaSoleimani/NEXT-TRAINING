@@ -11,7 +11,7 @@ const SSR: NextPage<Props> = ({ Response }) => {
   // RETURN
   return (
     <div className='p-4 flex flex-col items-start justify-center space-y-4 font-extrabold '>
-      <h1 className='p-2 rounded-md text-center bg-zinc-950 flex items-center justify-center text-pink-700 font-bold text-3xl'>SSR RENDERING PAGE</h1>
+      <h1 className='p-2 rounded-md text-center bg-zinc-800 flex items-center justify-center text-pink-700 font-bold text-3xl'>SSR RENDERING PAGE</h1>
 
       {Response.map(item => (
         <Link key={item.id} href={`/ssr/${item.id}`}>
@@ -23,10 +23,11 @@ const SSR: NextPage<Props> = ({ Response }) => {
   )
 }
 
-//^ GET SERVERSIDE PROPS => RUN AT SERVER SIDE ONLY
+//^ GET SERVERSIDE PROPS => RUNS AT SERVER SIDE ONLY
 export const getServerSideProps: GetServerSideProps = async (context) => {
 
   console.log(context.query)
+
   const Request = axios.get('https://jsonplaceholder.typicode.com/users')
   const Response = (await Request).data
 

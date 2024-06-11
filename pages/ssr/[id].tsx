@@ -7,6 +7,7 @@ interface Props { data: { id: number, name: string, email: string, phone: string
 const SingleUser: NextPage<Props> = ({ data, name, age }) => {
 
   const router = useRouter()
+
   function backHandler() { router.back() }
 
   return (
