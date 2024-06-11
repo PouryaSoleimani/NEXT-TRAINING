@@ -1,5 +1,5 @@
-//^ DYNAMIC SSR SINGLE ITEM PAGE
-import { NextPage, GetServerSideProps, type GetStaticPropsContext, type PreviewData } from 'next'
+//^ DYNAMIC SSR SINGLE ITEM PAGE _________________________________________________________________________________________________________________________________________
+import { NextPage, GetServerSideProps } from 'next'
 import { useRouter } from 'next/router'
 
 interface Props { data: { id: number, name: string, email: string, phone: string }, name: string, age: number }
