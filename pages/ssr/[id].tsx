@@ -11,7 +11,7 @@ const SingleUser: NextPage<Props> = ({ data, name, age }) => {
   function backHandler() { router.back() }
 
   return (
-    <div className='h-fit pl-4'>
+    <div className='h-fit pl-4 bg-zinc-900 py-6 w-fit rounded-xl mx-auto mt-4 hover:border border-white'>
       <h1 className=' font-extrabold text-4xl  p-4'>{data.id}</h1>
       <h1 className='font-extrabold text-4xl p-4'>{data.name}</h1>
       <h1 className='font-extrabold text-4xl p-4 text-blue-700'>{data.email}</h1>
@@ -43,7 +43,8 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   if (!Object.keys(data).length) {
     return {
       notFound: true,
-      // redirect: { destination: '/' } --> CUSTOM REDIRECTING
+      // CUSTOM REDIRECTING
+      redirect: { destination: '/' }
     }
   };
 
