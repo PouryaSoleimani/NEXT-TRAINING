@@ -1,33 +1,63 @@
 {
   "products": [
     {
-      "id": "1",
+      "id": 1,
       "title": "TSHIRT",
       "price": 100
     },
     {
-      "id": "2",
+      "id": 2,
       "title": "PANTS",
       "price": 200
     },
     {
-      "id": "3",
+      "id": 3,
       "title": "SHOES",
       "price": 300
     },
     {
-      "id": "4",
+      "id": 4,
       "title": "ACCESSORIES",
       "price": 400
     },
     {
-      "id": "5",
+      "id": 5,
       "title": "HOODIES",
       "price": 500
     },
     {
-      "id": "6",
-      "title": "JACKETS",
+      "id": 6,
+      "title": "SHIRTS",
+      "price": 600
+    },
+    {
+      "id": 7,
+      "title": "SHOES",
+      "price": 600
+    },
+    {
+      "id": 8,
+      "title": "BAGS",
+      "price": 600
+    },
+    {
+      "id": 9,
+      "title": "HATS",
+      "price": 600
+    },
+    {
+      "id": 10,
+      "title": "SOCKS",
+      "price": 600
+    },
+    {
+      "id": 11,
+      "title": "JOGGERS",
+      "price": 600
+    },
+    {
+      "id": 12,
+      "title": "GLOVES",
       "price": 600
     }
   ],

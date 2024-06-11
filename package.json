@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "server": "json-server -w ./data/db.json -p 4000",
+    "server": "json-server ./data/db.json -p 4000",
     "auth": "json-server-auth -w ./data/db.json -p 5000"
   },
   "dependencies": {
