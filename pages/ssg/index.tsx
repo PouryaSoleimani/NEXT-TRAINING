@@ -49,11 +49,15 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     const request = axios.get('https://fakestoreapi.com/products?limit=7');
     const response = (await request).data
     const age = 30
-    const myName = 'POURYA SOLEIMANI'
+    const myName = 'POURYA SOLEIMANI'   
 
-    // RETURN PROPS 
+    // RETURN PROPS =>
     return {
-        props: { products: response, age, myName },
+        props: {
+            products: response,
+            age,
+            myName
+        },
     }
 }
 
