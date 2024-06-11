@@ -7,16 +7,16 @@ import type { ParsedUrlQuery } from 'querystring'
 
 interface Props { product: { id: number, title: string, price: number, description: string, category: string, image: string, rating: object } }
 
-//^COMPONENT
+//^COMPONENT =======================================================================================================================================================================
 const StaticPage: NextPage<Props> = ({ product }) => {
-
-
     const router = useRouter()
+
     if (router.isFallback) { return (<h1>PLEASE WAIT</h1>) }
 
     function backHandler() { router.back() }
 
-    //RETURN  
+
+    //*RETURN  
     return (
         <div className='flex items-center justify-center h-screen flex-col space-y-6'>
             <h1 className='bg-zinc-700 text-4xl font-bold p-8 text-zinc-200'>{product.id} - {product.title.slice(0, 30)}  || {product.price}$</h1>
@@ -26,7 +26,7 @@ const StaticPage: NextPage<Props> = ({ product }) => {
 }
 
 
-//^GET STATIC PATHS : (SSG-DYNAMIC)
+//^GET STATIC PATHS : (SSG-DYNAMIC) ---------------------------------------------------------------------------------------------------------------------------------------------
 //THIS FUNCTIONS IS JUST LIKE {GET STATIC PROPS} -- BUT IT GET USED IN DYNAMIC ROUTES ==> [id].tsx 
 export const getStaticPaths: GetStaticPaths = async () => {
 
@@ -43,7 +43,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 }
 
-//^GET STATIC PROPS (SSG)
+//^GET STATIC PROPS (SSG) --------------------------------------------------------------------------------------------------------------------------------------------------------
 export const getStaticProps = async (context: GetStaticPropsContext<ParsedUrlQuery, PreviewData>) => {
 
     const productID = context.params?.id
@@ -65,5 +65,6 @@ export const getStaticProps = async (context: GetStaticPropsContext<ParsedUrlQue
 
 export default StaticPage
 
+//?TUTORIAL -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // SSG => STATIC SITE GENERATION (PERFORMANCE)
 // SSR => SERVER SIDE RENDERING
