@@ -65,5 +65,5 @@ export const getStaticProps = async (context: GetStaticPropsContext<ParsedUrlQue
 
 export default StaticPage
 
-
-//SSR =>
+// SSG => STATIC SITE GENERATION (PERFORMANCE)
+// SSR => SERVER SIDE RENDERING
