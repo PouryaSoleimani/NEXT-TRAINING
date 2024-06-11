@@ -10,7 +10,6 @@ interface Props { product: { id: number, title: string, price: number, descripti
 //^COMPONENT
 const StaticPage: NextPage<Props> = ({ product }) => {
 
-    function posts() { return true }
 
     const router = useRouter()
     if (router.isFallback) { return (<h1>PLEASE WAIT</h1>) }
