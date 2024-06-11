@@ -1,4 +1,4 @@
-//^ DYNAMIC SSR SINGLE ITEM PAGE _________________________________________________________________________________________________________________________________________
+//^ DYNAMIC SSR PAGE _________________________________________________________________________________________________________________________________________
 import { NextPage, GetServerSideProps } from 'next'
 import { useRouter } from 'next/router'
 
@@ -21,7 +21,7 @@ const SingleUser: NextPage<Props> = ({ data, name, age }) => {
   )
 }
 
-// GET SERVERSIDE PROPS
+//^ GET SERVERSIDE PROPS
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
   console.log(ctx.req, ctx.res)
@@ -36,6 +36,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const data = await req.json()
   const name: string = 'ALRIEZA'
   const age: number = 10
+
 
   // REDIRECTING THE USER TO THE {404 PAGE} IF THERE IS NO DATA FOR THAT ROUTE
   if (!Object.keys(data).length) {
