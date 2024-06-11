@@ -1,4 +1,4 @@
-// CSR SINGLE PAGE
+//^ CSR SINGLE DYNAMIC PAGE =======================================================================================================================================
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
 import { useRouter } from 'next/router'
 
@@ -16,17 +16,5 @@ const SingePageCSR: NextPage<Props> = ({ }) => {
   )
 }
 
-export const getStaticProps: GetStaticProps = async (ctx) => {
-  return {
-    props: {},
-  }
-}
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  return {
-    paths: [],
-    fallback: false,
-  }
-}
 
 export default SingePageCSR
