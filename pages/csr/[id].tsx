@@ -1,10 +1,15 @@
 //^ CSR SINGLE DYNAMIC PAGE =======================================================================================================================================
+import axios from 'axios'
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
 import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
 interface Props { }
 
 const SingePageCSR: NextPage<Props> = ({ }) => {
+  function getData() { axios.get('https://fakestoreapi.com/products') }
+  useEffect(() => { getData() }, [])
+
 
   const router = useRouter()
 
