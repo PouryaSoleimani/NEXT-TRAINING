@@ -2,7 +2,6 @@
 import axios from 'axios'
 import { NextPage, GetServerSideProps } from 'next'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 
 interface Props { Response: [{ id: number, name: string, username: string, email: string, address: object, phone: string, website: string, company: object }] }
 
@@ -24,7 +23,7 @@ const SSR: NextPage<Props> = ({ Response }) => {
   )
 }
 
-// GET STATIC PROPS
+// GET STATIC PROPS =>
 export const getServerSideProps: GetServerSideProps = async () => {
 
   const Request = axios.get('https://jsonplaceholder.typicode.com/users')
