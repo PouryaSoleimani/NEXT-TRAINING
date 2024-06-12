@@ -31,9 +31,7 @@ const Query: NextPage<Props> = ({ searchQuery }) => {
     </>
   )
 }
-
-
-
+//^ STATIC PROPS
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const searchQuery = ctx.params?.query
 
@@ -41,7 +39,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     props: { searchQuery, },
   }
 }
-
+//^ STATIC PATHS
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [],
