@@ -7,7 +7,6 @@ type SingleItemType = { id: number, title: string, price: number }
 
 const Swrssg: NextPage<Props> = ({ }) => {
 
-  // const fetcher = () => fetch('http://localhost:4000/products').then(res => res.json())
   const fetcher = () => axios.get('http://localhost:4000/products').then(res => res.data)
 
   const { data, isLoading, error } = useSWR('PRODUCTS', fetcher)
