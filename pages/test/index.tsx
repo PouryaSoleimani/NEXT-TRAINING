@@ -1,6 +1,6 @@
 //? TEST PAGE ---------------------------------------------------------------------------------------------------------------------------------------------------------
 import axios from 'axios'
-import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
+import { NextPage, GetStaticProps } from 'next'
 import Link from 'next/link'
 
 interface Props { data: [{ id: number, title: string, price: number }] }
@@ -23,9 +23,6 @@ const Index: NextPage<Props> = ({ data }) => {
     </section>
   )
 }
-
-
-
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const req = axios.get('http://localhost:4000/products')
