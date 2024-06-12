@@ -18,7 +18,7 @@ const Query: NextPage<Props> = ({ searchQuery }) => {
   return (
     <>
 
-      <h1 className='pb-4 px-2 text-2xl border-b-4 border-white'> RESULTS FOR <span className='text-yellow-400 font-bold text-3xl px-2  underline urderline-2 decoration-white'>{searchQuery.toString().toUpperCase()} </span> :  </h1>
+      <h1 className='pb-4 px-2 text-2xl border-b-4 border-white'> RESULTS FOR <span className='text-yellow-400 font-bold text-3xl px-2  underline urderline-2 decoration-white'>{searchQuery} </span> :  </h1>
 
       {!results.length && (
         <div className='flex flex-col space-y-4 items-center justify-center'>
