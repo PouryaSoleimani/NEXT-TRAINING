@@ -48,14 +48,11 @@ const SingleHomePage: React.FC = () => {
       <div>
         <h3 className='px-4 py-1 text-red-600 text-4xl font-bold text-center'>GETTING DATAS FROM SERVER :</h3>
         <ul className='flex flex-col justify-center items-start space-y-4'>
-
           {datas.map((product: productProps) => (
             <li className='text-3xl px-7 py-2 hover:bg-white hover:text-black cursor-pointer duration-500' key={product.id}> {product.title} -- {product.price}</li>
           ))}
-
         </ul>
       </div>
-
 
       <div>
         <h1 className='text-lime-600 text-4xl font-bold text-center p-4'>SHOWING DYNAMIC PRODUCT</h1>
