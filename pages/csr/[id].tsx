@@ -12,10 +12,10 @@ type SingleProductType = { id: number, title: string, price: number }
 const SingePageCSR: NextPage<Props> = ({ }) => {
 
   function getData() { axios.get('http://localhost:4000/products').then(data => setdata(data.data)) }
-
-  const [data, setdata] = useState([])
-
+  
   useEffect(() => { getData() }, [])
+  
+  const [data, setdata] = useState([])
 
   const router = useRouter()
 
