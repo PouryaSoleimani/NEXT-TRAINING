@@ -7,11 +7,12 @@ interface Props { data: [{ id: number, title: string, price: number }] }
 type SingleItemType = { id: number, title: string, price: number }
 
 const Searchtest: NextPage<Props> = ({ data }) => {
-
+  //STATES
   const [products, setProducts] = useState([])
   const [search, setSearch] = useState("")
   const [isShowError, setIsShowError] = useState(false)
 
+  //^ FILTER PRODUCTS
   useEffect(() => {
     const filteredProducts = data.filter((item: SingleItemType) => item.title.toLowerCase().includes(search.trim().toLowerCase()))
     setProducts(filteredProducts as [])
@@ -20,6 +21,7 @@ const Searchtest: NextPage<Props> = ({ data }) => {
 
   const searchHandler = (event: React.ChangeEvent<HTMLInputElement>) => { event.preventDefault(); setSearch(event.target.value) }
 
+  //^ RETURN
   return (
     <>
       <div className='flex items-center justify-center h-[10rem] bg-zinc-600'>
@@ -38,6 +40,8 @@ const Searchtest: NextPage<Props> = ({ data }) => {
   )
 }
 
+
+//^ STATIC PROPS
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const req = axios.get('http://localhost:4000/products')
   const data = (await req).data
