@@ -31,6 +31,6 @@ const SWR: NextPage<Props> = ({ }) => {
   )
 }
 
- 
+
 export default SWR
 
