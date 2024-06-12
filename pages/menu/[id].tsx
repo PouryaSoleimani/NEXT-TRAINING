@@ -10,7 +10,7 @@ interface Props { productID: number }
 const SingleItemMenu: NextPage<Props> = ({ productID }) => {
 
   const [PRODUCTS, setPRODUCTS] = useState([...db.products])
-  const mainProduct = PRODUCTS.find(item => item.id === String(productID))
+  const mainProduct = PRODUCTS.find(item => String(item.id) === String(productID))
   const router = useRouter()
 
   function backHandler() { router.back() }
