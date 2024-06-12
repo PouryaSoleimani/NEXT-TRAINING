@@ -39,6 +39,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     props: { searchQuery, },
   }
 }
+
 //^ STATIC PATHS
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
