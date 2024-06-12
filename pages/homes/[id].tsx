@@ -11,22 +11,23 @@ const SingleHomePage: React.FC = () => {
   const route = useRouter()
   const id = route.query.id
   const product = db.products.find((product) => { return String(product.id) === id })
-  //^STATES 
+  //STATES 
   const [datas, setDatas] = useState([])
   const [emailValue, setEmailValue] = useState('')
   const [passwordValue, setPasswordValue] = useState('')
   const [token, setToken] = useState('')
-  //^FUNCTIONS 
+  //FUNCTIONS 
   const getData = () => axios.get('/products').then(response => setDatas(response.data))
+  useEffect(() => { getData(); }, [])
+
   const emailValueHandler = (event: React.ChangeEvent<HTMLInputElement>) => { setEmailValue(event.target.value) }
   const passwordValueHandler = (event: React.ChangeEvent<HTMLInputElement>) => { setPasswordValue(event.target.value) }
   const notify = () => toast.success('User Registered ')
   const registerUser = () => { axios.post('http://localhost:5000/register', userInfos).then(response => setToken(response.data.accessToken)).catch(err => { console.log(err.msg) }) }
-  
-  useEffect(() => { getData(); }, [])
+
+
 
   const userInfos = { email: emailValue, password: passwordValue }
-
   const registerUserHandler = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     registerUser()
