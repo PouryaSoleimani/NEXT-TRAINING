@@ -3,16 +3,15 @@ import React from 'react'
 import useSWR from 'swr'
 import __ from 'lodash'
 
-
 type SingleUserType = { id: number, name: { firstname: string, lastname: string }, email: string }
 
-
+//COMPONENT
 const Swr = () => {
 
   const fetcher = () => axios.get('https://fakestoreapi.com/users').then(data => data.data)
   const { data, error, isLoading } = useSWR('https://fakestoreapi.com/users', fetcher)
 
-  //^ RETURN
+  //RETURN
   if (error) return <div className='text-2xl text-red-700'>failed to load</div>
   if (isLoading) return <div className='text-6xl text-zinc-500 flex items-center justify-center h-screen'>Loading...</div>
 
