@@ -23,7 +23,7 @@ const Searchtest: NextPage<Props> = ({ data }) => {
   return (
     <>
       <div className='flex items-center justify-center h-[10rem] bg-zinc-600'>
-        <input type="text" placeholder='Search Here' value={search} onChange={searchHandler} className='p-2 rounded-md w-[20rem] text-black font-bold' />
+        <input type="text" placeholder='Search Here' value={search} onChange={searchHandler} className='p-2 rounded-md w-[32rem] text-black font-bold outline-none border-8 border-zinc-700' />
       </div>
       {isShowError ? (<h1 className='bg-red-900 text-2xl font-bold rounded-lg mx-auto text-center py-10'> NO PRODUCTS FOUND </h1>) : (
         <div className='flex flex-wrap gap-4 items-center py-10 px-16 justify-start mt-10 mx-auto bg-zinc-800 p-2 w-fit'>
