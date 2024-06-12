@@ -31,7 +31,7 @@ const Searchtest: NextPage<Props> = ({ data }) => {
       {isShowError ? (<h1 className='bg-red-900 text-2xl font-bold rounded-lg mx-auto text-center py-10'> NO PRODUCTS FOUND </h1>) : (
         <div className='flex flex-wrap gap-4 items-center py-10 px-16 justify-center mt-10 mx-auto bg-zinc-800 p-2 w-fit'>
           {products.map((item: SingleItemType) => (
-            <Link href={`/test/${item.id}`} key={item.id} className='bg-zinc-900 w-[15rem] p-3 hover:bg-zinc-200 hover:text-black hover:font-extrabold'>
+            <Link href={`/test/${item.id}`} key={item.id} className='bg-zinc-900 w-[15rem] p-3 hover:bg-zinc-200 hover:text-black font-extrabold'>
               <h1>{item.id} - {item.title} : ${item.price}</h1>
             </Link>
           ))}
