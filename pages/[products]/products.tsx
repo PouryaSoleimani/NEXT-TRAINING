@@ -5,9 +5,7 @@ import React from 'react'
 
 const products = () => {
   const router = useRouter()
-  
   //^ FUNCTIONS 
-
   // BACK
   function goBackHandler() { router.back() }
   // PUSH
