@@ -7,7 +7,7 @@ import type { ParsedUrlQuery } from 'querystring'
 
 interface Props { product: { id: number, title: string, price: number, description: string, category: string, image: string, rating: object } }
 
-//^COMPONENT =======================================================================================================================================================================
+//COMPONENT =======================================================================================================================================================================
 const StaticPage: NextPage<Props> = ({ product }) => {
     const router = useRouter()
 
