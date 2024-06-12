@@ -38,7 +38,7 @@ const index: React.FC = () => {
       <button onClick={goToSearchInput} className='bg-blue-700 p-2 text-xl font-bold ml-10 rounded-lg hover:bg-blue-400'>GO TO SEARCH INPUT</button>
 
       {/* RESULTS BOX */}
-      <div className='w-full my-10 bg-zinc-300 h-fit flex  items-center justify-center space-x-4 py-10 px-10 overflow-hidden'>
+      <div className='w-full my-10 bg-zinc-300 h-fit flex flex-wrap items-center justify-center gap-2 py-10 px-10 overflow-hidden'>
         {isShowError ? (<h1 className='text-4xl bg-red-900 text-red-200 font-bold text-center px-4 py-6 rounded-md border-2 border-red-800 h-fit w-screen'>NO PRODUCTS FOUND</h1>)
           : (
             PRODUCTS.map(product => (
