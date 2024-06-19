@@ -1,4 +1,4 @@
-//^ DYNAMIC SSG SINGLE PAGE
+//^ DYNAMIC SSG SINGLE PAGE =======================================================================================================================================================================
 import axios from 'axios';
 import { NextPage, GetStaticProps, type GetStaticPaths, type GetStaticPropsContext, type PreviewData } from 'next'
 import { notFound, redirect } from 'next/navigation';
@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import type { ParsedUrlQuery } from 'querystring'
 
 interface Props { product: { id: number, title: string, price: number, description: string, category: string, image: string, rating: object } }
-//COMPONENT =======================================================================================================================================================================
+//COMPONENT ========================================================================================================================================================================================
 const StaticPage: NextPage<Props> = ({ product }) => {
 
   const router = useRouter()
@@ -22,7 +22,7 @@ const StaticPage: NextPage<Props> = ({ product }) => {
   )
 }
 
-//^GET STATIC PATHS : (SSG-DYNAMIC) ---------------------------------------------------------------------------------------------------------------------------------------------
+//^GET STATIC PATHS : (SSG-DYNAMIC) ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 //THIS FUNCTIONS IS JUST LIKE {GET STATIC PROPS} -- BUT IT GET USED IN DYNAMIC ROUTES ==> [id].tsx 
 export const getStaticPaths: GetStaticPaths = async () => {
 
@@ -35,7 +35,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
     fallback: true,
   }
 }
-//^GET STATIC PROPS (SSG) --------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//^GET STATIC PROPS (SSG) ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 export const getStaticProps = async (context: GetStaticPropsContext<ParsedUrlQuery, PreviewData>) => {
 
   const productID = context.params?.id
@@ -57,6 +58,6 @@ export const getStaticProps = async (context: GetStaticPropsContext<ParsedUrlQue
 
 export default StaticPage
 
-//?TUTORIAL -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//?TUTORIAL -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // SSG => STATIC SITE GENERATION (PERFORMANCE)
 // SSR => SERVER SIDE RENDERING
