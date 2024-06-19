@@ -6,16 +6,11 @@ import { useRouter } from 'next/router'
 import type { ParsedUrlQuery } from 'querystring'
 
 interface Props { product: { id: number, title: string, price: number, description: string, category: string, image: string, rating: object } }
-
 //COMPONENT =======================================================================================================================================================================
 const StaticPage: NextPage<Props> = ({ product }) => {
     const router = useRouter()
-
     if (router.isFallback) { return (<h1>PLEASE WAIT</h1>) }
-
     function backHandler() { router.back() }
-
-
     //*RETURN  
     return (
         <div className='flex items-center justify-center h-screen flex-col space-y-6'>
@@ -24,8 +19,6 @@ const StaticPage: NextPage<Props> = ({ product }) => {
         </div>
     )
 }
-
-
 //^GET STATIC PATHS : (SSG-DYNAMIC) ---------------------------------------------------------------------------------------------------------------------------------------------
 //THIS FUNCTIONS IS JUST LIKE {GET STATIC PROPS} -- BUT IT GET USED IN DYNAMIC ROUTES ==> [id].tsx 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -33,16 +26,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
     const request = axios.get('https://fakestoreapi.com/products?limit=7');
     const response = (await request).data
     const paths = response.map((item: { id: number }) => { return { params: { id: String(item.id) } } })
-
-
     //RETURN
     return {
         paths: paths,
         fallback: true,
     }
-
 }
-
 //^GET STATIC PROPS (SSG) --------------------------------------------------------------------------------------------------------------------------------------------------------
 export const getStaticProps = async (context: GetStaticPropsContext<ParsedUrlQuery, PreviewData>) => {
 
