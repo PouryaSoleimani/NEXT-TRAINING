@@ -18,7 +18,7 @@ const Ssg: NextPage<Props> = ({ response }) => {
     </div>
   )
 }
- 
+
 //^ GET STATIC PROPS 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const request = axios.get('https://fakestoreapi.com/products')
