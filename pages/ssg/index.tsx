@@ -11,11 +11,8 @@ interface PropsType {
   name: string,
   myName: string
 }
-
-
 //^ COMPONENT
 const Index: NextPage<PropsType> = ({ products, age, myName }) => {
-
   //RETURN
   return (
     <>
@@ -24,9 +21,7 @@ const Index: NextPage<PropsType> = ({ products, age, myName }) => {
           <div key={item.id}>
             <h1 className='py-2' >
               <Link href={`/ssg/${item.id}`}>
-                {item.id} - {item.title.slice(0, 30)} - {item.price}$ -
-                {Array(Math.ceil(item.rating.rate)).fill(0).map(item => ('🤍'))}
-                {Array((5 - Math.ceil(item.rating.rate))).fill(0).map(item => ('🖤'))}
+                {item.id} - {item.title.slice(0, 30)} - {item.price}$ - {Array(Math.ceil(item.rating.rate)).fill(0).map(item => ('🤍'))}{Array((5 - Math.ceil(item.rating.rate))).fill(0).map(item => ('🖤'))}
               </Link>
             </h1>
           </div>
