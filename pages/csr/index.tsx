@@ -11,12 +11,6 @@ const Index: NextPage<Props> = ({ }) => {
   )
 }
 
-export const getStaticProps: GetStaticProps = async (ctx) => {
-  return {
-    props: {},
-  }
-}
-
 export default Index
 
 // CSR (Client-Side-Rendering) In NEXT.js is Like REACT.JS , we fetch the datas in USEEFFECT and use everything directly in our component
