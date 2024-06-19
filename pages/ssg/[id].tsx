@@ -1,6 +1,6 @@
 //^ DYNAMIC SSG SINGLE PAGE =======================================================================================================================================================================
 import axios from 'axios';
-import { NextPage, GetStaticProps, type GetStaticPaths, type GetStaticPropsContext, type PreviewData } from 'next'
+import { NextPage, type GetStaticPaths, type GetStaticPropsContext, type PreviewData } from 'next'
 import { notFound, redirect } from 'next/navigation';
 import { useRouter } from 'next/router'
 import type { ParsedUrlQuery } from 'querystring'
@@ -53,9 +53,7 @@ export const getStaticProps = async (context: GetStaticPropsContext<ParsedUrlQue
     props: { product: data },
     revalidate: 10,
   }
-
 }
-
 export default StaticPage
 
 //?TUTORIAL -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
