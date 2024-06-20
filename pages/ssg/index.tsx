@@ -3,7 +3,7 @@ import { NextPage, GetStaticProps } from 'next'
 import axios from 'axios'
 import Link from 'next/link'
 import { Home } from 'lucide-react';
-
+import { ShieldX } from 'lucide-react';
 //PROPS TYPE
 interface PropsType {
   products: [{ id: number, title: string, price: number, description: string, category: string, image: string, rating: { rate: number, count: number } }],
@@ -27,8 +27,9 @@ const Index: NextPage<PropsType> = ({ products }) => {
         )}
       </div>
 
-      <div className='flex itmes-center flex-col justify-center'>
+      <div className='flex items-center justify-center'>
         <Link href='/' className='bg-green-400 flex items-center gap-2 rounded-md p-4 border-8 border-zinc-600 text-black text-2xl font-bold mx-auto'><Home size={32} strokeWidth={2.5} />HOME PAGE</Link>
+        <Link href='/ssg/product-notfound' className='bg-red-400 flex items-center gap-2 rounded-md p-4 border-8 border-zinc-600 text-black text-2xl font-bold mx-auto'><ShieldX size={32} strokeWidth={2.5} />NOT FOUND PAGE</Link>
       </div>
     </>
   )
