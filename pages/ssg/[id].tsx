@@ -29,7 +29,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const request = axios.get('https://fakestoreapi.com/products?limit=7');
   const response = (await request).data
   const paths = response.map((item: { id: number }) => { return { params: { id: String(item.id) } } })
-  //RETURN
+
   return {
     paths: paths,
     fallback: true,
