@@ -4,19 +4,18 @@ import { useRouter } from 'next/router'
 
 interface Props { data: { id: number, name: string, email: string, phone: string }, name: string, age: number }
 
-const SingleUser: NextPage<Props> = ({ data, name, age }) => {
+const SingleUser: NextPage<Props> = ({ data }) => {
 
   const router = useRouter()
 
   function backHandler() { router.back() }
 
   return (
-    <div className='h-fit pl-4 bg-zinc-900 py-6 w-fit rounded-xl mx-auto mt-4 hover:border border-white'>
+    <div className='h-fit pl-4 bg-zinc-900 py-6 w-fit rounded-xl mx-auto mt-44 border-2 borde-white hover:scale-110 duration-700 cursor-pointer'>
       <h1 className=' font-extrabold text-4xl  p-4'>{data.id}</h1>
       <h1 className='font-extrabold text-4xl p-4'>{data.name}</h1>
       <h1 className='font-extrabold text-4xl p-4 text-blue-700'>{data.email}</h1>
       <h1 className='font-extrabold text-4xl p-4 text-red-700'>{data.phone}</h1>
-      <h1 className='font-extrabold text-xl p-4 text-yellow-400'>{name} - {age}</h1>
       <button onClick={backHandler} className='bg-emerald-400 text-black p-2 ml-4 mt-4 text-xl font-bold outline-4 outline outline-zinc-600'>BACK</button>
     </div>
   )
@@ -35,9 +34,6 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const userID = ctx.params?.id
   const req = await fetch(`https://jsonplaceholder.typicode.com/users/${userID}`)
   const data = await req.json()
-  const name: string = 'ALRIEZA'
-  const age: number = 10
-
 
   // REDIRECTING THE USER TO THE {404 PAGE} IF THERE IS NO DATA FOR THAT ROUTE
   if (!Object.keys(data).length) {
@@ -49,7 +45,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   };
 
 
-  return { props: { data, name, age } }
+  return { props: { data } }
 
 }
 
