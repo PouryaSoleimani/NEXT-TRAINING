@@ -1,6 +1,7 @@
 //^ SORT PAGE
 import React, { useEffect, useState } from 'react'
 import db from '@/data/db.json'
+import __ from 'lodash'
 
 const Sort: React.FC = () => {
   //STATES
@@ -9,13 +10,13 @@ const Sort: React.FC = () => {
 
   //FUNCTIONS
   const sortAscending = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    const sortedProducts = db.products.sort((a, b) => a.price - b.price)
+    const sortedProducts = __.sortBy(PRODUCTS, "price")
     setSort(`Ascending`)
     setPRODUCTS(sortedProducts)
   }
 
   const sortDescending = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    const sortedProducts = db.products.sort((a, b) => a.price + b.price)
+    const sortedProducts = __.sortBy(PRODUCTS, "price").reverse()
     setSort(`Descending`)
     setPRODUCTS(sortedProducts)
   }
@@ -26,7 +27,7 @@ const Sort: React.FC = () => {
       <div className='w-full my-10 bg-zinc-300 h-fit grid place-items-center p-4 grid-cols-3 gap-y-10'>
         {PRODUCTS.map(product => (
           <div key={product.id} className='bg-zinc-950 w-[17rem] py-8 px-4 font-bold text-2xl text-center rounded-md '>
-            <h2>{product.title} - {product.price}</h2>
+            <h2>{product.title}  : <span className='bg-emerald-300/50 px-2 py-1 mr-2 rounded-xl'>${product.price}</span> </h2>
           </div>
         ))}
       </div>
@@ -41,4 +42,4 @@ const Sort: React.FC = () => {
 export default Sort
 
 
-//^ SSR => Server Side Rendering
+// SSR => Server Side Rendering
