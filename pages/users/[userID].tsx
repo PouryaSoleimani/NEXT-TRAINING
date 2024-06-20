@@ -3,10 +3,18 @@ import { NextPage, GetStaticPaths, GetStaticProps } from 'next'
 
 interface Props { }
 
-const Userinfo: NextPage<Props> = ({ }) => {
-  return <div></div>
+
+//^ COMPONENT 
+const UserInfoPage: NextPage<Props> = ({ }) => {
+  return (
+    <>
+
+    </>
+  )
 }
 
+
+//* STATIC PATHS 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [],
@@ -14,10 +22,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
+//^ STATIC PROPS
 export const getStaticProps: GetStaticProps = async (ctx) => {
+  const ID = ctx.params?.userID
   return {
     props: {},
   }
 }
 
-export default Userinfo
+export default UserInfoPage
