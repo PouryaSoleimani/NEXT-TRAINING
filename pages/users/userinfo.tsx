@@ -1,15 +1,23 @@
-import React from 'react'
+//^ USERS DYNAMIC PAGE
+import { NextPage, GetStaticPaths, GetStaticProps } from 'next'
 
-const userinfo: React.FC = () => {
+interface Props { }
 
-  const clickHandler = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => { console.log(`CLICK CLICK`) }
-
-  return (
-    <>
-      <h1>userinfo</h1>
-      <button onClick={clickHandler} className='p-3 bg-sky-700 rounded-xl'>CLICK ME</button>
-    </>
-  )
+const Userinfo: NextPage<Props> = ({ }) => {
+  return <div></div>
 }
 
-export default userinfo
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: [],
+    fallback: false,
+  }
+}
+
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  return {
+    props: {},
+  }
+}
+
+export default Userinfo
