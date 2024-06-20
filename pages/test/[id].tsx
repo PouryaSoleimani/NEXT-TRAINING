@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 interface Props { data: { id: number, title: string, price: number } }
 type SingleItemType = { id: number, title: string, price: number }
 
-
+//^ COMPONENT
 const DynamicSSgPage: NextPage<Props> = ({ data }) => {
   const router = useRouter()
   function backHandler() { router.back() }
@@ -17,10 +17,6 @@ const DynamicSSgPage: NextPage<Props> = ({ data }) => {
   )
 }
 
-
-
-
-
 //* GETSTATICPATHS
 export const getStaticPaths: GetStaticPaths = async () => {
 
@@ -28,10 +24,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const data = (await req).data
   const paths = data.map((item: SingleItemType) => { return { params: { id: String(item.id) } } })
 
-  return {
-    paths,
-    fallback: false,
-  }
+  return { paths, fallback: false, }
 }
 
 //* GETSTATICPROPS
