@@ -2,11 +2,6 @@
 import React, { useEffect, useState } from 'react'
 import db from '@/data/db.json'
 import { useRouter } from 'next/router'
-import { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: "SEARCH PAGE"
-}
 
 const index: React.FC = () => {
   // STATES   
