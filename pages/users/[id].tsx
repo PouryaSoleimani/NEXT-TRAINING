@@ -9,7 +9,7 @@ type SingleUserType = { id: number, name: string, email: string, city: string, p
 const UserInfoPage: NextPage<Props> = ({ user }) => {
   const [isLoading, setIsLoading] = useState(true)
 
-  useEffect(() => { setTimeout(() => { setIsLoading(false) }, 2000); }, [])
+  useEffect(() => { setTimeout(() => { setIsLoading(false) }, 500); }, [])
 
   return (
     <div className='flex items-center justify-center w-full overflow-hidden h-screen text-3xl font-bold underline decoration-emerald-600 decoration-8 scale-150 '>
