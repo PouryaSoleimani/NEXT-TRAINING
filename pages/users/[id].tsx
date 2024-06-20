@@ -14,9 +14,7 @@ const UserInfoPage: NextPage<Props> = ({ user }) => {
   return (
     <div className='flex items-center justify-center w-full overflow-hidden h-screen text-3xl font-bold underline decoration-emerald-600 decoration-8 scale-150 '>
       {isLoading ? (<h1 className='bg-zinc-900 p-8 rounded-xl text-center overflow-hidden border-8 border-red-950'>LOADING ...</h1>) : (
-
         <h1 className='bg-zinc-900 p-8 rounded-xl text-center overflow-hidden border-8 border-green-950'>{user.id} - {user.name}</h1>
-
       )}
     </div>
   )
