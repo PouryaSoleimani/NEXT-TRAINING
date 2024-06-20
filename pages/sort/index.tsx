@@ -23,7 +23,6 @@ const Sort: React.FC = () => {
   //RETURN
   return (
     <>
-
       <div className='w-full my-10 bg-zinc-300 h-fit grid place-items-center p-4 grid-cols-3 gap-y-10'>
         {PRODUCTS.map(product => (
           <div key={product.id} className='bg-zinc-950 w-[17rem] py-8 px-4 font-bold text-2xl text-center rounded-md '>
@@ -35,13 +34,11 @@ const Sort: React.FC = () => {
         <button className='bg-green-500 p-4 rounded-md border-8 text-black border-black cursor-pointer' onClick={sortAscending}>Ascending</button>
         <button className='bg-rose-500 p-4 rounded-md border-8 text-black border-black cursor-pointer' onClick={sortDescending}>Descending</button>
       </div>
-
     </>
 
   )
 }
-
 export default Sort
 
 
-// SSR => Server Side Rendering
+//^ SSR => Server Side Rendering
