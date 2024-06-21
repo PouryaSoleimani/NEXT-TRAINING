@@ -28,7 +28,7 @@ const SearchSSGpage: NextPage<Props> = ({ products }) => {
       <div className='flex flex-wrap px-10 py-10 gap-2 items-center justify-center'>
         {isShowError ? (<h1 className='text-center font-bold text-4xl text-red-900'>NO PRODUCTS FOUND</h1>) : (
           PRODUCTS.slice(0, 18).map(item => (
-            <div key={item.id} className='bg-zinc-800 w-fit p-4 rounded-md flex flex-col items-center justify-center'>
+            <div key={item.id} className='bg-zinc-800 w-[10rem] p-4 rounded-md flex flex-col items-center justify-center'>
               <img src={item.image} className='w-24 h-24 rounded-md' />
               <h1 className='font-extrabold'>{item.title.slice(0, 10)}</h1>
             </div>
