@@ -9,8 +9,8 @@ interface PropsType { products: [{ id: number, title: string, price: number, des
 
 //^ COMPONENT
 const Index: NextPage<PropsType> = ({ products }) => {
-  //-> RECIEVING DATA AND SHOW IT IN THE JSX
-  //RETURN
+  //-> 2 - RECIEVING DATA AND SHOW IT IN THE JSX
+
   return (
     <>
       <div className='flex flex-col border-2 border-white bg-zinc-900 items-start space-y-2 text-xl p-10 text-slate-200 justify-center font-bold h-full my-10'>
@@ -18,9 +18,7 @@ const Index: NextPage<PropsType> = ({ products }) => {
           <div key={item.id}>
             <h1 className='py-2' >
               <Link href={`/ssg/${item.id}`} className='hover:bg-zinc-200 hover:text-black p-2 rounded-md'>
-                {item.id} - {item.title.slice(0, 20)} - {item.price}$
-                -{Array(Math.ceil(item.rating.rate)).fill(0).map(item => ('🤍'))}
-                {Array((5 - Math.ceil(item.rating.rate))).fill(0).map(item => ('🖤'))}
+                {item.id} - {item.title.slice(0, 20)} - {item.price}$-{Array(Math.ceil(item.rating.rate)).fill(0).map(item => ('🤍'))}{Array((5 - Math.ceil(item.rating.rate))).fill(0).map(item => ('🖤'))}
               </Link>
             </h1>
           </div>
@@ -38,7 +36,7 @@ const Index: NextPage<PropsType> = ({ products }) => {
 
 //^ STATIC SITE GENERATION ( SSG ) 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-  //-> FETCHING DATA AND SENDING IT TO THE COMPONENT ABOVE ...
+  //-> 1 - FETCHING DATA AND SENDING IT TO THE COMPONENT ABOVE ...
   const request = axios.get('https://fakestoreapi.com/products?limit=7');
   const response = (await request).data
 
