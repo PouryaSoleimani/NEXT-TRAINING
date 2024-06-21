@@ -3,9 +3,11 @@ import axios from 'axios'
 import { Heading1 } from 'lucide-react'
 import { NextPage, GetStaticProps } from 'next'
 import { ChangeEvent, useEffect, useState } from 'react'
-
 interface Props { products: [{ id: number, title: string }] }
 
+
+
+//COMPONENT
 const SearchTestPage: NextPage<Props> = ({ products }) => {
 
   const [PRODUCTS, setPRODUCTS] = useState(products)
@@ -13,12 +15,13 @@ const SearchTestPage: NextPage<Props> = ({ products }) => {
   const [isShowError, setIsShowError] = useState(false)
 
   useEffect(() => {
-    const resultArray: any = PRODUCTS.filter((item) => item.title.toLowerCase().includes(search.toLowerCase()))
-    if (resultArray.length) { setIsShowError(false) } else { setIsShowError(true) }
+    const resultArray: any = PRODUCTS.filter((item) => item.title.trim().toLowerCase().includes(search.toLowerCase()))
+    setPRODUCTS(resultArray)
+    if (!resultArray.length) { setIsShowError(true) } else { setIsShowError(false) ; setPRODUCTS(products) }
     if (!search.length) { setPRODUCTS(products) } else { setPRODUCTS(resultArray) }
   }, [search])
 
-  const searchHandler = (event: ChangeEvent<HTMLInputElement>) => { setSearch(event.target.value) }
+  const searchHandler = (event: ChangeEvent<HTMLInputElement>) => { event.preventDefault(); setSearch(event.target.value) }
 
   return (
     <>
