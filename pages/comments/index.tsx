@@ -1,10 +1,12 @@
-//^ COMMENTS PAGE ==================================================================================================================================================
+//^ COMMENTS PAGE ======================================================================================================================================================================
 import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
 import { useState } from 'react'
 
 interface Props { comments: [{ postId: number, id: number, name: string, email: string, body: string }] }
 
+
+//^ COMPONENT =>
 const Index: NextPage<Props> = ({ comments }) => {
 
   const [COMMENTS, setCOMMENTS] = useState(comments)
@@ -14,7 +16,8 @@ const Index: NextPage<Props> = ({ comments }) => {
     const filteredComments: any = copy.filter(item => { return item.postId === ID })
     setCOMMENTS(filteredComments)
   }
-  //^ RETURN
+
+  // RETRUN =>
   return (
     <>
       <div className='flex items-center justify-around px-2 py-3'>
@@ -41,6 +44,7 @@ const Index: NextPage<Props> = ({ comments }) => {
   )
 }
 
+//^ STATIC PROPS =>
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const req = axios.get('https://jsonplaceholder.typicode.com/comments')
   const comments = (await req).data
