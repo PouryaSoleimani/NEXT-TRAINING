@@ -6,6 +6,7 @@ import { ChangeEvent, useEffect, useState } from 'react'
 interface Props { products: [{ id: number, title: string }] }
 
 const SearchTestPage: NextPage<Props> = ({ products }) => {
+  
   const [PRODUCTS, setPRODUCTS] = useState(products)
   const [search, setSearch] = useState('')
   const [isShowError, setIsShowError] = useState(false)
