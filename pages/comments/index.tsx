@@ -14,6 +14,7 @@ const Index: NextPage<Props> = ({ comments }) => {
     const filteredComments: any = copy.filter(item => { return item.postId === ID })
     setCOMMENTS(filteredComments)
   }
+  //^ RETURN
   return (
     <>
       <div className='flex items-center justify-around px-2 py-3'>
