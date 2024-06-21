@@ -1,53 +1,46 @@
-//! SEARCH TEST PAGE 
+//! SEARCH TEST PAGE
 import axios from 'axios'
-import { Heading1 } from 'lucide-react'
-import { NextPage, GetStaticProps } from 'next'
-import { ChangeEvent, useEffect, useState } from 'react'
-interface Props { products: [{ id: number, title: string }] }
+import React, { useEffect, useState } from 'react'
 
+type SingleItemType = { id: number, title: string }
 
+const SearchTestPage = () => {
+  const [products, setProducts] = useState([])
+  useEffect(() => { axios.get('https://fakestoreapi.com/products').then(response => { setProducts(response.data) }) }, [])
 
-//COMPONENT
-const SearchTestPage: NextPage<Props> = ({ products }) => {
-
-  const [PRODUCTS, setPRODUCTS] = useState(products)
   const [search, setSearch] = useState('')
   const [isShowError, setIsShowError] = useState(false)
 
+
   useEffect(() => {
-    const resultArray: any = PRODUCTS.filter((item) => item.title.trim().toLowerCase().includes(search.toLowerCase()))
-    setPRODUCTS(resultArray)
-    if (!resultArray.length) { setIsShowError(true) } else { setIsShowError(false) ; setPRODUCTS(products) }
-    if (!search.length) { setPRODUCTS(products) } else { setPRODUCTS(resultArray) }
+    const filteredArray = products.filter((item: SingleItemType) => { return item.title.toLowerCase().includes(search.toLowerCase()) })
+    setProducts(filteredArray)
+    !filteredArray.length ? setIsShowError(true) : setIsShowError(false)
+    console.log(products)
   }, [search])
 
-  const searchHandler = (event: ChangeEvent<HTMLInputElement>) => { event.preventDefault(); setSearch(event.target.value) }
+
 
   return (
     <>
-      <div className='bg-zinc-700 px-3 py-10 flex items-center justify-center'>
-        <input type="search" placeholder='search' className='p-2 font-semibold w-72 text-black outline-none' value={search} onChange={searchHandler} />
+      <div>
+        <h1 className='bg-lime-400 text-black text-center py-1 font-bold'>SearchTestPage</h1>
       </div>
-      <div className='flex flex-wrap gap-4 p-10 items-center justify-center'>
-        {isShowError ? (<h1 className='bg-red-200 text-red-900 font-bold text-2xl text-center rounded-md border-4 p-2 border-red-700'>NO PRODUCTS FOUND !</h1>) : (
-          PRODUCTS.map((item) => (
-            <div key={item.id} className='bg-zinc-800 w-fit p-2 rounded-md font-bold'>
-              <h1>{item.title.slice(0, 10)}</h1>
-            </div>
-          ))
-        )}
+      <div className='flex items-center justify-center py-4 border-b-4 border-lime-400'>
+        <input type="search" placeholder='search' value={search} onChange={event => setSearch(event.target.value)} className='p-1 font-bold text-black w-[20rem] outline-none' />
+      </div>
+      <div className='flex flex-wrap items-center justify-center p-10 gap-2'>
+
+        {products.map((item: SingleItemType) => (
+          <div key={item.id} className='font-bold text-xl bg-zinc-700 p-2 rounded-md'>
+            <h1>{item.title.slice(0, 10)}</h1>
+          </div>
+        ))}
 
       </div>
     </>
-  )
-}
 
-export const getStaticProps: GetStaticProps = async (ctx) => {
-  const req = axios.get('https://fakestoreapi.com/products')
-  const products = (await req).data
-  return {
-    props: { products },
-  }
+  )
 }
 
 export default SearchTestPage
