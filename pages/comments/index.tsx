@@ -27,7 +27,7 @@ const Index: NextPage<Props> = ({ comments }) => {
       <div className='flex flex-wrap items-center justify-center p-4 gap-2'>
         {COMMENTS.map(item => (
           <div key={item.id} className='flex flex-col space-y-2 bg-zinc-800 w-fit text-zinc-200 items-start p-2 rounded-md justify-center'>
-            <h1 className='text-xl font-bold'>{item.name.slice(0, 20)} : </h1>
+            <h1 className='text-lg font-bold'>{item.name.slice(0, 20).toUpperCase()} : </h1>
             <h4 className='text-sm text-zinc-500 font-thin'>{item.email}</h4>
             <h4 className='flex items-center justify-start space-x-6'>For post : <span className='text-xl font-extrabold bg-blue-900 px-2 text-white rounded-md ml-2'>{item.postId}</span> </h4>
             <span className='bg-white text-black w-[14rem] h-[14rem] overflow-auto'>
