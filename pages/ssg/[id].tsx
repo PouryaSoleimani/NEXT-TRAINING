@@ -8,12 +8,13 @@ import type { ParsedUrlQuery } from 'querystring'
 interface Props { product: { id: number, title: string, price: number, description: string, category: string, image: string, rating: object } }
 //COMPONENT ========================================================================================================================================================================================
 const StaticPage: NextPage<Props> = ({ product }) => {
+  //-> 3 - RECIEVING DATA FROM {getStaticProps} FUNCTION AND SHOW IT IN THE JSX ...
 
   const router = useRouter()
   if (router.isFallback) { return (<h1>PLEASE WAIT</h1>) }
   function backHandler() { router.back() }
 
-  //*RETURN  
+  // RETURN  
   return (
     <div className='flex items-center justify-center h-screen flex-col space-y-6'>
       <h1 className='bg-zinc-700 text-4xl font-bold p-8 text-zinc-200'>{product.id} - {product.title.slice(0, 30)}  || {product.price}$</h1>
@@ -25,7 +26,7 @@ const StaticPage: NextPage<Props> = ({ product }) => {
 //^GET STATIC PATHS : (SSG-DYNAMIC) ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 //THIS FUNCTIONS IS JUST LIKE {GET STATIC PROPS} -- BUT IT GET USED IN DYNAMIC ROUTES ==> [id].tsx 
 export const getStaticPaths: GetStaticPaths = async () => {
-
+  //-> 2 - DEFINING THE ACCEPTABLE PATHS FOR DYNAMIC PAGES ...
   const request = axios.get('https://fakestoreapi.com/products?limit=7');
   const response = (await request).data
   const paths = response.map((item: { id: number }) => { return { params: { id: String(item.id) } } })
@@ -38,7 +39,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 //^GET STATIC PROPS (SSG) ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 export const getStaticProps = async (context: GetStaticPropsContext<ParsedUrlQuery, PreviewData>) => {
-
+  //-> 1 - FETCHING DATA BY CONTEXT PARAMS ID AND SENDING IT TO THE COMPONENT ...
   const productID = context.params?.id
   const request = axios.get(`https://fakestoreapi.com/products/${productID}`)
   const data = (await request).data
@@ -46,7 +47,7 @@ export const getStaticProps = async (context: GetStaticPropsContext<ParsedUrlQue
   if (!data) {
     return {
       // notFound: true
-      redirect: { destination: '/ssg/product-notfound' }
+      redirect: { destination: '/ssg/product-notfound' } // => REDIRECTING THE CLIENT TO A CUSTOM ROUTE IF THE PRODUCT IS NOT FOUND ...
     }
   }
   return {
