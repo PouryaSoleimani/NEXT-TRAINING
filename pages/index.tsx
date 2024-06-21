@@ -19,6 +19,7 @@ export default function Home() {
           <Link href='/swr' className="bg-stone-800 text-2xl px-2 py-1 rounded-xl text-white font-bold border-[10px] border-zinc-950">SWR</Link>
           <Link href='/testpage' className="bg-pink-400 text-2xl px-2 py-1 rounded-xl text-white font-bold border-[10px] border-zinc-950">TEST</Link>
           <Link href='/users' className="bg-green-400 text-2xl px-2 py-1 rounded-xl text-black font-bold border-[10px] border-zinc-950">USERS</Link>
+          <Link href='/comments' className="bg-orange-400 text-2xl px-2 py-1 rounded-xl text-black font-bold border-[10px] border-zinc-950">COMMENTS</Link>
         </ul>
       </main>
     </>
