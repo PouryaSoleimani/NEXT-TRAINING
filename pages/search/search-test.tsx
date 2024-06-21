@@ -11,9 +11,13 @@ const SearchTestPage: React.FC = () => {
   const [isShowError, setIsShowError] = useState(false)
 
   useEffect(() => {
+
     const filteredArray = db.products.filter((item: SingleItemType) => { return item.title.toLowerCase().includes(search.toLowerCase()) })
+
     setProducts(filteredArray)
+
     !filteredArray.length ? setIsShowError(true) : setIsShowError(false)
+
   }, [search])
 
 
