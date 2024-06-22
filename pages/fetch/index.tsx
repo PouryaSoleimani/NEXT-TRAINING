@@ -1,9 +1,12 @@
+//^ FETCH PAGE
 import axios from 'axios'
 import { indexOf } from 'lodash'
 import React, { useState } from 'react'
 
 type SingleUserType = { username: string, password: string }
 
+
+//! COMPONENT
 const FetchPage = () => {
   const [usersList, setUsersList] = useState([])
   function fetchUsersHandler() {
