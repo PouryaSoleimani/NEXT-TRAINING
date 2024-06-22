@@ -6,7 +6,7 @@ const users = [
 ]
 
 
-//^ FUNCITONS
+//^ FUNCTION
 function usersHandler(Request, Response) {
   console.log("REQUEST METHOD => ", Request.method)
 
