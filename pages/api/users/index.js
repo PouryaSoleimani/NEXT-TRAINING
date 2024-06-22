@@ -1,9 +1,5 @@
 //! USERS ROUTE
 //* FAKE DATABASE
-const users = [
-  { username: 'POURYA SOLEIMANI', email: 'POURYA@GMAIL.COM', password: 'POURYA123' }
-]
-
 
 //^ FUNCITONS
 function usersHandler(Request, Response) {
@@ -14,10 +10,7 @@ function usersHandler(Request, Response) {
     case "GET": { return Response.json("GET METHOD") }
 
     case "POST": {
-      const { username, email, password } = Request.body
-      users.push({ username, email, password })
-      console.log("REQUEST BODY =>", Request.body)
-      return Response.json({ message: "POST METHOD => USER REGISTERED SUCCESFULLY", data: users })
+      return Response.json("POST METHOD")
     }
 
     case "PUT": { return Response.json("PUT METHOD") }
