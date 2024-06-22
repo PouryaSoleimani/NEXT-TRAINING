@@ -11,7 +11,7 @@ function usersHandler(Request, Response) {
 
   //?SWITCH CASE FOR DIFFERENT INCOMING METHODS
   switch (Request.method) {
-    case "GET": { return Response.json("GET METHOD") }
+    case "GET": { return Response.json({ message: 'GET METHOD', data: users }) }
 
     case "POST": {
       const { username, password } = Request.body
