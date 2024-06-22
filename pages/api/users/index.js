@@ -17,6 +17,7 @@ function usersHandler(Request, Response) {
       const { username, email, password } = Request.body
       users.push({ username, email, password })
       console.log("REQUEST BODY =>", Request.body)
+      console.log(users)
       return Response.json("POST METHOD => USER REGISTERED SUCCESFULLY")
     }
 
