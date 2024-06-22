@@ -2,6 +2,7 @@
 function usersHandler(Request, Response) {
   console.log("REQUEST METHOD => ", Request.method)
   console.log("REQUEST BODY => ", Request.url.slice(5))
+
   //?SWITCH CASE FOR DIFFERENT INCOMING METHODS
   switch (Request.method) {
     case "GET": { return Response.json("GET METHOD") }
@@ -11,7 +12,7 @@ function usersHandler(Request, Response) {
     case "DELETE": { return Response.json("DELETE METHOD") }
     default: { return Response.json("DEFAULT MODE") }
   }
-
+  
 
   //? GET METHOD RESPONSE
   // return Response.json({
