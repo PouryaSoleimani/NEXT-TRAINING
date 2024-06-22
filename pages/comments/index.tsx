@@ -6,7 +6,7 @@ import { useState } from 'react'
 interface Props { comments: [{ postId: number, id: number, name: string, email: string, body: string }] }
 
 
-//^ COMPONENT =>
+//! COMPONENT =>
 const Index: NextPage<Props> = ({ comments }) => {
 
   const [COMMENTS, setCOMMENTS] = useState(comments)
