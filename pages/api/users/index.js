@@ -10,7 +10,7 @@ const users = [
 function usersHandler(Request, Response) {
   console.log("REQUEST METHOD => ", Request.method)
 
-  //?SWITCH CASE FOR DIFFERENT INCOMING METHODS
+  //SWITCH CASE FOR DIFFERENT INCOMING METHODS
   switch (Request.method) {
     case "GET": { return Response.json({ message: 'GET METHOD', data: users }) }
 
