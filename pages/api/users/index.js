@@ -1,7 +1,8 @@
-//! USERS ROUTE
+//^ USERS API ROUTE
 //* FAKE DATABASE
 const users = [
-  { username: "pourya", password: "pourya123" }
+  { username: "pourya", password: "pourya123" },
+  { username: "majid", password: "majid" }
 ]
 
 
