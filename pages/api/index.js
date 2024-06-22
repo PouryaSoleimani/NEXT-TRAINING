@@ -1,5 +1,4 @@
-const handler = (request, response) => {
-  return response.json({ message: "WELCOME TO NEXT.JS API ROUTE FEATURE" })
+function handler() {
+  return Response.json({ message: "WELCOME TO API ROUTE ! ❤" })
 }
-
 export default handler
