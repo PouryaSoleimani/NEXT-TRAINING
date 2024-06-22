@@ -1,18 +1,31 @@
 //! USERS ROUTE
+//& DATABASE
+const users = [
+  { username: 'POURYA SOLEIMANI', email: 'POURYA@GMAIL.COM', password: 'POURYA123' }
+]
+
+
+//^ FUNCITONS
 function usersHandler(Request, Response) {
   console.log("REQUEST METHOD => ", Request.method)
-  console.log("REQUEST BODY => ", Request.url.slice(5))
 
   //?SWITCH CASE FOR DIFFERENT INCOMING METHODS
   switch (Request.method) {
     case "GET": { return Response.json("GET METHOD") }
-    case "POST": { return Response.json("POST METHOD") }
+
+    case "POST": {
+      const { username, email, password } = Request.body
+      users.push({ username, email, password })
+      console.log("REQUEST BODY =>", Request.body)
+      return Response.json("POST METHOD => USER REGISTERED SUCCESFULLY")
+    }
+
     case "PUT": { return Response.json("PUT METHOD") }
     case "PATCH": { return Response.json("PATCH METHOD") }
     case "DELETE": { return Response.json("DELETE METHOD") }
     default: { return Response.json("DEFAULT MODE") }
   }
-  
+
 
   //? GET METHOD RESPONSE
   // return Response.json({
