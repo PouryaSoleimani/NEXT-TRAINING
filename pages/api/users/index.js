@@ -1,4 +1,4 @@
-//^ USERS API ROUTE
+//^ USERS API ROUTE ===============================================================================================================================================
 //* FAKE DATABASE
 const users = [
   { username: "pourya", password: "pourya123" },
@@ -7,7 +7,7 @@ const users = [
 ]
 
 
-//& FUNCTION
+//^ FUNCTION =====================================================================================================================================================
 function usersHandler(Request, Response) {
   console.log("REQUEST METHOD => ", Request.method)
 

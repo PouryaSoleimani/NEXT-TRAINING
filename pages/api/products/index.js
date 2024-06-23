@@ -11,7 +11,9 @@ const allProducts = [
 
 function productHandler(Req, Res) {
   switch (Req.method) {
-    case "GET": return Res.json({ message: 'PRODUCTS ROUTE', data: allProducts })
+    case "GET": {
+      return Res.json({ message: 'PRODUCTS ROUTE / GET ', data: allProducts })
+    }
 
     case "POST": {
       const { id, title, price } = Req.body
@@ -19,7 +21,16 @@ function productHandler(Req, Res) {
       return Res.json({ message: "PRODUCT ADDED SUCCESSFULLY !", data: allProducts })
     }
 
-    default: return Res.json({ message: "DEFAULT METHOD :)" })
+    case "DELETE": {
+      const { id, title, price } = Req.body
+      allProducts.pop({ id, title, price })
+      return Res.json({ message: "PRODUCT REMOVED SUCCESSFULLY !", data: allProducts })
+    }
+
+    default: {
+      return Res.json({ message: "DEFAULT METHOD :)" })
+    }
+
   }
 
 }
