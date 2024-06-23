@@ -2,7 +2,8 @@
 //* FAKE DATABASE
 const users = [
   { username: "pourya", password: "pourya123" },
-  { username: "majid", password: "majid" }
+  { username: "majid", password: "majid" },
+  { username: "mehdi", password: "mehdi" },
 ]
 
 
