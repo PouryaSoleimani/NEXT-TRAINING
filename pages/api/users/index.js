@@ -7,7 +7,7 @@ const users = [
 ]
 
 
-//^ FUNCTION
+//& FUNCTION
 function usersHandler(Request, Response) {
   console.log("REQUEST METHOD => ", Request.method)
 
