@@ -12,6 +12,7 @@ const allProducts = [
 function productHandler(Req, Res) {
   switch (Req.method) {
     case "GET": return Res.json({ message: 'PRODUCTS ROUTE', data: allProducts })
+
     case "POST": {
       const { id, title, price } = Req.body
       allProducts.push({ id, title, price })
