@@ -17,12 +17,10 @@ function usersHandler(Req, Res) {
       const databaseBufferType = fs.readFileSync(dataBasePath)
       const parsedDataBase = JSON.parse(databaseBufferType)
       const usersArray = parsedDataBase.users // AND HERE WE HAVE REACHED THE USERS ARRAY IN OUR {db.json} FILE
-      return Res.json({ message: "USERS API | GET METHOD" })
+
+      return Res.json({ message: "USERS API | GET METHOD", usersArray })
+
     }
-
-
-
-
 
 
     case "POST": { return Res.json({ message: "USERS API | POST METHOD" }) }
