@@ -93,6 +93,11 @@
       "id": 3,
       "title": "WATCH TV",
       "isCompleted": false
+    },
+    {
+      "id": 4,
+      "title": "LEARN NEXT",
+      "isCompleted": false
     }
   ]
 }
