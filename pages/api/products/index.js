@@ -20,8 +20,7 @@ function productHandler(Req, Res) {
       console.log("FILENAME =>", __filename)
 
       // ACCESSING OUR ROOT DIRECTORY USING {process.cwd()}
-      console.log("PROCESS => ", process.cwd())
-
+      console.log("ROOT FOLDER PATH ==>", process.cwd())
 
       //ACCESSING THE DATABASE FILE PATH USING {PATH} AND {.join()}
       const dbPath = path.join(process.cwd(), "data", "db.json")
