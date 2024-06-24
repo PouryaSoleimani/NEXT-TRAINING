@@ -1,32 +1,18 @@
-//^ TODOS API ROUTE =========================================================================================================================
+// TODOS API ROUTE ============================================================================================================================================ 
 
-//* FAKE DATABASE 
-const todos = [
-  { id: 1, title: 'GO TO GYM', isCompleted: false },
-  { id: 2, title: 'READ A BOOK', isCompleted: false },
-  { id: 3, title: 'WATCH TV', isCompleted: false },
-]
 
-//^ FUNCTION
 
-function todosHandler(Request, Response) {
-  switch (Request.method) {
+// FUNCTION ============================================================================================================================================ 
+function todosHandler(Req, Res) {
 
-    case "GET": {
-      return Response.json({ message: "TODOS ROUTE , GET METHOD ", todos })
-    }
+  switch (Req.method) {
 
-    case "POST": {
-      const { id, title, isCompleted } = Request.body
-      todos.push({ id, title, isCompleted })
-      return Response.json({ message: "TODOS ROUTE , POST METHOD ", todos })
-    }
-
-    default: {
-      return { message: "TODOS ROUTE , DEFAULT METHOD" }
-    }
-
+    case "GET": { return Res.json({ message: "TODOS ROUTE  |  GET METHOD" }) }
+    case "POST": { return Res.json({ message: "TODOS ROUTE  |  POST METHOD" }) }
+    case "PUT": { return Res.json({ message: "TODOS ROUTE  |  PUT METHOD" }) }
+    case "DELETE": { return Res.json({ message: "TODOS ROUTE  |  DELETE METHOD" }) }
+    default: { return Res.json({ message: "TODOS ROUTE  |  DEFAULT METHOD" }) }
+    
   }
 }
-
 export default todosHandler
