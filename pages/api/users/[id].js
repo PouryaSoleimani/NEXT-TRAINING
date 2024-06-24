@@ -4,12 +4,17 @@ import { users } from './index.js'
 
 function userDynamicHandler(req, res) {
 
-  const mainUser = users.filter(user => { return user.id === req.query.id })
+  const mainUser = users.filter(user => { return user.id.toString() === req.query.id })
 
   switch (req.method) {
 
     case "GET": {
-      return res.json({ message: `RESPONSE => ${req.query.id}`, user: mainUser })
+
+      if (mainUser.length) {
+        return res.json({ message: `RESPONSE => ${req.query.id}`, user: mainUser })
+      } else {
+        return res.json({ message: "404 | USER NOT FOUND" })
+      }
     }
 
     default: {
