@@ -13,7 +13,7 @@ function userDynamicHandler(Request, Response) {
       if (mainUser) {
         return Response.json({ message: `USER ID ${ID}`, mainUser })
       } else {
-        return Response.json({ message: "404 | USER NOT FOUND" })
+        return Response.status(404).json({ message: "404 | USER NOT FOUND" })
       }
     }
 
@@ -23,4 +23,5 @@ function userDynamicHandler(Request, Response) {
 
   }
 }
+
 export default userDynamicHandler
