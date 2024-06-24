@@ -11,7 +11,7 @@ function userDynamicHandler(Request, Response) {
 
     case "GET": {
       if (mainUser) {
-        return Response.json({ message: "USERS DYNAMIC ROUTE", mainUser })
+        return Response.json({ message: `USER ID ${ID}`, mainUser })
       } else {
         return Response.json({ message: "404 | USER NOT FOUND" })
       }
