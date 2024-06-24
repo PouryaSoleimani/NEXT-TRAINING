@@ -22,7 +22,7 @@ function usersHandler(Request, Response) {
     case "POST": {
       const { username, password } = Request.body
       users.push({ username, password })
-      return Response.json({ message: "USER REGISTERED SUCCESSFULLY", data: users })
+      return Response.status(201).json({ message: "USER REGISTERED SUCCESSFULLY", data: users })
     }
 
     case "PUT": { return Response.json("PUT METHOD") }
