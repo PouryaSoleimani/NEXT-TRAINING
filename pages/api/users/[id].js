@@ -1,7 +1,9 @@
-//^ USERS DYNAMIC ROUTE ======================================================================================================
+//^ USERS DYNAMIC ROUTE ===========================================================================================================================
 //IMPORTING DATABASE
 import { users } from './index.js'
 
+
+// FUNCTION
 function userDynamicHandler(req, res) {
 
   const mainUser = users.filter(user => { return user.id.toString() === req.query.id })
