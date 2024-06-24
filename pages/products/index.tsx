@@ -10,12 +10,12 @@ const ProductsPage = () => {
 
   useEffect(() => {
     axios.get("http://localhost:3000/api/products")
-      .then(response => setProducts(response.data.data))
+      .then(response => setProducts(response.data.products.slice(0, 5)))
   }, [])
 
   // RETURN 
   return (
-    <section className='w-screen h-screen flex items-center justify-center flex-col space-y-4 overflow-hidden bg-gradient-to-b from-pink-300 via-purple-800 to-orange-900'>
+    <section className='w-screen h-screen flex items-center justify-center flex-col space-y-4 overflow-hidden'>
       <h1 className='text-4xl font-extrabold text-orange-500 bg-zinc-800/40 px-24 py-4 rounded-lg'>PRODUCTS</h1>
       <div className='flex items-center justify-center font-bold text-3xl flex-col space-y-4'>
         {products?.map((item: SingleItemType) => (

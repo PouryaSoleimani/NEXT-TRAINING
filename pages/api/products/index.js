@@ -25,23 +25,23 @@ function productHandler(Req, Res) {
 
       //ACCESSING THE DATABASE FILE PATH USING {PATH} AND {.join()}
       const dbPath = path.join(process.cwd(), "data", "db.json")
-      console.log(dbPath)
+      console.log("DATABASE PATH => ", dbPath)
 
-      
-      //READING THE DATABASE FILE(JSON FORMAT)
+
+      //READING THE DATABASE FILE(JSON FORMAT) USING {fs} AND {readFileSync} METHOD IN BUFFER TYPE
       const database = fs.readFileSync(dbPath)
-      // console.log(database)
+      console.log(database)
 
       //PARSING THE DATABASE FROM BUFFER TYPE TO {JSON} FILE
       const parsedDatabase = JSON.parse(database)
-      // console.log(parsedDatabase)
-      // console.log(parsedDatabase.products)
+      console.log(parsedDatabase)
+      console.log(parsedDatabase.products)
 
 
 
       return Res.json({
         message: 'PRODUCTS ROUTE / GET ',
-        users: parsedDatabase.products
+        products: parsedDatabase.products
       })
     }
 
