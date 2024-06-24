@@ -11,6 +11,7 @@ const allProducts = [
 
 function productHandler(Req, Res) {
   switch (Req.method) {
+    
     case "GET": {
       return Res.json({ message: 'PRODUCTS ROUTE / GET ', data: allProducts })
     }
