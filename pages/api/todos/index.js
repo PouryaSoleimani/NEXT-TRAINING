@@ -20,8 +20,6 @@ function todosHandler(Req, Res) {
 
 
 
-
-
     case "POST": { return Res.json({ message: "TODOS ROUTE  |  POST METHOD" }) }
     case "PUT": { return Res.json({ message: "TODOS ROUTE  |  PUT METHOD" }) }
     case "DELETE": { return Res.json({ message: "TODOS ROUTE  |  DELETE METHOD" }) }
