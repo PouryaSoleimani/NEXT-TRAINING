@@ -15,9 +15,29 @@ function productHandler(Req, Res) {
   switch (Req.method) {
 
     case "GET": {
-      console.log("DIRNAME",__dirname)
+
+      console.log("DIRNAME =>", __dirname)
+      console.log("FILENAME =>", __filename)
+      console.log("PROCESS => ", process.cwd())
+
+      //ACCESSING THE DATABASE
+      const dbPath = path.join(process.cwd(), "data", "db.json")
+      console.log(dbPath)
+
+      //READING THE DATABASE FILE(JSON FORMAT)
+      const database = fs.readFileSync(dbPath)
+      console.log(database)
+
+      //PARSING THE DATABASE FROM BUFFER TYPE TO {JSON} FILE
+      const parsedDatabase = JSON.parse(database)
+      console.log(parsedDatabase)
+      console.log(parsedDatabase.products)
+
+
+
       return Res.json({
         message: 'PRODUCTS ROUTE / GET ',
+        users: parsedDatabase.products
       })
     }
 
