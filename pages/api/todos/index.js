@@ -28,3 +28,5 @@ function todosHandler(Request, Response) {
 
   }
 }
+
+export default todosHandler
