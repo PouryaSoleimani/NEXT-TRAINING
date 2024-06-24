@@ -77,5 +77,22 @@
       "username": "reza",
       "password": "12345"
     }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "title": "GO TO GYM",
+      "isCompleted": false
+    },
+    {
+      "id": 2,
+      "title": "READ A BOOK",
+      "isCompleted": false
+    },
+    {
+      "id": 3,
+      "title": "WATCH TV",
+      "isCompleted": false
+    }
   ]
 }
