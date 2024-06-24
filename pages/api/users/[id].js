@@ -3,6 +3,7 @@
 import { users } from './index'
 
 function userDynamicHandler(Request, Response) {
+
   const ID = Request.query.id
   const mainUser = users.find(user => user.id == ID)
 
@@ -16,7 +17,9 @@ function userDynamicHandler(Request, Response) {
       }
     }
 
-    default: { return { message: "USERS DYNAMIC ROUTE" } }
+    default: {
+      return { message: "USERS DYNAMIC ROUTE" }
+    }
 
   }
 }
