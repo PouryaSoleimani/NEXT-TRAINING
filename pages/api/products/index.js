@@ -1,7 +1,9 @@
 //^ PRODUCTS ROUTE ======================================================================================================================================
+import fs from 'fs'
+import path from 'path'
 
 //!FAKE DATABASE
-const allProducts = [
+const allProductsFake = [
   { id: 1, title: "Watch", price: 220 },
   { id: 2, title: "Laptop", price: 980 },
   { id: 3, title: "Keyboard", price: 80 },
@@ -11,9 +13,12 @@ const allProducts = [
 
 function productHandler(Req, Res) {
   switch (Req.method) {
-    
+
     case "GET": {
-      return Res.json({ message: 'PRODUCTS ROUTE / GET ', data: allProducts })
+      console.log("DIRNAME",__dirname)
+      return Res.json({
+        message: 'PRODUCTS ROUTE / GET ',
+      })
     }
 
     case "POST": {
