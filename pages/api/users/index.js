@@ -1,44 +1,36 @@
-//^ USERS API ROUTE ===============================================================================================================================================
-//* FAKE DATABASE
-export const usersFake = [
-  { id: 1, username: "pourya", password: "pourya123" },
-  { id: 2, username: "majid", password: "majid" },
-  { id: 3, username: "mehdi", password: "mehdi" },
-  { id: 4, username: "mohsen", password: "mohsen" },
-]
+//^ USERS API ROUTE ==============================================================================================================================================
+import fs from 'fs'
+import path from 'path'
 
 
-//^ FUNCTION =====================================================================================================================================================
-function usersHandler(Request, Response) {
-  console.log("REQUEST METHOD => ", Request.method)
 
-  //SWITCH CASE FOR DIFFERENT INCOMING METHODS
-  switch (Request.method) {
 
+
+
+
+// FUNCTION  =====================================================================================================================================================
+function usersHandler(Req, Res) {
+  switch (Req.method) {
     case "GET": {
-      return Response.json({ message: 'GET METHOD', data: users })
+      const root = process.cwd()
+      const dataBasePath = path.join(root, "data", "db.json")
+      const databaseBufferType = fs.readFileSync(dataBasePath)
+      const parsedDataBase = JSON.parse(databaseBufferType)
+      const usersArray = parsedDataBase.users // AND HERE WE HAVE REACHED THE USERS ARRAY IN OUR {db.json} FILE
+      return Res.json({ message: "USERS API | GET METHOD" })
     }
 
-    case "POST": {
-      const { username, password } = Request.body
-      users.push({ username, password })
-      return Response.status(201).json({ message: "USER REGISTERED SUCCESSFULLY", data: users })
-    }
 
-    case "PUT": { return Response.json("PUT METHOD") }
-    case "PATCH": { return Response.json("PATCH METHOD") }
-    case "DELETE": { return Response.json("DELETE METHOD") }
-    default: { return Response.json("DEFAULT MODE") }
+
+
+
+
+    case "POST": { return Res.json({ message: "USERS API | POST METHOD" }) }
+    case "PUT": { return Res.json({ message: "USERS API | PUT METHOD" }) }
+    case "DELETE": { return Res.json({ message: "USERS API | DELETE METHOD" }) }
+    default: { return Res.json({ message: "USERS API | DEFAULT METHOD" }) }
+
+
   }
-
-
-  //? GET METHOD RESPONSE
-  // return Response.json({
-  //   message: "WELCOME TO USERS ROUTE", 
-  //   user: { id: 1, firstName: "Pourya", lastName: "Soleimani" },
-  //   user2: { id: 2, firstName: "Ali", lastName: "Mahdavi" }, 
-  //   user3: { id: 3, firstName: "Mohammad", lastName: "Karimi" },
-  // })
 }
-
 export default usersHandler

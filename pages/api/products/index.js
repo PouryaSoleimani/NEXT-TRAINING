@@ -1,4 +1,5 @@
 //^ PRODUCTS ROUTE ======================================================================================================================================
+
 import fs from 'fs'
 import path from 'path'
 
@@ -34,7 +35,7 @@ function productHandler(Req, Res) {
       //PARSING THE DATABASE FROM BUFFER TYPE TO {JSON} FILE
       const parsedDatabase = JSON.parse(database)
       console.log(parsedDatabase)
-      console.log(parsedDatabase.products)
+      console.log(parsedDatabase.products) 
 
 
 
