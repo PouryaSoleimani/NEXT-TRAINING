@@ -1,9 +1,10 @@
 //^ USERS API ROUTE ===============================================================================================================================================
 //* FAKE DATABASE
-const users = [
-  { username: "pourya", password: "pourya123" },
-  { username: "majid", password: "majid" },
-  { username: "mehdi", password: "mehdi" },
+export const users = [
+  { id: 1, username: "pourya", password: "pourya123" },
+  { id: 2, username: "majid", password: "majid" },
+  { id: 3, username: "mehdi", password: "mehdi" },
+  { id: 4, username: "mohsen", password: "mohsen" },
 ]
 
 
