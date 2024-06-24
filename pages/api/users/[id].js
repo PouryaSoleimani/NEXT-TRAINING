@@ -9,7 +9,6 @@ function userDynamicHandler(req, res) {
   switch (req.method) {
 
     case "GET": {
-
       if (mainUser.length) {
         return res.json({ message: `RESPONSE => ${req.query.id}`, user: mainUser })
       } else {
