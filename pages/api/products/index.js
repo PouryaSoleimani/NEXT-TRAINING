@@ -18,20 +18,24 @@ function productHandler(Req, Res) {
 
       console.log("DIRNAME =>", __dirname)
       console.log("FILENAME =>", __filename)
+
+      // ACCESSING OUR ROOT DIRECTORY USING {process.cwd()}
       console.log("PROCESS => ", process.cwd())
 
-      //ACCESSING THE DATABASE
+
+      //ACCESSING THE DATABASE FILE PATH USING {PATH} AND {.join()}
       const dbPath = path.join(process.cwd(), "data", "db.json")
       console.log(dbPath)
 
+      
       //READING THE DATABASE FILE(JSON FORMAT)
       const database = fs.readFileSync(dbPath)
-      console.log(database)
+      // console.log(database)
 
       //PARSING THE DATABASE FROM BUFFER TYPE TO {JSON} FILE
       const parsedDatabase = JSON.parse(database)
-      console.log(parsedDatabase)
-      console.log(parsedDatabase.products)
+      // console.log(parsedDatabase)
+      // console.log(parsedDatabase.products)
 
 
 
