@@ -9,13 +9,13 @@ function todosHandler(Req, Res) {
   switch (Req.method) {
 
     case "GET": {
-      const root = process.cwd()
-      const dataBasePath = path.join(root, "data", "db.json")
-      const bufferTypeDataBase = fs.readFileSync(dataBasePath)
-      const parsedDataBase = JSON.parse(bufferTypeDataBase)
-      const todos = parsedDataBase.todos
+      const root = process.cwd() // ROOT 
+      const dataBasePath = path.join(root, "data", "db.json") // ACCESSING DATABASE FILE
+      const bufferTypeDataBase = fs.readFileSync(dataBasePath) // READING THE FILE {db.json}
+      const parsedDataBase = JSON.parse(bufferTypeDataBase) // PARSING THE FILE FROM BUFFER TO JSON
+      const todos = parsedDataBase.todos // ACCESSING THE USERS ARRAY FROM {db.json} FILE
 
-      return Res.json({ message: "TODOS ROUTE  |  GET METHOD", todos })
+      return Res.json({ message: "TODOS ROUTE  |  GET METHOD", todos }) // RETURNING THE {todos} IN RESPONSE
     }
 
 
