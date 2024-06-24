@@ -1,6 +1,5 @@
-//^ FETCH PAGE
+//^ FETCH PAGE ========================================================================================================================================================================
 import axios from 'axios'
-import { indexOf } from 'lodash'
 import React, { useState } from 'react'
 
 type SingleUserType = { username: string, password: string }
