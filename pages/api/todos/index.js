@@ -7,6 +7,7 @@ import fs from 'fs'
 function todosHandler(Req, Res) {
   switch (Req.method) {
     case "GET": {
+
       const root = process.cwd() // ACCESSING PROJECTS ROOT FOLDER 
       const dataBasePath = path.join(root, "data", "db.json") // ACCESSING DATABASE FILE
       const bufferTypeDataBase = fs.readFileSync(dataBasePath) // READING THE FILE {db.json}
