@@ -6,7 +6,7 @@ import fs from 'fs'
 // FUNCTION ============================================================================================================================================ 
 function todosHandler(Req, Res) {
   switch (Req.method) {
-    
+
     case "GET": {
 
       const root = process.cwd() // ACCESSING PROJECTS ROOT FOLDER 
