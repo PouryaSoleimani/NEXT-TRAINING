@@ -6,6 +6,7 @@ import fs from 'fs'
 // FUNCTION ============================================================================================================================================ 
 function todosHandler(Req, Res) {
   switch (Req.method) {
+    
     case "GET": {
 
       const root = process.cwd() // ACCESSING PROJECTS ROOT FOLDER 
@@ -15,7 +16,10 @@ function todosHandler(Req, Res) {
       const todos = parsedDataBase.todos // ACCESSING THE USERS ARRAY FROM {db.json} FILE
 
       return Res.json({ message: "TODOS ROUTE  |  GET METHOD", todos }) // RETURNING THE {todos} IN RESPONSE
+
     }
+
+
     case "POST": { return Res.json({ message: "TODOS ROUTE  |  POST METHOD" }) }
     case "PUT": { return Res.json({ message: "TODOS ROUTE  |  PUT METHOD" }) }
     case "DELETE": { return Res.json({ message: "TODOS ROUTE  |  DELETE METHOD" }) }
