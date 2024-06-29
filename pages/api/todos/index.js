@@ -9,7 +9,7 @@ function todosHandler(Req, Res) {
 
     case "GET": {
 
-      const root = process.cwd() // ACCESSING PROJECTS ROOT FOLDER 
+      const root = process.cwd() // ACCESSING PROJECTS ROOT FOLDER    
       const dataBasePath = path.join(root, "data", "db.json") // ACCESSING DATABASE FILE
       const bufferTypeDataBase = fs.readFileSync(dataBasePath) // READING THE FILE {db.json}
       const parsedDataBase = JSON.parse(bufferTypeDataBase) // PARSING THE FILE FROM BUFFER TO JSON

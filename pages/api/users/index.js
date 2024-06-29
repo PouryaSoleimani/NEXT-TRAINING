@@ -6,7 +6,6 @@ import path from 'path'
 // FUNCTION  =====================================================================================================================================================
 function usersHandler(Req, Res) {
   switch (Req.method) {
-
     case "GET": {
       const root = process.cwd()
       const dataBasePath = path.join(root, "data", "db.json")
@@ -17,8 +16,6 @@ function usersHandler(Req, Res) {
       return Res.json({ message: "USERS API | GET METHOD", usersArray })
 
     }
-
-
     case "POST": { return Res.json({ message: "USERS API | POST METHOD" }) }
     case "PUT": { return Res.json({ message: "USERS API | PUT METHOD" }) }
     case "DELETE": { return Res.json({ message: "USERS API | DELETE METHOD" }) }
