@@ -1,14 +1,37 @@
 //! TEST PAGE ================================================================================================================
-
+import axios from 'axios'
+import { GetStaticProps } from 'next'
 import React from 'react'
+interface Props { data: [{ id: number, title: string, img: string, price: string }] }
+type SingleItemType = { id: number, title: string, img: string, price: string }
 
-const TestPage = () => {
+const Test = ({ data }: Props) => {
   return (
-    <div>
+    <>
       <h1 className='text-4xl font-extrabold text-center py-2 bg-red-800'>TEST PAGE</h1>
-      
-    </div>
+
+      <section>
+        {data.map((item: SingleItemType) => (
+          <div key={item.id}>
+            <h2>{item.id}</h2>
+            <img src={item.img} alt="" />
+            <span>{item.price}</span>
+          </div>
+        ))}
+      </section>
+
+    </>
   )
 }
 
-export default TestPage
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  const req = axios.get("https://fakestoreapi.com/products")
+  const data = (await req).data
+  return {
+    props: { data },
+    notFound: true,
+    revalidate: 180
+  }
+}
+
+export default Test
