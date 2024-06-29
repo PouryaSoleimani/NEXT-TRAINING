@@ -11,8 +11,8 @@ const DynamicSSgPage: NextPage<Props> = ({ data }) => {
   function backHandler() { router.back() }
 
   return (
-    <div className='flex flex-col space-y-10 items-center justify-center w-screen h-screen text-7xl font-semibold text-pretty flex-shrink flex-wrap'>
-      <h1 className='bg-zinc-800 p-10 rounded-md border text-clip'>{data.id} - {data.title} : <span className='bg-green-600 px-2 rounded-md border-2 border-green-800 flex-shrink'>${data.price}</span></h1>
+    <div className='flex flex-col space-y-10 items-center justify-center w-screen h-screen text-3xl font-semibold text-pretty flex-shrink flex-wrap'>
+      <h1 className='bg-zinc-800 p-4  rounded-md border-4'>{data.id} - {data.title} : <span className='bg-green-600 px-2 rounded-md border-2 border-green-800 flex-shrink'>${data.price}</span></h1>
       <button onClick={backHandler} className='text-2xl bg-sky-800 py-4 px-10 hover:bg-slate-700 rounded-md'>BACK</button>
     </div>
   )
