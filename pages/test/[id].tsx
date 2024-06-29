@@ -20,7 +20,7 @@ const DynamicSSgPage: NextPage<Props> = ({ data }) => {
 //* GETSTATICPATHS
 export const getStaticPaths: GetStaticPaths = async () => {
 
-  const req = axios.get('http://localhost:4000/products')
+  const req = axios.get('https://fakestoreapi.com/products')
   const data = (await req).data
   const paths = data.map((item: SingleItemType) => { return { params: { id: String(item.id) } } })
 
@@ -30,7 +30,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 //* GETSTATICPROPS
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const productID = ctx.params?.id
-  const req = axios.get(`http://localhost:4000/products/${productID}`)
+  const req = axios.get(`https://fakestoreapi.com/products/${productID}`)
   const data = (await req).data
 
   return {
