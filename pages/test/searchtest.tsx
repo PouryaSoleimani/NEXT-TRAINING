@@ -10,7 +10,7 @@ type SingleItemType = { id: number, title: string, price: number }
 const Searchtest: NextPage<Props> = ({ data }) => {
   //STATES
   const [products, setProducts] = useState([])
-  const [search, setSearch] = useState("")
+  const [search, setSearch] = useState("") 
   const [isShowError, setIsShowError] = useState(false)
 
   //^ FILTER PRODUCTS
