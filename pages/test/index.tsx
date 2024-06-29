@@ -1,11 +1,11 @@
 //! TEST PAGE ================================================================================================================
 import axios from 'axios'
-import { GetStaticProps } from 'next'
+import { GetStaticProps, NextPage } from 'next'
 import React from 'react'
 interface Props { data: [{ id: number, title: string, img: string, price: string }] }
 type SingleItemType = { id: number, title: string, img: string, price: string }
 
-const Test = ({ data }: Props) => {
+const Test: NextPage<Props> = ({ data }) => {
   return (
     <>
       <h1 className='text-4xl font-extrabold text-center py-2 bg-red-800'>TEST PAGE</h1>
@@ -29,7 +29,6 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   const data = (await req).data
   return {
     props: { data },
-    notFound: true,
     revalidate: 180
   }
 }
