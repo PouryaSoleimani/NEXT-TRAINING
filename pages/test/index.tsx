@@ -14,7 +14,7 @@ const Test: NextPage<Props> = ({ data }) => {
       <section className='grid grid-cols-5 gap-4 py-4 place-items-center'>
         {data.map((item: SingleItemType) => (
           <Link href={`/test/${item.id}`}>
-            <div key={item.id} className='flex flex-col items-center justify-center border-2 w-[10rem] rounded-lg hover:scale-125 duration-700'>
+            <div key={item.id} className='flex flex-col items-center justify-center border-2 w-[16rem] rounded-lg hover:scale-110 duration-700 '>
               <h2 className='text-2xl font-extrabold'>{item.id}</h2>
               <img src={item.image} className='w-full h-[9rem]' />
               <span className='w-full text-center bg-green-600 rounded-b-lg'>{item.price}</span>
