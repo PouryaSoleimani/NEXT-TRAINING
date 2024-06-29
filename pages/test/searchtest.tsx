@@ -20,7 +20,10 @@ const Searchtest: NextPage<Props> = ({ data }) => {
     if (!filteredProducts.length) { setIsShowError(true) } else { setIsShowError(false) }
   }, [search])
 
-  const searchHandler = (event: React.ChangeEvent<HTMLInputElement>) => { event.preventDefault(); setSearch(event.target.value) }
+  const searchHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+    event.preventDefault();
+    setSearch(event.target.value)
+  }
 
   //^ RETURN
   return (
