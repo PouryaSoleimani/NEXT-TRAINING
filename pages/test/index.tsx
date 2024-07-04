@@ -3,7 +3,7 @@ import axios from 'axios'
 import { GetStaticProps, NextPage } from 'next'
 import Link from 'next/link'
 import React from 'react'
-interface Props { data: [{ id: number, title: string, image: string, price: string }] }
+interface Props { data: [ { id: number, title: string, image: string, price: string } ] }
 type SingleItemType = { id: number, title: string, image: string, price: string }
 
 const Test: NextPage<Props> = ({ data }) => {
@@ -22,7 +22,6 @@ const Test: NextPage<Props> = ({ data }) => {
           </Link>
         ))}
       </section>
-
     </>
   )
 }

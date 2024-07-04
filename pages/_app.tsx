@@ -4,10 +4,9 @@ import { ConfigProvider } from 'antd';
 
 
 
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ConfigProvider>
-      <Component {...pageProps} />
-    </ConfigProvider>
+    <Component {...pageProps} />
   );
 }
