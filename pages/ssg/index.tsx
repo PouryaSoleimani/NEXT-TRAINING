@@ -15,7 +15,7 @@ const Index: NextPage<PropsType> = ({ products }) => {
     <>
       <div className='flex flex-col border-2 border-white bg-zinc-900 items-start space-y-2 text-xl p-10 text-slate-200 justify-center font-bold h-full my-10'>
         {products.map(item =>
-          <div key={item.id}>
+          <div key={item.id}> 
             <h1 className='py-2' >
               <Link href={`/ssg/${item.id}`} className='hover:bg-zinc-200 hover:text-black p-2 rounded-md'>
                 {item.id} - {item.title.slice(0, 20)} - {item.price}$-
