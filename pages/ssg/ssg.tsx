@@ -3,7 +3,7 @@ import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
 import Link from 'next/link'
 
-interface Props { response: [{ id: number, title: string, price: number }] }
+interface Props { response: [ { id: number, title: string, price: number } ] }
 type SingleItemType = { id: number, title: string, price: number }
 
 //COMPONENT
