@@ -9,7 +9,7 @@ interface PropsType { products: [ { id: number, title: string, price: number, de
 
 //^ COMPONENT
 const Index: NextPage<PropsType> = ({ products }) => {
-  //-> 2 - RECIEVING DATA AND SHOW IT IN THE JSX
+  //==> 2 - RECIEVING DATA AND SHOW IT IN THE JSX
 
   return (
     <>
