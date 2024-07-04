@@ -1,7 +1,7 @@
-//^ PRODUCT NOT FOUND PAGE 
-import { useRouter } from 'next/router'
 //^ PRODUCT NOT FOUND PAGE =========================================================================================================================================
 import React from 'react'
+import { useRouter } from 'next/router'
+
 
 const ProductNotFound = () => {
 
