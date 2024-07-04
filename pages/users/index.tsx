@@ -12,6 +12,7 @@ const UsersPage: NextPage<Props> = ({ users }) => {
     <>
       <h1 className='text-4xl font-bold text-center py-4 bg-emerald-900'>USERS PAGE</h1>
       <div className='flex flex-wrap items-center justify-center p-10 gap-6'>
+
         {users.slice(0, 9).map((user: SingleUserType) => (
           <Link href={`/users/${user.id}`} key={user.id}>
             <div className='text-xl font-sans border-8 border-emerald-600 bg-zinc-200 text-zinc-800 w-fit h-fit p-4 rounded-xl font-bold hover:scale-90 cursor-pointer duration-300'>
@@ -22,6 +23,7 @@ const UsersPage: NextPage<Props> = ({ users }) => {
             </div>
           </Link>
         ))}
+
       </div>
     </>
   )
