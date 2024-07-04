@@ -41,7 +41,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   //-> 1 - FETCHING DATA AND SENDING IT TO THE COMPONENT ABOVE ...
   const request = axios.get('https://fakestoreapi.com/products?limit=7');
   const response = (await request).data
-
+  
   // RETURN PROPS
   return {
     props: { products: response, },
