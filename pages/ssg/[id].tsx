@@ -37,7 +37,7 @@ export const getStaticPaths: GetStaticPaths = async () => {  // This method is R
   }
 }
 
-// GET STATIC PROPS (SSG) ============================================================================================================================================================
+// GET STATIC PROPS (SSG - STATIC) ============================================================================================================================================================
 export const getStaticProps = async (context: GetStaticPropsContext<ParsedUrlQuery, PreviewData>) => {
   //-> 1 - FETCHING DATA BY CONTEXT PARAMS ID AND SENDING IT TO THE COMPONENT ...
   const productID = context.params?.id
