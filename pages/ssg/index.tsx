@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { Home } from 'lucide-react';
 import { ShieldX } from 'lucide-react';
 //PROPS TYPE
-interface PropsType { products: [{ id: number, title: string, price: number, description: string, category: string, image: string, rating: { rate: number, count: number } }], }
+interface PropsType { products: [ { id: number, title: string, price: number, description: string, category: string, image: string, rating: { rate: number, count: number } } ], }
 
 //^ COMPONENT
 const Index: NextPage<PropsType> = ({ products }) => {
@@ -18,7 +18,9 @@ const Index: NextPage<PropsType> = ({ products }) => {
           <div key={item.id}>
             <h1 className='py-2' >
               <Link href={`/ssg/${item.id}`} className='hover:bg-zinc-200 hover:text-black p-2 rounded-md'>
-                {item.id} - {item.title.slice(0, 20)} - {item.price}$-{Array(Math.ceil(item.rating.rate)).fill(0).map(item => ('🤍'))}{Array((5 - Math.ceil(item.rating.rate))).fill(0).map(item => ('🖤'))}
+                {item.id} - {item.title.slice(0, 20)} - {item.price}$-
+                {Array(Math.ceil(item.rating.rate)).fill(0).map(item => ('🤍'))}
+                {Array((5 - Math.ceil(item.rating.rate))).fill(0).map(item => ('🖤'))}
               </Link>
             </h1>
           </div>
