@@ -11,6 +11,8 @@
     "auth": "json-server-auth -w ./data/db.json -p 5000"
   },
   "dependencies": {
+    "@ant-design/cssinjs": "^1.21.0",
+    "antd": "^5.19.0",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
     "json-server": "^1.0.0-alpha.23",
