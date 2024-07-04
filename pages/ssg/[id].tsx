@@ -11,7 +11,7 @@ const StaticPage: NextPage<Props> = ({ product }) => {
   //-> 3 - RECIEVING DATA FROM {getStaticProps} FUNCTION AND SHOW IT IN THE JSX ...
 
   const router = useRouter()
-  if (router.isFallback) { return (<h1 className='text-center py-4 text-3xl text-blue-700 font-extrabold'>PLEASE WAIT</h1>) }
+  if (router.isFallback) { return (<h1 className='text-center bg-blue-200 py-4 text-3xl text-blue-700 font-extrabold'>PLEASE WAIT</h1>) }
   function backHandler() { router.back() }
 
   //RETURN  
