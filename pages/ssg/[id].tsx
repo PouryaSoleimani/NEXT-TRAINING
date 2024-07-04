@@ -45,7 +45,7 @@ export const getStaticProps = async (context: GetStaticPropsContext<ParsedUrlQue
   const data = (await request).data
 
   if (!data) {
-    return {
+    return { 
       // notFound: true
       redirect: { destination: '/ssg/product-notfound' } // => REDIRECTING THE CLIENT TO A CUSTOM ROUTE IF THE PRODUCT IS NOT FOUND ...
     }
