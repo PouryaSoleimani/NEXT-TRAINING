@@ -36,7 +36,7 @@ const Index: NextPage<PropsType> = ({ products }) => {
 }
 
 
-//^ STATIC SITE GENERATION ( SSG ) 
+//^ STATIC SITE GENERATION ( SSG ) (ONLY RUNS ON SERVER SIDE)
 export const getStaticProps: GetStaticProps = async (ctx) => {
   //-> 1 - FETCHING DATA AND SENDING IT TO THE COMPONENT ABOVE ...
   const request = axios.get('https://fakestoreapi.com/products?limit=7');
