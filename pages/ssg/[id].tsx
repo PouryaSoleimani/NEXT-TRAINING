@@ -25,7 +25,7 @@ const StaticPage: NextPage<Props> = ({ product }) => {
 
 // GET STATIC PATHS : (SSG-DYNAMIC)  =================================================================================================================================================
 //THIS FUNCTIONS IS JUST LIKE {GET STATIC PROPS} -- BUT IT GET USED IN DYNAMIC ROUTES ==> [id].tsx 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {  // This method is Required , When we want to use "DYNAMIC ROUTES"
   //-> 2 - DEFINING THE ACCEPTABLE PATHS FOR DYNAMIC PAGES ...
   const request = axios.get('https://fakestoreapi.com/products?limit=7');
   const response = (await request).data
