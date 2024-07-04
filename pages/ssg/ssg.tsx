@@ -22,7 +22,7 @@ const Ssg: NextPage<Props> = ({ response }) => {
 }
 
 //^ GET STATIC PROPS :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-export const getStaticProps: GetStaticProps = async (ctx) => {
+export const getStaticProps: GetStaticProps = async (ctx) => {    // This method is Required , When we want to use "DYNAMIC ROUTES"
   const request = axios.get('https://fakestoreapi.com/products')
   const response = (await request).data
 
