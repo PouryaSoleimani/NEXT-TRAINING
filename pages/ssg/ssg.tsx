@@ -28,7 +28,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
   return {
     props: { response },
-    revalidate: 43200
+    revalidate: 43200 // ISR => Incremental Static ReGeneration
   }
 
 }
