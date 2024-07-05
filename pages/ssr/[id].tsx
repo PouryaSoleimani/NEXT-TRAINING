@@ -24,11 +24,8 @@ const SingleUser: NextPage<Props> = ({ data }) => {
 //^ GET SERVERSIDE PROPS
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
-  console.log(ctx.req, ctx.res)
-  // HERE WE CAN ACCESS REQEUST AND RESPONSE DATAS BY USING {CTX} , INCLUDING COOKIES AND ...
-
-  console.log(ctx.query)
-  // AND ALSO WE CAN HAVE {QUERY} FROM THE {CTX} , WHICH GIVES US THE PATH NAME OF OUR MAIN ROUTE --> {id : '2'}
+  console.log(ctx.req, ctx.res)   // HERE WE CAN ACCESS REQEUST AND RESPONSE DATAS BY USING {CTX} , INCLUDING COOKIES AND ...
+  console.log(ctx.query)   // AND ALSO WE CAN HAVE {QUERY} FROM THE {CTX} , WHICH GIVES US THE PATH NAME OF OUR MAIN ROUTE --> {id : '2'}
   // TO ADD A QUERY , WE MUST USE ? IN THE PATH NAME IN OUR BROWSER
 
   const userID = ctx.params?.id
