@@ -1,4 +1,4 @@
-//* DYNAMIC SSR PAGE _________________________________________________________________________________________________________________________________________
+//^ DYNAMIC SSR PAGE _________________________________________________________________________________________________________________________________________
 import { NextPage, GetServerSideProps } from 'next'
 import { useRouter } from 'next/router'
 
@@ -22,13 +22,13 @@ const SingleUser: NextPage<Props> = ({ data }) => {
 }
 
 //^ GET SERVERSIDE PROPS
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
 
-  console.log(ctx.req, ctx.res)   // HERE WE CAN ACCESS REQEUST AND RESPONSE DATAS BY USING {CTX} , INCLUDING COOKIES AND ...
-  console.log(ctx.query)   // AND ALSO WE CAN HAVE {QUERY} FROM THE {CTX} , WHICH GIVES US THE PATH NAME OF OUR MAIN ROUTE --> {id : '2'}
+  console.log(context.req, context.res)   // HERE WE CAN ACCESS REQEUST AND RESPONSE DATAS BY USING {CTX} , INCLUDING COOKIES AND ...
+  console.log(context.query)   // AND ALSO WE CAN HAVE {QUERY} FROM THE {CTX} , WHICH GIVES US THE PATH NAME OF OUR MAIN ROUTE --> {id : '2'}
   // TO ADD A QUERY , WE MUST USE ? IN THE PATH NAME IN OUR BROWSER
 
-  const userID = ctx.params?.id
+  const userID = context.params?.id
   const req = await fetch(`https://jsonplaceholder.typicode.com/users/${userID}`)
   const data = await req.json()
 
