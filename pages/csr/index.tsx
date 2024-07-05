@@ -1,5 +1,5 @@
 //^ CSR INDEX PAGE ===============================================================================================================================================
-import { NextPage, GetStaticProps } from 'next'
+import { NextPage } from 'next'
 
 interface Props { }
 
