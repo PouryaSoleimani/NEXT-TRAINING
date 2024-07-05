@@ -9,7 +9,7 @@ type SingleProductType = { id: number, title: string, price: number }
 // COMPONENT
 const SingePageCSR: NextPage<Props> = ({ }) => {
 
-  const [data, setdata] = useState([])
+  const [ data, setdata ] = useState([])
 
   function getData() { axios.get('http://localhost:4000/products').then(data => setdata(data.data)) }
   useEffect(() => { getData() }, [])
