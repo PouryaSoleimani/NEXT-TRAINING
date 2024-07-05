@@ -16,7 +16,7 @@ const SingleUser: NextPage<Props> = ({ data }) => {
       <h1 className='font-extrabold text-4xl p-4'>{data.name}</h1>
       <h1 className='font-extrabold text-4xl p-4 text-blue-700'>{data.email}</h1>
       <h1 className='font-extrabold text-4xl p-4 text-red-700'>{data.phone}</h1>
-      <button onClick={backHandler} className='bg-green-600 text-black p-2 mt-4 text-xl font-bold outline-4 outline outline-zinc-600 w-full'>BACK</button>
+      <button onClick={backHandler} className='bg-green-600 text-black p-2 mt-4 text-3xl font-bold w-full'>BACK</button>
     </div>
   )
 }
