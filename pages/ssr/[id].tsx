@@ -37,7 +37,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     return {
       notFound: true,
       // CUSTOM REDIRECTING
-      redirect: { destination: '/' }
+      redirect: { destination: '/ssg/product-notfound' }
     }
   };
 
