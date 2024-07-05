@@ -11,7 +11,9 @@ const StaticPage: NextPage<Props> = ({ product }) => {
   //-> 3 - RECIEVING DATA FROM {getStaticProps} FUNCTION AND SHOW IT IN THE JSX ...
 
   const router = useRouter()
-  if (router.isFallback) { return (<h1 className='text-center bg-blue-900 py-4 text-3xl text-blue-200 font-extrabold'>PLEASE WAIT</h1>) }
+  if (router.isFallback) {
+    return (<div className='w-screen h-screen flex items-center justify-center p-10'><h1 className='text-center bg-zinc-900 py-6 text-6xl w-[30rem] h-[7rem] flex items-center justify-center rounded-lg text-zinc-200 font-extrabold'>PLEASE WAIT</h1></div>)
+  }
   function backHandler() { router.back() }
 
   //RETURN  
@@ -30,7 +32,7 @@ export const getStaticPaths: GetStaticPaths = async () => {  // This method is R
   const request = axios.get('https://fakestoreapi.com/products?limit=7');
   const response = (await request).data
   const paths = response.map((item: { id: number }) => { return { params: { id: String(item.id) } } })
-  
+
   return {
     paths: paths,
     fallback: true,
