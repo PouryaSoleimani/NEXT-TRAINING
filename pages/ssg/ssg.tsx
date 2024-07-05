@@ -30,7 +30,6 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     props: { response },
     revalidate: 43200 // ISR => Incremental Static ReGeneration
   }
-
 }
 
 export default Ssg
