@@ -11,9 +11,7 @@ const StaticPage: NextPage<Props> = ({ product }) => {
   //-> 3 - RECIEVING DATA FROM {getStaticProps} FUNCTION AND SHOW IT IN THE JSX ...
 
   const router = useRouter()
-  if (router.isFallback) {
-    return (<div className='w-screen h-screen flex items-center justify-center p-10'><h1 className='text-center bg-zinc-900 py-6 text-6xl w-[30rem] h-[7rem] flex items-center justify-center rounded-lg text-zinc-200 font-extrabold'>PLEASE WAIT</h1></div>)
-  }
+  if (router.isFallback) { return (<div className='w-screen h-screen flex items-center justify-center p-10'><h1 className='text-center bg-zinc-900 py-6 text-6xl w-[30rem] h-[7rem] flex items-center justify-center rounded-lg text-zinc-200 font-extrabold'>PLEASE WAIT</h1></div>) }
   function backHandler() { router.back() }
 
   //RETURN  
