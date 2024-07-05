@@ -5,8 +5,8 @@ import React, { useEffect, useState } from 'react'
 type SingleTodoType = { id: number, title: string, isCompleted: boolean }
 
 const TodosPage = () => {
-  const [todos, setTodos] = useState([])
-  const [isCompleted, setIsCompleted] = useState(false)
+  const [ todos, setTodos ] = useState([])
+  const [ isCompleted, setIsCompleted ] = useState(false)
 
   useEffect(() => {
     axios.get('/api/todos').then(response => setTodos(response.data.todos))
