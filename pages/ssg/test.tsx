@@ -2,7 +2,7 @@
 import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
 
-interface Props { data: [{ id: number, title: string, price: number }] }
+interface Props { data: [ { id: number, title: string, price: number } ] }
 type SingleItemType = { id: number, title: string, price: number }
 
 
