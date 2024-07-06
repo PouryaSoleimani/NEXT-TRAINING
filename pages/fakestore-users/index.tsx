@@ -16,7 +16,7 @@ const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
   //^ FUNCTIONS
   const notify = () => toast.success('User Submitted.', { icon: '✔', style: { borderRadius: '6px', background: '#333', color: '#fff', } });
   const notify2 = () => toast.error('User Details Invalid.', { icon: '❌', style: { borderRadius: '6px', background: '#333', color: '#fff', } });
-
+  // SUBMIT HANDLER
   function submitHandler(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     if (username.length && password.length) {
@@ -30,7 +30,7 @@ const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
     setPassword('')
   }
 
-
+  //RETURN
   return (
     <section className='overflow-hidden'>
       <Toaster position="top-right" reverseOrder={true} />
