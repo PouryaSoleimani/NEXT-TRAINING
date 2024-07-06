@@ -1,6 +1,6 @@
 //^ DATA-FETCHING PAGE =========================================================================================================================================================
 import React, { useState } from 'react'
-import { products } from '@/data/db.json'
+import { products } from '@/data/db.json' //Importing DataBase From an External File
 
 // COMPONENT
 const DataFetching = () => {
