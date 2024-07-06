@@ -2,19 +2,23 @@
 import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
 import Link from 'next/link'
-import { useState } from 'react'
+import { FormEvent, useState } from 'react'
 
 interface Props { users: [ { id: number, email: string, username: string, name: { firstname: string, lastname: string } } ] }
 type SingleUserType = { id: number, email: string, username: string, name: { firstname: string, lastname: string } }
 // COMPONENT
 const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
-  //?STATES
+  //? STATES
   const [ username, setUsername ] = useState("")
   const [ password, setPassword ] = useState("")
 
-
+  //^ FUNCTIONS
+  function submitHandler(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    console.log('HELLo')
+  }
   return (
-    <section>
+    <section className='overflow-hidden'>
       <div className='grid grid-cols-3 items-center gap-y-2 mt-10  place-items-center w-screen h-fit'>
         {users.slice(0, 9).map((user: SingleUserType) => (
           <Link href={`/fakestore-users/${user.id}`} key={user.id}>
@@ -25,7 +29,7 @@ const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
         ))}
       </div>
 
-      <form className="form w-fit mx-auto mt-16 border-2">
+      <form onSubmit={submitHandler} className="form w-fit mx-auto mt-16 border-2">
         <p id="heading">Login</p>
         <div className="field">
           <svg className="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -40,8 +44,8 @@ const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
           <input value={password} onChange={event => event.target.value} placeholder="Password" className="input-field" type="password" />
         </div>
         <div className="btn">
-          <button className="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-          <button className="button2">Sign Up</button>
+          <button type='submit' className="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+          <button type='submit' className="button2">Sign Up</button>
         </div>
         <button className="button3">Forgot Password</button>
       </form>
