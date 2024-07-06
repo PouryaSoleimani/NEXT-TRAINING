@@ -49,7 +49,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   const req = axios.get('https://jsonplaceholder.typicode.com/comments')
   const comments = (await req).data
   return {
-    props: { comments },
+    props: { comments : comments},
   }
 }
 
