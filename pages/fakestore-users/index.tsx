@@ -19,7 +19,7 @@ const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
         ))}
       </div>
 
-      <form className="form">
+      <form className="form w-fit mx-auto mt-16 border-2">
         <p id="heading">Login</p>
         <div className="field">
           <svg className="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
