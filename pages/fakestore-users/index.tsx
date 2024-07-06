@@ -3,6 +3,7 @@ import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
 import Link from 'next/link'
 import { FormEvent, useState } from 'react'
+import toast, { Toaster } from 'react-hot-toast';
 
 interface Props { users: [ { id: number, email: string, username: string, name: { firstname: string, lastname: string } } ] }
 type SingleUserType = { id: number, email: string, username: string, name: { firstname: string, lastname: string } }
@@ -13,16 +14,26 @@ const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
   const [ password, setPassword ] = useState("")
 
   //^ FUNCTIONS
+  const notify = () => toast.success('User Submitted.', { icon: '✔', style: { borderRadius: '6px', background: '#333', color: '#fff', } });
+  const notify2 = () => toast.error('User Details Invalid.', { icon: '❌', style: { borderRadius: '6px', background: '#333', color: '#fff', } });
+
   function submitHandler(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
+    if (username.length && password.length) {
+      notify()
+    } else {
+      notify2()
+    }
     const userInfo = { username, password }
     console.log(userInfo)
     setUsername('')
     setPassword('')
   }
-  
+
+
   return (
     <section className='overflow-hidden'>
+      <Toaster position="top-right" reverseOrder={true} />
       <div className='grid grid-cols-3 items-center gap-y-2 mt-10  place-items-center w-screen h-fit'>
         {users.slice(0, 9).map((user: SingleUserType) => (
           <Link href={`/fakestore-users/${user.id}`} key={user.id}>
