@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "server": "json-server ./data/db.json -p 4000",
-    "auth": "json-server-auth -w ./data/db.json -p 5000"
+    "auth": "json-server-auth ./data/db.json -p 5000"
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.21.0",
