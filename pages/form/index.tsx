@@ -5,8 +5,8 @@ import React, { useState } from 'react'
 const FormPage = () => {
 
   //STATES
-  const [username, setUsername] = useState("")
-  const [password, setPassword] = useState("")
+  const [ username, setUsername ] = useState("")
+  const [ password, setPassword ] = useState("")
 
 
   //FUNCTIONS
