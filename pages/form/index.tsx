@@ -10,7 +10,7 @@ const FormPage = () => {
 
 
   //FUNCTIONS
-  function submitHandler(event: React.FormEvent<HTMLFormElement>) {
+  function submitHandler(event: React.FormEvent<HTMLFormElement>) { //POST METHOD
     event.preventDefault()
     axios.post('http://localhost:3000/api/users', { username, password }).then(response => { console.log(response.data) })
     setUsername('')
