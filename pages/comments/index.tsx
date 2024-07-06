@@ -6,7 +6,7 @@ import { useState } from 'react'
 interface Props { comments: [ { postId: number, id: number, name: string, email: string, body: string } ] }
 
 
-//! COMPONENT =>
+//^ COMPONENT =>
 const Index: NextPage<Props> = ({ comments }) => {
 
   const [ COMMENTS, setCOMMENTS ] = useState(comments)
@@ -49,7 +49,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   const req = axios.get('https://jsonplaceholder.typicode.com/comments')
   const comments = (await req).data
   return {
-    props: { comments : comments},
+    props: { comments: comments },
   }
 }
 
