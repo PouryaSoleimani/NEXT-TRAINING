@@ -8,7 +8,7 @@ type SingleUserType = { username: string, password: string }
 //! COMPONENT ==========================================================================================================================================================================================
 const FetchPage = () => {
 
-  const [usersList, setUsersList] = useState([])
+  const [ usersList, setUsersList ] = useState([])
 
   //* FETCH HANDLER
   function fetchUsersHandler() {
