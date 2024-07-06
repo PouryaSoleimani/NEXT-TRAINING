@@ -1,9 +1,12 @@
+//& FAKESTORE USERS DYNAMIC PAGE
 import axios from 'axios'
 import { NextPage, GetServerSideProps } from 'next'
 import { useRouter } from 'next/router'
 
 interface Props { user: { id: number, email: string, username: string, name: { firstname: string, lastname: string } } }
 type SingleUserType = { id: number, email: string, username: string, name: { firstname: string, lastname: string } }
+
+//COMPONENT
 const FakeStoreDynamicPage: NextPage<Props> = ({ user }) => {
   const router = useRouter()
   function backHandler() { router.back() }
