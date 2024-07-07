@@ -1,4 +1,4 @@
-//& FAKESTORE USERS PAGE ==================================================================================================================================
+//^ FAKESTORE USERS PAGE ==================================================================================================================================
 import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
 import Link from 'next/link'
@@ -7,6 +7,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 interface Props { users: [{ id: number, email: string, username: string, name: { firstname: string, lastname: string } }] }
 type SingleUserType = { id: number, email: string, username: string, name: { firstname: string, lastname: string } }
+
 // COMPONENT
 const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
   // STATES
@@ -30,7 +31,7 @@ const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
     setPassword('')
   }
 
-  //RETURN
+  // RETURN
   return (
     <section className='overflow-hidden'>
       <Toaster position="top-right" reverseOrder={true} />
@@ -43,7 +44,7 @@ const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
           </Link>
         ))}
       </div>
-      {/*//^ FORM */}
+      {/* FORM */}
       <form onSubmit={submitHandler} className="form w-fit mx-auto mt-16 border-2">
         <p id="heading">Login</p>
         <div className="field">
