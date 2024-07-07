@@ -10,6 +10,7 @@ type SingleUserType = { id: number, email: string, username: string, name: { fir
 const FakeStoreDynamicPage: NextPage<Props> = ({ user }) => {
   const router = useRouter()
   function backHandler() { router.back() }
+
   return (
     <div className='flex items-center justify-center w-screen h-screen flex-col space-y-4'>
       <h1 className='text-3xl font-extrabold bg-zinc-800 px-5 py-3 rounded-xl border-4 border-orange-500'>{user.id}  - {user.name.firstname.toUpperCase()} {user.name.lastname.toUpperCase()}</h1>
