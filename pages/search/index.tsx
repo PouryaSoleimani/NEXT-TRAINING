@@ -5,9 +5,9 @@ import { useRouter } from 'next/router'
 
 const index: React.FC = () => {
   // STATES   
-  const [PRODUCTS, setPRODUCTS] = useState([...db.products])
-  const [searchInfo, setSearchInfo] = useState('')
-  const [isShowError, setIsShowError] = useState(false)
+  const [ PRODUCTS, setPRODUCTS ] = useState([ ...db.products ])
+  const [ searchInfo, setSearchInfo ] = useState('')
+  const [ isShowError, setIsShowError ] = useState(false)
   const router = useRouter()
 
 
@@ -16,7 +16,7 @@ const index: React.FC = () => {
     const searchedProducts = db.products.filter((product) => product.title.toLowerCase().includes(searchInfo.toLowerCase()))
     setPRODUCTS(searchedProducts)
     !searchedProducts.length ? setIsShowError(true) : setIsShowError(false)
-  }, [searchInfo])
+  }, [ searchInfo ])
 
   const searchHandler = (event: React.ChangeEvent<HTMLInputElement>) => { event.preventDefault(); setSearchInfo(event.target.value) }
 
