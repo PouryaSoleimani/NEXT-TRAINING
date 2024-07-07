@@ -43,7 +43,7 @@ const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
           </Link>
         ))}
       </div>
-
+      {/*//^ FORM */}
       <form onSubmit={submitHandler} className="form w-fit mx-auto mt-16 border-2">
         <p id="heading">Login</p>
         <div className="field">
