@@ -5,13 +5,13 @@ import Link from 'next/link'
 import { FormEvent, useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast';
 
-interface Props { users: [ { id: number, email: string, username: string, name: { firstname: string, lastname: string } } ] }
+interface Props { users: [{ id: number, email: string, username: string, name: { firstname: string, lastname: string } }] }
 type SingleUserType = { id: number, email: string, username: string, name: { firstname: string, lastname: string } }
 // COMPONENT
 const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
   //? STATES
-  const [ username, setUsername ] = useState("")
-  const [ password, setPassword ] = useState("")
+  const [username, setUsername] = useState("")
+  const [password, setPassword] = useState("")
 
   //^ FUNCTIONS
   const notify = () => toast.success('User Submitted.', { icon: '✔', style: { borderRadius: '6px', background: '#333', color: '#fff', } });
