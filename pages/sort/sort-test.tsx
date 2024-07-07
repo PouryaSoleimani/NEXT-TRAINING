@@ -39,6 +39,7 @@ const SortTest: NextPage<props> = ({ products }) => {
             <p className='bg-lime-600/50 px-2 py-1 rounded-xl text-xl font-bold'>${item.price}</p>
           </div>
         ))}
+
       </div>
     </div>
   )
