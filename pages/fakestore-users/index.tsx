@@ -9,14 +9,14 @@ interface Props { users: [{ id: number, email: string, username: string, name: {
 type SingleUserType = { id: number, email: string, username: string, name: { firstname: string, lastname: string } }
 // COMPONENT
 const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
-  //? STATES
+  // STATES
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
 
-  //^ FUNCTIONS
+  // FUNCTIONS
   const notify = () => toast.success('User Submitted.', { icon: '✔', style: { borderRadius: '6px', background: '#333', color: '#fff', } });
   const notify2 = () => toast.error('User Details Invalid.', { icon: '❌', style: { borderRadius: '6px', background: '#333', color: '#fff', } });
-  //? SUBMIT HANDLER
+  // SUBMIT HANDLER
   function submitHandler(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     if (username.length && password.length) {
