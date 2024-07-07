@@ -1,4 +1,4 @@
-//^ SEARCH PAGE =============================================================================================================================================================================
+//^ SEARCH PAGE =====================================================================================================================================
 import React, { useEffect, useState } from 'react'
 import db from '@/data/db.json'
 import { useRouter } from 'next/router'
@@ -22,7 +22,7 @@ const index: React.FC = () => {
 
   function goToSearchInput() { router.push('/search/searchinput') }
 
-  // RETURN  ================================================================================================================================================================================
+  // RETURN  ======================================================================================================================================
   return (
     <div>
 
@@ -35,7 +35,8 @@ const index: React.FC = () => {
 
 
       <div className='w-full my-10 bg-zinc-300 h-fit flex flex-wrap items-center justify-center gap-2 py-10 px-10 overflow-hidden'>
-        {isShowError ? (<h1 className='text-4xl bg-red-900 text-red-200 font-bold text-center px-4 py-6 rounded-md border-2 border-red-800 h-fit w-screen'>NO PRODUCTS FOUND</h1>)
+        {isShowError ? (
+          <h1 className='text-4xl bg-red-900 text-red-200 font-bold text-center px-4 py-6 rounded-md border-2 border-red-800 h-fit w-screen'>NO PRODUCTS FOUND</h1>)
           : (
             PRODUCTS.map(product => (
               <div key={product.id} className='bg-black w-[12rem] py-8 px-4 font-bold text-2xl text-center rounded-md '>
