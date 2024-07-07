@@ -8,7 +8,7 @@ import toast, { Toaster } from 'react-hot-toast';
 interface Props { users: [{ id: number, email: string, username: string, name: { firstname: string, lastname: string } }] }
 type SingleUserType = { id: number, email: string, username: string, name: { firstname: string, lastname: string } }
 
-// COMPONENT
+//* COMPONENT
 const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
   // STATES
   const [username, setUsername] = useState("")
