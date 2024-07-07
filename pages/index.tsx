@@ -24,6 +24,7 @@ export default function Home() {
           <Link href='/comments' className="bg-orange-400 text-2xl px-2 py-1 rounded-xl text-black font-bold border-[10px] border-zinc-950">COMMENTS</Link>
           <Link href='/form' className="bg-cyan-600 text-2xl px-2 py-1 rounded-xl text-black font-bold border-[10px] border-zinc-950">FORM</Link>
         </ul>
+        <object data="/favicon.ico" width={50} height={50} className="border rounded-xl hover:scale-75 duration-300 "></object>
       </main>
     </>
   );
