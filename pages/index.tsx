@@ -17,6 +17,7 @@ export default function Home() {
           <Link href='/csr' className="bg-slate-700 text-2xl px-2 py-1 rounded-xl text-white font-bold border-[10px] border-zinc-950">CSR</Link>
           <Link href='/search' className="bg-violet-400 text-2xl px-2 py-1 rounded-xl text-black font-bold border-[10px] border-zinc-950">SEARCH</Link>
           <Link href='/sort' className="bg-yellow-400 text-2xl px-2 py-1 rounded-xl text-black font-bold border-[10px] border-zinc-950">SORT</Link>
+          <Link href='/fakestore-users' className="bg-purple-700 text-2xl px-2 py-1 rounded-xl text-white font-bold border-[10px] border-zinc-950">FAKESTORE</Link>
           <Link href='/swr' className="bg-stone-800 text-2xl px-2 py-1 rounded-xl text-white font-bold border-[10px] border-zinc-950">SWR</Link>
           <Link href='/testpage' className="bg-pink-400 text-2xl px-2 py-1 rounded-xl text-white font-bold border-[10px] border-zinc-950">TEST</Link>
           <Link href='/users' className="bg-green-400 text-2xl px-2 py-1 rounded-xl text-black font-bold border-[10px] border-zinc-950">USERS</Link>
