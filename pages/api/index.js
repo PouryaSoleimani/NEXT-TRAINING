@@ -1,4 +1,4 @@
-//^ API ROUTE =>
+//^ API ROUTE || HOME ROUTE =>
 function handler(Request, Response) {
   return Response.json({ message: "WELCOME TO API ROUTE ! ❤" })
 }
