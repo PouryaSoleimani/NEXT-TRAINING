@@ -3,16 +3,16 @@ import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
 import { useState } from 'react'
 
-interface Props { comments: [ { postId: number, id: number, name: string, email: string, body: string } ] }
+interface Props { comments: [{ postId: number, id: number, name: string, email: string, body: string }] }
 
 
 //^ COMPONENT =>
 const Index: NextPage<Props> = ({ comments }) => {
 
-  const [ COMMENTS, setCOMMENTS ] = useState(comments)
+  const [COMMENTS, setCOMMENTS] = useState(comments)
 
   function filterCommentHandler(ID: number) {
-    const copy = [ ...comments ]
+    const copy = [...comments]
     const filteredComments: any = copy.filter(item => { return item.postId === ID })
     setCOMMENTS(filteredComments)
   }
