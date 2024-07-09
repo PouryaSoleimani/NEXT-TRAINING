@@ -5,14 +5,14 @@ import React, { useState } from 'react'
 type SingleUserType = { username: string, password: string }
 
 
-//! COMPONENT ==========================================================================================================================================================================================
+//^ COMPONENT ==========================================================================================================================================================================================
 const FetchPage = () => {
 
   const [ usersList, setUsersList ] = useState([])
 
   //* FETCH HANDLER
   function fetchUsersHandler() {
-    axios.get('http://localhost:3000/api/users')
+    axios.get('/api/users')
       .then(response => {
         setUsersList(response.data.usersArray)
       })
