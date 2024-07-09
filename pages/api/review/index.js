@@ -1,8 +1,8 @@
 //^ REVIEW API ROUTE ============================================================================================================
 function reviewHandler(req, res) {
-    console.log(req.method)
-    console.log(req.body)
-    
+    console.log(req.method) //REQUEST METHOD
+    console.log(req.body) //REQUEST BODY
+
     switch (req.method) {
 
         case "GET": { return res.json({ message: "REVIEW GET MODE" }) }
