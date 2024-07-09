@@ -2,6 +2,7 @@
 const usersList = []
 
 function postHandler(request, response) {
+
     switch (request.method) {
 
         case "GET": { return response.json({ message: "REVIEW ROUTE || GET METHOD", usersList }) }
