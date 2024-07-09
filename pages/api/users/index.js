@@ -6,6 +6,7 @@ import path from 'path'
 // FUNCTION  =====================================================================================================================================================
 function usersHandler(Req, Res) {
   switch (Req.method) {
+
     case "GET": {
       const root = process.cwd()
       const dataBasePath = path.join(root, "data", "db.json")
