@@ -2,17 +2,18 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 
+
 const FormPage = () => {
 
-  //STATES
-  const [ username, setUsername ] = useState("")
-  const [ password, setPassword ] = useState("")
+  //^STATES
+  const [username, setUsername] = useState("")
+  const [password, setPassword] = useState("")
 
 
-  //FUNCTIONS
+  //^FUNCTIONS
   function submitHandler(event: React.FormEvent<HTMLFormElement>) { //POST METHOD
     event.preventDefault()
-    axios.post('http://localhost:3000/api/users', { username, password }).then(response => { console.log(response.data) })
+    axios.post('http://localhost:3000/api/review/requestBody', { username, password }).then(response => { console.log(response.data) })
     setUsername('')
     setPassword('')
   }
