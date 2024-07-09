@@ -1,7 +1,6 @@
 //^ REVIEW API ROUTE ===============================================================================================================
-const usersList = [
+const usersList = []
 
-]
 function postHandler(request, response) {
     switch (request.method) {
 
