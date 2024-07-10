@@ -8,7 +8,7 @@ type SingleUserType = { username: string, password: string }
 //^ COMPONENT ==========================================================================================================================================================================================
 const FetchPage = () => {
 
-  const [ usersList, setUsersList ] = useState([])
+  const [usersList, setUsersList] = useState([])
 
   //* FETCH HANDLER
   function fetchUsersHandler() {
@@ -23,7 +23,7 @@ const FetchPage = () => {
       <button onClick={fetchUsersHandler} className='bg-orange-500 rounded-md px-16 py-2 font-bold text-2xl'>FETCH USERS</button>
       <div>
         {usersList?.map((user: SingleUserType) =>
-          <h1 className='text-2xl bg-zinc-800 px-14 py-1 rounded-md my-2 font-bold'>{user.username.toUpperCase()}</h1>
+          <h1 className='text-2xl bg-zinc-800 px-14 py-1 rounded-md my-2 font-bold'>USER = {user.username.toUpperCase()}</h1>
         )}
       </div>
     </div>
