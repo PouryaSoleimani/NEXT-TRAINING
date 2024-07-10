@@ -3,7 +3,7 @@ const usersList = []
 
 function postHandler(request, response) {
 
-    console.log(request.body) // GETTING REQUEST BODY
+    console.log(request.body) //GETTING REQUEST BODY
     console.log(request.method) // GETTING REQUEST METHOD
 
     switch (request.method) {
@@ -16,7 +16,8 @@ function postHandler(request, response) {
                 const user = request.body
                 usersList.push(user)
                 return response.json({ message: "REVIEW ROUTE || POST METHOD", user: user, usersList: usersList })
-            }
+            };
+
         case "PUT":
             { return response.json({ message: "REVIEW ROUTE || PUT METHOD" }) }
         case "DELETE":
