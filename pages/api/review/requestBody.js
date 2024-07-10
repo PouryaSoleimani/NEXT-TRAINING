@@ -3,8 +3,8 @@ const usersList = []
 
 function postHandler(request, response) {
 
-    console.log(request.body) //REQUEST BODY
-    console.log(request.method) // REQUEST BODY
+    console.log(request.body) // GETTING REQUEST BODY
+    console.log(request.method) // GETTING REQUEST METHOD
 
     switch (request.method) {
 
