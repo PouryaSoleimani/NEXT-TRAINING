@@ -46,6 +46,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     const ID = ctx.params?.id
     const request = axios.get(`http://localhost:3000/api/review/${ID}`)
     const Mainuser = (await request).data.mainUser
+
     return { props: { Mainuser }, }
 }
 export default DynamicApiSingle
