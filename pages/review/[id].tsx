@@ -16,7 +16,6 @@ const DynamicApiSingle: NextPage<Props> = ({ Mainuser }) => {
 }
 
 
-
 //^ GET STATIC PATHS
 export const getStaticPaths: GetStaticPaths = async () => {
     return {
