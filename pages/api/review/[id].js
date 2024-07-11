@@ -21,4 +21,4 @@ function dynamicHandler(req, res) {
         default: { return res.json({ message: "DEFAULT" }) }
     }
 }
-export default dynamicHandler
+export default dynamicHandler  
