@@ -2,7 +2,7 @@
 import db from "../../../data/db.json"
 
 function dynamicHandler(req, res) {
-    const { id } = req.query;
+    const { id } = req.query; //ACCESSING THE QUERY PARAMS , LIKE FRONT-END
     const usersArray = db.users
     const mainUser = usersArray.find(user => { return user.id === +id })
 
