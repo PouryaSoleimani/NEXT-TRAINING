@@ -11,18 +11,9 @@ const DynamicApiSingle: NextPage<Props> = ({ Mainuser }) => {
 
     return (
         <section className='flex items-center justify-center h-screen w-screen' >
-            {Mainuser ? (
-
-                <div className='flex items-center justify-center'>
-                    <h1 className='text-9xl uppercase font-extrabold'>{Mainuser.id} - {Mainuser.username}</h1>
-                </div>
-
-            ) : (
-                <div>
-                    <h1 className='text-9xl uppercase font-extrabold text-orange-500'>User Not Found</h1>
-                    <button onClick={backHandler} className='px-6 py-2 bg-sky-600 rounded-xl'>← BACK </button>
-                </div>
-            )}
+            <div className='flex items-center justify-center bg-zinc-900 px-10 py-4 rounded-3xl border-8 border-orange-400'>
+                <h1 className='text-9xl uppercase font-extrabold'>{Mainuser.id} - {Mainuser.username}</h1>
+            </div>
         </section >
     )
 }
