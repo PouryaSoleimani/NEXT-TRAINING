@@ -7,13 +7,15 @@ type SingleUserType = { id: number, firstname: string, lastname: string }
 
 const ReviewPage: NextPage<Props> = ({ users }) => {
     return (
-        <div className='bg-zinc-800 w-fit mx-auto mt-10 p-4 rounded-xl'>
-            {users?.map((user: SingleUserType) => (
-                <div key={user.id} className='text-2xl font-bold'>
-                    <h1 className='my-4'>{user.id} - {user.firstname.toLocaleUpperCase()} {user.lastname.toLocaleUpperCase()}</h1>
-                </div>
-            ))}
-        </div>
+        <section id='FULL_PAGE_SECTION' className='w-screen h-screen pt-16 bg-zinc-500'>
+            <div className='bg-zinc-800 w-fit mx-auto p-4 rounded-xl'>
+                {users?.map((user: SingleUserType) => (
+                    <div key={user.id} className='text-2xl font-bold'>
+                        <h1 className='my-4'>{user.id} - {user.firstname.toLocaleUpperCase()} {user.lastname.toLocaleUpperCase()}</h1>
+                    </div>
+                ))}
+            </div>
+        </section>
     )
 }
 
