@@ -10,11 +10,9 @@ function postHandler(request, response) {
     console.log(request.body) //GETTING REQUEST BODY
     console.log(request.method) // GETTING REQUEST METHOD
 
-
     switch (request.method) {
-
+        
         case "GET": { return response.json({ message: "REVIEW ROUTE || GET METHOD", usersList }) }
-
         case "POST": {
             const user = request.body;
             usersList.push(user);
