@@ -6,9 +6,14 @@ function dynamicHandler(req, res) {
     const mainUser = db.users.find(user => user.id = +id)
 
     switch (req.method) {
-        case "GET": { return res.json({ message: "API DYNAMIC ROUTE", id: id, mainUser }) }
+        case "GET": {
 
-
+            if (mainUser) {
+                return res.json({ message: "API DYNAMIC ROUTE", id: id, mainUser })
+            } else {
+                return res.json({ message: "NO USERS FOUND ... " })
+            }
+        }
 
         default: { return res.json({ message: "API DYNAMIC ROUTE", id: id }) }
     }
