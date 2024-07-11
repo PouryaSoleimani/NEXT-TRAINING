@@ -9,7 +9,7 @@ function dynamicHandler(req, res) {
     switch (req.method) {
 
         case "GET": {
-            
+
             if (mainUser) {
                 return res.status(200).json({ message: ` ID => ${id}`, mainUser })
             } else {
