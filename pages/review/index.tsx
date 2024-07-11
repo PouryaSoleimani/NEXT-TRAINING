@@ -16,7 +16,6 @@ const ReviewPage: NextPage<Props> = ({ users }) => {
                     </div>
                 ))}
             </div>
-
         </section>
     )
 }
