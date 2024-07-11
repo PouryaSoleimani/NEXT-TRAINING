@@ -6,7 +6,14 @@ function dynamicHandler(req, res) {
     const usersArray = db.users
     const mainUser = usersArray.find(user => { return user.id === +id })
     switch (req.method) {
-        case "GET": { return res.json({ message: ` ID => ${id}`, mainUser }) }
+        case "GET": {
+            if (mainUser) {
+                return res.json({ message: ` ID => ${id}`, mainUser })
+            } else {
+                return res.status(404).json({ message: ` ID => User with id:${id} Not Found` })
+            }
+        }
+
         default: { return res.json({ message: "DEFAULT" }) }
     }
 }
