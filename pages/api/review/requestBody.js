@@ -2,7 +2,6 @@
 const usersList = [
     { id: 1, firstname: "pourya", lastname: "soleimani" },
     { id: 2, firstname: "reza", lastname: "hoseini" },
-
 ]
 
 function postHandler(request, response) {
@@ -11,7 +10,7 @@ function postHandler(request, response) {
     console.log(request.method) // GETTING REQUEST METHOD
 
     switch (request.method) {
-        
+
         case "GET": { return response.json({ message: "REVIEW ROUTE || GET METHOD", usersList }) }
         case "POST": {
             const user = request.body;
