@@ -1,11 +1,12 @@
 //^ DYNAMIC PAGE SINGLE
 import axios from 'axios'
 import { NextPage, GetStaticPaths, GetStaticProps } from 'next'
-
+import db from '@/data/db.json'
 interface Props { Mainuser: { id: number, username: string } }
 
 // COMPONENT
 const DynamicApiSingle: NextPage<Props> = ({ Mainuser }) => {
+
     return (
         <section className='flex items-center justify-center h-screen w-screen'>
             <div className='flex items-center justify-center'>
@@ -18,8 +19,13 @@ const DynamicApiSingle: NextPage<Props> = ({ Mainuser }) => {
 
 //^ GET STATIC PATHS
 export const getStaticPaths: GetStaticPaths = async () => {
+
+    const request = axios.get('http://localhost:3000/api/users');
+    const response = (await request).data.usersArray
+    const paths = response.map((item: { id: number }) => { return { params: { id: String(item.id) } } })
+    
     return {
-        paths: [],
+        paths: paths,
         fallback: false,
     }
 }
