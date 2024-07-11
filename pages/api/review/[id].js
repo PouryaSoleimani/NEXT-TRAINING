@@ -1,21 +1,13 @@
 //* DYNAMIC API ROUTE ======================================================================================================
-import db from './../../../data/db.json'
+import db from "../../../data/db.json"
 
 function dynamicHandler(req, res) {
-    const { id } = req.query
-    const mainUser = db.users.find(user => user.id = +id)
-
+    const { id } = req.query;
+    const usersArray = db.users
+    const mainUser = usersArray.find(user => { return user.id === +id })
     switch (req.method) {
-        case "GET": {
-
-            if (mainUser) {
-                return res.json({ message: "API DYNAMIC ROUTE", id: id, mainUser })
-            } else {
-                return res.json({ message: "NO USERS FOUND ... " })
-            }
-        }
-
-        default: { return res.json({ message: "API DYNAMIC ROUTE", id: id }) }
+        case "GET": { return res.json({ message: ` ID => ${id}`, mainUser }) }
+        default: { return res.json({ message: "DEFAULT" }) }
     }
 }
-export default dynamicHandler   
+export default dynamicHandler
