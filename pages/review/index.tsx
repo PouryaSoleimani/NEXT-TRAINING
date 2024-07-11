@@ -10,7 +10,7 @@ const ReviewPage: NextPage<Props> = ({ users }) => {
         <section id='FULL_PAGE_SECTION' className='w-screen h-screen pt-16 bg-zinc-300'>
             <div className='w-fit mx-auto p-4 rounded-xl flex space-x-2 bg-transparent'>
                 {users.map((user: SingleUserType) => (
-                    <div key={user.id} className="card w-[17.2rem] mx-auto mt-10">
+                    <div key={user.id} className="card w-[17.2rem] mx-auto mt-10  hover:scale-110 duration-300 cursor-pointer">
                         <div className="card-overlay"></div>
                         <div className="card-inner text-zinc-900">{user.id}<br />{user.firstname.toUpperCase()}<br />{user.lastname.toUpperCase()}</div>
                     </div>
