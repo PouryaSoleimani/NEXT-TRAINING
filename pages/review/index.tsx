@@ -1,7 +1,5 @@
 //? REVIEW PAGE =================================================================================================================
-import { useRowStyle } from 'antd/es/grid/style'
 import axios from 'axios'
-import { UserRoundCheck } from 'lucide-react'
 import { NextPage, GetStaticProps } from 'next'
 
 interface Props { users: [{ id: number, firstname: string, lastname: string }] }

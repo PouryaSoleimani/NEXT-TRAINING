@@ -2,6 +2,7 @@
 const usersList = [
     { id: 1, firstname: "pourya", lastname: "soleimani" },
     { id: 2, firstname: "reza", lastname: "hoseini" },
+    { id: 3, firstname: "ali", lastname: "mohammadi" }
 ]
 
 function postHandler(request, response) {
