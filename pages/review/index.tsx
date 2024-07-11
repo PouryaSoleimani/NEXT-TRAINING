@@ -15,6 +15,10 @@ const ReviewPage: NextPage<Props> = ({ users }) => {
                     </div>
                 ))}
             </div>
+            <div class="card">
+                <div class="card-overlay"></div>
+                <div class="card-inner">YOUR<br />CONTENT<br />HERE</div>
+            </div>
         </section>
     )
 }
