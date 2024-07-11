@@ -16,8 +16,8 @@ function postHandler(request, response) {
 
         case "POST":
             {
-                const user = request.body
-                usersList.push(user)
+                const user = request.body;
+                usersList.push(user);
                 return response.json({ message: "REVIEW ROUTE || POST METHOD", user: user, usersList: usersList })
             };
 
