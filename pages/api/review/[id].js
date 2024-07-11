@@ -7,9 +7,9 @@ function dynamicHandler(req, res) {
     const mainUser = usersArray.find(user => { return user.id === +id })
 
     switch (req.method) {
-        //* GET METHOD
-        case "GET": {
 
+        case "GET": {
+            
             if (mainUser) {
                 return res.status(200).json({ message: ` ID => ${id}`, mainUser })
             } else {
