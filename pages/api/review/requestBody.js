@@ -1,6 +1,8 @@
 //^ REVIEW API ROUTE ===============================================================================================================
 const usersList = [
-    { id: 1, firstname: "pourya", lastname: "soleimani" }
+    { id: 1, firstname: "pourya", lastname: "soleimani" },
+    { id: 2, firstname: "reza", lastname: "hoseini" },
+
 ]
 
 function postHandler(request, response) {
