@@ -1,5 +1,7 @@
 //? REVIEW PAGE =================================================================================================================
+import { useRowStyle } from 'antd/es/grid/style'
 import axios from 'axios'
+import { UserRoundCheck } from 'lucide-react'
 import { NextPage, GetStaticProps } from 'next'
 
 interface Props { users: [{ id: number, firstname: string, lastname: string }] }
@@ -7,18 +9,16 @@ type SingleUserType = { id: number, firstname: string, lastname: string }
 
 const ReviewPage: NextPage<Props> = ({ users }) => {
     return (
-        <section id='FULL_PAGE_SECTION' className='w-screen h-screen pt-16 bg-zinc-500'>
-            <div className='bg-zinc-800 w-fit mx-auto p-4 rounded-xl'>
-                {users?.map((user: SingleUserType) => (
-                    <div key={user.id} className='text-2xl font-bold'>
-                        <h1 className='my-4'>{user.id} - {user.firstname.toLocaleUpperCase()} {user.lastname.toLocaleUpperCase()}</h1>
+        <section id='FULL_PAGE_SECTION' className='w-screen h-screen pt-16 bg-zinc-300'>
+            <div className='w-fit mx-auto p-4 rounded-xl flex space-x-2 bg-transparent'>
+                {users.map((user: SingleUserType) => (
+                    <div key={user.id} className="card w-[17.2rem] mx-auto mt-10">
+                        <div className="card-overlay"></div>
+                        <div className="card-inner text-zinc-900">{user.id}<br />{user.firstname.toUpperCase()}<br />{user.lastname.toUpperCase()}</div>
                     </div>
                 ))}
             </div>
-            <div class="card">
-                <div class="card-overlay"></div>
-                <div class="card-inner">YOUR<br />CONTENT<br />HERE</div>
-            </div>
+
         </section>
     )
 }

@@ -147,6 +147,7 @@ body {
   color: white;
 }
 
+/*^^ CARD ^^*/
 .card {
   --bg: #e8e8e8;
   --contrast: #e2e0e0;
@@ -162,7 +163,7 @@ body {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: repeating-conic-gradient(var(--bg) 0.0000001%, var(--grey) 0.000104%) 60% 60%/600% 600%;
+  /* background: repeating-conic-gradient(var(--bg) 0.0000001%, var(--grey) 0.000104%) 60% 60%/600% 600%; */
   filter: opacity(10%) contrast(105%);
 }
 
@@ -177,10 +178,10 @@ body {
   height: 254px;
   background-color: var(--contrast);
   border-radius: 30px;
-  /* Content style */
+  /*& Content style */
   font-size: 30px;
   font-weight: 900;
-  color: #c7c4c4;
+  color: #3b3a3a;
   text-align: center;
   font-family: monospace;
 }
