@@ -24,8 +24,6 @@ const DynamicApi: NextPage<Props> = ({ allUsers }) => {
     )
 }
 
-
-
 //^ GET STATIC PROPS
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const request = axios.get('http://localhost:3000/api/users')
