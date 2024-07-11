@@ -64,18 +64,23 @@
   "users": [
     {
       "id": 1,
-      "username": "pourya",
-      "password": "12345"
+      "username": "pourya"
     },
     {
       "id": 2,
-      "username": "ali",
-      "password": "12345"
+      "username": "ali"
     },
     {
       "id": 3,
-      "username": "reza",
-      "password": "12345"
+      "username": "reza"
+    },
+    {
+      "id": 4,
+      "username": "mahdi"
+    },
+    {
+      "id": 5,
+      "username": "mohammad"
     }
   ],
   "todos": [
