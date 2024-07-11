@@ -1,10 +1,13 @@
 //^ REVIEW API ROUTE ===============================================================================================================
-const usersList = []
+const usersList = [
+    { id: 1, firstname: "pourya", lastname: "soleimani" }
+]
 
 function postHandler(request, response) {
 
     console.log(request.body) //GETTING REQUEST BODY
     console.log(request.method) // GETTING REQUEST METHOD
+
 
     switch (request.method) {
 
