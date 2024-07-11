@@ -7,6 +7,7 @@ function dynamicHandler(req, res) {
     const mainUser = usersArray.find(user => { return user.id === +id })
 
     switch (req.method) {
+        //* GET METHOD
         case "GET": {
 
             if (mainUser) {
