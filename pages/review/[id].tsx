@@ -11,7 +11,7 @@ const DynamicApiSingle: NextPage<Props> = ({ Mainuser }) => {
 
     return (
         <section className='flex items-center justify-center h-screen w-screen' >
-            <div className='flex items-center justify-center bg-zinc-900 px-10 py-4 rounded-3xl border-8 border-orange-400'>
+            <div className='flex items-center justify-center bg-zinc-900 px-10 py-4 rounded-3xl border-8 border-zinc-200'>
                 <h1 className='text-9xl uppercase font-extrabold'>{Mainuser.id} - {Mainuser.username}</h1>
             </div>
         </section >
