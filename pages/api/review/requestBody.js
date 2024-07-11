@@ -11,11 +11,11 @@ function postHandler(request, response) {
 
     switch (request.method) {
 
-        case "GET": { return response.json({ message: "REVIEW ROUTE || GET METHOD", usersList }) }
+        case "GET": { return response.json({ message: "REVIEW ROUTE || GET METHOD", data: usersList }) }
         case "POST": {
             const user = request.body;
             usersList.push(user);
-            return response.json({ message: "REVIEW ROUTE || POST METHOD", user: user, usersList: usersList })
+            return response.json({ message: "REVIEW ROUTE || POST METHOD", user: user, data: usersList })
         }
         case "PUT": { return response.json({ message: "REVIEW ROUTE || PUT METHOD" }) }
         case "DELETE": { return response.json({ message: "REVIEW ROUTE || DELETE METHOD" }) }

@@ -3,7 +3,7 @@ import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
 import Link from 'next/link'
 
-interface Props { users: [ { id: number, name: string, email: string, address: { city: string }, phone: string } ] }
+interface Props { users: [{ id: number, name: string, email: string, address: { city: string }, phone: string }] }
 type SingleUserType = { id: number, name: string, email: string, address: { city: string }, phone: string }
 
 //^ COMPONENT 
