@@ -4,7 +4,6 @@ function reviewHandler(req, res) {
     console.log(req.body) //REQUEST BODY
 
     switch (req.method) {
-
         case "GET": { return res.json({ message: "REVIEW GET MODE" }) }
         case "POST": { return res.json({ message: "REVIEW POST MODE" }) }
         case "PUT": { return res.json({ message: "REVIEW PUT MODE" }) }

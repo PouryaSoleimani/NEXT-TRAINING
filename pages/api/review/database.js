@@ -4,12 +4,13 @@ import path from 'path'
 
 function databaseHandler(request, response) {
     const root = process.cwd()
-    const database = path.join(root, "db", "db.json")
-    const DB = fs.readFileSync(database)
-    console.log(DB)
+    const database = path.join(root, "data", "db.json")
+    const DatabaseBuffer = fs.readFileSync(database)
+    const databaseParsed = JSON.parse(DatabaseBuffer)
+    const PRODUCTS = databaseParsed.users
 
     switch (request.method) {
-        case "GET": { return response.json({ message: "FS AND PATH" }) }
+        case "GET": { return response.json({ message: "FS AND PATH", db: PRODUCTS }) }
         default: { return response.json({ message: "FS AND PATH" }) }
 
     }
