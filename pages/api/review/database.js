@@ -1,9 +1,10 @@
 //^ FS AND PATH ROUTE ===========================================================================================================
-import path from 'path'
 import fs from 'fs'
+import path from 'path'
 
 function databaseHandler(request, response) {
-    console.log(request, response)
+    const root = process.cwd()
+    
 }
 
 export default databaseHandler
