@@ -15,7 +15,11 @@ const addUserHandler = (req, res) => {
     // SWITCH CASE
     switch (req.method) {
         case "GET": { return res.json({ message: "ADD USER GET METHOD", users: USERS }) }
-        case "PUT": { }
+        case "PUT": {
+            const { email, password } = req.body
+            const newUser = { id: crypto.randomUUID(), email, password }
+            USERS.push(newUser)
+        }
         default: { return res.json({ message: "DEFAULT METHOD" }) }
     }
 
@@ -23,3 +27,9 @@ const addUserHandler = (req, res) => {
 export default addUserHandler
 
 // crypto.randomUUID()
+
+// fs.writeFileSync( dbPath , newUser)
+
+// const err = fs.writeFileSync( dbPath , JSON.stringify(newUser) )
+
+// if(err) = {console.log(err)}
