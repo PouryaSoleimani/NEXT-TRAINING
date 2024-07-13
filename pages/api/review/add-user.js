@@ -15,6 +15,7 @@ const addUserHandler = (req, res) => {
     // SWITCH CASE
     switch (req.method) {
         case "GET": { return res.json({ message: "ADD USER GET METHOD", users: USERS }) }
+        //^ ADDING NEW USER
         case "POST": {
             const { email, password } = req.body
             const newUser = { id: crypto.randomUUID(), email: email, password: password }
