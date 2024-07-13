@@ -21,6 +21,7 @@ const addUserHandler = (req, res) => {
             const { email, password } = req.body
             const newUser = { id: crypto.randomUUID(), email: email, password: password }
             USERS.push(newUser)
+            
             const error = fs.writeFileSync(dbPath, JSON.stringify(dbParsed)) //The {writeFileSync} method returns null if everything is ok .
             if (error) { return res.status(500).json({ message: "INVALID PARAMETERS" }) }
             else { return res.status(201).json({ message: "USER CREATED SUCCESSFULLY", data: USERS }) }
