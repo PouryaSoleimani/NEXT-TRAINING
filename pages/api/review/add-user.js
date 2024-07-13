@@ -20,5 +20,6 @@ const addUserHandler = (req, res) => {
     }
 
 }
-
 export default addUserHandler
+
+// crypto.randomUUID()
