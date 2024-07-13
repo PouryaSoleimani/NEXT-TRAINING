@@ -17,10 +17,11 @@ const addUserHandler = (req, res) => {
         case "GET": { return res.json({ message: "ADD USER GET METHOD", users: USERS }) }
         case "POST": {
             const { email, password } = req.body
-            const newUser = { id: crypto.randomUUID(), email : email, password : password }
-            const error = fs.writeFileSync(dbPath, JSON.stringify(newUser))
+            const newUser = { id: crypto.randomUUID(), email: email, password: password }
+            USERS.push(newUser)
+            const error = fs.writeFileSync(dbPath, JSON.stringify(dbParsed))
             if (error) { return res.status(500).json({ message: "INVALID PARAMETERS" }) }
-            else { return res.status(201).json({ message: "USER CREATED SUCCESSFULLY", users : USERS }) }
+            else { return res.status(201).json({ message: "USER CREATED SUCCESSFULLY", data: USERS }) }
         }
         default: { return res.json({ message: "DEFAULT METHOD" }) }
     }
