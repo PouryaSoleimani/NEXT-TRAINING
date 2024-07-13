@@ -12,6 +12,7 @@ const addUserHandler = (req, res) => {
     const dbBuffer = fs.readFileSync(dbPath)
     const dbParsed = JSON.parse(dbBuffer)
     const USERS = dbParsed.users
+
     // SWITCH CASE
     switch (req.method) {
         case "GET": { return res.json({ message: "ADD USER GET METHOD", users: USERS }) }
@@ -20,7 +21,7 @@ const addUserHandler = (req, res) => {
             const { email, password } = req.body
             const newUser = { id: crypto.randomUUID(), email: email, password: password }
             USERS.push(newUser)
-            const error = fs.writeFileSync(dbPath, JSON.stringify(dbParsed))
+            const error = fs.writeFileSync(dbPath, JSON.stringify(dbParsed)) //THE {writeFileSync} method returns null if everything is ok .
             if (error) { return res.status(500).json({ message: "INVALID PARAMETERS" }) }
             else { return res.status(201).json({ message: "USER CREATED SUCCESSFULLY", data: USERS }) }
         }
