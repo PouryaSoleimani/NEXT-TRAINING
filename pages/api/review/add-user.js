@@ -14,6 +14,7 @@ const addUserHandler = (req, res) => {
 
     switch (req.method) {
         case "GET": { return res.json({ message: "ADD USER GET METHOD", users: USERS }) }
+        case "PUT" : {}
         default: { return res.json({ message: "DEFAULT METHOD" }) }
     }
 
