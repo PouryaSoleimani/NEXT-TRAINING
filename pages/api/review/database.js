@@ -12,8 +12,7 @@ function databaseHandler(request, response) {
     switch (request.method) {
         case "GET": { return response.json({ message: "FS AND PATH", db: PRODUCTS }) }
         default: { return response.json({ message: "FS AND PATH" }) }
-
     }
 }
 
-export default databaseHandler
+export default databaseHandler   
