@@ -32,7 +32,7 @@ const addUserHandler = (req, res) => {
                 return res.status(201).json({ message: "USER CREATED SUCCESSFULLY", data: USERS })
             }
         }
-
+        
         default: { return res.json({ message: "DEFAULT METHOD" }) }
     }
 
