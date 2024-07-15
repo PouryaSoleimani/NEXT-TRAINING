@@ -17,7 +17,7 @@ function addUserHandler2(request, response) {
             const newUser = { id: crypto.randomUUID(), username, password }
 
             USERSLIST.push(newUser)
-
+                    
             const ERROR = fs.writeFileSync(dbPath, JSON.stringify(dbParsed, null, 2))
 
             if (ERROR) {
