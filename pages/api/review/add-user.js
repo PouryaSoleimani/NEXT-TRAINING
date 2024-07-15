@@ -2,8 +2,6 @@
 import path from "path"
 import fs from 'fs'
 
-
-
 //===============================================================================================================================================
 const addUserHandler = (req, res) => {
     //ACCESSING THE DATABASE
