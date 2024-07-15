@@ -17,7 +17,7 @@ function addUserHandler2(request, response) {
             const newUser = { id: crypto.randomUUID(), username, password }
 
             USERSLIST.push(newUser)
-                    
+
             const ERROR = fs.writeFileSync(dbPath, JSON.stringify(dbParsed, null, 2))
 
             if (ERROR) {
@@ -26,6 +26,7 @@ function addUserHandler2(request, response) {
                 response.status(201).json({ message: "USER CREATED", data: USERSLIST })
             }
         }
+        
         default: { return response.status(200).json({ message: "ADD USER 2 || DEFAULT METHOD" }) }
     }
 }
