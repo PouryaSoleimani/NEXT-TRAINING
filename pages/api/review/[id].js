@@ -17,6 +17,7 @@ function dynamicHandler(req, res) {
                 return res.status(404).json({ message: ` ID => User with id:${id} Not Found` })
             }
         }
+        
 
         default: { return res.json({ message: "DEFAULT" }) }
     }
