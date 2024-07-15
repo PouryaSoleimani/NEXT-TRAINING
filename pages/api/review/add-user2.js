@@ -26,7 +26,6 @@ function addUserHandler2(request, response) {
                 response.status(201).json({ message: "USER CREATED", data: USERSLIST })
             }
         }
-        
         default: { return response.status(200).json({ message: "ADD USER 2 || DEFAULT METHOD" }) }
     }
 }

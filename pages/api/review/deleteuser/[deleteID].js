@@ -13,8 +13,11 @@ function deleteUserHandler(request, response) {
             const usersList = dbParsed.users
             // DELETE USER
             const { deleteID } = request.query
+
             const mainUser = usersList.find(user => user.id == String(deleteID))
+
             const newUsers = usersList.filter(user => user.id !== mainUser.id)
+
             // WRITE FILE
             const error = fs.writeFileSync(dbPath, JSON.stringify({ ...dbParsed, users: newUsers }))
             if (!error) {
