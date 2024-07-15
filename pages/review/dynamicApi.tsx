@@ -2,14 +2,25 @@
 import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
 import Link from 'next/link'
+import { FormEvent, useState } from 'react'
 
 interface Props { allUsers: [{ id: number, username: string, password: string }] }
 type SingleUserType = { id: number, username: string, password: string }
 
 
 const DynamicApi: NextPage<Props> = ({ allUsers }) => {
+    const [ID, setID] = useState("")
+
+    function deleteUserHandler(event: FormEvent<HTMLFormElement>) {
+        event.preventDefault()
+        axios.delete(`http://localhost:3000/api/review/deleteuser/${ID}`)
+            .then(res => console.log(res))
+            .catch(error => console.error("USER NOT FOUND"))
+    }
+
+
     return (
-        <section id='FULL_PAGE_SECTION' className='w-screen h-screen pt-16 bg-zinc-300 flex items-center justify-center'>
+        <section id='FULL_PAGE_SECTION' className='w-screen h-screen pt-16 bg-zinc-300 flex flex-col space-y-10 items-center justify-center'>
             <div className='w-fit mx-auto p-4 rounded-xl flex flex-wrap items-center justify-center gap-2 bg-transparent'>
                 {allUsers.map((user: SingleUserType) => (
                     <Link href={`/review/${user.id}`}>
@@ -20,6 +31,10 @@ const DynamicApi: NextPage<Props> = ({ allUsers }) => {
                     </Link>
                 ))}
             </div>
+            <form onSubmit={deleteUserHandler} className='border-2 border-zinc-800 w-1/2 h-1/3 p-10 flex flex-col items-center justify-start space-y-6'>
+                <input className='px-4 py-2 text-black text-2xl border border-black outline-none font-bold rounded-xl w-1/2' type="text" placeholder="User ID you want to delete" value={ID} onChange={event => setID(event.target.value)} />
+                <button className='bg-red-800 px-10 py-4 rounded-xl text-2xl font-bold'>DELETE</button>
+            </form>
         </section>
     )
 }
