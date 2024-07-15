@@ -21,7 +21,7 @@ function addUserHandler2(request, response) {
             const ERROR = fs.writeFileSync(dbPath, JSON.stringify(dbParsed, null, 2))
 
             if (ERROR) {
-                response.status(500).json({ message: "INVALID PARAMETERS ..." })    
+                response.status(500).json({ message: "INVALID PARAMETERS ..." })
             } else {
                 response.status(201).json({ message: "USER CREATED", data: USERSLIST })
             }
