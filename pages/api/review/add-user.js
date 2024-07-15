@@ -25,8 +25,12 @@ const addUserHandler = (req, res) => {
 
             const error = fs.writeFileSync(dbPath, JSON.stringify(dbParsed)) //The {writeFileSync} method returns null if everything is OK .
 
-            if (error) { return res.status(500).json({ message: "INVALID PARAMETERS" }) }
-            else { return res.status(201).json({ message: "USER CREATED SUCCESSFULLY", data: USERS }) }
+            if (error) {
+                return res.status(500).json({ message: "INVALID PARAMETERS" })
+            }
+            else {
+                return res.status(201).json({ message: "USER CREATED SUCCESSFULLY", data: USERS })
+            }
         }
 
         default: { return res.json({ message: "DEFAULT METHOD" }) }
