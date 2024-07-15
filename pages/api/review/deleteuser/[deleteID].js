@@ -14,11 +14,9 @@ function deleteUserHandler(request, response) {
             //DELETE USER
             const { deleteID } = request.query
             const MAINUSER = USERSLIST.find(user => user.id == String(deleteID))
-            if (MAINUSER) {
-                return response.status(200).json({ MAINUSER })
-            } else {
-                return response.status(404).json({ message: "USER NOT FOUND" })
-            }
+            const NEWUSERS = USERSLIST.filter(user => user.id !== MAINUSER.id)
+
+            return response.status(200).json({ NEWUSERS })
 
         }
         default: { return response.json({ message: "DELETE USERS DYNAMIC ROUTE" }) }
