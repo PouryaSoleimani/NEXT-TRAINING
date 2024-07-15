@@ -12,7 +12,7 @@ const DynamicApi: NextPage<Props> = ({ allUsers }) => {
     const [ID, setID] = useState("")
 
 
-    
+
     function deleteUserHandler(event: FormEvent<HTMLFormElement>) {
         event.preventDefault()
         axios.delete(`http://localhost:3000/api/review/deleteuser/${ID}`)
@@ -23,7 +23,7 @@ const DynamicApi: NextPage<Props> = ({ allUsers }) => {
 
 
     return (
-        <section id='FULL_PAGE_SECTION' className='w-screen h-screen pt-16 bg-zinc-300 flex flex-col space-y-10 items-center justify-center'>
+        <section id='FULL_PAGE_SECTION' className='w-screen h-screen pt-16 bg-zinc-300 flex flex-col space-y-10 items-center justify-center'>   
             <div className='w-fit mx-auto p-4 rounded-xl flex flex-wrap items-center justify-center gap-2 bg-transparent'>
                 {allUsers.map((user: SingleUserType) => (
                     <Link href={`/review/${user.id}`}>
