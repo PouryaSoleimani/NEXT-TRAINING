@@ -1,4 +1,4 @@
-//! DELETE USER API ROUTE ====================================================================================================================
+//^ DELETE USER API ROUTE ====================================================================================================================
 import fs from 'fs'
 import path from 'path'
 
@@ -18,7 +18,7 @@ function deleteUserHandler(request, response) {
 
             const newUsers = usersList.filter(user => user.id !== mainUser.id)
 
-            // WRITE FILE
+            // WRITE FILE SYNC
             const error = fs.writeFileSync(dbPath, JSON.stringify({ ...dbParsed, users: newUsers }))
             if (!error) {
                 return response.status(201).json({ message: "USER REMOVED SUCCESSFULLY", newUsers })
