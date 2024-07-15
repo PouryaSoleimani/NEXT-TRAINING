@@ -10,13 +10,18 @@ function deleteUserHandler(request, response) {
             const dbPath = path.join(root, "data", "db.json")
             const dbBuffered = fs.readFileSync(dbPath)
             const dbParsed = JSON.parse(dbBuffered.toString())
-            const USERSLIST = dbParsed.users
+            const usersList = dbParsed.users
             //DELETE USER
             const { deleteID } = request.query
-            const MAINUSER = USERSLIST.find(user => user.id == String(deleteID))
-            const NEWUSERS = USERSLIST.filter(user => user.id !== MAINUSER.id)
-
-            return response.status(200).json({ NEWUSERS })
+            const mainUser = usersList.find(user => user.id == String(deleteID))
+            const newUsers = usersList.filter(user => user.id !== mainUser.id)
+            // WRITE FILE
+            const error = fs.writeFileSync(dbPath, JSON.stringify({ ...dbParsed, users: newUsers }))
+            if (!error) {
+                return response.status(201).json({ message: "USER REMOVED SUCCESSFULLY", newUsers })
+            } else {
+                return response.status(404).json({ message: "404 | USER NOT FOUND" })
+            }
 
         }
         default: { return response.json({ message: "DELETE USERS DYNAMIC ROUTE" }) }
