@@ -3,8 +3,8 @@ import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
 import Link from 'next/link'
 
-interface Props { allUsers: [{ id: number, email: string, password: string }] }
-type SingleUserType = { id: number, email: string, password: string }
+interface Props { allUsers: [{ id: number, username: string, password: string }] }
+type SingleUserType = { id: number, username: string, password: string }
 
 
 const DynamicApi: NextPage<Props> = ({ allUsers }) => {
@@ -15,7 +15,7 @@ const DynamicApi: NextPage<Props> = ({ allUsers }) => {
                     <Link href={`/review/${user.id}`}>
                         <div key={user.id} className="card w-[17.2rem] mx-auto mt-10  hover:scale-110 duration-300 cursor-pointer">
                             <div className="card-overlay"></div>
-                            <div className="card-inner text-zinc-900">{user.email.slice(0, 5)}<br /></div>
+                            <div className="card-inner text-zinc-900">{user.username.toUpperCase()}<br /></div>
                         </div>
                     </Link>
                 ))}
