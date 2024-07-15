@@ -11,12 +11,12 @@ const addUserHandler = (req, res) => {
     const dbParsed = JSON.parse(dbBuffer)
     const USERS = dbParsed.users
 
-    // SWITCH CASE
+    // SWITCH CASE`
     switch (req.method) {
         case "GET": { return res.json({ message: "ADD USER GET METHOD", users: USERS }) }
         //^ ADDING NEW USER
         case "POST": {
-            
+
             const { username, password } = req.body
 
             const newUser = { id: crypto.randomUUID(), username: username, password: password }
