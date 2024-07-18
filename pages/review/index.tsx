@@ -7,6 +7,7 @@ type SingleUserType = { id: number, firstname: string, lastname: string }
 
 const ReviewPage: NextPage<Props> = ({ users }) => {
     return (
+
         <section id='FULL_PAGE_SECTION' className='w-screen h-screen pt-16 bg-zinc-300'>
             <div className='w-fit mx-auto p-4 rounded-xl flex space-x-2 bg-transparent'>
                 {users.map((user: SingleUserType) => (
@@ -17,6 +18,7 @@ const ReviewPage: NextPage<Props> = ({ users }) => {
                 ))}
             </div>
         </section>
+
     )
 }
 
