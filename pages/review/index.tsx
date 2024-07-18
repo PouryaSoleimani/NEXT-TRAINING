@@ -13,7 +13,9 @@ const ReviewPage: NextPage<Props> = ({ users }) => {
                 {users.map((user: SingleUserType) => (
                     <div key={user.id} className="card w-[17.2rem] mx-auto mt-10  hover:scale-110 duration-300 cursor-pointer">
                         <div className="card-overlay"></div>
-                        <div className="card-inner text-zinc-900">{user.id}<br />{user.firstname.toUpperCase()}<br />{user.lastname.toUpperCase()}</div>
+                        <div className="card-inner text-zinc-900">{user.id}<br />
+                            {user.firstname.toUpperCase()}<br />
+                            {user.lastname.toUpperCase()}</div>
                     </div>
                 ))}
             </div>
