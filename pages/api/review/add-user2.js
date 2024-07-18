@@ -12,6 +12,7 @@ function addUserHandler2(request, response) {
     switch (request.method) {
         case "GET": { return response.status(200).json({ message: "ADD USER 2 || GET METHOD", data: USERSLIST }) }
         case "POST": {
+
             const { username, password } = request.body
 
             const newUser = { id: crypto.randomUUID(), username, password }

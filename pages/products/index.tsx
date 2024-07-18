@@ -6,7 +6,7 @@ type SingleItemType = { id: number, title: string, price: number }
 //COMPONENT =====================================================================================================================================================
 const ProductsPage = () => {
 
-  const [ products, setProducts ] = useState([])
+  const [products, setProducts] = useState([])
 
   useEffect(() => {
     axios.get("http://localhost:3000/api/products")
