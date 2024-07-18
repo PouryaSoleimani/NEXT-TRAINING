@@ -10,11 +10,9 @@ const FetchPage = () => {
 
   const [usersList, setUsersList] = useState([])
 
-  //* FETCH HANDLER
+  //^ FETCH HANDLER
   function fetchUsersHandler() {
-    axios.get('/api/users').then(response => {
-      setUsersList(response.data.usersArray)
-    })
+    axios.get('/api/users').then(response => { setUsersList(response.data.usersArray) })
   }
 
   return (
