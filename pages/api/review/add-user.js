@@ -19,7 +19,11 @@ const addUserHandler = (req, res) => {
 
             const { username, password } = req.body
 
-            const newUser = { id: crypto.randomUUID(), username: username, password: password }
+            const newUser = {
+                id: crypto.randomUUID(),
+                username: username,
+                password: password
+            }
 
             USERS.push(newUser)
 
