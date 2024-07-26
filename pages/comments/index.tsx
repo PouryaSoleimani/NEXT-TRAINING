@@ -17,7 +17,7 @@ const Index: NextPage<Props> = ({ comments }) => {
     setCOMMENTS(filteredComments)
   }
 
-  //* RETURN =>
+  //* RETURN =======================================================================================================================================================================>
   return (
     <>
       <div className='flex items-center justify-around px-2 py-3'>
