@@ -12,8 +12,7 @@ const products = () => {
   function pushHandler() { router.push('/courses') }
   // REPLACE
   function replaceHandler() { router.replace('/courses') }
-
-  // RETURN e
+  // RETURN 
   return (
     <>
       <h1 className='bg-zinc-700 p-4 font-bold text-xl'>{router.query.products?.toString().toUpperCase()} PAGE</h1>
