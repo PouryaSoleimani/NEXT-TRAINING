@@ -1,4 +1,4 @@
-// PRODUCTS PAGE
+//^ PRODUCTS PAGE
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
@@ -13,7 +13,7 @@ const products = () => {
   // REPLACE
   function replaceHandler() { router.replace('/courses') }
 
-  // RETURN 
+  // RETURN e
   return (
     <>
       <h1 className='bg-zinc-700 p-4 font-bold text-xl'>{router.query.products?.toString().toUpperCase()} PAGE</h1>
