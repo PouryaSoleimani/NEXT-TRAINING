@@ -16,7 +16,7 @@ const FetchPage = () => {
   }
 
   return (
-    <div className='flex items-center py-10 flex-col space-y-2 justify-center h-screen'>
+    <div className='flex items-center py-10 flex-col space-y-2 justify-center h-screen '>
       <button onClick={fetchUsersHandler} className='bg-orange-500 rounded-md px-16 py-2 font-bold text-2xl'>FETCH USERS</button>
       <div>
         {usersList?.map((user: SingleUserType) =>
