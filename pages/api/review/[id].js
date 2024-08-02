@@ -17,8 +17,7 @@ function dynamicHandler(req, res) {
                 return res.status(404).json({ message: ` ID => User with id:${id} Not Found` })
             }
         }
-
-
+        case "PUT": { return res.json({ message: "PUT METHOD" }) }
         default: { return res.json({ message: "DEFAULT" }) }
     }
 }
