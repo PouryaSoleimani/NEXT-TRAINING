@@ -4,7 +4,7 @@ import { products } from '@/data/db.json' //Importing DataBase From an External 
 
 // COMPONENT
 const DataFetching = () => {
-  const [ data, setdata ] = useState(products)
+  const [data, setdata] = useState(products)
 
   // RETURN
   return (
