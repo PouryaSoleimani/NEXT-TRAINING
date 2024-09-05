@@ -13,7 +13,7 @@ const FetchPage = () => {
 
   //^ FETCH HANDLER
   function fetchUsersHandler() { axios.get('/api/users').then(response => { setUsersList(response.data.usersArray) }) }
-  
+
 
   return (
     <div className='flex items-center py-10 flex-col space-y-2 justify-center h-screen '>
