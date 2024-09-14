@@ -3,7 +3,7 @@ import axios from 'axios'
 import { NextPage, GetServerSideProps } from 'next'
 import Link from 'next/link'
 
-interface Props { Response: [ { id: number, name: string, username: string, email: string, address: object, phone: string, website: string, company: object } ] }
+interface Props { Response: [{ id: number, name: string, username: string, email: string, address: object, phone: string, website: string, company: object }] }
 
 const SSR: NextPage<Props> = ({ Response }) => {
 
