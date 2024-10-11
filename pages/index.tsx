@@ -1,9 +1,7 @@
 //^ HOME PAGE 
 import Link from "next/link";
 
-
-
-
+//^ COMPONENT 
 export default function Home() {
 
   return (
