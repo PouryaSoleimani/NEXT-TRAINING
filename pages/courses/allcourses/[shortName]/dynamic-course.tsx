@@ -1,11 +1,9 @@
 import { useRouter } from 'next/router'
 import React from 'react'
 
-
-
-
 //^ COMPONENT
 const DynamicCourseRoute = () => {
+
     const router = useRouter()
     console.log(router.query)
     return (
