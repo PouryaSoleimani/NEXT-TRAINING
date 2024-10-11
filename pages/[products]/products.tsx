@@ -17,10 +17,10 @@ const products = () => {
     <>
       <h1 className='bg-zinc-700 p-4 font-bold text-xl'>{router.query.products?.toString().toUpperCase()} PAGE</h1>
       <div className='mt-10'>
-        <Link href="/" className='bg-sky-700 p-2  mx-10'>HOME PAGE</Link>
-        <button onClick={goBackHandler} className='bg-emerald-700 px-2 py-2 mx-10'>BACK</button>
-        <button onClick={pushHandler} className='bg-red-700 px-2 py-2 mx-10'>PUSH</button>
-        <button onClick={replaceHandler} className='bg-yellow-400 px-2 py-2 mx-10'>REPLACE</button>
+        <Link href="/" className='bg-sky-700 p-2  mx-10 font-extrabold'>HOME PAGE</Link>
+        <button onClick={goBackHandler} className='bg-emerald-700 px-2 py-2 mx-10 font-extrabold'>BACK</button>
+        <button onClick={pushHandler} className='bg-red-700 px-2 py-2 mx-10 font-extrabold'>PUSH</button>
+        <button onClick={replaceHandler} className='bg-yellow-500 px-2 py-2 mx-10 font-extrabold'>REPLACE</button>
       </div>
     </>
   )
