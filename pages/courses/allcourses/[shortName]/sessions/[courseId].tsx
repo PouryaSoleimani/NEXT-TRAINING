@@ -6,7 +6,7 @@ import React from 'react'
 
 
 //^ COMPONENT
-const SingleCoursePage = () => { 
+const SingleCoursePage = () => {
     const router = useRouter()
     console.log("ROUTER QUERY ===>", router.query)
     function goBackHandler() {
