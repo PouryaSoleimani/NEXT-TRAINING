@@ -7,11 +7,15 @@ import React from 'react'
 
 //^ COMPONENT
 const SingleCoursePage = () => {
+
     const router = useRouter()
     console.log("ROUTER QUERY ===>", router.query)
+
     function goBackHandler() {
         router.back()
     }
+
+
     return (
         <div className='w-screen h-screen flex items-center justify-center flex-col'>
             <h1 className='text-6xl font-extrabold'>SingleCoursePage</h1>
