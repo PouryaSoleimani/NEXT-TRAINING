@@ -7,6 +7,7 @@ import React from 'react'
 //^ COMPONENT
 const DynamicCourseRoute = () => {
     const router = useRouter()
+    console.log(router.query)
     return (
         <div className='flex items-center justify-center w-screen h-screen flex-col space-y-10'>
             <h1 className='text-6xl font-extrabold'>DynamicCourseRoute</h1>
