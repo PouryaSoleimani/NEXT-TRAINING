@@ -6,4 +6,4 @@ const UserCourses = () => {
     )
 }
 
-export default UserCourses
+export default UserCourses 
