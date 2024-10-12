@@ -5,7 +5,7 @@ import React from 'react'
 const Params = () => {
     const router = useRouter()
     const { params } = router.query;
-    console.log("%c ALL PARAMS ===>", "color : yellow", router.query.params)
+    console.log("%c ALL PARAMS ===>", "color :", router.query.params)
 
     return (
         <div className='text-5xl bg-zinc-900 text-yellow-400 flex flex-col items-center justify-around font-bold p-10'>
