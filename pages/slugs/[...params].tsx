@@ -19,7 +19,9 @@ const Params = () => {
         color : white ;
     `
 
-
+    function logger() {
+        console.log("HELLO HELLO")
+    }
     //^ RETURN
     return (
         <>
@@ -32,7 +34,7 @@ const Params = () => {
                 </h2>
             </div>
             <div className='w-screen flex items-center justify-center h-64'>
-                <BUTTON>HELLO</BUTTON>
+                <BUTTON onClick={logger}>HELLO</BUTTON>
             </div>
         </>
     )
