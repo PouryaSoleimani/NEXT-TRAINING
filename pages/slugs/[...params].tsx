@@ -12,7 +12,7 @@ const Params = () => {
             <h1>
                 {params?.length && (`${params[0]?.toUpperCase()} ${params[1]?.toUpperCase()} ${params[2]} ${params[3]?.toUpperCase() || ""}`)}
             </h1>
-            <h2 className='text-white mt-10 tracking-tighter text-5xl font-medium'>
+            <h2 className='text-white mt-10 tracking-tighter text-5xl font-medium '>
                 {params?.length && (`YOU ARE READING AN ARTICLE FROM ${params[0]?.toLocaleUpperCase()} FROM ${params[1]?.toUpperCase()} WRITTEN IN ${params[2]?.toUpperCase()}`)}
             </h2>
         </div>
