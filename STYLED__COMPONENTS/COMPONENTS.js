@@ -1,17 +1,18 @@
 import styled from 'styled-components'
 
 
-
-
-
 export const StyledFilledButton = styled.button`
-background-color : "#FABB14";
+background-color : #FABB14;
 width : 150px;
 padding : 1rem;
 border-radius : 20px ;
-color : white ;
-border: 5px solid black ;
+color : black ;
+border: 5px solid black;
 font-size : 26px;
+font-weight : 900;
+font-family : LALEZAR;
+box-sizing : border-box;
+box-shadow : 1px 1px 1px #2c2c2c;
 `
 
 export const StyledOutLineButton = styled.button`
@@ -22,4 +23,8 @@ border-radius : 20px ;
 color : white ;
 border: 5px solid #FABB14 ;
 font-size : 26px;
+font-weight : 900;
+font-family : LALEZAR;
+box-sizing : border-box;
+box-shadow : 1px 1px 1px #2c2c2c;
 `

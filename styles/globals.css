@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "LALEZAR";
+  src:
+    local("Trickster"),
+    url("/fonts/Lalezar-Regular.ttf") format("opentype") tech(color-COLRv1),
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -51,11 +58,6 @@ body {
   border-radius: 25px;
   transition: 0.4s ease-in-out;
 }
-
-/* .form:hover {
-  transform: scale(1.05);
-  border: 1px solid black;
-} */
 
 #heading {
   text-align: center;
