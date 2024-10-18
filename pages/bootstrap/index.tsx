@@ -5,7 +5,7 @@ const BootstrapTrainingPage = () => {
     return (
         <section className='bg-black'>
             <div>
-                <h1 className='bg-violet-800 text-white p-10 text-6xl font-extrabold text-center'>BootstrapTrainingPage</h1>
+                <h1 className='bg-violet-800 text-white p-10 text-6xl font-extrabold text-center capitalize'>BOOTSTRAP TRAINING PAGE</h1>
             </div>
             <div>
 
