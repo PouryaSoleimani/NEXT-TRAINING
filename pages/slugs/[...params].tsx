@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const Params = () => {
     const router = useRouter()
-    const { params } = router.query;
+    const { params = [] } = router.query;
     console.log("%c ALL PARAMS ===>", "color :yellow ", router.query.params)
 
     //^STYLED BUTTON
@@ -19,9 +19,7 @@ const Params = () => {
      color : white ;
     `
 
-    function logger() {
-        console.log("HELLO HELLO")
-    }
+    function logger() { console.log("HELLO HELLO") }
     //^ RETURN
     return (
         <>
