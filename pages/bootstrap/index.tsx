@@ -1,9 +1,10 @@
 //^ BOOTSTRAP TRAINING PAGE =====================================================================================================================
+import Footer from '@/COMPONENTS/FOOTER/Footer'
 import React from 'react'
 
 const BootstrapTrainingPage = () => {
     return (
-        <section>
+        <section className='h-screen overflow-hidden flex flex-col p-0 items-stretch m-0'>
             <div>
                 <h1 className='bg-violet-800 text-white p-10 text-6xl font-extrabold text-center capitalize'>BOOTSTRAP TRAINING PAGE</h1>
             </div>
@@ -16,6 +17,7 @@ const BootstrapTrainingPage = () => {
                     <li className='alert alert-success'>FIFTH</li>
                 </ul>
             </div>
+            <Footer />
         </section>
     )
 }
