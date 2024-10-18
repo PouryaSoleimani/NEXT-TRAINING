@@ -1,8 +1,8 @@
 // ^ STYLED COMPONENTS PAGE =========================================================================================================
 import React from 'react';
 import styled from 'styled-components'
-// ! MY STYLED COMPONENTS
 
+// ^ COMPONENT ======================================================================================================================
 const StyleComponentsPage = () => {
 
     const ButtonFilled = styled.button`
@@ -10,7 +10,7 @@ const StyleComponentsPage = () => {
     border : 5px solid darkred ;
     border-radius : 15px;
     font-size : 25px;
-    padding : 1rem 3rem;
+    padding : 1rem;
     color : white;
     font-weight : 900;
     width : 150px;
@@ -21,12 +21,13 @@ const StyleComponentsPage = () => {
     border : 5px solid darkred;
     border-radius : 15px;
     font-size : 25px;
-    padding : 1rem 3rem;
+    padding : 1rem;
     color : white;
     font-weight : 900;
     width : 150px;
     transition : all 300ms linear ;
     `
+
     return (
         <>
             <div>

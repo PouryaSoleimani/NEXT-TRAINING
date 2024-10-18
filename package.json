@@ -15,6 +15,7 @@
     "@ant-design/nextjs-registry": "^1.0.0",
     "antd": "^5.19.0",
     "axios": "^1.6.8",
+    "babel-plugin-styled-components": "^2.1.4",
     "bootstrap": "^5.3.3",
     "json-server": "^1.0.0-alpha.23",
     "lodash": "^4.17.21",
