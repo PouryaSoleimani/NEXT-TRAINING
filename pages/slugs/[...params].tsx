@@ -10,13 +10,13 @@ const Params = () => {
 
     //^STYLED BUTTON
     const BUTTON = styled.button`
-        background-color : purple;
-        border-radius : 15px;
-        font-size : 40px;
-        margin : 10px auto ;
-        border : 3px solid purple;
-        padding : 6px;
-        color : white ;
+     background-color : purple;
+     border-radius : 15px;
+     font-size : 40px;
+     margin : 10px auto ;
+     border : 3px solid purple;
+     padding : 6px;
+     color : white ;
     `
 
     function logger() {
