@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/*! LALEZAR FONT */
 @font-face {
   font-family: "LALEZAR";
-  src:
-    local("Trickster"),
-    url("/fonts/Lalezar-Regular.ttf") format("opentype") tech(color-COLRv1),
+  src: url("/fonts/Lalezar-Regular.ttf") format("opentype") tech(color-COLRv1);
 }
 
 :root {
