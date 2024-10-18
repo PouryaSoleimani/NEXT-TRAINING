@@ -1,1 +1,12 @@
- */
+.FOOTER__BUTTOM__DIV {
+  background-color: black;
+  border: 9px solid white;
+  width: 90%;
+  border-radius: 30px;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 80px;
+}
