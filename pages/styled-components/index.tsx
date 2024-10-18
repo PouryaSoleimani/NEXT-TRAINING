@@ -1,6 +1,7 @@
 // ^ STYLED COMPONENTS PAGE =========================================================================================================
 import React from 'react';
 import styled from 'styled-components'
+import { StyledFilledButton } from '@/StyledComponents/styled-components'
 
 // ^ COMPONENT ======================================================================================================================
 const StyleComponentsPage = () => {
@@ -36,6 +37,9 @@ const StyleComponentsPage = () => {
             <div className='flex p-10 items-center justify-center space-x-10'>
                 <ButtonFilled className='hover:bg-red-700 hover:border-red-700'>Yes</ButtonFilled>
                 <ButtonOutline className='hover:border-red-700'>No</ButtonOutline>
+            </div>
+            <div className='flex item-center justify-center space-x-10 border-t-8 border-[#FABB14] p-10'>
+                <StyledFilledButton>HELLO</StyledFilledButton>
             </div>
         </>
     )
