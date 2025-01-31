@@ -11,7 +11,7 @@ const MyDocument = () => (
       <Main />
       <NextScript />
     </body>
-  </Html>
+  </Html> 
 );
 
 MyDocument.getInitialProps = async (ctx: DocumentContext) => {
