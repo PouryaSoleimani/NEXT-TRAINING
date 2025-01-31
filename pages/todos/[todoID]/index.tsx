@@ -3,6 +3,7 @@ import React from 'react'
 
 const TodoDynamicPage = () => {
     const router = useRouter()
+    console.log("ROUTER ===>",router)
     const { todoID } = router.query
     return (
         <div className='w-sceen h-screen flex flex-col gap-y-10 items-center justify-center'>
