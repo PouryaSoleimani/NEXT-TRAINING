@@ -7,7 +7,7 @@ import type { DocumentContext } from 'next/document';
 const MyDocument = () => (
   <Html lang="en" className='h-screen'>
     <Head />
-    <body>
+    <body className='bg-black'>
       <Main />
       <NextScript />
     </body>
