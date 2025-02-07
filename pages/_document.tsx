@@ -2,14 +2,12 @@ import React from 'react';
 import { createCache, extractStyle, StyleProvider } from '@ant-design/cssinjs';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 import type { DocumentContext } from 'next/document';
-import { Toaster } from 'react-hot-toast';
 
 
 const MyDocument = () => (
   <Html lang="en" className='h-screen'>
     <Head />
     <body className='bg-black'>
-
       <Main />
       <NextScript />
     </body>

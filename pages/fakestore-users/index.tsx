@@ -34,7 +34,6 @@ const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
   // RETURN
   return (
     <section className='overflow-hidden'>
-      <Toaster position="top-right" reverseOrder={true} />
       <div className='grid grid-cols-3 items-center gap-y-2 mt-10  place-items-center w-screen h-fit'>
         {users.slice(0, 9).map((user: SingleUserType) => (
           <Link href={`/fakestore-users/${user.id}`} key={user.id}>

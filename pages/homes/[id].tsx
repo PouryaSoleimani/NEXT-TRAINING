@@ -10,7 +10,7 @@ type productProps = { id: number, title: string, price: number }
 const SingleHomePage: React.FC = () => {
   const route = useRouter()
   const id = route.query.id
-  const product = db.products.find((product) => { return String(product.id) === id })
+  const product = db?.products.find((product) => { return String(product.id) === id })
   //^STATES 
   const [ datas, setDatas ] = useState([])
   const [ emailValue, setEmailValue ] = useState('')
@@ -40,7 +40,6 @@ const SingleHomePage: React.FC = () => {
   //RETURN -------------------------------------------------------------------------------------------------------------------------
   return (
     <>
-      <Toaster position="top-right" reverseOrder={true} />
       <div>
         <h1 className="py-10 px-10 bg-zinc-800 text-white rounded-lg text-5xl font-sans font-bold">ALL HOMES PAGE - HOME # {id} </h1>
       </div>
