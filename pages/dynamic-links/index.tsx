@@ -4,11 +4,11 @@ import React from 'react'
 const DynamicLinksPage = () => {
     const courses = [
         { id: 1, title: 'REACT', link: '/dynamic-links/react' },
-        { id: 1, title: 'NEXT', link: '/dynamic-links/react' },
-        { id: 1, title: 'NODE', link: '/dynamic-links/react' },
-        { id: 1, title: 'PWA', link: '/dynamic-links/react' },
-        { id: 1, title: 'MONGODB', link: '/dynamic-links/react' },
-        { id: 1, title: 'EXPRESS', link: '/dynamic-links/react' },
+        { id: 1, title: 'NEXT', link: '/dynamic-links/next' },
+        { id: 1, title: 'NODE', link: '/dynamic-links/node' },
+        { id: 1, title: 'PWA', link: '/dynamic-links/pwa' },
+        { id: 1, title: 'MONGODB', link: '/dynamic-links/mongodb' },
+        { id: 1, title: 'EXPRESS', link: '/dynamic-links/express' },
     ]
     return (
         <div className='w-screen h-screen flex flex-col gap-y-10 mt-10 items-center juftify-center bg-black text-white px-10'>
