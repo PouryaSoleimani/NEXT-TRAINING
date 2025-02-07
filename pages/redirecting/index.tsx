@@ -5,17 +5,17 @@ import toast, { Toaster } from 'react-hot-toast';
 const RedirectingPage = () => {
 
     const router = useRouter()
+    const number = 1
+    const notify = () => toast.loading('Redirecting to Dynamic Links Page', { duration: 2000, position: "top-right", style: { fontSize: "18px" } })
+
     function redirectHandler(): void {
-        setTimeout(() => {
-            router.push('/dynamic-links')
-        }, 3000);
+        setTimeout(() => { router.push('/dynamic-links') }, 3000);
     }
 
     useEffect(() => {
-        const notify = () => toast.loading('Redirecting to Dynamic Links Page', { duration: 2000, position: "top-right", style: { fontSize: "18px" } })
         notify()
         redirectHandler()
-    }, [])
+    }, [number])
 
     return (
         <>
