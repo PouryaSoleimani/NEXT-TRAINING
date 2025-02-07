@@ -6,6 +6,7 @@ import toast from 'react-hot-toast';
 //  COMPONENT
 const RedirectingPage = () => {
     const router = useRouter()
+    
     const notify = () => toast.loading('Redirecting to Dynamic Links Page', { duration: 2000, style: { fontSize: "18px" }, icon: '🔗' })
 
     function redirectHandler(): void { router.push('/dynamic-links') }
