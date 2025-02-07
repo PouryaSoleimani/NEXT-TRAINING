@@ -7,7 +7,7 @@ const products = () => {
   const router = useRouter()
   //^ FUNCTIONS 
   // BACK
-  function goBackHandler() { router.back() }
+  function goBackHandler() { router.back(); }
   // PUSH
   function pushHandler() { router.push('/courses') }
   // REPLACE
