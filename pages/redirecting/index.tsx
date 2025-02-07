@@ -6,7 +6,7 @@ const RedirectingPage = () => {
 
     const router = useRouter()
     const number = 1
-    const notify = () => toast.loading('Redirecting to Dynamic Links Page', { duration: 2000, position: "top-right", style: { fontSize: "18px" } })
+    const notify = () => toast.loading('Redirecting to Dynamic Links Page', { duration: 2000, style: { fontSize: "18px" } })
 
     function redirectHandler(): void {
         setTimeout(() => { router.push('/dynamic-links') }, 3000);
@@ -19,7 +19,7 @@ const RedirectingPage = () => {
 
     return (
         <>
-            <Toaster reverseOrder={false} />
+            <Toaster position='top-right' reverseOrder={false} />
             <div className='w-screen h-screen flex items-center justify-center bg-black text-white'>
                 <h1 className='text-6xl font-bold text-white'>Redirecting Page</h1>
             </div>
