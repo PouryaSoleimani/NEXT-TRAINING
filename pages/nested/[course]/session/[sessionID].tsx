@@ -12,7 +12,7 @@ const DynamicNestedRoute = () => {
                 COURSE : <span className='bg-slate-900 text-slate-300 px-7 py-2 rounded-xl box-border border-8 border-red-900'>{course?.toLocaleString().toUpperCase()}</span>-
                 SESSION :  <span className='bg-slate-900 text-slate-300 px-7 py-2 rounded-xl box-border border-8 border-red-900'>{sessionID?.toLocaleString()}</span>
             </h1>
-            <Link href="/" className='text-5xl text-center bg-green-900 py-3 px-6 rounded-xl'>🏠</Link>
+            <Link href="/" className='text-5xl text-center bg-green-900 py-3 px-6 rounded-xl no-underline text-white font-black flex items-center justify-center'>🏠 HOME PAGE</Link>
 
         </div>
     )
