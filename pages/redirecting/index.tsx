@@ -18,7 +18,7 @@ const RedirectingPage = () => {
 
     return (
         <>
-            <div className='w-screen h-screen flex items-center justify-center bg-black text-white'>
+            <div className='w-screen h-screen flex items-center justify-center bg-black text-white overflow-x-hidden'>
                 <h1 className='text-6xl font-bold text-white'>Redirecting Page</h1>
             </div>
         </>

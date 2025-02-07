@@ -12,7 +12,7 @@ const DynamicLinksPage = () => {
     ]
 
     return (
-        <div className='w-screen h-screen flex flex-col gap-y-10 mt-10 items-center juftify-center bg-black text-white px-10'>
+        <div className='w-screen h-screen flex flex-col gap-y-10 mt-10 items-center juftify-center bg-black text-white px-10 overflow-x-hidden'>
             <h1 className='text-5xl font-black'>Dynamic Links Page</h1>
             <ul className='w-[80%] flex flex-wrap gap-x-10 gap-y-10 justify-center items-center bg-zinc-900 p-10 border-2 border-zinc-600 rounded-2xl'>
                 {courses.map(course => (
