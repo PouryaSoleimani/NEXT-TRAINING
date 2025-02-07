@@ -10,7 +10,7 @@ const RedirectingPage = () => {
             router.push('/dynamic-links')
         }, 3000);
     }
-    const notify = () => toast.loading('Redirecting to Dynamic Links Page', { duration: 2000, position: "top-right" })
+    const notify = () => toast.loading('Redirecting to Dynamic Links Page', { duration: 2000, position: "top-right", style: { fontSize: "18px" } })
 
     useEffect(() => {
         notify()
