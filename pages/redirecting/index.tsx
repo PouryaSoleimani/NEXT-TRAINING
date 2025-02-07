@@ -6,6 +6,7 @@ const RedirectingPage = () => {
     const router = useRouter()
     function redirectHandler(): void { router.push('/dynamic-links') }
     const notify = () => toast.loading('Redirecting to Dynamic Links Page')
+    
     useEffect(() => {
         notify()
         setTimeout(() => { redirectHandler() }, 3000)
