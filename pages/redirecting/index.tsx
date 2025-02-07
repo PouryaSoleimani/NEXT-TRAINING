@@ -9,11 +9,17 @@ const RedirectingPage = () => {
 
     const notify = () => toast.loading('Redirecting to Dynamic Links Page', { duration: 2000, style: { fontSize: "18px" }, icon: '🔗' })
 
-    function redirectHandler(): void { router.push('/dynamic-links') }
+    function redirectHandler(): void {
+        // router.push('/dynamic-links')
+        router.push({
+            pathname: "/dynamic-links",
+            query: { id: "123" }
+        })
+    }
 
     useEffect(() => {
         notify();
-        setTimeout(() => { redirectHandler() }, 3000);
+        setTimeout(() => { redirectHandler() }, 2500);
     }, [])
 
 
