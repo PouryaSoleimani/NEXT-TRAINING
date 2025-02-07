@@ -1,17 +1,21 @@
 import { useRouter } from 'next/router'
-import React, { useEffect } from 'react'
+import React, { useEffect, useLayoutEffect } from 'react'
 import toast, { Toaster } from 'react-hot-toast';
 
 const RedirectingPage = () => {
 
     const router = useRouter()
-    function redirectHandler(): void { router.push('/dynamic-links') }
+    function redirectHandler(): void {
+        setTimeout(() => {
+            router.push('/dynamic-links')
+        }, 3000);
+    }
     const notify = () => toast.loading('Redirecting to Dynamic Links Page', { duration: 2000, position: "top-right" })
 
     useEffect(() => {
         notify()
-        setTimeout(() => { redirectHandler() }, 3000)
-    }, [notify])
+        redirectHandler()
+    }, [])
 
     return (
         <>
