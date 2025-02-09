@@ -12,7 +12,7 @@ const Params = () => {
     const BUTTON = styled.button`   background-color : purple;   border-radius : 15px;   font-size : 40px;   margin : 10px auto ;   border : 3px solid purple;   padding : 6px;   color : white ;`
 
     function logger() { console.log("HELLO HELLO") }
-    //^ RETURN
+    // RETURN
     return (
         <>
             <div className='text-5xl bg-zinc-900 text-yellow-400 flex flex-col items-center justify-around font-bold p-10'>
