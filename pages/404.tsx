@@ -10,8 +10,8 @@ const NotFound = () => {
 
   return (
     <div className='flex flex-col space-y-2 items-center justify-center h-screen font-extrabold tracking-tighter text-3xl'>
-      <h1 className='bg-zinc-900/50 border-4 border-red-900 backdrop-blur-3xl p-4 rounded-md tracking-widest'>404 ERROR | Not Found</h1>
-      <button onClick={backHandler} className='bg-zinc-900/80 text-2xl p-2 hover:bg-zinc-900 hover:border font-bold rounded-md'>⬅ BACK</button>
+      <h1 className='bg-zinc-900/50 border-4 border-red-900 backdrop-blur-3xl p-4 text-white font-semibold tracking-tighter rounded-xl'>404 ERROR | Not Found</h1>
+      <button onClick={backHandler} className='bg-zinc-900/80 text-3xl p-3 hover:bg-zinc-700 font-bold rounded-xl text-white'>⬅ BACK</button>
     </div>
   )
 }
