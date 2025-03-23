@@ -1,16 +1,23 @@
 import { NextPage, GetStaticProps } from 'next'
 
-interface Props { data: [{ id: number, title: string, price: number }] }
+interface Props {
+  data: [{ id: number, title: string, price: number }]
+}
 type SingleItemType = { id: number, title: string, price: number }
 
 const Test: NextPage<Props> = ({ data }) => {
   return (
-    <div>
-      {data.map(item =>
-        <div key={item.id}>
-          {item.title} - ${item.price}
+    <div className="p-6 font-sans bg-zinc-900 min-h-screen">
+      {data.map((item) => (
+        <div key={item.id} className="border border-zinc-300 rounded-lg p-4 mb-4 shadow-lg bg-black hover:shadow-xl transition-shadow text-white w-96 text-center text-4xl">
+          <h3 className="text-5xl font-semibold text-zinc-100 mb-8">
+            {item.title}
+          </h3>
+          <p className="text-blue-400">
+            Price: <strong className="text-zinc-100">${item.price.toFixed(2)}</strong>
+          </p>
         </div>
-      )}
+      ))}
     </div>
   )
 }
