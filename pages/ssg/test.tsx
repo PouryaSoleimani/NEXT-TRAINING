@@ -18,8 +18,7 @@ const SsgTest: NextPage<Props> = ({ data }) => {
             {item.id} - {item.title.slice(0, 15)} :
             <span className='text-emerald-600'>${item.price}</span>
           </h2>
-        )
-        }
+        )}
       </div>
     </>
   )
