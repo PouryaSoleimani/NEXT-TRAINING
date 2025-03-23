@@ -75,6 +75,7 @@
       "commandCenter.activeBorder": "#fff",
       "editorWidget.background": "#000",
       "editorWidget.border": "#fff",
+      "editorHoverWidget.border": "#fff",
       "editor.wordHighlightBackground": "#464646ef",
       "editor.wordHighlightBorder": "#00000000",
       "titleBar.activeForeground": "#fff",
@@ -84,7 +85,8 @@
       "commandCenter.inactiveBorder": "#fafafa",
       "commandCenter.activeForeground": "#fafafa",
       "quickInput.background": "#000",
-      "quickInput.foreground": "#fff"
+      "quickInput.foreground": "#fff",
+      "inputOption.activeBorder": "#fff",
     },
     "[TheDarkerOne]": {
       "editor.background": "#1e1e1e",
