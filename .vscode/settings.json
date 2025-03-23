@@ -25,8 +25,6 @@
   //^ WORKBENCH COLOR CUSTOMIZATIONS
   "workbench.colorCustomizations": {
     "[Next Dark Pro]": {
-      // "editor.background": "#0b0c0d",
-      // "editor.background": "#141414",
       "editor.background": "#0A0A0A",
       "editor.foldBackground": "#000000ad",
       "editorGutter.background": "#0A0A0A",
@@ -1772,7 +1770,7 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "editor.columnSelection": false,
-  "workbench.colorTheme": "Next Dark Pro",
+  "workbench.colorTheme": "Subaru (Dark)",
   "terminal.integrated.fontSize": 17,
   "terminal.integrated.fontLigatures.enabled": true,
   "gitlens.advanced.messages": {

@@ -1,36 +1,30 @@
-//SSG TEST PAGE _____________________________________________________________________________________________________________________________
-import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
 
 interface Props { data: [{ id: number, title: string, price: number }] }
 type SingleItemType = { id: number, title: string, price: number }
 
-
-
-// COMPONENT
-const SsgTest: NextPage<Props> = ({ data }) => {
+const Test: NextPage<Props> = ({ data }) => {
   return (
-    <>
-      <h1 className='text-5xl font-extrabold bg-slate-900 text-center py-4'>SSG TEST PAGE</h1>
-      <div className='text-2xl font-semibold space-y-4'>
-        {data.map((item: SingleItemType) =>
-          <h2 key={item.id} className='hover:bg-slate-100 hover:text-black duration-300 cursor-pointer'>
-            {item.id} - {item.title.slice(0, 15)} :
-            <span className='text-emerald-600'>${item.price}</span>
-          </h2>
-        )}
-      </div>
-    </>
+    <div>
+      {data.map(item =>
+        <div key={item.id}>
+          {item.title} - ${item.price}
+        </div>
+      )}
+    </div>
   )
 }
 
-// STATIC PROPS
 export const getStaticProps: GetStaticProps = async (ctx) => {
-  const request = axios.get('https://fakestoreapi.com/products')
-  const data = (await request).data
-
-  return { props: { data }, }
-
+  const data = [
+    { id: 1, title: 'First Item', price: 100 },
+    { id: 2, title: 'Second Item', price: 200 },
+    { id: 3, title: 'Third Item', price: 300 },
+    { id: 4, title: 'Fourth Item', price: 400 },
+  ]
+  return {
+    props: { data: data },
+  }
 }
 
-export default SsgTest
+export default Test
