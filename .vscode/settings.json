@@ -1753,7 +1753,7 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "editor.columnSelection": false,
-  "workbench.colorTheme": "Meteora",
+  "workbench.colorTheme": "Next Dark Pro",
   "terminal.integrated.fontSize": 17,
   "terminal.integrated.fontLigatures.enabled": true,
   "gitlens.advanced.messages": {
@@ -1766,10 +1766,6 @@
   "betterFolding.showFoldedBodyLinesCount": false,
   "workbench.activityBar.location": "top",
   "workbench.sideBar.location": "right",
-  "helium-icon-theme.activeIconPack": "react_redux",
-  "helium-icon-theme.folders.color": "#fff",
-  "helium-icon-theme.hidesExplorerArrows": true,
-  "helium-icon-theme.showUpdateMessage": true,
   "bracketPairColorizer.consecutivePairColors": [
     "()",
     "[]",
@@ -1788,10 +1784,6 @@
     "foldMode": "best",
     "unfoldMode": "parent"
   },
-  "vsicons.presets.hideExplorerArrows": true,
-  "vikings-icon-theme.folders.theme": "specific",
-  "vikings-icon-theme.activeIconPack": "react_redux",
-  "vikings-icon-theme.hidesExplorerArrows": true,
   "workbench.productIconTheme": "material-product-icons",
   "window.commandCenter": false,
   "github.copilot.chat.editor.temporalContext.enabled": true,
