@@ -17,7 +17,8 @@ const SsgTest: NextPage<Props> = ({ data }) => {
           <h2 key={item.id} className='hover:bg-slate-100 hover:text-black duration-300 cursor-pointer'>
             {item.id} - {item.title.slice(0, 15)} :
             <span className='text-emerald-600'>${item.price}</span>
-          </h2>)
+          </h2>
+        )
         }
       </div>
     </>
