@@ -28,8 +28,8 @@ const Index: NextPage<PropsType> = ({ products }) => {
       </div>
 
       <div className='flex items-center justify-center'>
-        <Link href='/' className='bg-green-400 flex items-center gap-2 rounded-md p-4 border-8 border-zinc-600 text-black text-2xl font-bold mx-auto'><Home size={32} strokeWidth={2.5} />HOME PAGE</Link>
-        <Link href='/ssg/product-notfound' className='bg-red-400 flex items-center gap-2 rounded-md p-4 border-8 border-zinc-600 text-black text-2xl font-bold mx-auto'><ShieldX size={32} strokeWidth={2.5} />NOT FOUND PAGE</Link>
+        <Link href='/' className='bg-green-400 flex items-center gap-2 rounded-xl p-4 border-4 border-zinc-600 text-black text-2xl font-bold mx-auto no-underline'><Home size={32} strokeWidth={2.5} />HOME PAGE</Link>
+        <Link href='/ssg/product-notfound' className='bg-red-400 flex items-center gap-2 rounded-xl p-4 border-4 border-zinc-600 text-black text-2xl font-bold mx-auto no-underline'><ShieldX size={32} strokeWidth={2.5} />NOT FOUND PAGE</Link>
       </div>
     </>
   )
