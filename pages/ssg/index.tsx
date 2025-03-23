@@ -17,7 +17,7 @@ const Index: NextPage<PropsType> = ({ products }) => {
         {products.map(item =>
           <div key={item.id}>
             <h1 className='py-2' >
-              <Link href={`/ssg/${item.id}`} className='hover:bg-zinc-200 hover:text-black p-2 rounded-md'>
+              <Link href={`/ssg/${item.id}`} className='hover:bg-black hover:text-black p-2 rounded-md decoration-none no-underline text-white tracking-tighter font-semibold'>
                 {item.id} - {item.title.slice(0, 20)} - {item.price}$-
                 {Array(Math.ceil(item.rating.rate)).fill(0).map(item => ('🤍'))}
                 {Array((5 - Math.ceil(item.rating.rate))).fill(0).map(item => ('🖤'))}
