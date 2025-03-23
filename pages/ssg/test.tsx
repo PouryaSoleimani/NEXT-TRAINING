@@ -1,4 +1,4 @@
-//^ SSG TEST PAGE _____________________________________________________________________________________________________________________________
+//SSG TEST PAGE _____________________________________________________________________________________________________________________________
 import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
 
@@ -7,7 +7,7 @@ type SingleItemType = { id: number, title: string, price: number }
 
 
 
-//^ COMPONENT
+// COMPONENT
 const SsgTest: NextPage<Props> = ({ data }) => {
   return (
     <>
@@ -24,7 +24,7 @@ const SsgTest: NextPage<Props> = ({ data }) => {
   )
 }
 
-// ^ STATIC PROPS
+// STATIC PROPS
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const request = axios.get('https://fakestoreapi.com/products')
   const data = (await request).data
