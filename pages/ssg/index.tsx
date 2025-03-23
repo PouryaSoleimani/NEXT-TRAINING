@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { Home } from 'lucide-react';
 import { ShieldX } from 'lucide-react';
 //PROPS TYPE
-interface PropsType { products: [ { id: number, title: string, price: number, description: string, category: string, image: string, rating: { rate: number, count: number } } ], }
+interface PropsType { products: [{ id: number, title: string, price: number, description: string, category: string, image: string, rating: { rate: number, count: number } }], }
 
 //^ COMPONENT
 const Index: NextPage<PropsType> = ({ products }) => {
@@ -36,7 +36,7 @@ const Index: NextPage<PropsType> = ({ products }) => {
 }
 
 
-//^ STATIC SITE GENERATION ( SSG ) (ONLY RUNS ON SERVER SIDE)
+//^ STATIC SITE GENERATION ( SSG ) (ONLY RUNS ON SERVER SIDE) ====================================================================================================================
 export const getStaticProps: GetStaticProps = async (ctx) => {
   //-> 1 - FETCHING DATA AND SENDING IT TO THE COMPONENT ABOVE ...
   const request = axios.get('https://fakestoreapi.com/products?limit=7');
