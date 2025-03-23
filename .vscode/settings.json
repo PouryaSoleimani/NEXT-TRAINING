@@ -85,6 +85,7 @@
       "quickInput.background": "#000",
       "quickInput.foreground": "#fff",
       "inputOption.activeBorder": "#fff",
+      "input.foreground": "#fff",
     },
     "[Vercel (Dark)]": {
       "editor.lineHighlightBackground": "#000000bf",
