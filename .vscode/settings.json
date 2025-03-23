@@ -1,7 +1,7 @@
 {
-  "editor.fontFamily": "calibri",
+  "editor.fontFamily": "Calibri",
   "editor.fontWeight": "900",
-  "editor.letterSpacing": 0.2,
+  "editor.letterSpacing": 0.3,
   "editor.lineNumbers": "on",
   "workbench.iconTheme": "material-icon-theme",
   "editor.minimap.enabled": false,
@@ -87,6 +87,34 @@
       "quickInput.background": "#000",
       "quickInput.foreground": "#fff",
       "inputOption.activeBorder": "#fff",
+    },
+    "[Vercel (Dark)]": {
+      "editor.lineHighlightBackground": "#000000bf",
+      "editor.selectionBackground": "#4d4d4dc7",
+      "editor.foldBackground": "#00000098",
+      "button.background": "#0c7505",
+      "button.hoverBackground": "#076900",
+      "button.border": "#065317",
+      "button.foreground": "#fff",
+      "button.secondaryBackground": "#0c7505",
+      "button.secondaryForeground": "#fff",
+      "button.secondaryHoverBackground": "#0c7505",
+      "foreground": "#fff",
+      "sideBar.foreground": "#fafafaee",
+      "commandCenter.foreground": "#fff",
+      "activityBar.foreground": "#fff",
+      "icon.foreground": "#fff",
+      "sideBarTitle.foreground": "#fafafa",
+      "activityBarBadge.background": "#0077ff",
+      "activityBarBadge.foreground": "#fff",
+      "titleBar.activeForeground": "#fff",
+      "titleBar.inactiveForeground": "#fff",
+      "activityBar.border": "#fafafa",
+      "activityBar.activeBackground": "#000000",
+      "activityBarTop.foreground": "#fff",
+      "activityBar.activeBorder": "#fafafa",
+      "input.border": "#616060ee",
+      "input.background": "#0a0a0a",
     },
     "[TheDarkerOne]": {
       "editor.background": "#1e1e1e",
@@ -389,19 +417,6 @@
       "sideBarActivityBarTop.border": "#2e2e2e",
       "sideBar.border": "#2e2e2e",
       "editorGroupHeader.tabsBorder": "#2e2e2e"
-    },
-    "[Vercel (Dark)]": {
-      "editor.lineHighlightBackground": "#000000bf",
-      "editor.selectionBackground": "#4d4d4dc7",
-      "editor.foldBackground": "#00000098",
-      "button.background": "#0c7505",
-      "button.hoverBackground": "#076900",
-      "button.border": "#065317",
-      "button.foreground": "#fff",
-      "button.secondaryBackground": "#0c7505",
-      "button.secondaryForeground": "#fff",
-      "button.secondaryHoverBackground": "#0c7505",
-      "foreground": "#fff"
     },
     "[Min Dark]": {
       // "editor.background": "#100f0f",
@@ -1519,14 +1534,14 @@
             "string"
           ],
           "settings": {
-            // "foreground": "#A5D6FF"
+            "foreground": "#A5D6FF"
             // "foreground": "#5aabfd"
-            "foreground": "#74b0ec"
+            // "foreground": "#74b0ec"
           }
         },
         {
           "scope": [
-            "support.class.component"
+            "support.class.component",
           ],
           "settings": {
             "foreground": "#F5C876"
@@ -1547,7 +1562,11 @@
             "constant.numeric.css",
             "support.constant.property-value.css",
             "support.constant.vendored.property-value.css",
-            "punctuation.definition.string"
+            "punctuation.definition.string",
+            "meta.embedded.expression",
+            "variable.other.object.property.tsx",
+            "variable.other.object.property.jsx",
+            "variable.other.object.property"
           ],
           "settings": {
             "foreground": "#fff",
@@ -1753,7 +1772,7 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "editor.columnSelection": false,
-  "workbench.colorTheme": "Next Dark Pro",
+  "workbench.colorTheme": "Vercel (Dark)",
   "terminal.integrated.fontSize": 17,
   "terminal.integrated.fontLigatures.enabled": true,
   "gitlens.advanced.messages": {
