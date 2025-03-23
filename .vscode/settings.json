@@ -1129,7 +1129,8 @@
             "support.class.component"
           ],
           "settings": {
-            "foreground": "#ffd586"
+            // "foreground": "#ffd586",
+            "foreground": "#79B8FF",
           }
         },
         {
@@ -1750,7 +1751,7 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "editor.columnSelection": false,
-  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.colorTheme": "Next Dark Pro",
   "terminal.integrated.fontSize": 17,
   "terminal.integrated.fontLigatures.enabled": true,
   "gitlens.advanced.messages": {
