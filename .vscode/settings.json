@@ -27,14 +27,14 @@
     "[Next Dark Pro]": {
       // "editor.background": "#0b0c0d",
       // "editor.background": "#141414",
-      "editor.background": "#090b0e",
+      "editor.background": "#0A0A0A",
       "editor.foldBackground": "#000000ad",
-      "editorGutter.background": "#090b0e",
+      "editorGutter.background": "#0A0A0A",
       "activityBar.activeBorder": "#fafafa",
-      "editorGroup.emptyBackground": "#090b0e",
-      "breadcrumb.background": "#090b0e",
-      "tab.activeBackground": "#090b0e",
-      "tab.activeBorder": "#090b0e",
+      "editorGroup.emptyBackground": "#0A0A0A",
+      "breadcrumb.background": "#0A0A0A",
+      "tab.activeBackground": "#0A0A0A",
+      "tab.activeBorder": "#0A0A0A",
       "tab.activeBorderTop": "#fafafa",
       "tab.border": "#363636",
       "activityBarTop.dropBorder": "#2e2e2e",
@@ -419,7 +419,7 @@
       "editorGroupHeader.tabsBorder": "#2e2e2e"
     },
     "[Min Dark]": {
-      // "editor.background": "#100f0f",
+      "editor.background": "#0A0A0A",
       "editor.foldBackground": "#000000ad",
       "activityBar.activeBorder": "#fafafa",
       "tab.activeBorderTop": "#fafafa",
@@ -1772,7 +1772,7 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "editor.columnSelection": false,
-  "workbench.colorTheme": "Vercel (Dark)",
+  "workbench.colorTheme": "Next Dark Pro",
   "terminal.integrated.fontSize": 17,
   "terminal.integrated.fontLigatures.enabled": true,
   "gitlens.advanced.messages": {

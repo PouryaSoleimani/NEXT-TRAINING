@@ -24,6 +24,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
       { id: 1, title: 'First Item', price: 100 },
       { id: 2, title: 'Second Item', price: 200 },
       { id: 3, title: 'Third Item', price: 300 },
+      { id: 4, title: 'Fourth Item', price: 400 },
    ]
    return {
       props: { data: data },
