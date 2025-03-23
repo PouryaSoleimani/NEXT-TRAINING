@@ -1532,7 +1532,8 @@
             "string"
           ],
           "settings": {
-            "foreground": "#A5D6FF"
+            // "foreground": "#A5D6FF"
+            "foreground": "#a5d5fc"
             // "foreground": "#5aabfd"
             // "foreground": "#74b0ec"
           }
@@ -1770,7 +1771,7 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "editor.columnSelection": false,
-  "workbench.colorTheme": "Subaru (Dark)",
+  "workbench.colorTheme": "GitHub Dark Default",
   "terminal.integrated.fontSize": 17,
   "terminal.integrated.fontLigatures.enabled": true,
   "gitlens.advanced.messages": {
