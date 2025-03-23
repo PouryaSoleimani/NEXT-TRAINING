@@ -3,7 +3,7 @@ import axios from 'axios'
 import { NextPage, GetStaticProps } from 'next'
 import Link from 'next/link'
 
-interface Props { response: [ { id: number, title: string, price: number } ] }
+interface Props { response: [{ id: number, title: string, price: number }] }
 type SingleItemType = { id: number, title: string, price: number }
 
 //COMPONENT
@@ -12,7 +12,7 @@ const Ssg: NextPage<Props> = ({ response }) => {
     <div className='text-2xl flex flex-col space-y-2 font-semibold'>
 
       {response.map((item: SingleItemType) => (
-        <Link href={`/ssg/${item.id}`} key={item.id}>
+        <Link href={`/ssg/${item.id}`} key={item.id} className='no-underline text-white hover:bg-zinc-700 hover:text-black p-2 rounded-xl w-fit'>
           <h2>{item.id} - {item.title} : <span className='text-red-600'>"${item.price}"</span></h2>
         </Link>
       ))}
