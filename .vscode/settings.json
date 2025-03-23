@@ -1533,8 +1533,7 @@
             "string"
           ],
           "settings": {
-            // "foreground": "#A5D6FF"
-            "foreground": "#a5d5fc"
+            "foreground": "#A5D6FF"
             // "foreground": "#5aabfd"
             // "foreground": "#74b0ec"
           }
