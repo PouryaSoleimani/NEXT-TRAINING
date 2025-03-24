@@ -1341,7 +1341,7 @@
     "[javascriptreact]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
     "editor.columnSelection": false,
     "workbench.colorTheme": "Vercel (Dark)",
-    "terminal.integrated.fontSize": 17,
+    "terminal.integrated.fontSize": 16,
     "terminal.integrated.fontLigatures.enabled": true,
     "gitlens.advanced.messages": { "suppressCreatePullRequestPrompt": true },
     "editor.codeActions.triggerOnFocusChange": true,
