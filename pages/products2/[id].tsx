@@ -14,7 +14,8 @@ const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
 
 
    return (
-      <section className='w-screen h-screen flex items-center justify-center flex-col gap-y-3'>
+      <section className='w-screen h-screen flex items-center justify-center flex-col gap-y-8'>
+         <h2 className='relative bg-white bg-opacity-10 backdrop-blur-xl w-full text-center  shadow-lg p-3 flex flex-col justify-center font-black text-white'>SINGLE PRODUCT PAGE</h2>
          <GlassMorphismCard product={product} />
          <BackButton />
       </section >
