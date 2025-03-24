@@ -5,7 +5,7 @@ import { Button, Card, Flex, Tooltip } from 'antd';
 import { Search, SearchIcon, ShoppingBasket } from 'lucide-react';
 
 interface Props { products: [{ id: number, title: string, price: number, category: string, image: string }] }
-type SingleProductType = { id: number, title: string, price: number, category: string, image: string }
+export type SingleProductType = { id: number, title: string, price: number, category: string, image: string }
 
 //  COMPONENT
 const Products2Page: NextPage<Props> = ({ products }) => {

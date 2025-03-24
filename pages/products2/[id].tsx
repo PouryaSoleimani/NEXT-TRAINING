@@ -3,6 +3,7 @@ import { SkipBack } from 'lucide-react'
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { SingleProductType } from '.'
 
 interface Props { ID: number, product: { id: number, title: string, price: string } }
 
@@ -45,17 +46,24 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
 // Get Static Paths
 export const getStaticPaths: GetStaticPaths = async () => {
-
-   const paths = [
+   // STATIC WAY
+   const pathsStatic = [
       { params: { id: "1" } },
       { params: { id: "2" } },
       { params: { id: "3" } },
       { params: { id: "4" } },
       { params: { id: "5" } },
    ]
-
+   // DYNAMIC WAY
+   const request = await fetch(`https://fakestoreapi.com/products`)
+   const products = await request.json()
+   const pathsDynamic = products.map((product: SingleProductType) => {
+      return {
+         paths: { id: product.id }
+      }
+   })
    return {
-      paths,
+      paths: pathsDynamic,
       fallback: false,
    }
 }
