@@ -20,7 +20,7 @@
     "terminal.integrated.fontLigatures": true,
     "editor.linkedEditing": true,
     "liveServer.settings.donotShowInfoMsg": true,
-    "editor.lineHeight": 1.7,
+    "editor.lineHeight": 1.6,
     "editor.fontSize": 12,
     "breadcrumbs.icons": true,
     "terminal.integrated.mouseWheelZoom": true,
