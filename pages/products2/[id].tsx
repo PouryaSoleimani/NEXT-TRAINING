@@ -55,16 +55,15 @@ export const getStaticPaths: GetStaticPaths = async () => {
       { params: { id: "5" } },
    ]
    // DYNAMIC WAY
-   const request = await fetch(`https://fakestoreapi.com/products`)
+   const request = await fetch("https://fakestoreapi.com/products?limit=10")
    const products = await request.json()
    const pathsDynamic = products.map((product: SingleProductType) => {
       return {
-         paths: { id: product.id }
+         params: { id: product.id.toString() }
       }
    })
-
    return {
-      paths: pathsDynamic,
+      paths: [],
       fallback: false,
    }
 }
