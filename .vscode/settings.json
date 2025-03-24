@@ -1137,7 +1137,7 @@
                         "meta.embedded.expression",
                         "variable.other.object.property.tsx",
                         "variable.other.object.property.jsx",
-                        "variable.other.object.property",
+                        "variable.other.object.property"
                     ],
                     "settings": { "foreground": "#fff", "fontStyle": "bold" }
                 }
