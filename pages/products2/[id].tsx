@@ -29,7 +29,7 @@ const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
    )
 }
 
-// Get Static Props
+// Get Static Props ==================================================================================================================================
 export const getStaticProps: GetStaticProps = async (context) => {
    //  GETTING THE DYNAMIC ROUTE PARAMS FROM CONTEXT
    const ID = context.params?.id;
@@ -43,7 +43,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
    }
 }
 
-// Get Static Paths
+// Get Static Paths =================================================================================================================================
 export const getStaticPaths: GetStaticPaths = async () => {
    // STATIC WAY
    const pathsStatic = [
