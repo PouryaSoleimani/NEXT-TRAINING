@@ -37,17 +37,20 @@ export const getStaticProps: GetStaticProps = async (context) => {
    const product = await request.json()
 
    return {
-      props: {
-         ID: ID,
-         product: product
-      },
+      props: { ID: ID, product: product },
    }
 }
 
 // Get Static Paths
 export const getStaticPaths: GetStaticPaths = async () => {
+   const paths = [
+      { params: { id: "1" } },
+      { params: { id: "2" } },
+      { params: { id: "3" } },
+   ]
+
    return {
-      paths: [],
+      paths,
       fallback: false,
    }
 }
