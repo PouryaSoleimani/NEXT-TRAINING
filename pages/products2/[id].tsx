@@ -2,10 +2,14 @@ import { Button, Tooltip } from 'antd'
 import { SkipBack } from 'lucide-react'
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 interface Props { ID: number, product: { id: number, title: string, price: string } }
 
 const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
+   const router = useRouter()
+   function goBackHandler() { router.back() }
+
    return (
       <section className='w-screen h-screen flex items-center justify-center flex-col gap-y-5'>
 
@@ -18,9 +22,7 @@ const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
          </div>
 
          <Tooltip title="Back" >
-            <Link href={"/products2"}>
-               <Button type="primary" icon={<SkipBack className='w-5 h-5' />} className='tracking-tighter'>BACK</Button>
-            </Link>
+            <Button onClick={goBackHandler} type="primary" icon={<SkipBack className='w-5 h-5' />} className='tracking-tighter'>BACK</Button>
          </Tooltip>
 
       </section >
@@ -47,6 +49,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
       { params: { id: "1" } },
       { params: { id: "2" } },
       { params: { id: "3" } },
+      { params: { id: "4" } },
+      { params: { id: "5" } },
    ]
 
    return {
