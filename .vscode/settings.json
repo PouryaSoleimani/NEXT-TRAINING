@@ -20,7 +20,7 @@
     "terminal.integrated.fontLigatures": true,
     "editor.linkedEditing": true,
     "liveServer.settings.donotShowInfoMsg": true,
-    "editor.lineHeight": 1.50,
+    "editor.lineHeight": 1.5,
     "editor.fontSize": 12,
     "breadcrumbs.icons": true,
     "terminal.integrated.mouseWheelZoom": true,
@@ -1137,7 +1137,7 @@
                         "meta.embedded.expression",
                         "variable.other.object.property.tsx",
                         "variable.other.object.property.jsx",
-                        "variable.other.object.property"
+                        "variable.other.object.property",
                     ],
                     "settings": { "foreground": "#fff", "fontStyle": "bold" }
                 }
@@ -1318,7 +1318,7 @@
     "workbench.editor.editorActionsLocation": "titleBar",
     "[javascriptreact]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
     "editor.columnSelection": false,
-    "workbench.colorTheme": "Vercel (Dark)",
+    "workbench.colorTheme": "Next Dark Pro",
     "terminal.integrated.fontSize": 17,
     "terminal.integrated.fontLigatures.enabled": true,
     "gitlens.advanced.messages": { "suppressCreatePullRequestPrompt": true },
