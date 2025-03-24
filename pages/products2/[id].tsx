@@ -8,10 +8,10 @@ import GlassMorphismCard from "@/COMPONENTS/FOOTER/GlassMorphismCard"
 import BackButton from '@/COMPONENTS/FOOTER/BackButton'
 interface Props { ID: number, product: { id: number, title: string, price: string, image: string } }
 
+
+
+// COMPONENT =======================================================================================================================================
 const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
-
-
-
 
    return (
       <section className='w-screen h-screen flex items-center justify-center flex-col gap-y-8'>
