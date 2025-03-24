@@ -1,14 +1,24 @@
-import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
-import { SingleProductType } from '.'
-import GlassMorphismCard from "@/COMPONENTS/FOOTER/GlassMorphismCard"
-import BackButton from '@/COMPONENTS/FOOTER/BackButton'
+import BackButton from '@/COMPONENTS/FOOTER/BackButton';
+import GlassMorphismCard from '@/COMPONENTS/FOOTER/GlassMorphismCard';
+import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
+import { SingleProductType } from '.';
+import { useRouter } from 'next/router';
+import { Alert, Spin } from 'antd';
 interface Props { ID: number, product: { id: number, title: string, price: string, image: string } }
 
 
 
 // COMPONENT =======================================================================================================================================
 const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
+   const router = useRouter()
 
+   if (router.isFallback) {
+      return (
+         <Spin tip="Loading...">
+            <Alert message="Alert message title" description="Further details about the context of this alert." type="info" />
+         </Spin>
+      )
+   }
    return (
       <section className='w-screen h-screen flex items-center justify-center flex-col gap-y-8'>
          <h2 className='relative bg-white bg-opacity-10 backdrop-blur-xl w-full text-center  shadow-lg p-3 flex flex-col justify-center font-black text-white'>SINGLE PRODUCT PAGE</h2>
@@ -47,13 +57,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
    const request = await fetch("https://fakestoreapi.com/products?limit=10")
    const products = await request.json()
 
-   const pathsDynamic = products.map((product: SingleProductType) => {
+   const pathsDynamic = products.slice(0, 5).map((product: SingleProductType) => {
       return { params: { id: product.id.toString() } }
    })
 
    return {
       paths: pathsDynamic,
-      fallback: false,
+      fallback: true,
    }
 }
 

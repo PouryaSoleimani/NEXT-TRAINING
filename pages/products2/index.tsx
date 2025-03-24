@@ -1,8 +1,8 @@
 import { NextPage, GetStaticProps } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Button, Card, Flex, Tooltip } from 'antd';
-import { Search, SearchIcon, ShoppingBasket } from 'lucide-react';
+import { Button, Card, Tooltip } from 'antd';
+import { ShoppingBasket } from 'lucide-react';
 
 interface Props { products: [{ id: number, title: string, price: number, category: string, image: string }] }
 export type SingleProductType = { id: number, title: string, price: number, category: string, image: string }
