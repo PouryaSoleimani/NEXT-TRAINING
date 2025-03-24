@@ -8,6 +8,7 @@ import Image from 'next/image'
 interface Props { ID: number, product: { id: number, title: string, price: string, image: string } }
 
 const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
+
    const router = useRouter()
    function goBackHandler() { router.back() }
 
@@ -21,7 +22,7 @@ const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
          </div>
 
          <div className='flex items-center justify-center text-zinc-200 font-bold text-3xl'>
-            <h2 className='font-bold bg-cyan-900 px-16 py-3 rounded-xl w-[28rem]'> {product?.title.slice(0, 12)} : ${product?.price}</h2>
+            <h2 className='font-bold bg-cyan-900 px-16 py-3 rounded-xl w-[28rem] whitespace-nowrap'> {product?.title.slice(0, 12)} : ${product?.price}</h2>
          </div>
 
          <Tooltip title="Back" >
