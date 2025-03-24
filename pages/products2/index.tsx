@@ -37,3 +37,10 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 export default Index
+
+
+// GET STATIC PROPS FUNCTION :
+//  1. Only runs on Server Side
+//  2. Security
+//  3. Can Run Node.js Files
+//  4.Only Can Be in page/ Folder
