@@ -6,6 +6,9 @@ type SingleProductType = { id: number, title: string, price: number, category: s
 
 //  COMPONENT
 const Index: NextPage<Props> = ({ products }) => {
+
+   console.info("%c HELLO", "color : yellow ; font-size : 20px")
+
    return (
       <>
          <h1 className='bg-zinc-800 text-center py-3 text-black font-bold border-b-4 border-white'>PRODUCTS</h1>
