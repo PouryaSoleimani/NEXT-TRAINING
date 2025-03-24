@@ -18,7 +18,7 @@ const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
          </div>
 
          <Tooltip title="Back" >
-            <Link href={"/products2"}>F
+            <Link href={"/products2"}>
                <Button type="primary" icon={<SkipBack className='w-5 h-5' />} className='tracking-tighter'>BACK</Button>
             </Link>
          </Tooltip>

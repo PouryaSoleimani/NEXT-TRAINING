@@ -1,5 +1,7 @@
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
 
 /*! LALEZAR FONT */
@@ -14,7 +16,7 @@
   --background-end-rgb: #000;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme:dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -25,11 +27,11 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  to bottom,
+  transparent,
+  rgb(var(--background-end-rgb))
+  )
+  rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
@@ -190,4 +192,8 @@ body {
   color: #3b3a3a;
   text-align: center;
   font-family: monospace;
+}
+
+.ant-card-body {
+  padding: 8px !important;
 }
