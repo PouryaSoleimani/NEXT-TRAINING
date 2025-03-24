@@ -1,3 +1,5 @@
+import { Button, Tooltip } from 'antd'
+import { SkipBack } from 'lucide-react'
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
 import Link from 'next/link'
 
@@ -12,8 +14,13 @@ const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
          <div className='flex items-center justify-center text-zinc-200 font-bold text-5xl'>
             <h2 className='font-bold bg-zinc-900 px-5 py-10 rounded-md'> {product?.title.slice(0, 10)} : ${product?.price}</h2>
          </div>
-         <Link href={"/products2"} className='btn btn-secondary'>BACK</Link>
-      </section>
+         <Tooltip title="Back" >
+            <Link href={"/products2"}>
+               <Button type="primary" icon={<SkipBack className='w-5 h-5' />} className='tracking-tighter'>BACK</Button>
+            </Link>
+         </Tooltip>
+
+      </section >
    )
 }
 
