@@ -1,9 +1,5 @@
-import { Button, Tooltip } from 'antd'
-import { ShoppingBasket, SkipBack } from 'lucide-react'
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
-import { useRouter } from 'next/router'
 import { SingleProductType } from '.'
-import Image from 'next/image'
 import GlassMorphismCard from "@/COMPONENTS/FOOTER/GlassMorphismCard"
 import BackButton from '@/COMPONENTS/FOOTER/BackButton'
 interface Props { ID: number, product: { id: number, title: string, price: string, image: string } }
