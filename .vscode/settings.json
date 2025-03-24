@@ -1117,6 +1117,8 @@
                     "settings": { "foreground": "#7EE787" }
                 },
                 { "scope": [ "string" ], "settings": { "foreground": "#A5D6FF" }},
+                { "scope": [ "support.type.primitive" ,"variable.other.readwrite.tsx", "variable.other.readwrite.jsx"], "settings": { "foreground": "#79B8FF" }},
+                { "scope": [ "entity.name.type.tsx" ], "settings": { "foreground": "#B675F1" }},
                 { "scope": [ "support.class.component" ], "settings": { "foreground": "#F5C876" }},
                 {
                     "scope": [
@@ -1318,7 +1320,7 @@
     "workbench.editor.editorActionsLocation": "titleBar",
     "[javascriptreact]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
     "editor.columnSelection": false,
-    "workbench.colorTheme": "Next Dark Pro",
+    "workbench.colorTheme": "Vercel (Dark)",
     "terminal.integrated.fontSize": 17,
     "terminal.integrated.fontLigatures.enabled": true,
     "gitlens.advanced.messages": { "suppressCreatePullRequestPrompt": true },
