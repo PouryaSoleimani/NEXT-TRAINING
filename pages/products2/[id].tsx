@@ -14,7 +14,9 @@ const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
 
    if (router.isFallback) {
       return (
-         <Spin tip="Loading..." className='w-96 mx-auto'></Spin>
+         <div className='w-screen h-screen flex items-center justify-center'>
+            <Spin tip="Loading..." className='w-96 mx-auto'></Spin>
+         </div>
       )
    }
    return (
@@ -61,7 +63,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
    return {
       paths: pathsDynamic,
-      fallback: 'blocking',
+      fallback: true,
    }
 }
 
