@@ -20,8 +20,8 @@
     "terminal.integrated.fontLigatures": true,
     "editor.linkedEditing": true,
     "liveServer.settings.donotShowInfoMsg": true,
-    "editor.lineHeight": 1.5,
-    "editor.fontSize": 12,
+    "editor.lineHeight": 1.45,
+    "editor.fontSize": 15,
     "breadcrumbs.icons": true,
     "terminal.integrated.mouseWheelZoom": true,
     "workbench.colorCustomizations": {
@@ -1127,7 +1127,10 @@
                     "settings": { "foreground": "#7EE787" }
                 },
                 { "scope": [ "string" ], "settings": { "foreground": "#A5D6FF" }},
-                { "scope": [ "support.type.primitive", "variable.other.readwrite.tsx", "variable.other.readwrite.jsx" ],  "settings": { "foreground": "#79B8FF" }},
+                {
+                    "scope": [ "support.type.primitive", "variable.other.readwrite.tsx", "variable.other.readwrite.jsx" ],
+                    "settings": { "foreground": "#79B8FF" }
+                },
                 { "scope": [ "entity.name.type.tsx" ], "settings": { "foreground": "#B675F1" }},
                 { "scope": [ "support.class.component" ], "settings": { "foreground": "#F5C876" }},
                 {
@@ -1182,7 +1185,6 @@
                 {
                     "scope": [
                         "variable.other",
-                        // "variable.parameter",
                         "variable.other.property",
                         "meta.jsx.children.js",
                         "meta.jsx.children.jsx",
@@ -1334,7 +1336,7 @@
     "workbench.editor.editorActionsLocation": "titleBar",
     "[javascriptreact]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
     "editor.columnSelection": false,
-    "workbench.colorTheme": "Vercel (Dark)",
+    "workbench.colorTheme": "Min Dark",
     "terminal.integrated.fontSize": 17,
     "terminal.integrated.fontLigatures.enabled": true,
     "gitlens.advanced.messages": { "suppressCreatePullRequestPrompt": true },
@@ -1354,7 +1356,7 @@
     ],
     "auto-fold-unfold.onSaved": true,
     "auto-fold-unfold.onEditing": { "enable": false, "foldMode": "best", "unfoldMode": "parent" },
-    "workbench.productIconTheme": "productIconThemes",
+    "workbench.productIconTheme": "material-product-icons",
     "window.commandCenter": false,
     "github.copilot.chat.editor.temporalContext.enabled": true,
     "github.copilot.chat.edits.temporalContext.enabled": true,

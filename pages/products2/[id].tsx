@@ -8,14 +8,17 @@ interface Props { ID: number, product: { id: number, title: string, price: strin
 const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
    return (
       <section className='w-screen h-screen flex items-center justify-center flex-col gap-y-5'>
+
          <div className='flex items-center justify-center text-zinc-200 font-bold text-5xl'>
             <h2 className='font-bold bg-zinc-900 px-5 py-4 rounded-md'> SINGLE PRODUCT # {ID}</h2>
          </div>
+
          <div className='flex items-center justify-center text-zinc-200 font-bold text-5xl'>
             <h2 className='font-bold bg-zinc-900 px-5 py-10 rounded-md'> {product?.title.slice(0, 10)} : ${product?.price}</h2>
          </div>
+
          <Tooltip title="Back" >
-            <Link href={"/products2"}>
+            <Link href={"/products2"}>F
                <Button type="primary" icon={<SkipBack className='w-5 h-5' />} className='tracking-tighter'>BACK</Button>
             </Link>
          </Tooltip>
