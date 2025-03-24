@@ -87,7 +87,7 @@
             "quickInput.foreground": "#fff",
             "inputOption.activeBorder": "#fff",
             "input.foreground": "#fff",
-            "input.background": "#0A0A0A",
+            "input.background": "#2a2a2a",
             "focusBorder": "#fafafa"
         },
         "[Vercel (Dark)]": {
@@ -115,8 +115,7 @@
             "activityBar.activeBackground": "#000000",
             "activityBarTop.foreground": "#fff",
             "activityBar.activeBorder": "#fafafa",
-            "input.border": "#616060ee",
-            "input.background": "#0a0a0a",
+            "input.background": "#2a2a2a",
             "menu.foreground": "#fff",
             "editorWidget.foreground": "#fff",
             "editorSuggestWidget.background": "#000",
@@ -489,7 +488,8 @@
             "terminal.foreground": "#fff",
             "editorSuggestWidget.background": "#000",
             "editorSuggestWidget.border": "#656565",
-            "editorSuggestWidget.foreground": "#e8e7e7"
+            "editorSuggestWidget.foreground": "#e8e7e7",
+            "input.background": "#2a2a2a"
         },
         "[Anysphere+ (Dark)]": {
             "editor.foldBackground": "#000000ad",
@@ -1157,7 +1157,7 @@
                     ],
                     "settings": { "foreground": "#fff", "fontStyle": "bold" }
                 },
-                { "scope": [ "punctuation.separator" ], "settings": { "foreground": "#F97583" }}
+                { "scope": [ "punctuation.separator", "meta.template.expression" ], "settings": { "foreground": "#F05B8D" }}
             ]
         },
         "[Min Dark]": {
@@ -1339,7 +1339,7 @@
     "workbench.editor.editorActionsLocation": "titleBar",
     "[javascriptreact]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
     "editor.columnSelection": false,
-    "workbench.colorTheme": "Min Dark",
+    "workbench.colorTheme": "Vercel (Dark)",
     "terminal.integrated.fontSize": 17,
     "terminal.integrated.fontLigatures.enabled": true,
     "gitlens.advanced.messages": { "suppressCreatePullRequestPrompt": true },
