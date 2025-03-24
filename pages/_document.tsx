@@ -5,7 +5,7 @@ import type { DocumentContext } from 'next/document';
 
 
 const MyDocument = () => (
-  <Html lang="en" className='h-screen'>
+  <Html lang="en" className='bg-black'>
     <Head />
     <body className='bg-black'>
       <Main />

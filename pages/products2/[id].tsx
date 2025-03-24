@@ -14,9 +14,7 @@ const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
 
    if (router.isFallback) {
       return (
-         <div className='w-screen h-screen flex items-center justify-center'>
-            <Spin tip="Loading..." className='w-96 mx-auto'></Spin>
-         </div>
+         <Spin tip="Loading..." className='w-96 mx-auto'></Spin>
       )
    }
    return (
