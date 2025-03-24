@@ -1,31 +1,29 @@
 import { NextPage, GetStaticProps } from 'next'
-interface Props { posts: SinglePostType[]; }
-type SinglePostType = { id: number, title: string, body: string }
 
+interface Props {
+   posts: any[];
+}
 
-//^ COMPONENT  
-const SSG: NextPage<Props> = ({ posts }) => {
+const Index: NextPage<Props> = ({ posts }) => {
    return (
-      <div className='font-sans bg-zinc-950 min-h-screen  flex items-center justify-around w-[90%] mx-auto gap-4 flex-wrap p-10'>
-         {posts.map((post: SinglePostType) => (
-            <div key={post.id} className='border-8 border-orange-400  p-4 rounded-lg text-white font-black w-64 h-32 flex items-center justify-center duration-500 hover:scale-110'>
-               {post.title.slice(0, 40)}
+      <div className='flex flex-wrap gap-4 mx-auto items-center justify-around p-10'>
+         {posts.map(post => (
+            <div key={post.id} className='border-2 p-4 my-4 w-64 h-32 flex items-center justify-center flex-col rounded-xl bg-zinc-900'>
+               <h2 className='text-white'>{post.title.slice(0, 10)}</h2>
+               <p className='text-zinc-500'>{post.body.slice(0, 40)}</p>
             </div>
          ))}
       </div>
    )
 }
 
-
-//^ GET STATIC PROPS
 export const getStaticProps: GetStaticProps = async (ctx) => {
    const request = await fetch('https://jsonplaceholder.typicode.com/posts')
    const data = await request.json()
+
    return {
       props: { posts: data },
    }
 }
 
-
-
-export default SSG
+export default Index
