@@ -62,6 +62,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
          paths: { id: product.id }
       }
    })
+
    return {
       paths: pathsDynamic,
       fallback: false,
