@@ -1601,7 +1601,6 @@
             "string.quoted.single.jsx",
             "string.quoted.double.css",
             "string.quoted.single.css"
-
           ],
           "settings": {
             "foreground": "#A5D6FF"
