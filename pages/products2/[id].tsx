@@ -1,7 +1,6 @@
 import { Button, Tooltip } from 'antd'
 import { SkipBack } from 'lucide-react'
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { SingleProductType } from '.'
 
