@@ -1733,7 +1733,7 @@
     "**/Thumbs.db": true
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "GamemodeOne.json-compact-prettier"
   },
   "editor.mouseWheelZoom": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
