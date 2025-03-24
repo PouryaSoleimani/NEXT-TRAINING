@@ -1360,7 +1360,7 @@
     ],
     "auto-fold-unfold.onSaved": true,
     "auto-fold-unfold.onEditing": { "enable": false, "foldMode": "best", "unfoldMode": "parent" },
-    "workbench.productIconTheme": "fluent-icons",
+    "workbench.productIconTheme": "productIconThemes",
     "window.commandCenter": false,
     "github.copilot.chat.editor.temporalContext.enabled": true,
     "github.copilot.chat.edits.temporalContext.enabled": true,
