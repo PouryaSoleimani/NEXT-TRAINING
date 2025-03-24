@@ -4,6 +4,7 @@ interface Props {
    posts: any[];
 }
 
+// COMPONENT
 const Index: NextPage<Props> = ({ posts }) => {
    return (
       <div className='flex flex-wrap gap-4 mx-auto items-center justify-around p-10'>
@@ -17,6 +18,7 @@ const Index: NextPage<Props> = ({ posts }) => {
    )
 }
 
+// GET STATIC PROPS
 export const getStaticProps: GetStaticProps = async (ctx) => {
    const request = await fetch('https://jsonplaceholder.typicode.com/posts')
    const data = await request.json()
