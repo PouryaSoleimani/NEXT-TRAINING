@@ -6,7 +6,7 @@ interface Props { products: [{ id: number, title: string, price: number, categor
 type SingleProductType = { id: number, title: string, price: number, category: string, image: string }
 
 //  COMPONENT
-const Index: NextPage<Props> = ({ products }) => {
+const Products2Page: NextPage<Props> = ({ products }) => {
 
    console.info("%c HELLO", "color : yellow ; font-size : 20px")
 
@@ -40,7 +40,7 @@ export const getStaticProps: GetStaticProps = async () => {
    }
 }
 
-export default Index
+export default Products2Page
 
 
 // GET STATIC PROPS FUNCTION :
