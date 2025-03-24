@@ -3,8 +3,9 @@ import { SkipBack } from 'lucide-react'
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
 import { useRouter } from 'next/router'
 import { SingleProductType } from '.'
+import Image from 'next/image'
 
-interface Props { ID: number, product: { id: number, title: string, price: string } }
+interface Props { ID: number, product: { id: number, title: string, price: string, image: string } }
 
 const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
    const router = useRouter()
@@ -12,6 +13,8 @@ const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
 
    return (
       <section className='w-screen h-screen flex items-center justify-center flex-col gap-y-5'>
+
+         <Image src={product.image} width={200} height={200} alt='product___image' className='rounded-xl' />
 
          <div className='flex items-center justify-center text-zinc-200 font-bold text-5xl'>
             <h2 className='font-bold bg-zinc-900 px-5 py-4 rounded-md'> SINGLE PRODUCT # {ID}</h2>
