@@ -1,4 +1,5 @@
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
+import Link from 'next/link'
 
 interface Props { ID: number, product: { id: number, title: string, price: string } }
 
@@ -11,6 +12,7 @@ const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
          <div className='flex items-center justify-center text-zinc-200 font-bold text-5xl'>
             <h2 className='font-bold bg-zinc-900 px-5 py-10 rounded-md'> {product?.title.slice(0, 10)} : ${product?.price}</h2>
          </div>
+         <Link href={"/products2"} className='btn btn-secondary'>BACK</Link>
       </section>
    )
 }
