@@ -19,7 +19,6 @@
     "terminal.integrated.fontWeight": "900",
     "terminal.integrated.fontLigatures": true,
     "editor.linkedEditing": true,
-    "liveServer.settings.donotShowInfoMsg": true,
     "editor.lineHeight": 1.4,
     "editor.fontSize": 15,
     "breadcrumbs.icons": true,

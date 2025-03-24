@@ -1,34 +1,22 @@
 import { Button, Tooltip } from 'antd'
-import { SkipBack } from 'lucide-react'
+import { ShoppingBasket, SkipBack } from 'lucide-react'
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next'
 import { useRouter } from 'next/router'
 import { SingleProductType } from '.'
 import Image from 'next/image'
-
+import GlassMorphismCard from "@/COMPONENTS/FOOTER/GlassMorphismCard"
+import BackButton from '@/COMPONENTS/FOOTER/BackButton'
 interface Props { ID: number, product: { id: number, title: string, price: string, image: string } }
 
 const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
 
-   const router = useRouter()
-   function goBackHandler() { router.back() }
+
+
 
    return (
       <section className='w-screen h-screen flex items-center justify-center flex-col gap-y-3'>
-
-         <Image src={product.image} width={330} height={100} alt='product___image' className='rounded-xl' />
-
-         <div className='flex items-center justify-center text-zinc-200 font-bold text-3xl'>
-            <h2 className='font-bold bg-zinc-900 px-5 py-4 rounded-xl w-[28rem]'> SINGLE PRODUCT # {ID}</h2>
-         </div>
-
-         <div className='flex items-center justify-center text-zinc-200 font-bold text-3xl'>
-            <h2 className='font-bold bg-cyan-900 px-16 py-3 rounded-xl w-[28rem] whitespace-nowrap'> {product?.title.slice(0, 12)} : ${product?.price}</h2>
-         </div>
-
-         <Tooltip title="Back" >
-            <Button onClick={goBackHandler} type="primary" icon={<SkipBack className='w-5 h-5' />} className='tracking-tighter'>BACK</Button>
-         </Tooltip>
-
+         <GlassMorphismCard product={product} />
+         <BackButton />
       </section >
    )
 }
