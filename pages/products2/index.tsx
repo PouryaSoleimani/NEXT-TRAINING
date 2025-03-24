@@ -29,6 +29,8 @@ export const getStaticProps: GetStaticProps = async () => {
    const request = await fetch("https://fakestoreapi.com/products?limit=10")
    const data = await request.json()
 
+   console.log("DIR NAME ==>", __dirname)
+
    return {
       props: { products: data },
    }
