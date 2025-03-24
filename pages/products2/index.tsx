@@ -22,7 +22,8 @@ const Index: NextPage<Props> = ({ products }) => {
    )
 }
 
-export const getStaticProps: GetStaticProps = async (ctx) => {
+export const getStaticProps: GetStaticProps = async () => {
+
    const request = await fetch("https://fakestoreapi.com/products?limit=10")
    const data = await request.json()
 
