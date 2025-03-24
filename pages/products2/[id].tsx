@@ -63,9 +63,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
    const products = await request.json()
 
    const pathsDynamic = products.map((product: SingleProductType) => {
-      return {
-         params: { id: product.id.toString() }
-      }
+      return { params: { id: product.id.toString() } }
    })
 
    return {
