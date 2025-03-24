@@ -122,7 +122,8 @@
             "editorSuggestWidget.border": "#656565",
             "editorSuggestWidget.foreground": "#e8e7e7",
             "activityBarTop.background": "#000",
-            "activityBarTop.inactiveForeground": "#ffffff"
+            "activityBarTop.inactiveForeground": "#ffffff",
+            "input.border": "#00000000"
         },
         "[TheDarkerOne]": {
             "editor.background": "#1e1e1e",
