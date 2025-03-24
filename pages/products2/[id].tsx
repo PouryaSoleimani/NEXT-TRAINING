@@ -21,7 +21,7 @@ const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
          </div>
 
          <div className='flex items-center justify-center text-zinc-200 font-bold text-3xl'>
-            <h2 className='font-bold bg-zinc-900 px-16 py-10 rounded-xl'> {product?.title.slice(0, 12)} : ${product?.price}</h2>
+            <h2 className='font-bold bg-cyan-900 px-16 py-3 rounded-xl w-[28rem]'> {product?.title.slice(0, 12)} : ${product?.price}</h2>
          </div>
 
          <Tooltip title="Back" >
