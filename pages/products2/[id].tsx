@@ -14,13 +14,13 @@ const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
    return (
       <section className='w-screen h-screen flex items-center justify-center flex-col gap-y-3'>
 
-         <Image src={product.image} width={310} height={200} alt='product___image' className='rounded-xl' />
+         <Image src={product.image} width={330} height={100} alt='product___image' className='rounded-xl' />
 
-         <div className='flex items-center justify-center text-zinc-200 font-bold text-5xl'>
-            <h2 className='font-bold bg-zinc-900 px-5 py-4 rounded-xl'> SINGLE PRODUCT # {ID}</h2>
+         <div className='flex items-center justify-center text-zinc-200 font-bold text-3xl'>
+            <h2 className='font-bold bg-zinc-900 px-5 py-4 rounded-xl w-[28rem]'> SINGLE PRODUCT # {ID}</h2>
          </div>
 
-         <div className='flex items-center justify-center text-zinc-200 font-bold text-5xl'>
+         <div className='flex items-center justify-center text-zinc-200 font-bold text-3xl'>
             <h2 className='font-bold bg-zinc-900 px-16 py-10 rounded-xl'> {product?.title.slice(0, 12)} : ${product?.price}</h2>
          </div>
 
