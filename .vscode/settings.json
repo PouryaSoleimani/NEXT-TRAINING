@@ -26,14 +26,14 @@
   "workbench.colorCustomizations": {
     "[Next Dark Pro]": {
       // "editor.background": "#0a0a0a",
-      "editor.background": "#020202",
+      "editor.background": "#0A0A0A",
       "editor.foldBackground": "#000000ad",
-      "editorGutter.background": "#020202",
+      "editorGutter.background": "#0A0A0A",
       "activityBar.activeBorder": "#fafafa",
-      "editorGroup.emptyBackground": "#020202",
-      "breadcrumb.background": "#020202",
-      "tab.activeBackground": "#020202",
-      "tab.activeBorder": "#020202",
+      "editorGroup.emptyBackground": "#0A0A0A",
+      "breadcrumb.background": "#0A0A0A",
+      "tab.activeBackground": "#0A0A0A",
+      "tab.activeBorder": "#0A0A0A",
       "tab.activeBorderTop": "#fafafa",
       "tab.border": "#363636",
       "activityBarTop.dropBorder": "#7d7c7c",
@@ -1589,7 +1589,19 @@
         {
           "scope": [
             "string",
-            "string.quoted.double.html"
+            "string.quoted.double.html",
+            "string.quoted.single.html",
+            "string.quoted.double.js",
+            "string.quoted.single.js",
+            "string.quoted.double.ts",
+            "string.quoted.single.ts",
+            "string.quoted.double.tsx",
+            "string.quoted.single.tsx",
+            "string.quoted.double.jsx",
+            "string.quoted.single.jsx",
+            "string.quoted.double.css",
+            "string.quoted.single.css"
+            
           ],
           "settings": {
             "foreground": "#A5D6FF"
@@ -1772,7 +1784,7 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "editor.columnSelection": false,
-  "workbench.colorTheme": "Next Dark Pro",
+  "workbench.colorTheme": "Min Dark",
   "terminal.integrated.fontSize": 17,
   "terminal.integrated.fontLigatures.enabled": true,
   "gitlens.advanced.messages": {
@@ -1803,7 +1815,7 @@
     "foldMode": "best",
     "unfoldMode": "parent"
   },
-  "workbench.productIconTheme": "material-product-icons",
+  "workbench.productIconTheme": "productIconThemes",
   "window.commandCenter": false,
   "github.copilot.chat.editor.temporalContext.enabled": true,
   "github.copilot.chat.edits.temporalContext.enabled": true,
