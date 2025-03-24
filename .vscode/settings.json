@@ -1601,7 +1601,7 @@
             "string.quoted.single.jsx",
             "string.quoted.double.css",
             "string.quoted.single.css"
-            
+
           ],
           "settings": {
             "foreground": "#A5D6FF"
@@ -1784,7 +1784,7 @@
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "editor.columnSelection": false,
-  "workbench.colorTheme": "Min Dark",
+  "workbench.colorTheme": "Next Dark Pro",
   "terminal.integrated.fontSize": 17,
   "terminal.integrated.fontLigatures.enabled": true,
   "gitlens.advanced.messages": {
