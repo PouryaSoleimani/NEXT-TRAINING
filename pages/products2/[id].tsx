@@ -25,6 +25,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
    const request = await fetch(`https://fakestoreapi.com/products/${ID}`)
    const product = await request.json()
+
    return {
       props: {
          ID: ID,

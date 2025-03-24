@@ -13,9 +13,9 @@ const Products2Page: NextPage<Props> = ({ products }) => {
    return (
       <>
          <h1 className='bg-zinc-800 text-center py-3 text-black font-bold border-b-4 border-white'>PRODUCTS</h1>
-         <div className='flex justify-around items-center flex-wrap gap-5 my-10'>
+         <div className='flex justify-around items-center flex-wrap gap-3 my-10 px-10'>
             {products.map((product: SingleProductType) => (
-               <Link href={`/products2/${product.id}`}>
+               <Link href={`/products2/${product.id}`} className='hover:scale-105 duration-500 cursor-pointer'>
                   <div key={product.id} className='border-4 rounded-xl w-64 h-80 flex flex-col items-center justify-around p-5 text-lg gap-2'>
                      <Image src={product.image} width={90} height={90} alt='Image' className='w-32 h-32 rounded-md' />
                      <h5 className='whitespace-nowrap text-white font-bold mt-3'>{product.title.slice(0, 20)}</h5>
