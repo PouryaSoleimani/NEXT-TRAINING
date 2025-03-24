@@ -1127,10 +1127,7 @@
                     "settings": { "foreground": "#7EE787" }
                 },
                 { "scope": [ "string" ], "settings": { "foreground": "#A5D6FF" }},
-                {
-                    "scope": [ "support.type.primitive", "variable.other.readwrite.tsx", "variable.other.readwrite.jsx" ],
-                    "settings": { "foreground": "#79B8FF" }
-                },
+                { "scope": [ "support.type.primitive", "variable.other.readwrite.tsx", "variable.other.readwrite.jsx" ],  "settings": { "foreground": "#79B8FF" }},
                 { "scope": [ "entity.name.type.tsx" ], "settings": { "foreground": "#B675F1" }},
                 { "scope": [ "support.class.component" ], "settings": { "foreground": "#F5C876" }},
                 {
@@ -1152,7 +1149,8 @@
                         "meta.embedded.expression",
                         "variable.other.object.property.tsx",
                         "variable.other.object.property.jsx",
-                        "variable.other.object.property"
+                        "variable.other.object.property",
+                        "constant"
                     ],
                     "settings": { "foreground": "#fff", "fontStyle": "bold" }
                 }
@@ -1184,7 +1182,7 @@
                 {
                     "scope": [
                         "variable.other",
-                        "variable.parameter",
+                        // "variable.parameter",
                         "variable.other.property",
                         "meta.jsx.children.js",
                         "meta.jsx.children.jsx",
@@ -1197,7 +1195,8 @@
                         "support.constant.property-value.css"
                     ],
                     "settings": { "foreground": "#fff" }
-                }
+                },
+                { "scope": [ "support.class.component" ], "settings": { "foreground": "#F5C876" }}
             ]
         },
         "[Anysphere+ (Dark)]": {
@@ -1335,7 +1334,7 @@
     "workbench.editor.editorActionsLocation": "titleBar",
     "[javascriptreact]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
     "editor.columnSelection": false,
-    "workbench.colorTheme": "Vercel (Dark)",
+    "workbench.colorTheme": "Min Dark",
     "terminal.integrated.fontSize": 17,
     "terminal.integrated.fontLigatures.enabled": true,
     "gitlens.advanced.messages": { "suppressCreatePullRequestPrompt": true },
