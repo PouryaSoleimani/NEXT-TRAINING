@@ -20,8 +20,7 @@ const SingleProductPage: NextPage<Props> = ({ ID, product }) => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
    //  GETTING THE DYNAMIC ROUTE PARAMS FROM CONTEXT
-   const ID = context.params?.id
-   console.log(ID)
+   const ID = context.params?.id; console.log(ID)
    const request = await fetch(`https://fakestoreapi.com/products/${ID}`)
    const product = await request.json()
    return {
