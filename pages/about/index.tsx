@@ -18,9 +18,9 @@ const Index: NextPage<Props> = ({ posts }) => {
 }
 
 // GET STATIC PROPS ==> ONLY RUNS AT SERVER SIDE
-export const getStaticProps: GetStaticProps = async (ctx) => {
+export const getStaticProps: GetStaticProps = async () => {
 
-   const request = await fetch('https://jsonplaceholder.typicode.com/posts?limit=10')
+   const request = await fetch('https://jsonplaceholder.typicode.com/posts')
    const data = await request.json()
 
    return {
