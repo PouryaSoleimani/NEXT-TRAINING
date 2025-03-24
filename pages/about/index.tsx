@@ -1,9 +1,9 @@
 import { NextPage, GetStaticProps } from 'next'
+interface Props { posts: SinglePostType[]; }
+type SinglePostType = { id: number, title: string, body: string }
 
 
 //^ COMPONENT  
-interface Props { posts: SinglePostType[]; }
-type SinglePostType = { id: number, title: string, body: string }
 const SSG: NextPage<Props> = ({ posts }) => {
    return (
       <div className='p-6 font-sans bg-zinc-950 min-h-screen  flex items-center justify-center gap-4 flex-wrap'>
