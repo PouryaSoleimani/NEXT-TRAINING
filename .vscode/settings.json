@@ -575,8 +575,9 @@
                 { "scope": [ "support.type.property-name" ], "settings": { "foreground": "#fff", "fontStyle": "" }},
                 {
                     "scope": [ "entity.other.attribute-name.class.css" ],
-                    "settings": { "foreground": "#eb9c52", "fontStyle": "bold" }
-                }
+                    "settings": { "foreground": "#61AFEF", "fontStyle": "bold" }
+                },
+                { "scope": [ "variable.other.readwrite.tsx" ], "settings": { "foreground": "#E5C07B", "fontStyle": "bold" }}
             ]
         },
         "[Min Theme+]": {

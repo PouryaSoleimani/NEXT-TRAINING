@@ -4,8 +4,8 @@
 
 /*! LALEZAR FONT */
 @font-face {
-  font-family: "LALEZAR";
-  src: url("/fonts/Lalezar-Regular.ttf") format("opentype") tech(color-COLRv1);
+  font-family: 'LALEZAR';
+  src: url('/fonts/Lalezar-Regular.ttf') format('opentype') tech(color-COLRv1);
 }
 
 :root {
