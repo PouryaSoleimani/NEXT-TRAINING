@@ -28,6 +28,8 @@ const Products2Page: NextPage<Props> = ({ products }) => {
    )
 }
 
+
+// 1 :
 export const getStaticProps: GetStaticProps = async () => {
 
    const request = await fetch("https://fakestoreapi.com/products?limit=10")
