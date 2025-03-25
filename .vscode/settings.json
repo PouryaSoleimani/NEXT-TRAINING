@@ -1319,7 +1319,6 @@
     "editor.defaultColorDecorators": "auto",
     "editor.experimentalInlineEdit.backgroundColoring": true,
     "workbench.preferredDarkColorTheme": "Next Dark Pro",
-    "redhat.telemetry.enabled": true,
     "[javascript]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
     "RainbowBrackets.depreciation-notice": false,
     "material-icon-theme.folders.color": "#a2773c",
@@ -1333,7 +1332,6 @@
     "editor.guides.bracketPairsHorizontal": false,
     "tabnine.experimentalAutoImports": true,
     "autoimport.doubleQuotes": true,
-    "better-comments.highlightPlainText": true,
     "material-icon-theme.activeIconPack": "react_redux",
     "material-icon-theme.folders.theme": "specific",
     "search.exclude": {
@@ -1412,7 +1410,7 @@
         "launchpad": false
     },
     "git.autofetch": true,
-    "editor.tabSize": 3,
+    "editor.tabSize": 4,
     "workbench.editor.editorActionsLocation": "hidden",
     "[javascriptreact]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
     "editor.columnSelection": false,
