@@ -527,6 +527,7 @@
             "editorWidget.background": "#000",
             "editorWidget.border": "#eaeaea",
             "editorWidget.foreground": "#fff",
+            "editorHoverWidget.foreground": "#fff",
             "menu.background": "#000",
             "editorHoverWidget.background": "#000",
             "list.focusForeground": "#fff",
@@ -563,10 +564,13 @@
             "sideBarTitle.foreground": "#fff",
             "foreground": "#fff",
             "menu.foreground": "#fff",
+            "inputOption.activeBackground": "#000", 
             "selection.background": "#8f8f90",
             "editor.selectionBackground": "#4f4f53a1",
             "editor.findMatchBackground": "#444242b9",
             "focusBorder": "#fff",
+            "simpleFindWidget.sashBorder": "#e3e3e3",
+            "input.placeholderForeground": "#f8f6f6",
             "tab.selectedForeground": "#ffffff",
             "activityBar.foreground": "#fff",
             "activityBarTop.foreground": "#fff",
@@ -574,14 +578,14 @@
             "button.hoverBackground": "#098776",
             "button.secondaryBackground": "#2a635b",
             "button.secondaryHoverBackground": "#098776",
-            "sideBar.dropBackground" : "#000000",
+            "sideBar.dropBackground": "#000000",
             "sideBarSectionHeader.background": "#000000",
-            "sideBarSectionHeader.border" : "#cacacb",
-            "sideBarSectionHeader.foreground" : "#f2f2f2",
-            "tab.hoverBackground" : "#0e0e0e",
-            "list.hoverForeground" : "#ffffff",
-            "tab.unfocusedHoverForeground" : "#fff",
-            "input.background" : "#1f1f1f"
+            "sideBarSectionHeader.border": "#cacacb",
+            "sideBarSectionHeader.foreground": "#f2f2f2",
+            "tab.hoverBackground": "#0e0e0e",
+            "list.hoverForeground": "#ffffff",
+            "tab.unfocusedHoverForeground": "#fff",
+            "input.background": "#1f1f1f"
         }
     },
     "editor.tokenColorCustomizations": {
@@ -815,7 +819,8 @@
                         "text.html.derivative",
                         "source.css.tailwind",
                         "variable.other.constant.tsx",
-                        "variable.other.constant.jsx"
+                        "variable.other.constant.jsx",
+                        "punctuation.accessor.optional"
                     ],
                     "settings": { "foreground": "#fff" }
                 },
@@ -920,7 +925,7 @@
                         "entity.name.tag.css",
                         "punctuation.separator.key-value.tsx",
                         "entity.other.attribute-name.class.css",
-                        "support.type"
+                        "support.type",
                     ],
                     "settings": { "foreground": "#BB9AF7", "fontStyle": "" }
                 }

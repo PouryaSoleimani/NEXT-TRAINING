@@ -10,11 +10,13 @@ type SingleUserType = { id: number, name: string, email: string }
 
 
 const SingleUserComponent: NextPage<Props> = ({ user }) => {
+
    const router = useRouter()
 
    if (router.isFallback) {
+
       return (
-         <div className='w-screen h-screen flex items-center justify-center'>
+         <div className='w-screen h-screen flex items-center justify-center bg-black'>
             <Spin size="large" />
          </div>
       )
@@ -38,6 +40,9 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
    const request = await fetch(`https://jsonplaceholder.typicode.com/users/${userID}`)
    const user = await request.json()
 
+   if (!user || Object.keys(user).length === 0) {
+      return { notFound: true }
+   }
 
    return {
       props: { user },
