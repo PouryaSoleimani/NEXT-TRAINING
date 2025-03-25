@@ -1,5 +1,6 @@
 import { NextPage, GetStaticPaths, GetStaticProps } from 'next'
 import { Avatar, Card, Flex } from 'antd';
+import Link from 'next/link';
 
 
 
@@ -13,10 +14,10 @@ const Users2Page: NextPage<Props> = ({ users }) => {
    return (
       <div className='flex items-center justify-center h-screen gap-4 flex-wrap'>
          {users.map((user: SingleUserType) => (
-            <div key={user.id} className='bg-zinc-900 px-5 py-3 text-white rounded-xl w-[30rem]'>
+            <Link href={`/users2/${user.id.toString()}`} key={user.id} className='bg-zinc-900 px-5 py-3 text-white rounded-xl w-[30rem]'>
                <h2>{user.id} . {user.name}</h2>
                <p>{user.email}</p>
-            </div>
+            </Link>
          ))}
       </div>
    )
@@ -25,9 +26,7 @@ const Users2Page: NextPage<Props> = ({ users }) => {
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
    const request = await fetch("https://jsonplaceholder.typicode.com/users")
-   const users = await request.json(
-
-   )
+   const users = await request.json()
    return {
       props: { users: users },
    }
