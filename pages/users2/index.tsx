@@ -1,16 +1,13 @@
-import { NextPage, GetStaticPaths, GetStaticProps } from 'next'
-import { Avatar, Card, Flex, Spin } from 'antd';
+// ^ ALL USERS PAGE ======================================================================================================
+import { NextPage, GetStaticProps } from 'next'
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-
-
 
 interface Props { users: [{ id: number, name: string, email: string, }] }
 type SingleUserType = { id: number, name: string, email: string }
 
 
 
-// COMPONENT
+// COMPONENT ==========================================================================================================
 const Users2Page: NextPage<Props> = ({ users }) => {
 
    return (
@@ -31,6 +28,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
    const users = await request.json()
    return {
       props: { users: users },
+      revalidate: 3600,
    }
 }
 
