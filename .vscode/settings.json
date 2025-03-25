@@ -1345,7 +1345,7 @@
     "workbench.editor.editorActionsLocation": "hidden",
     "[javascriptreact]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
     "editor.columnSelection": false,
-    "workbench.colorTheme": "Vercel (Dark)",
+    "workbench.colorTheme": "Next Dark Pro",
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.fontLigatures.enabled": true,
     "gitlens.advanced.messages": { "suppressCreatePullRequestPrompt": true },
