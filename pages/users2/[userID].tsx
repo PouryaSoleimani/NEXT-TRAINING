@@ -1,6 +1,7 @@
 import BackButton from '@/COMPONENTS/FOOTER/BackButton'
-import { Card, Flex } from 'antd'
+import { Card, Flex, Spin } from 'antd'
 import { NextPage, GetStaticPaths, GetStaticProps } from 'next'
+import { useRouter } from 'next/router'
 
 
 interface Props { user: { id: number, name: string, email: string } }
@@ -9,6 +10,16 @@ type SingleUserType = { id: number, name: string, email: string }
 
 
 const SingleUserComponent: NextPage<Props> = ({ user }) => {
+   const router = useRouter()
+
+   if (router.isFallback) {
+      return (
+         <div className='w-screen h-screen flex items-center justify-center'>
+            <Spin size="large" />
+         </div>
+      )
+
+   }
    return (
       <div className='w-screen h-screen flex items-center justify-center flex-col gap-y-10'>
          <Card size="small" color='white' style={{ width: 300, backgroundColor: "#101010", border: "none", color: "white" }} >
@@ -21,12 +32,12 @@ const SingleUserComponent: NextPage<Props> = ({ user }) => {
    )
 }
 
-
+// GET STATIC PROPS ===================================================================================================================================
 export const getStaticProps: GetStaticProps = async (ctx) => {
    const userID = ctx.params?.userID?.toString() ?? null
    const request = await fetch(`https://jsonplaceholder.typicode.com/users/${userID}`)
    const user = await request.json()
-   
+
 
    return {
       props: { user },
@@ -34,6 +45,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 }
 
 
+// GET STATIC PATHS ===================================================================================================================================
 export const getStaticPaths: GetStaticPaths = async () => {
    const request = await fetch("https://jsonplaceholder.typicode.com/users")
    const users = await request.json()
