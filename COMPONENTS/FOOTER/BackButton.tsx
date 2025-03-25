@@ -5,7 +5,7 @@ import React from 'react'
 
 const BackButton = () => {
    const router = useRouter()
-   function goBackHandler() { router.push("/products2") }
+   function goBackHandler() { router.back() }
 
    return (
       <Tooltip title="Back" >
