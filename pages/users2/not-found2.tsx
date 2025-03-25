@@ -2,7 +2,7 @@ import { Button } from 'antd';
 import { FileWarning } from 'lucide-react';
 import { useRouter } from 'next/router';
 import React from 'react';
-import Image from 'next/image';
+
 
 const NotFound2 = () => {
     const router = useRouter();
