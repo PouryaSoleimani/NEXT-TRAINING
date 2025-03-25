@@ -573,7 +573,14 @@
             "button.background": "#2a635b",
             "button.hoverBackground": "#098776",
             "button.secondaryBackground": "#2a635b",
-            "button.secondaryHoverBackground": "#098776"
+            "button.secondaryHoverBackground": "#098776",
+            "sideBar.dropBackground" : "#000000",
+            "sideBarSectionHeader.background": "#000000",
+            "sideBarSectionHeader.border" : "#cacacb",
+            "sideBarSectionHeader.foreground" : "#f2f2f2",
+            "tab.hoverBackground" : "#0e0e0e",
+            "list.hoverForeground" : "#ffffff",
+            "tab.unfocusedHoverForeground" : "#fff"
         }
     },
     "editor.tokenColorCustomizations": {
@@ -1414,7 +1421,7 @@
     ],
     "auto-fold-unfold.onSaved": true,
     "auto-fold-unfold.onEditing": { "enable": false, "foldMode": "best", "unfoldMode": "parent" },
-    "workbench.productIconTheme": "material-product-icons",
+    "workbench.productIconTheme": "productIconThemes",
     "window.commandCenter": false,
     "github.copilot.chat.editor.temporalContext.enabled": true,
     "github.copilot.chat.edits.temporalContext.enabled": true,
