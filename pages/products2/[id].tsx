@@ -36,10 +36,11 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
    const request = await fetch(`https://fakestoreapi.com/products/${ID}`)
    const product = await request.json()
+   if (!product) { return { notFound: true } }
+
 
    return {
       props: { ID: ID, product: product },
-      notFound: true,
    }
 }
 
