@@ -35,7 +35,9 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
    const user = await request.json()
 
    if (!user || Object.keys(user).length === 0) {
-      return { notFound: true }
+      return {
+         notFound: true
+      }
    }
 
    return {
