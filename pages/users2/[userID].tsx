@@ -14,15 +14,8 @@ const SingleUserComponent: NextPage<Props> = ({ user }) => {
 
    const router = useRouter()
 
-   if (router.isFallback) {
+   if (router.isFallback) { return (<div className='w-screen h-screen flex items-center justify-center bg-black'>  <Spin size="large" /></div>) }
 
-      return (
-         <div className='w-screen h-screen flex items-center justify-center bg-black'>
-            <Spin size="large" />
-         </div>
-      )
-
-   }
    return (
       <div className='w-screen h-screen flex items-center justify-center flex-col gap-y-10'>
          <Card size="small" color='white' style={{ width: 300, backgroundColor: "#101010", border: "none", color: "white" }} >
