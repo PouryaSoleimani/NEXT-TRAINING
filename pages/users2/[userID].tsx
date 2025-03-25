@@ -42,8 +42,8 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
    if (!user || Object.keys(user).length === 0) {
       return {
-         notFound: true,
-         // redirect: { destination: "/users2", permanent: false }
+         // notFound: true,
+         redirect: { destination: "/users2", permanent: false }
       }
    }
 
