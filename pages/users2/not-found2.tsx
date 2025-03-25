@@ -15,7 +15,7 @@ const NotFound2 = () => {
             {/* Background Image */}
             <div className="absolute inset-0 -z-10">
                 <Image
-                    src="https://source.unsplash.com/1920x1080/?abstract,dark" // Online image URL
+                    src="/NEW___PICS/not-found-bg.avif" // Online image URL
                     alt="Background"
                     layout="fill"
                     objectFit="cover"
