@@ -12,8 +12,8 @@ const NotFound2 = () => {
     return (
         <section className="w-screen h-screen flex items-center justify-center flex-col bg-gradient-to-br from-gray-900 via-black to-gray-800 relative overflow-hidden">
             {/* Background Image */}
-            <div className="absolute inset-0 z-10">
-                <Image src="/NEW___PICS/not-found-bg.avif" alt="Background" layout="fill" objectFit="cover" className="opacity-10" />
+            <div className="absolute inset-0 ">
+                <Image src="/NEW___PICS/404_page_cover.jpg" alt="Background" width={1500} height={700} className="opacity-30" />
             </div>
 
             {/* Glassmorphism Card */}
