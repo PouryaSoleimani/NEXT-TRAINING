@@ -365,12 +365,12 @@
             "activityBarTop.foreground": "#fff"
         },
         "[Meteora]": {
-            "editor.background" : "#0e0e0e",
+            "editor.background": "#0e0e0e",
             "sideBar.background": "#000",
             "titleBar.activeBackground": "#000",
             "titleBar.inactiveBackground": "#000",
-            "tab.activeBackground" : "#0e0e0e",
-            "breadcrumb.background" :"#0e0e0e",
+            "tab.activeBackground": "#0e0e0e",
+            "breadcrumb.background": "#0e0e0e",
             "tab.activeBorderTop": "#fafafa",
             "tab.activeBorder": "#1e1e1e",
             "sideBar.foreground": "#dadadaee",
@@ -850,7 +850,8 @@
                         "punctuation.terminator.rule.css",
                         "keyword.other.unit.rem.css",
                         "keyword.other.unit.px.css",
-                        "keyword.control.trycatch.tsx"
+                        "keyword.control.trycatch.tsx",
+                        "storage.modifier.async.tsx"
                     ],
                     "settings": { "fontStyle": "" }
                 },
@@ -884,7 +885,7 @@
                     "settings": { "foreground": "#fff", "fontStyle": "" }
                 },
                 {
-                    "scope": [ "entity.other.attribute-name.class.css" ],
+                    "scope": [ "entity.other.attribute-name.class.css", "constant.language.boolean" ],
                     "settings": { "foreground": "#97BEF9", "fontStyle": "" }
                 },
                 {
