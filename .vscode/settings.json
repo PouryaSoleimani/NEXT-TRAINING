@@ -317,7 +317,9 @@
             "editorGroup.emptyBackground": "#010409",
             "editorGroupHeader.tabsBackground": "#010409",
             "terminal.background": "#010409",
-            "editor.foldBackground": "#010409b9"
+            "editor.foldBackground": "#010409b9",
+            "editor.background": "#0f1012",
+            "titleBar.inactiveBackground": "#010409"
         },
         "[Github Minimal Dark]": {
             "statusBar.background": "#010409",
@@ -951,7 +953,7 @@
                     ],
                     "settings": { "foreground": "#7EE787" }
                 },
-                { "scope": [ "support.class.component" ], "settings": { "foreground": "#79B8FF" }},
+                { "scope": [ "support.class.component" ], "settings": { "foreground": "#ceb483" }},
                 {
                     "scope": [
                         "punctuation.definition.tag.begin.tsx",
@@ -1318,7 +1320,7 @@
     "editor.wrappingIndent": "none",
     "editor.defaultColorDecorators": "auto",
     "editor.experimentalInlineEdit.backgroundColoring": true,
-    "workbench.preferredDarkColorTheme": "Next Dark Pro",
+    "workbench.preferredDarkColorTheme": "GitHub Dark Default",
     "[javascript]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
     "RainbowBrackets.depreciation-notice": false,
     "material-icon-theme.folders.color": "#a2773c",
@@ -1414,7 +1416,7 @@
     "workbench.editor.editorActionsLocation": "hidden",
     "[javascriptreact]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
     "editor.columnSelection": false,
-    "workbench.colorTheme": "Next Dark Pro",
+    "workbench.colorTheme": "GitHub Dark Default",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontLigatures.enabled": true,
     "gitlens.advanced.messages": { "suppressCreatePullRequestPrompt": true },
@@ -1434,7 +1436,7 @@
     ],
     "auto-fold-unfold.onSaved": true,
     "auto-fold-unfold.onEditing": { "enable": false, "foldMode": "best", "unfoldMode": "parent" },
-    "workbench.productIconTheme": "productIconThemes",
+    "workbench.productIconTheme": "material-product-icons",
     "window.commandCenter": false,
     "github.copilot.chat.editor.temporalContext.enabled": true,
     "github.copilot.chat.edits.temporalContext.enabled": true,
