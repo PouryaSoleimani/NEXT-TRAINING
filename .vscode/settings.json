@@ -524,12 +524,12 @@
         "[Meteora]": {
             "editor.background": "#0e0e0e",
             "sideBar.background": "#000",
-            "editorWidget.background" : "#000",
-            "editorWidget.border" : "#eaeaea",
-            "editorWidget.foreground" : "#fff",
-            "menu.background" : "#000",
-            "editorHoverWidget.background" : "#000",
-            "list.focusForeground" : "#fff",
+            "editorWidget.background": "#000",
+            "editorWidget.border": "#eaeaea",
+            "editorWidget.foreground": "#fff",
+            "menu.background": "#000",
+            "editorHoverWidget.background": "#000",
+            "list.focusForeground": "#fff",
             "titleBar.activeBackground": "#000",
             "titleBar.inactiveBackground": "#000",
             "tab.activeBackground": "#0e0e0e",
@@ -911,7 +911,8 @@
                     "scope": [
                         "entity.name.tag.css",
                         "punctuation.separator.key-value.tsx",
-                        "entity.other.attribute-name.class.css"
+                        "entity.other.attribute-name.class.css",
+                        "support.type"
                     ],
                     "settings": { "foreground": "#BB9AF7", "fontStyle": "" }
                 }
