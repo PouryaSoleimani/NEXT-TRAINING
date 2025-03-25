@@ -14,7 +14,13 @@ const SingleUserComponent: NextPage<Props> = ({ user }) => {
 
    const router = useRouter()
 
-   if (router.isFallback) { return (<div className='w-screen h-screen flex items-center justify-center bg-black z-10'>  <Spin size="large" className='z-50' /></div>) }
+   if (router.isFallback) {
+      return (
+         <div className='w-screen h-screen flex items-center justify-center bg-black z-10'>
+            <Spin size="large" className='z-50' />
+         </div>
+      )
+   }
 
    return (
       <div className='w-screen h-screen flex items-center justify-center flex-col gap-y-10'>
@@ -50,6 +56,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 export const getStaticPaths: GetStaticPaths = async () => {
    const request = await fetch("https://jsonplaceholder.typicode.com/users")
    const users = await request.json()
+
    const dynamicPaths = users.map((item: SingleUserType) => {
       return { params: { userID: String(item.id) } }
    })
