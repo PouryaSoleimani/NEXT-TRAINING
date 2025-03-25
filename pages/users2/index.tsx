@@ -28,7 +28,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
    const users = await request.json()
    return {
       props: { users: users },
-      revalidate: 3600,
+      revalidate: 3600, //ISR 
    }
 }
 
