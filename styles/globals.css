@@ -24,9 +24,11 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-html{
+
+html {
   background-color: black;
 }
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
