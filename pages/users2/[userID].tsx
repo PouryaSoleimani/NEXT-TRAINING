@@ -64,7 +64,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
    return {
       paths: dynamicPaths,
-      fallback: true,
+      fallback: "blocking",
    }
 }
 
