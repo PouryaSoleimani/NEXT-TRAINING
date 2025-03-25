@@ -19,20 +19,20 @@
     "terminal.integrated.fontWeight": "900",
     "terminal.integrated.fontLigatures": true,
     "editor.linkedEditing": true,
-    "editor.lineHeight": 1.45,
+    "editor.lineHeight": 1.3,
     "editor.fontSize": 12,
     "breadcrumbs.icons": true,
     "terminal.integrated.mouseWheelZoom": true,
     "workbench.colorCustomizations": {
         "[Next Dark Pro]": {
-            "editor.background": "#0A0A0A",
+            "editor.background": "#0d0f0f",
             "editor.foldBackground": "#000000ad",
-            "editorGutter.background": "#0A0A0A",
+            "editorGutter.background": "#0d0f0f",
             "activityBar.activeBorder": "#fafafa",
-            "editorGroup.emptyBackground": "#0A0A0A",
-            "breadcrumb.background": "#0A0A0A",
-            "tab.activeBackground": "#0A0A0A",
-            "tab.activeBorder": "#0A0A0A",
+            "editorGroup.emptyBackground": "#0d0f0f",
+            "breadcrumb.background": "#0d0f0f",
+            "tab.activeBackground": "#0d0f0f",
+            "tab.activeBorder": "#0d0f0f",
             "tab.activeBorderTop": "#fafafa",
             "tab.border": "#363636",
             "activityBarTop.dropBorder": "#7d7c7c",
@@ -564,7 +564,7 @@
             "sideBarTitle.foreground": "#fff",
             "foreground": "#fff",
             "menu.foreground": "#fff",
-            "inputOption.activeBackground": "#000", 
+            "inputOption.activeBackground": "#000",
             "selection.background": "#8f8f90",
             "editor.selectionBackground": "#4f4f53a1",
             "editor.findMatchBackground": "#444242b9",
@@ -606,8 +606,16 @@
                 { "scope": [ "support.class.component.tsx" ], "settings": { "fontStyle": "" }},
                 { "scope": [ "support.type.property-name" ], "settings": { "foreground": "#fff", "fontStyle": "" }},
                 {
+                    "scope": [ "variable.other.object.property.tsx" ],
+                    "settings": { "foreground": "#EF596F", "fontStyle": "bold" }
+                },
+                {
                     "scope": [ "entity.other.attribute-name.class.css" ],
                     "settings": { "foreground": "#61AFEF", "fontStyle": "bold" }
+                },
+                {
+                    "scope": [ "comment", "punctuation.definition.comment" ],
+                    "settings": { "foreground": "#ababab", "fontStyle": "" }
                 },
                 { "scope": [ "variable.other.readwrite.tsx" ], "settings": { "foreground": "#E5C07B", "fontStyle": "bold" }}
             ]
@@ -820,7 +828,8 @@
                         "source.css.tailwind",
                         "variable.other.constant.tsx",
                         "variable.other.constant.jsx",
-                        "punctuation.accessor.optional"
+                        "punctuation.accessor.optional",
+                        "variable.other.property"
                     ],
                     "settings": { "foreground": "#fff" }
                 },
@@ -925,7 +934,7 @@
                         "entity.name.tag.css",
                         "punctuation.separator.key-value.tsx",
                         "entity.other.attribute-name.class.css",
-                        "support.type",
+                        "support.type"
                     ],
                     "settings": { "foreground": "#BB9AF7", "fontStyle": "" }
                 }

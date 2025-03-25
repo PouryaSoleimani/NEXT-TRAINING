@@ -14,7 +14,7 @@ const SingleUserComponent: NextPage<Props> = ({ user }) => {
 
    const router = useRouter()
 
-   if (router.isFallback) { return (<div className='w-screen h-screen flex items-center justify-center bg-black'>  <Spin size="large" /></div>) }
+   if (router.isFallback) { return (<div className='w-screen h-screen flex items-center justify-center bg-black z-10'>  <Spin size="large" className='z-50' /></div>) }
 
    return (
       <div className='w-screen h-screen flex items-center justify-center flex-col gap-y-10'>
@@ -54,7 +54,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
    return {
       paths: dynamicPaths,
-      fallback: false,
+      fallback: true,
    }
 }
 
