@@ -22,7 +22,7 @@ const Users2Page: NextPage<Props> = ({ users }) => {
    )
 }
 
-
+// GET STATIC PROPS ==========================================================================================================
 export const getStaticProps: GetStaticProps = async (ctx) => {
    const request = await fetch("https://jsonplaceholder.typicode.com/users")
    const users = await request.json()
