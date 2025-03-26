@@ -11,12 +11,13 @@ const SingleUser: NextPage<Props> = ({ data }) => {
   function backHandler() { router.back() }
 
   return (
-    <div className='h-fit px-4 bg-zinc-900 py-6 mt-32 w-fit rounded-xl mx-auto border-2 borde-white hover:scale-110 duration-700 cursor-pointer'>
-      <p className=' font-extrabold text-2xl  text-white text-center'>{data.id}</p>
-      <p className='font-extrabold text-2xl text-center text-white'>{data.name}</p>
-      <p className='font-extrabold text-xl text-blue-900'>{data.email}</p>
-      <p className='font-extrabold text-xl text-red-900'>{data.phone}</p>
-      <button onClick={backHandler} className='bg-green-800 text-white  p-1 text-xl font-bold w-full rounded-lg'>BACK</button>
+    <div className='flex flex-col items-center bg-zinc-900 py-8 px-6 mt-32 w-fit rounded-xl mx-auto border-2 border-white hover:scale-105 transition-transform duration-500 cursor-pointer shadow-lg'>
+      <p className='text-3xl font-bold text-white mb-4'>{data.id}</p>
+      <p className='text-2xl font-semibold text-white mb-2'>{data.name}</p>
+      <p className='text-lg text-blue-500 mb-2'>{data.email}</p>
+      <p className='text-lg text-red-500 mb-4'>{data.phone}</p>
+      <button onClick={backHandler} className='bg-green-700 hover:bg-green-600 text-white py-2 px-4 text-lg font-medium rounded-lg transition-colors duration-300'>  BACK
+      </button>
     </div>
   )
 }
