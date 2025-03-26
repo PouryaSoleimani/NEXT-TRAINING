@@ -18,9 +18,7 @@ const SingleUser: NextPage<Props> = ({ data }) => {
         <p className='text-2xl font-semibold text-white mb-2'>{data.name}</p>
         <p className='text-lg text-blue-100 mb-2 bg-blue-950 p-2 rounded-md w-full'>{data.email}</p>
         <p className='text-lg text-white mb-4 bg-red-950 p-2 text-center font-semibold rounded-md w-full'>{data.phone}</p>
-        <button className='bg-green-700 hover:bg-green-600 text-white py-2 px-20 text-lg font-medium rounded-lg shadow-[4px_4px_10px_rgba(0,0,0,0.5),-4px_-4px_10px_rgba(255,255,255,0.1)] transition-colors duration-300' onClick={backHandler} >
-          BACK
-        </button>
+        <button className='bg-green-700 hover:bg-green-600 text-white py-2 px-20 text-lg font-medium rounded-lg shadow-[4px_4px_10px_rgba(0,0,0,0.5),-4px_-4px_10px_rgba(255,255,255,0.1)] transition-colors duration-300' onClick={backHandler} >  BACK </button>
       </div>
     </section>
   )
