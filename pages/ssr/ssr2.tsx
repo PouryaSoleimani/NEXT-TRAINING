@@ -40,9 +40,14 @@ const SSR2: NextPage<Props> = ({ data }) => {
 };
 
 // GET SERVERS SIDE PROPS ==================================================================================================================================
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
     const req = await fetch("https://jsonplaceholder.typicode.com/users");
     const data = await req.json();
+
+
+    const { query } = context
+    console.log("QUERIES===> ", query)
+
 
     return {
         props: { data },
