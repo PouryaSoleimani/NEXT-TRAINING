@@ -45,7 +45,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     const data = await req.json();
 
 
-    const { query } = context
+    const { query } = context // ==> GETTING QUERY PARAMS FROM CONTEXT IN THE SERVER-SIDE
     console.log("QUERIES===> ", query)
 
 
