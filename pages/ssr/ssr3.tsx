@@ -24,7 +24,6 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
     const request = await fetch("https://jsonplaceholder.typicode.com/users")
     const data = await (request.json())
 
-
     return {
         props: { data }
     }
