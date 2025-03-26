@@ -22,14 +22,12 @@ const SSR2: NextPage<Props> = ({ data }) => {
 
                     {/* Hover Effect Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-
-                    {/* Card Border Highlight */}
                     <div className="absolute inset-0 border-2 border-transparent bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
 
                     {/* Content */}
-                    <h2 className="text-xl font-semibold text-white mb-2">{user.name}</h2>
-                    <p className="text-gray-400">{user.username}</p>
-                    <h4 className="text-sm text-gray-500">{user.email.slice(0, 15)}</h4>
+                    <h2 className="text-2xl font-semibold text-white mb-2">{user.name}</h2>
+                    <p className="text-slate-100 bg-slate-900/80 w-44 text-center py-1 rounded-xl font-bold">{user.username}</p>
+                    <h4 className="text-sm text-gray-300 font-semibold">{user.email.slice(0, 15)}</h4>
 
                     {/* Bottom Border Animation */}
                     <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
