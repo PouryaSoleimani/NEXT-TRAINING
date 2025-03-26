@@ -1942,7 +1942,7 @@
     },
     "editor.columnSelection": false,
     "workbench.colorTheme": "GitHub Dark Default",
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 15,
     "terminal.integrated.fontLigatures.enabled": true,
     "gitlens.advanced.messages": {
         "suppressCreatePullRequestPrompt": true
