@@ -1357,7 +1357,8 @@
                         "entity.other.attribute-name.jsx",
                         "entity.other.attribute-name.js",
                         "entity.other.attribute-name.tsx",
-                        "entity.name.type"
+                        "entity.name.type",
+                        "entity.name.function.member"
                     ],
                     "settings": {
                         "foreground": "#B392F0"
