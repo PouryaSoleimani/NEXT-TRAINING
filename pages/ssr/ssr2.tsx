@@ -1,33 +1,34 @@
-import { Card } from 'antd'
-import { NextPage, GetServerSideProps } from 'next'
+import { Card } from 'antd';
+import { NextPage, GetServerSideProps } from 'next';
 
-interface Props { data: [{ id: number, name: string, username: string, email: string }] }
-type SingleUserType = { id: number, name: string, username: string, email: string }
-
+interface Props {
+    data: [{ id: number; name: string; username: string; email: string }];
+}
+type SingleUserType = { id: number; name: string; username: string; email: string };
 
 // COMPONENT  ==================================================================================================================================
 const SSR2: NextPage<Props> = ({ data }) => {
     return (
-        <div className='flex w-screen h-1/2 mt-auto p-10 gap-5 flex-wrap items-center justify-center'>
+        <div className="flex w-screen min-h-screen p-12 gap-8 flex-wrap items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800">
             {data.map((user: SingleUserType) => (
-                <Card type='inner' key={user.id} className='w-72 h-48 flex flex-col items-center justify-center font-extralight' bordered>
-                    <h2>{user.name}</h2>
-                    <p>{user.username}</p>
-                    <h4>{user.email.slice(0, 15)}</h4>
+                <Card key={user.id} className="w-72 h-48 flex flex-col items-center justify-center bg-gray-900 rounded-xl shadow-lg hover:shadow-2xl transition-shadow border border-gray-700 hover:bg-gray-800 transform hover:scale-105 duration-500" bordered={true}>
+                    <h2 className="text-xl font-semibold text-black group-hover:text-white">{user.name}</h2>
+                    <p className="text-gray-600">{user.username}</p>
+                    <h4 className="text-sm text-gray-500">{user.email.slice(0, 15)}</h4>
                 </Card>
             ))}
         </div>
-    )
-}
+    );
+};
 
 // GET SERVERS SIDE PROPS ==================================================================================================================================
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-    const req = await fetch("https://jsonplaceholder.typicode.com/users")
-    const data = await req.json()
+    const req = await fetch("https://jsonplaceholder.typicode.com/users");
+    const data = await req.json();
 
     return {
-        props: { data }
-    }
-}
+        props: { data },
+    };
+};
 
-export default SSR2
+export default SSR2;
