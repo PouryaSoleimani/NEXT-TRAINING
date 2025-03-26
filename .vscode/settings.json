@@ -980,7 +980,18 @@
                     "scope": [ "support.type.property-name.css" ],
                     "settings": { "foreground": "#79B8FF", "fontStyle": "bold" }
                 },
-                { "scope": [ "entity.name.type.interface", "meta.selector.css" ], "settings": { "foreground": "#d2a8ff" }},
+                {
+                    "scope": [
+                        "entity.name.type.interface",
+                        "meta.selector.css",
+                        "meta.selector.css.pseudo-class",
+                        "meta.selector.css.pseudo-element",
+                        "entity.name.type.tsx",
+                        "entity.name.type.ts",
+                        "meta.definition.variable"
+                    ],
+                    "settings": { "foreground": "#d2a8ff" }
+                },
                 {
                     "scope": [
                         "entity.other.attribute-name.html",
@@ -1006,7 +1017,9 @@
                         "variable.other.constant.jsx",
                         "variable.other.constant",
                         "support.constant.media.css",
-                        "support.type.property-name.media.css"
+                        "support.type.property-name.media.css",
+                        "variable.other.constant.tsx",
+                        "meta.definition.variable"
                     ],
                     "settings": { "foreground": "#A5D6FF", "fontStyle": "bold" }
                 },
@@ -1020,7 +1033,7 @@
                     "settings": { "foreground": "#fafafa", "fontStyle": "bold" }
                 },
                 {
-                    "scope": [ "variable.other.constant.object.tsx" ],
+                    "scope": [ "variable.other.constant.object.tsx","variable.other.constant.tsx","keyword.operator.type.annotation.tsx" ],
                     "settings": { "foreground": "#79b8ff", "fontStyle": "bold" }
                 }
             ]
