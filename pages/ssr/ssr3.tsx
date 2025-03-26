@@ -5,8 +5,9 @@ type SingleUserType = { id: number, name: string, username: string, email: strin
 
 
 
-// COMPONENT
+// COMPONENT ===============================================================================================================================================
 const SSR3: NextPage<Props> = ({ data }) => {
+
     return (
         <div className="flex flex-wrap gap-10 items-center justify-center mt-10">
             {data.slice(0, 9).map((item: SingleUserType) => (
@@ -20,7 +21,9 @@ const SSR3: NextPage<Props> = ({ data }) => {
     )
 }
 
+// GET SERVER SIDE PROPS =====================================================================================================================================
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
+
     const request = await fetch("https://jsonplaceholder.typicode.com/users")
     const data = await (request.json())
 
