@@ -1,4 +1,5 @@
 import { NextPage, GetServerSideProps } from 'next'
+import Link from 'next/link'
 
 interface Props { data: [{ id: number, name: string, username: string, email: string }] }
 type SingleUserType = { id: number, name: string, username: string, email: string }
@@ -11,11 +12,11 @@ const SSR3: NextPage<Props> = ({ data }) => {
     return (
         <div className="flex flex-wrap gap-10 items-center justify-center mt-16">
             {data.slice(0, 9).map((item: SingleUserType) => (
-                <div key={item.id} className='w-[20rem] h-[10rem] bg-white rounded-xl text-sm p-4 hover:-translate-y-3 duration-500 cursor-pointer'>
+                <Link href={`/ssr/${item.id}`} key={item.id} className='w-[20rem] h-[10rem] bg-white rounded-xl text-sm p-4 hover:-translate-y-3 duration-500 cursor-pointer'>
                     <p>{item.name}</p>
                     <p>{item.username}</p>
                     <p>{item.email}</p>
-                </div>
+                </Link>
             ))}
         </div>
     )
