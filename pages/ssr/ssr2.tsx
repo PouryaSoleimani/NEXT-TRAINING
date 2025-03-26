@@ -5,7 +5,7 @@ interface Props { data: [{ id: number, name: string, username: string, email: st
 type SingleUserType = { id: number, name: string, username: string, email: string }
 
 
-
+// COMPONENT  ==================================================================================================================================
 const SSR2: NextPage<Props> = ({ data }) => {
     return (
         <div className='flex w-screen h-1/2 mt-auto p-10 gap-5 flex-wrap items-center justify-center'>
