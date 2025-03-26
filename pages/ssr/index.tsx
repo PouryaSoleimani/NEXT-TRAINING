@@ -19,7 +19,7 @@ const SSR: NextPage<Props> = ({ Response }) => {
   )
 }
 
-//^ GET SERVERSIDE PROPS => RUNS AT SERVER SIDE ONLY
+//^ GET SERVERSIDE PROPS => RUNS AT SERVER SIDE ONLY _____________________________________________________________________________________________________________________________________________________________________
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { params, req, res, query } = context // Accessing the {request} and {response} Details and the {query} in (getServerSideProps) function
 
