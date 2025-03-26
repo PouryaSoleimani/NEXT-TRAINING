@@ -24,7 +24,7 @@ const SSR3: NextPage<Props> = ({ data }) => {
 // GET SERVER SIDE PROPS =====================================================================================================================================
 export const getServerSideProps: GetServerSideProps = async (context) => {
 
-    const { params } = context
+    const { params, req, res } = context
 
     const request = await fetch("https://jsonplaceholder.typicode.com/users")
     const data = await (request.json())
