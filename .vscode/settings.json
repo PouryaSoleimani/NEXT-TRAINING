@@ -1344,7 +1344,8 @@
                         "variable.other.property.tsx",
                         "variable.other.property.jsx",
                         "variable.other.property.js",
-                        "variable.other.property.ts"
+                        "variable.other.property.ts",
+                        "meta.var.expr.tsx"
                     ],
                     "settings": {
                         "foreground": "#fafafa",
@@ -1358,7 +1359,7 @@
                         "entity.other.attribute-name.js",
                         "entity.other.attribute-name.tsx",
                         "entity.name.type",
-                        "entity.name.function.member"
+                        "entity.name.function.member",
                     ],
                     "settings": {
                         "foreground": "#B392F0"
@@ -1374,6 +1375,24 @@
                     ],
                     "settings": {
                         "foreground": "#79b8ff",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": [
+                        "meta.template.expression.tsx"
+                    ],
+                    "settings": {
+                        "foreground": "#B392F0"
+                    }
+                },
+                {
+                    "scope": [
+                        // "variable.other.constant.object.tsx"
+                        ""
+                    ],
+                    "settings": {
+                        "foreground": "#fafafa",
                         "fontStyle": "bold"
                     }
                 },
