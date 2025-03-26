@@ -6,14 +6,14 @@ type SingleUserType = { id: number, name: string, username: string, email: strin
 
 
 
-const Ss2: NextPage<Props> = ({ data }) => {
+const SSR2: NextPage<Props> = ({ data }) => {
     return (
-        <div>
+        <div className='flex w-screen h-screen p-10 gap-10 flex-wrap items-center justify-center'>
             {data.map((user: SingleUserType) => (
-                <Card type='inner' key={user.id}>
+                <Card type='inner' key={user.id} className='w-72 h-48 flex flex-col items-center justify-center font-extralight'>
                     <h2>{user.name}</h2>
-                    <h2>{user.username}</h2>
-                    <h2>{user.email}</h2>
+                    <p>{user.username}</p>
+                    <h4>{user.email.slice(0, 15)}</h4>
                 </Card>
             ))}
         </div>
@@ -29,4 +29,4 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
     }
 }
 
-export default Ss2
+export default SSR2
