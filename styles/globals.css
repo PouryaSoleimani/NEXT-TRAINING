@@ -206,3 +206,21 @@ body {
 Link , a {
   text-decoration: none !important;
 }
+
+@keyframes flowting {
+  0% {
+    transform: translateY(0);
+  }
+  
+  50% {
+    transform: translateY(10px);
+  }
+  
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.flowting-particles {
+  animation: flowting 5s infinite;
+}
