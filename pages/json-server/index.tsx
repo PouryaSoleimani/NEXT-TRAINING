@@ -18,7 +18,7 @@ const JsonServerPage = () => {
     }, [])
 
     function postApi() {
-        axios.post("http://localhost:4000/users", { id: 11, name: "pouria", age: 32 }, { headers: { "Content-Type": "application/json" } })
+        axios.post("http://localhost:4000/users", { id: "11", name: "pouria", age: 32 }, { headers: { "Content-Type": "application/json" } })
     }
 
     function deletePost(id: number) {
