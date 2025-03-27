@@ -25,14 +25,14 @@
     "terminal.integrated.mouseWheelZoom": true,
     "workbench.colorCustomizations": {
         "[Next Dark Pro]": {
-            "editor.background": "#080a0a",
+            "editor.background": "#070808",
             "editor.foldBackground": "#000000ad",
-            "editorGutter.background": "#080a0a",
+            "editorGutter.background": "#070808",
             "activityBar.activeBorder": "#fafafa",
-            "editorGroup.emptyBackground": "#080a0a",
-            "breadcrumb.background": "#080a0a",
-            "tab.activeBackground": "#080a0a",
-            "tab.activeBorder": "#080a0a",
+            "editorGroup.emptyBackground": "#070808",
+            "breadcrumb.background": "#070808",
+            "tab.activeBackground": "#070808",
+            "tab.activeBorder": "#070808",
             "tab.activeBorderTop": "#fafafa",
             "tab.border": "#363636",
             "activityBarTop.dropBorder": "#7d7c7c",
@@ -1961,7 +1961,7 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "editor.columnSelection": false,
-    "workbench.colorTheme": "Vercel (Dark)",
+    "workbench.colorTheme": "Next Dark Pro",
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.fontLigatures.enabled": true,
     "gitlens.advanced.messages": {
