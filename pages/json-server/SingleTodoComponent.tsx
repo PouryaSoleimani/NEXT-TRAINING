@@ -23,7 +23,7 @@ const SingleTodoComponent: React.FC<SingleTodo> = ({ id, name, age, isToggle }) 
     // RETURN  ====================================================================================================================================================
     return (
         <>
-            <div key={id} className='relative flex flex-col bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 m-4 rounded-2xl backdrop-blur-sm border border-white/10 shadow-[4px_4px_10px_rgba(0,0,0,0.4),-4px_-4px_10px_rgba(255,255,255,0.1)]           hover:shadow-[8px_8px_20px_rgba(0,0,0,0.4),-8px_-8px_20px_rgba(255,255,255,0.1)] space-y-4 hover:scale-105 transition-all duration-300 group w-[18rem]'   >
+            <div key={id} className='relative flex flex-col bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 m-4 rounded-2xl backdrop-blur-sm border border-white/10  hover:shadow-[8px_8px_20px_rgba(0,0,0,0.4),-8px_-8px_20px_rgba(255,255,255,0.1)] space-y-4 hover:scale-105 transition-all duration-300 group w-[18rem] h-[22rem]'   >
                 <div className='absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg'>
                     <h1 className='text-white font-bold text-3xl rounded-md'>{`ID: ${user.id}`}</h1>
                 </div>
@@ -43,7 +43,7 @@ const SingleTodoComponent: React.FC<SingleTodo> = ({ id, name, age, isToggle }) 
                         {user.isToggle ? "🟩" : "🟥"}
                     </p>
                 </div>
-                <button className='btn btn-warning mx-auto w-fit -translate-y-8 font-extrabold' onClick={toggleHandler(id)}>TOGGLE</button>
+                <button className='bg-cyan-500 p-3 rounded-xl text-white mx-auto -translate-y-8 font-bold w-full' onClick={toggleHandler(id)}>TOGGLE</button>
             </div >
         </>
     )

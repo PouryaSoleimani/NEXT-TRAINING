@@ -4,25 +4,25 @@
       "id": "1",
       "name": "Pourya",
       "age": 25,
-      "isToggle": false
+      "isToggle": true
     },
     {
       "id": "2",
       "name": "Ali",
       "age": 30,
-      "isToggle": false
+      "isToggle": true
     },
     {
       "id": "3",
       "name": "Reza",
       "age": 35,
-      "isToggle": false
+      "isToggle": true
     },
     {
       "id": "4",
       "name": "Mehdi",
       "age": 40,
-      "isToggle": false
+      "isToggle": true
     },
     {
       "id": "5",
@@ -34,13 +34,13 @@
       "id": "6",
       "name": "Saeed",
       "age": 50,
-      "isToggle": true
+      "isToggle": false
     },
     {
       "id": "7",
       "name": "Amir",
       "age": 55,
-      "isToggle": false
+      "isToggle": true
     },
     {
       "id": "8",
