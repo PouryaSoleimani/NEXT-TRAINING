@@ -1,3 +1,4 @@
+import axios from 'axios'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 type AllUsersType = [{ id: number, name: string, age: number }]
@@ -14,7 +15,9 @@ const JsonServerPage = () => {
             .then(json => setusers(json))
     }, [])
 
-
+    function postApi() {
+        axios.post("http://localhost:4000/users", { name: "pouri", age: 32 }, { headers: { "Content-Type": "application/json" } })
+    }
 
     // RETURN ================================================================================================================================================
     return (
@@ -33,6 +36,9 @@ const JsonServerPage = () => {
                         :
                         'Loading...'
                     }
+                </div>
+                <div className='flex justify-center'>
+                    <button onClick={postApi} className='bg-zinc-900 text-cyan-500 p-2 px-4 rounded-md hover:bg-zinc-800'>Add User</button>
                 </div>
             </div>
         </div>
