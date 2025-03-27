@@ -51,21 +51,8 @@
       "age": 70
     },
     {
-      "id": "7186",
-      "form": {
-        "id": 11,
-        "name": "John Doe",
-        "age": 25
-      }
-    },
-    {
-      "id": "d18d",
-      "name": "pouri",
-      "age": 32
-    },
-    {
-      "id": "e877",
-      "name": "pouri",
+      "id": 11,
+      "name": "pouria",
       "age": 32
     }
   ]
