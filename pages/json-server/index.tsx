@@ -10,6 +10,10 @@ type AllUsersType = [{ id: number, name: string, age: number }]
 const JsonServerPage = () => {
     const [users, setusers] = useState<AllUsersType>([{ id: 0, name: '', age: 0 }])
     const [deleteID, setDeleteID] = useState<number | string>(0)
+
+    const [updateID, setUpdateID] = useState<number | string>(0)
+    const [updateAge, setUpdateAge] = useState<number | string>(0)
+
     const router = useRouter()
 
     useEffect(() => {
@@ -28,6 +32,11 @@ const JsonServerPage = () => {
             .then(data => console.info(data))
             .then(data => router.reload())
             .catch(err => console.error(err))
+    }
+
+    function userAgeUpdater(id: number, age: number) {
+        const name = users.filter(user => user.id === id)[0].name
+        axios.put(`http://localhost:4000/users/${Number(id)}`, { id: id, name: name, age: Number(age) }).then(data => router.reload())
     }
 
     // RETURN ================================================================================================================================================
@@ -54,6 +63,11 @@ const JsonServerPage = () => {
                 <form onSubmit={(e) => { e.preventDefault(); deletePost(Number(deleteID)); }} className='flex flex-col justify-center items-center gap-2 bg-zinc-800 p-5 w-fit mx-auto my-10 rounded-lg'>
                     <input type="text" value={deleteID} onChange={(e) => { setDeleteID(Number(e.target.value)) }} className='p-2 border border-black rounded-xl' />
                     <button type='submit' className='btn btn-danger'>DELETE</button>
+                </form>
+                <form className='flex flex-col justify-center items-center gap-2 bg-zinc-800 p-5 w-fit mx-auto my-10 rounded-lg' onSubmit={e => { e.preventDefault(); userAgeUpdater(Number(updateID), Number(updateAge)) }}>
+                    <input type="text" value={updateID} onChange={e => setUpdateID(e.target.value)} className='p-1 my-1 rounded-lg font-semibold outline-none text-xl' />
+                    <input type="text" value={updateAge} onChange={e => setUpdateAge(e.target.value)} className='p-1 my-1 rounded-lg font-semibold outline-none text-xl' />
+                    <button type='submit' className='btn btn-success w-full font-bold' onClick={() => userAgeUpdater(Number(updateID), Number(updateAge))}>Update</button>
                 </form>
             </div>
         </div>
