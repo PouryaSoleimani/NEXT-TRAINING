@@ -1,4 +1,3 @@
-import { Card } from 'antd';
 import { NextPage, GetServerSideProps } from 'next';
 import Link from 'next/link';
 
@@ -8,8 +7,6 @@ interface Props {
 }
 
 type SingleUserType = { id: number; name: string; username: string; email: string };
-
-
 
 // COMPONENT  ==================================================================================================================================
 const SSR2: NextPage<Props> = ({ data, query }) => {
