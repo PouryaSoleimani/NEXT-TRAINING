@@ -4,19 +4,19 @@
       "id": "1",
       "name": "Pourya",
       "age": 25,
-      "isToggle": true
+      "isToggle": false
     },
     {
       "id": "2",
       "name": "Ali",
       "age": 30,
-      "isToggle": false
+      "isToggle": true
     },
     {
       "id": "3",
       "name": "Reza",
       "age": 35,
-      "isToggle": false
+      "isToggle": true
     },
     {
       "id": "4",
@@ -40,7 +40,7 @@
       "id": "7",
       "name": "Amir",
       "age": 55,
-      "isToggle": true
+      "isToggle": false
     },
     {
       "id": "8",

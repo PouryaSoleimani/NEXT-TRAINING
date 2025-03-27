@@ -2,6 +2,7 @@ import axios from 'axios'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
+import { useRouter as USEROUTER } from "next/navigation"
 type AllUsersType = [{ id: number, name: string, age: number, isToggle: boolean }]
 
 
@@ -9,7 +10,8 @@ type AllUsersType = [{ id: number, name: string, age: number, isToggle: boolean 
 // COMPONENT ================================================================================================================================================
 const JsonServerPage = () => {
     const router = useRouter()
-
+    const ROUTER = USEROUTER()
+    const [myUser, setMyUser] = useState({ id: 0, name: '', age: 0, isToggle: true })
     const [users, setusers] = useState<AllUsersType>([{ id: 0, name: '', age: 0, isToggle: true }])
     const [deleteID, setDeleteID] = useState<number | string>(0)
 
@@ -25,20 +27,21 @@ const JsonServerPage = () => {
     // POST  ===================================================================================================================================================
     function postApi() {
         axios.post("http://localhost:4000/users", { id: "12", name: "alireza", age: 32 }, { headers: { "Content-Type": "application/json" } })
-            .then(data => { console.info(data); router.reload() })
+            .then(data => { console.info(data); ROUTER.refresh() })
     }
     // DELETE  =================================================================================================================================================
     function userDelete(id: number) {
         axios.delete(`http://localhost:4000/users/${Number(id)}`)
-            .then(data => { console.info(data); router.reload() })
+            .then(data => { console.info(data); ROUTER.refresh() })
             .catch(err => console.error(err))
     }
     // PUT  ====================================================================================================================================================
     function userUpdate(id: number, age: number) {
         const user = users.find(user => user.id == id); // Find the user object
+        if (user) { setMyUser(user); }
         if (user) {
             axios.put(`http://localhost:4000/users/${id}`, { id: user.id, name: user.name, age: age }) // Spread the existing user object and update the age
-                .then(() => router.reload())
+                .then(() => ROUTER.refresh())
                 .catch(err => console.error('Error updating user:', err));
         } else {
             console.error('User not found');
@@ -48,9 +51,10 @@ const JsonServerPage = () => {
     function toggleHandler(ID: number | string) {
         return () => {
             const user = users.find(user => user.id == ID); // Find the user object
+            if (user) { setMyUser(user); }
             if (user) {
                 axios.put(`http://localhost:4000/users/${ID}`, { id: user.id, name: user.name, age: user.age, isToggle: !user.isToggle }) // Spread the existing user object and update the age
-                    .then(() => router.reload())
+                    .then(() => ROUTER.refresh())
                     .catch(err => console.error('Error updating user:', err));
             } else {
                 console.error('User not found');

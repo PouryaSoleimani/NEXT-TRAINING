@@ -344,6 +344,7 @@
             "editor.foldBackground": "#010409b9"
         },
         "[Black modern]": {
+            "editor.background": "#070808",
             "tab.inactiveBackground": "#000",
             "editorGroupHeader.tabsBackground": "#000",
             "titleBar.inactiveBackground": "#000",
@@ -364,7 +365,9 @@
             "notificationCenterHeader.foreground": "#fff",
             "icon.foreground": "#fff",
             "statusBar.foreground": "#fff",
-            "activityBarTop.foreground": "#fff"
+            "activityBarTop.foreground": "#fff",
+            "tab.activeBackground" : "#070808",
+            "breadcrumb.background" : "#070808"
         },
         "[Tokyo Night Dark]": {
             "sideBar.background": "#000",
