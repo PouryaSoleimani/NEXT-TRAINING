@@ -1,5 +1,6 @@
 import axios from 'axios'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 type AllUsersType = [{ id: number, name: string, age: number }]
 
@@ -8,7 +9,8 @@ type AllUsersType = [{ id: number, name: string, age: number }]
 // COMPONENT ================================================================================================================================================
 const JsonServerPage = () => {
     const [users, setusers] = useState<AllUsersType>([{ id: 0, name: '', age: 0 }])
-
+    const [deleteID, setDeleteID] = useState<number | string>(0)
+    const router = useRouter()
     useEffect(() => {
         fetch("http://localhost:4000/users")
             .then(response => response.json())
@@ -17,6 +19,13 @@ const JsonServerPage = () => {
 
     function postApi() {
         axios.post("http://localhost:4000/users", { id: 11, name: "pouria", age: 32 }, { headers: { "Content-Type": "application/json" } })
+    }
+
+    function deletePost(id: number) {
+        axios.delete(`http://localhost:4000/users/${Number(id)}`)
+            .then(data => console.info(data))
+            .then(data => router.reload())
+            .catch(err => console.error(err))
     }
 
     // RETURN ================================================================================================================================================
@@ -40,6 +49,10 @@ const JsonServerPage = () => {
                 <div className='flex justify-center'>
                     <button onClick={postApi} className='bg-zinc-900 text-cyan-500 p-2 px-4 rounded-md hover:bg-zinc-800'>Add User</button>
                 </div>
+                <form onSubmit={(e) => { e.preventDefault(); deletePost(Number(deleteID)); }} className='flex flex-col justify-center items-center gap-2 bg-zinc-800 p-5 w-fit mx-auto my-10 rounded-lg'>
+                    <input type="text" value={deleteID} onChange={(e) => { setDeleteID(Number(e.target.value)) }} className='p-2 border border-black rounded-xl' />
+                    <button type='submit' className='btn btn-danger'>DELETE</button>
+                </form>
             </div>
         </div>
     )
