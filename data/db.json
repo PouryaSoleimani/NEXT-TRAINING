@@ -16,13 +16,13 @@
       "id": "3",
       "name": "Reza",
       "age": 35,
-      "isToggle": true
+      "isToggle": false
     },
     {
       "id": "4",
       "name": "Mehdi",
       "age": 40,
-      "isToggle": true
+      "isToggle": false
     },
     {
       "id": "5",
