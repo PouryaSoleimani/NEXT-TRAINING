@@ -1,7 +1,8 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
-import { useRouter as USEROUTER } from "next/navigation"
-import SingleTodoComponent from './SingleTodoComponent'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import SingleTodoComponent from './SingleTodoComponent';
+import { useRouter as USEROUTER } from 'next/navigation';
+
 type AllUsersType = [{ id: number, name: string, age: number, isToggle: boolean }]
 
 interface UserProps { id: number, name: string, age: number, isToggle: boolean }

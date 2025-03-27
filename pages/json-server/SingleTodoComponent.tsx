@@ -16,7 +16,6 @@ const SingleTodoComponent: React.FC<SingleTodo> = ({ id, name, age, isToggle }) 
             axios.put(`http://localhost:4000/users/${ID}`, { id: id, name: name, age: age, isToggle: !user.isToggle }) // Spread the existing user object and update the age
                 .then((data) => { setUser(data.data) })
                 .catch(err => console.error('Error updating user:', err));
-
         }
     }
     // RETURN  ====================================================================================================================================================
