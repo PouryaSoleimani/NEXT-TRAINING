@@ -32,14 +32,14 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   // TO ADD A QUERY , WE MUST USE ? IN THE PATH NAME IN OUR BROWSER
 
   const userID = context.params?.id
-  const req = await fetch(`https://jsonplaceholder.typicode.com/users/${userID}`) // FETCHING DATA RELATED TO QUERY.PARAMS AND USER ID
+  const req = await fetch(`https://jsonplaceholder.typicode.com/users/${userID}`)  // FETCHING DATA RELATED TO QUERY.PARAMS AND USER ID
   const data = await req.json()
 
-  // REDIRECTING THE USER TO THE {404 PAGE} IF THERE IS NO DATA FOR THAT ROUTE
+  // ==> REDIRECTING THE USER TO THE {404 PAGE} IF THERE IS NO DATA FOR THAT ROUTE
   if (!Object.keys(data).length) {
     return {
       notFound: true,
-      redirect: { destination: '/ssg/product-notfound' }      // CUSTOM REDIRECTING
+      redirect: { destination: '/ssg/product-notfound' }    // ==> CUSTOM REDIRECTING
     }
   };
 
