@@ -21,10 +21,10 @@ const JsonServerPage = () => {
         <div>
             <div>
                 <h1 className='bg-zinc-800 text-cyan-500 text-3xl text-center font-bold p-4 w-full'>JSON SERVER</h1>
-                <div className='flex flex-wrap items-center justify-center gap-2 p-5'>
+                <div className='flex flex-wrap items-center justify-center gap-10 p-5'>
                     {users.length ?
                         users.map((user) => (
-                            <Link href={`/json-server/${user.id}`} className=' w-[20rem] h-[12rem]  mx-auto p-4 bg-zinc-900 border text-cyan-500 rounded-md' key={user.id}>
+                            <Link href={`/json-server/${user.id}`} className=' w-[20rem] h-[12rem]  mx-auto p-4 bg-zinc-900 border text-cyan-500 rounded-md hover:-translate-y-2 duration-300' key={user.id}>
                                 <h1 className='w-full text-center bg-black text-white font-bold'>{user.id}</h1>
                                 <h2 className='tracking-tighter text-center font-black mt-2 '>{user.name}</h2>
                                 <p className='text-center w-full mt-2 text-3xl font-black'>{user.age}</p>
