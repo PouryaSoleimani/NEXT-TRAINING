@@ -5,13 +5,15 @@ import React, { useEffect, useState } from 'react'
 import { useRouter as USEROUTER } from "next/navigation"
 type AllUsersType = [{ id: number, name: string, age: number, isToggle: boolean }]
 
-
+interface UserProps { id: number, name: string, age: number, isToggle: boolean }
 
 // COMPONENT ================================================================================================================================================
-const JsonServerPage = () => {
+const JsonServerPage: React.FC<UserProps> = ({ id, age, name, isToggle }) => {
+
+    const [myUser, setMyUser] = useState({ id: id, name: name, age: age, isToggle: isToggle })
+
     const router = useRouter()
     const ROUTER = USEROUTER()
-    const [myUser, setMyUser] = useState({ id: 0, name: '', age: 0, isToggle: true })
     const [users, setusers] = useState<AllUsersType>([{ id: 0, name: '', age: 0, isToggle: true }])
     const [deleteID, setDeleteID] = useState<number | string>(0)
 
