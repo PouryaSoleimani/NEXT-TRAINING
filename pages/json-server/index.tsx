@@ -15,25 +15,25 @@ const JsonServerPage = () => {
     const [updateAge, setUpdateAge] = useState<number | string>(0)
 
     const router = useRouter()
-
+    // GET  ====================================================================================================================================================
     useEffect(() => {
         fetch("http://localhost:4000/users")
             .then(response => response.json())
             .then(json => setusers(json))
     }, [])
-
+    // POST  ===================================================================================================================================================
     function postApi() {
         axios.post("http://localhost:4000/users", { id: "12", name: "alireza", age: 32 }, { headers: { "Content-Type": "application/json" } })
             .then(data => router.reload())
     }
-
+    // DELETE  =================================================================================================================================================
     function deletePost(id: number) {
         axios.delete(`http://localhost:4000/users/${Number(id)}`)
             .then(data => console.info(data))
             .then(data => router.reload())
             .catch(err => console.error(err))
     }
-
+    // PUT  ====================================================================================================================================================
     function userAgeUpdater(id: number, age: number) {
         const user = users.find(user => user.id == id); // Find the user object
         if (user) {
