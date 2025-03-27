@@ -35,11 +35,14 @@ const JsonServerPage = () => {
     }
 
     function userAgeUpdater(id: number, age: number) {
-        const user = users.find(user => user.id === id); // Find the user object
-        axios
-            .put(`http://localhost:4000/users/${id}`, { ...user, name: user?.name, age: age }) // Spread the existing user object and update the age
-            .then(() => router.reload())
-            .catch(err => console.error('Error updating user:', err));
+        const user = users.find(user => user.id == id); // Find the user object
+        if (user) {
+            axios.put(`http://localhost:4000/users/${id}`, { name: user.name, age: age }) // Spread the existing user object and update the age
+                .then(() => router.reload())
+                .catch(err => console.error('Error updating user:', err));
+        } else {
+            console.error('User not found');
+        }
     }
 
     // RETURN ================================================================================================================================================
