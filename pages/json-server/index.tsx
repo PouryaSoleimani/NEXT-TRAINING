@@ -1,6 +1,4 @@
 import axios from 'axios'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import { useRouter as USEROUTER } from "next/navigation"
 import SingleTodoComponent from './SingleTodoComponent'
@@ -13,7 +11,6 @@ const JsonServerPage: React.FC<UserProps> = ({ id, age, name, isToggle }) => {
 
     const [myUser, setMyUser] = useState({ id: id, name: name, age: age, isToggle: isToggle })
 
-    const router = useRouter()
     const ROUTER = USEROUTER()
     const [users, setusers] = useState<AllUsersType>([{ id: 0, name: '', age: 0, isToggle: true }])
     const [deleteID, setDeleteID] = useState<number | string>(0)

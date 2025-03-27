@@ -1,6 +1,5 @@
-import axios from 'axios';
-import Link from 'next/link'
 import React, { useState } from 'react'
+import axios from 'axios';
 import { useRouter as USEROUTER } from "next/navigation"
 interface SingleTodo { id: number, name: string, age: number, isToggle: boolean }
 

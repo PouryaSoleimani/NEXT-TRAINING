@@ -649,7 +649,7 @@
                     ],
                     "settings": {
                         "foreground": "#EF596F",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 },
                 {
@@ -658,7 +658,7 @@
                     ],
                     "settings": {
                         "foreground": "#61AFEF",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 },
                 {
@@ -677,7 +677,7 @@
                     ],
                     "settings": {
                         "foreground": "#E5C07B",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 }
             ]
@@ -1229,178 +1229,6 @@
                 }
             ]
         },
-        // "[GitHub Dark Default]": {
-        //     "textMateRules": [
-        //         {
-        //             "scope": [
-        //                 "support.constant.property-value.css",
-        //                 "constant.numeric.css",
-        //                 "punctuation.definition.string.end.css",
-        //                 "source.json.comments"
-        //             ],
-        //             "settings": {
-        //                 "foreground": "#7EE787"
-        //             }
-        //         },
-        //         {
-        //             "scope": [
-        //                 "support.class.component"
-        //             ],
-        //             "settings": {
-        //                 "foreground": "#ceb483"
-        //             }
-        //         },
-        //         {
-        //             "scope": [
-        //                 "punctuation.definition.tag.begin.tsx",
-        //                 "punctuation.definition.tag.begin.jsx",
-        //                 "punctuation.definition.tag.begin.js",
-        //                 "punctuation.definition.tag.end.tsx",
-        //                 "punctuation.definition.tag.end.jsx",
-        //                 "punctuation.definition.tag.end.ts",
-        //                 "punctuation.definition.tag.begin.html",
-        //                 "punctuation.definition.tag.end.html",
-        //                 "text.html.derivative",
-        //                 "text.html.derivative",
-        //                 "constant.numeric.css",
-        //                 "support.constant.property-value.css",
-        //                 "support.constant.vendored.property-value.css"
-        //             ],
-        //             "settings": {
-        //                 "foreground": "#fff",
-        //                 "fontStyle": "bold"
-        //             }
-        //         },
-        //         {
-        //             "scope": [
-        //                 "entity.other.attribute-name.class.css"
-        //             ],
-        //             "settings": {
-        //                 "foreground": "#7EE787",
-        //                 "fontStyle": "bold"
-        //             }
-        //         },
-        //         {
-        //             "scope": [
-        //                 "support.type.property-name.css",
-        //                 "entity.name"
-        //             ],
-        //             "settings": {
-        //                 "foreground": "#79B8FF",
-        //                 "fontStyle": "bold"
-        //             }
-        //         },
-        //         {
-        //             "scope": [
-        //                 "entity.name.type.interface",
-        //                 "meta.selector.css",
-        //                 "meta.selector.css.pseudo-class",
-        //                 "meta.selector.css.pseudo-element",
-        //                 "entity.name.type",
-        //                 "meta.definition.variable",
-        //                 "source.tsx"
-        //             ],
-        //             "settings": {
-        //                 "foreground": "#d2a8ff"
-        //             }
-        //         },
-        //         {
-        //             "scope": [
-        //                 "entity.other.attribute-name.html",
-        //                 "entity.other.attribute-name.jsx",
-        //                 "entity.other.attribute-name.js",
-        //                 "entity.other.attribute-name.tsx"
-        //             ],
-        //             "settings": {
-        //                 "foreground": "#B392F0"
-        //             }
-        //         },
-        //         {
-        //             "scope": [
-        //                 "comment",
-        //                 "variable.parameter",
-        //                 "comment.line.double-slash.tsx",
-        //                 "entity.other.attribute-name.tsx",
-        //                 "comment.line.double-slash.js"
-        //             ],
-        //             "settings": {
-        //                 "fontStyle": "bold"
-        //             }
-        //         },
-        //         {
-        //             "scope": [
-        //                 "variable.other.constant.tsx",
-        //                 "variable.other.constant.jsx",
-        //                 "variable.other.constant",
-        //                 "support.constant.media.css",
-        //                 "support.type.property-name.media.css",
-        //                 "variable.other.constant.tsx",
-        //                 "meta.definition.variable"
-        //             ],
-        //             "settings": {
-        //                 "foreground": "#A5D6FF",
-        //                 "fontStyle": "bold"
-        //             }
-        //         },
-        //         {
-        //             "scope": [
-        //                 "variable.other.property.tsx",
-        //                 "variable.other.property.jsx",
-        //                 "variable.other.property.js",
-        //                 "variable.other.property.ts",
-        //                 "meta.var.expr.tsx"
-        //             ],
-        //             "settings": {
-        //                 "foreground": "#fafafa",
-        //                 "fontStyle": "bold"
-        //             }
-        //         },
-        //         {
-        //             "scope": [
-        //                 "entity.other.attribute-name.html",
-        //                 "entity.other.attribute-name.jsx",
-        //                 "entity.other.attribute-name.js",
-        //                 "entity.other.attribute-name.tsx",
-        //                 "entity.name.type",
-        //                 "entity.name.function.member",
-        //             ],
-        //             "settings": {
-        //                 "foreground": "#B392F0"
-        //             }
-        //         },
-        //         {
-        //             "scope": [
-        //                 "variable.other.constant.object.tsx",
-        //                 "variable.other.constant.tsx",
-        //                 "keyword.operator.type.annotation.tsx",
-        //                 "entity.name.type.class",
-        //                 "entity.name.function"
-        //             ],
-        //             "settings": {
-        //                 "foreground": "#79b8ff",
-        //                 "fontStyle": "bold"
-        //             }
-        //         },
-        //         {
-        //             "scope": [
-        //                 "meta.template.expression.tsx"
-        //             ],
-        //             "settings": {
-        //                 "foreground": "#B392F0"
-        //             }
-        //         },
-        //         {
-        //             "scope": [
-        //                 // "variable.other.constant.object.tsx"
-        //                 ""
-        //             ],
-        //             "settings": {
-        //                 "foreground": "#fafafa",
-        //                 "fontStyle": "bold"
-        //             }
-        //         },
-        //     ]
-        // },
         "[GitHub Dark High Contrast]": {
             "textMateRules": [
                 {
@@ -1439,7 +1267,7 @@
                     ],
                     "settings": {
                         "foreground": "#fff",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 },
                 {
@@ -1448,7 +1276,7 @@
                     ],
                     "settings": {
                         "foreground": "#7EE787",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 },
                 {
@@ -1457,7 +1285,7 @@
                     ],
                     "settings": {
                         "foreground": "#79B8FF",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 },
                 {
@@ -1489,7 +1317,7 @@
                         "comment.line.double-slash.js"
                     ],
                     "settings": {
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 },
                 {
@@ -1502,7 +1330,7 @@
                     ],
                     "settings": {
                         "foreground": "#A5D6FF",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 },
                 {
@@ -1514,7 +1342,7 @@
                     ],
                     "settings": {
                         "foreground": "#fafafa",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 },
                 {
@@ -1523,7 +1351,7 @@
                     ],
                     "settings": {
                         "foreground": "#79b8ff",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 }
             ]
@@ -1567,7 +1395,7 @@
                     ],
                     "settings": {
                         "foreground": "#fff",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 },
                 {
@@ -1576,7 +1404,7 @@
                     ],
                     "settings": {
                         "foreground": "#7EE787",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 },
                 {
@@ -1585,7 +1413,7 @@
                     ],
                     "settings": {
                         "foreground": "#79B8FF",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 },
                 {
@@ -1616,7 +1444,7 @@
                         "comment.line.double-slash.js"
                     ],
                     "settings": {
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 },
                 {
@@ -1629,7 +1457,7 @@
                     ],
                     "settings": {
                         "foreground": "#A5D6FF",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 },
                 {
@@ -1641,7 +1469,7 @@
                     ],
                     "settings": {
                         "foreground": "#fafafa",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 },
                 {
@@ -1650,7 +1478,7 @@
                     ],
                     "settings": {
                         "foreground": "#79b8ff",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 }
             ]
@@ -1727,7 +1555,7 @@
                     ],
                     "settings": {
                         "foreground": "#fff",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 },
                 {
@@ -1749,7 +1577,7 @@
                     ],
                     "settings": {
                         "foreground": "#7EE787",
-                        "fontStyle": "bold"
+                        "fontStyle": ""
                     }
                 },
                 {
