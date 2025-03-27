@@ -17,9 +17,9 @@ const JsonServerPage = () => {
     const router = useRouter()
     // GET  ====================================================================================================================================================
     useEffect(() => {
-        fetch("http://localhost:4000/users")
-            .then(response => response.json())
-            .then(json => setusers(json))
+        axios.get("http://localhost:4000/users")
+            .then(data => setusers(data.data))
+            .catch(err => console.error(err))
     }, [])
     // POST  ===================================================================================================================================================
     function postApi() {
@@ -27,14 +27,14 @@ const JsonServerPage = () => {
             .then(data => router.reload())
     }
     // DELETE  =================================================================================================================================================
-    function deletePost(id: number) {
+    function userDelete(id: number) {
         axios.delete(`http://localhost:4000/users/${Number(id)}`)
             .then(data => console.info(data))
             .then(data => router.reload())
             .catch(err => console.error(err))
     }
     // PUT  ====================================================================================================================================================
-    function userAgeUpdater(id: number, age: number) {
+    function userUpdate(id: number, age: number) {
         const user = users.find(user => user.id == id); // Find the user object
         if (user) {
             axios.put(`http://localhost:4000/users/${id}`, { id: user.id, name: user.name, age: age }) // Spread the existing user object and update the age
@@ -66,15 +66,15 @@ const JsonServerPage = () => {
                 <div className='flex justify-center'>
                     <button onClick={postApi} className='bg-zinc-900 text-cyan-500 p-2 px-4 rounded-md hover:bg-zinc-800'>Add User</button>
                 </div>
-                <form className='flex flex-col justify-center items-center gap-2 bg-zinc-800 p-5 w-fit mx-auto my-10 rounded-lg' onSubmit={e => { e.preventDefault(); userAgeUpdater(Number(updateID), Number(updateAge)) }}>
+                <form className='flex flex-col justify-center items-center gap-2 bg-zinc-800 p-5 w-fit mx-auto my-10 rounded-lg' onSubmit={e => { e.preventDefault(); userUpdate(Number(updateID), Number(updateAge)) }}>
                     <h2 className='text-white text-start my-0 leading-3 font-bold'>User ID :</h2>
                     <input type="text" value={updateID} onChange={e => setUpdateID(e.target.value)} className='p-1 my-1 rounded-lg font-semibold outline-none text-xl' />
                     <h2 className='text-white text-start my-0 leading-3 font-bold'> User Age :</h2>
                     <input type="text" value={updateAge} onChange={e => setUpdateAge(e.target.value)} className='p-1 my-1 rounded-lg font-semibold outline-none text-xl' />
-                    <button type='submit' className='btn btn-success w-full font-bold' onClick={() => userAgeUpdater(Number(updateID), Number(updateAge))}>Update</button>
+                    <button type='submit' className='btn btn-success w-full font-bold' onClick={() => userUpdate(Number(updateID), Number(updateAge))}>Update</button>
                 </form>
 
-                <form onSubmit={(e) => { e.preventDefault(); deletePost(Number(deleteID)); }} className='flex flex-col justify-center items-center gap-2 bg-zinc-800 p-5 w-fit mx-auto my-10 rounded-lg'>
+                <form onSubmit={(e) => { e.preventDefault(); userDelete(Number(deleteID)); }} className='flex flex-col justify-center items-center gap-2 bg-zinc-800 p-5 w-fit mx-auto my-10 rounded-lg'>
                     <input type="text" value={deleteID} onChange={(e) => { setDeleteID(Number(e.target.value)) }} className='p-2 border border-black rounded-xl' />
                     <button type='submit' className='btn btn-danger'>DELETE</button>
                 </form>
