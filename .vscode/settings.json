@@ -1860,7 +1860,7 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "GamemodeOne.json-compact-prettier"
     },
     "git.enableSmartCommit": true,
     "files.associations": {
