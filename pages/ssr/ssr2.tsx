@@ -21,7 +21,7 @@ const SSR2: NextPage<Props> = ({ data, query }) => {
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-20 blur-lg -z-10"></div>
                     {/* Floating Particles */}
                     <div className="absolute inset-0 overflow-hidden flowting-particles">
-                        <div className="animate-float-slow absolute top-5 left-1/2 w-1 h-1 bg-yellow-400 rounded-full opacity-90 z-50"></div>
+                        <div className="animate-float-slow absolute top-5 left-1/2 w-3 h-3 bg-yellow-400 rounded-full opacity-40 z-50"></div>
                         <div className="animate-float-slow absolute top-2 left-2 w-2 h-2 bg-blue-400 rounded-full opacity-40"></div>
                         <div className="animate-float-medium absolute top-8 right-4 w-1.5 h-1.5 bg-purple-400 rounded-full opacity-30"></div>
                         <div className="animate-float-fast absolute bottom-4 left-1/2 w-1 h-1 bg-pink-400 rounded-full opacity-20"></div>
