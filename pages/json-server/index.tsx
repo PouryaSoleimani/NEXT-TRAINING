@@ -8,13 +8,14 @@ type AllUsersType = [{ id: number, name: string, age: number, isToggle: boolean 
 
 // COMPONENT ================================================================================================================================================
 const JsonServerPage = () => {
+    const router = useRouter()
+
     const [users, setusers] = useState<AllUsersType>([{ id: 0, name: '', age: 0, isToggle: true }])
     const [deleteID, setDeleteID] = useState<number | string>(0)
 
     const [updateID, setUpdateID] = useState<number | string>(0)
     const [updateAge, setUpdateAge] = useState<number | string>(0)
 
-    const router = useRouter()
     // GET  ====================================================================================================================================================
     useEffect(() => {
         axios.get("http://localhost:4000/users")
