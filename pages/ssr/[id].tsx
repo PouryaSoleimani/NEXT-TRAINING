@@ -37,13 +37,10 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
   // REDIRECTING THE USER TO THE {404 PAGE} IF THERE IS NO DATA FOR THAT ROUTE
   if (!Object.keys(data).length) {
-
     return {
       notFound: true,
-      // CUSTOM REDIRECTING
-      redirect: { destination: '/ssg/product-notfound' }
+      redirect: { destination: '/ssg/product-notfound' }      // CUSTOM REDIRECTING
     }
-
   };
 
 
