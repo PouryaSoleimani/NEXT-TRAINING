@@ -66,12 +66,22 @@ const JsonServerPage = () => {
                 <div className='flex justify-center'>
                     <button onClick={postApi} className='bg-zinc-900 text-cyan-500 p-2 px-4 rounded-md hover:bg-zinc-800'>Add User</button>
                 </div>
-                <form className='flex flex-col justify-center items-center gap-2 bg-zinc-800 p-5 w-fit mx-auto my-10 rounded-lg' onSubmit={e => { e.preventDefault(); userUpdate(Number(updateID), Number(updateAge)) }}>
-                    <h2 className='text-white text-start my-0 leading-3 font-bold'>User ID :</h2>
-                    <input type="text" value={updateID} onChange={e => setUpdateID(e.target.value)} className='p-1 my-1 rounded-lg font-semibold outline-none text-xl' />
-                    <h2 className='text-white text-start my-0 leading-3 font-bold'> User Age :</h2>
-                    <input type="text" value={updateAge} onChange={e => setUpdateAge(e.target.value)} className='p-1 my-1 rounded-lg font-semibold outline-none text-xl' />
-                    <button type='submit' className='btn btn-success w-full font-bold' onClick={() => userUpdate(Number(updateID), Number(updateAge))}>Update</button>
+                <form className='flex flex-col justify-center items-center gap-4 bg-gradient-to-br from-zinc-800 to-zinc-900 p-8 w-[380px] mx-auto my-10 rounded-2xl border border-zinc-700/30' onSubmit={e => { e.preventDefault(); userUpdate(Number(updateID), Number(updateAge)) }}   >
+                    <div className="w-full space-y-6">
+                        <div className="relative">
+                            <h2 className='absolute -top-3 left-4 px-2 bg-gradient-to-r from-zinc-800 to-zinc-900 text-cyan-400 text-sm font-medium'>User ID</h2>
+                            <input type="text" value={updateID} onChange={e => setUpdateID(e.target.value)} className='w-full p-3 bg-zinc-800/50 rounded-xl border border-zinc-700/50 text-white font-medium outline-none focus:border-cyan-500/50 transition-all duration-300 shadow-inner' />
+                        </div>
+
+                        <div className="relative">
+                            <h2 className='absolute -top-3 left-4 px-2 bg-gradient-to-r from-zinc-800 to-zinc-900 text-cyan-400 text-sm font-medium'>User Age</h2>
+                            <input type="text" value={updateAge} onChange={e => setUpdateAge(e.target.value)} className='w-full p-3 bg-zinc-800/50 rounded-xl border border-zinc-700/50 text-white font-medium outline-none focus:border-cyan-500/50 transition-all duration-300 shadow-inner' />
+                        </div>
+                    </div>
+
+                    <button type='submit' className='mt-6 w-full py-3 px-6 bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white font-medium rounded-xl shadow-lg hover:shadow-cyan-500/25 transform hover:-translate-y-0.5 transition-all duration-300'  >
+                        Update User
+                    </button>
                 </form>
 
                 <form onSubmit={(e) => { e.preventDefault(); userDelete(Number(deleteID)); }} className='flex flex-col justify-center items-center gap-2 bg-zinc-800 p-5 w-fit mx-auto my-10 rounded-lg'>
