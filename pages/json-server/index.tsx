@@ -15,7 +15,6 @@ const JsonServerPage: React.FC<UserProps> = ({ id, age, name, isToggle }) => {
     const ROUTER = USEROUTER()
     const [users, setusers] = useState<AllUsersType>([{ id: 0, name: '', age: 0, isToggle: true }])
     const [deleteID, setDeleteID] = useState<number | string>(0)
-
     const [updateID, setUpdateID] = useState<number | string>(0)
     const [updateAge, setUpdateAge] = useState<number | string>(0)
 

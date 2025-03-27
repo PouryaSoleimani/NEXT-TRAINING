@@ -1631,7 +1631,8 @@
                 },
                 {
                     "scope": [
-                        "variable.parameter"
+                        "variable.parameter",
+                        "entity.name.type.module",
                     ],
                     "settings": {
                         "foreground": "#ffa657"
