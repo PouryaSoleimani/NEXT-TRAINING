@@ -13,6 +13,7 @@ const CSR2 = () => {
             .then(json => setTodos(json))
     }, [])
 
+    // RETURN ================================================================================================================================================
     return (
         <>
             <h1 className='bg-zinc-800 text-cyan-500 text-3xl text-center font-bold p-4 w-full'>CRS RENDERING - CSR2.TSX</h1>
