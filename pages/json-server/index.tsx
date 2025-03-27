@@ -11,6 +11,7 @@ const JsonServerPage = () => {
     const [users, setusers] = useState<AllUsersType>([{ id: 0, name: '', age: 0 }])
     const [deleteID, setDeleteID] = useState<number | string>(0)
     const router = useRouter()
+
     useEffect(() => {
         fetch("http://localhost:4000/users")
             .then(response => response.json())
@@ -18,7 +19,8 @@ const JsonServerPage = () => {
     }, [])
 
     function postApi() {
-        axios.post("http://localhost:4000/users", { id: "12", name: "alireza", age: 32 }, { headers: { "Content-Type": "application/json" } }).then(data => router.reload())
+        axios.post("http://localhost:4000/users", { id: "12", name: "alireza", age: 32 }, { headers: { "Content-Type": "application/json" } })
+            .then(data => router.reload())
     }
 
     function deletePost(id: number) {
