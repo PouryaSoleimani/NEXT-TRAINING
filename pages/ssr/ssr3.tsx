@@ -29,6 +29,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
     const request = await fetch("https://jsonplaceholder.typicode.com/users")
     const data = await (request.json())
+
     console.log("PARAMS ====> ", params)
     // Accessing the Cookie via req variable
     console.log("COOKIES ====>", req.cookies)
