@@ -1800,7 +1800,7 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "editor.columnSelection": false,
-    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.colorTheme": "Next Dark Pro",
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.fontLigatures.enabled": true,
     "gitlens.advanced.messages": {
