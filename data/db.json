@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Pourya",
       "age": 25,
-      "isToggle": false
+      "isToggle": true
     },
     {
       "id": "2",
@@ -22,7 +22,7 @@
       "id": "4",
       "name": "Mehdi",
       "age": 40,
-      "isToggle": false
+      "isToggle": true
     },
     {
       "id": "5",
