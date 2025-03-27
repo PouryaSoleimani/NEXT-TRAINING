@@ -14,7 +14,7 @@ const SingleTodoComponent: React.FC<SingleTodo> = ({ id, name, age, isToggle }) 
 
     function toggleHandler(ID: number | string) {
         return () => {
-            axios.put(`http://localhost:4000/users/${ID}`, { id: id, name: name, age: age, isToggle: !isToggle }) // Spread the existing user object and update the age
+            axios.put(`http://localhost:4000/users/${ID}`, { id: id, name: name, age: age, isToggle: !user.isToggle }) // Spread the existing user object and update the age
                 .then((data) => { setUser(data.data) })
                 .catch(err => console.error('Error updating user:', err));
 
@@ -43,7 +43,7 @@ const SingleTodoComponent: React.FC<SingleTodo> = ({ id, name, age, isToggle }) 
                         {user.isToggle ? "🟩" : "🟥"}
                     </p>
                 </div>
-                <button className='bg-cyan-500 p-3 rounded-xl text-white mx-auto -translate-y-8 font-bold w-full' onClick={toggleHandler(id)}>TOGGLE</button>
+                <button className='bg-orange-500 p-3 rounded-xl text-white mx-auto -translate-y-8 font-bold w-full' onClick={toggleHandler(id)}>TOGGLE</button>
             </div >
         </>
     )
