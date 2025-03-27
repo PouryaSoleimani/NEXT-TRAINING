@@ -24,13 +24,12 @@ const JsonServerPage = () => {
     // POST  ===================================================================================================================================================
     function postApi() {
         axios.post("http://localhost:4000/users", { id: "12", name: "alireza", age: 32 }, { headers: { "Content-Type": "application/json" } })
-            .then(data => router.reload())
+            .then(data => { console.info(data); router.reload() })
     }
     // DELETE  =================================================================================================================================================
     function userDelete(id: number) {
         axios.delete(`http://localhost:4000/users/${Number(id)}`)
-            .then(data => console.info(data))
-            .then(data => router.reload())
+            .then(data => { console.info(data); router.reload() })
             .catch(err => console.error(err))
     }
     // PUT  ====================================================================================================================================================
