@@ -1,63 +1,16 @@
 {
-  "users": [
-    {
-      "id": "1",
-      "name": "Pourya",
-      "age": 25
-    },
-    {
-      "id": "2",
-      "name": "Ali",
-      "age": 30
-    },
-    {
-      "id": "3",
-      "name": "Reza",
-      "age": 35
-    },
-    {
-      "id": "4",
-      "name": "Mehdi",
-      "age": 40
-    },
-    {
-      "id": "5",
-      "name": "Hossein",
-      "age": 45
-    },
-    {
-      "id": "6",
-      "name": "Saeed",
-      "age": 50
-    },
-    {
-      "id": "7",
-      "name": "Amir",
-      "age": 55
-    },
-    {
-      "id": "8",
-      "name": "Mahdi",
-      "age": 24
-    },
-    {
-      "id": "9",
-      "name": "Mohammad",
-      "age": 21
-    },
-    {
-      "id": "10",
-      "name": "Reza",
-      "age": 24
-    },
-    {
-      "id": "11",
-      "name": "Amin",
-      "age": 29
-    },
-    {
-      "age": 32,
-      "id": "12"
-    }
-  ]
+    "users": [
+        { "id": "1", "name": "Pourya", "age": 25 },
+        { "id": "2", "name": "Ali", "age": 30 },
+        { "id": "3", "name": "Reza", "age": 35 },
+        { "id": "4", "name": "Mehdi", "age": 40 },
+        { "id": "5", "name": "Hossein", "age": 45 },
+        { "id": "6", "name": "Saeed", "age": 50 },
+        { "id": "7", "name": "Amir", "age": 55 },
+        { "id": "8", "name": "Mahdi", "age": 24 },
+        { "id": "9", "name": "Mohammad", "age": 21 },
+        { "id": "10", "name": "Reza", "age": 24 },
+        { "id": "11", "name": "Amin", "age": 29 },
+        { "age": 32, "id": "12" }
+    ]
 }

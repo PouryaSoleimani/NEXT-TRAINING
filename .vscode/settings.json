@@ -1,7 +1,7 @@
 {
     "editor.fontFamily": "Calibri",
-    "editor.fontWeight": "900",
-    "editor.letterSpacing": 0.1,
+    "editor.fontWeight": "500",
+    "editor.letterSpacing": -0.1,
     "editor.lineNumbers": "on",
     "workbench.iconTheme": "material-icon-theme",
     "editor.minimap.enabled": false,
