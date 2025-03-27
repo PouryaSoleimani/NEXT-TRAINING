@@ -6,7 +6,10 @@ interface Props {
     data: [{ id: number; name: string; username: string; email: string }];
     query: { [key: string]: string | string[] | undefined };
 }
+
 type SingleUserType = { id: number; name: string; username: string; email: string };
+
+
 
 // COMPONENT  ==================================================================================================================================
 const SSR2: NextPage<Props> = ({ data, query }) => {
@@ -14,7 +17,7 @@ const SSR2: NextPage<Props> = ({ data, query }) => {
 
         <div className="flex w-screen min-h-screen p-12 gap-8 flex-wrap items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800">
             <p className='text-white whitespace-nowrap  w-full text-center text-2xl bg-white/10 backdrop-blur-md py-3 rounded-xl font-bold'> {JSON.stringify(query)}</p>
-            
+
             {data.slice(0, 9).map((user: SingleUserType) => (
                 <Link href={`/ssr/${user.id}`} key={user.id} className="relative w-72 h-48 flex flex-col items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 duration-500 border border-gray-700 overflow-hidden"   >
                     {/* Decorative Glow */}
