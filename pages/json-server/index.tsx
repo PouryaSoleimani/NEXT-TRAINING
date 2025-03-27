@@ -2,13 +2,13 @@ import axios from 'axios'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
-type AllUsersType = [{ id: number, name: string, age: number }]
+type AllUsersType = [{ id: number, name: string, age: number, isToggle: boolean }]
 
 
 
 // COMPONENT ================================================================================================================================================
 const JsonServerPage = () => {
-    const [users, setusers] = useState<AllUsersType>([{ id: 0, name: '', age: 0 }])
+    const [users, setusers] = useState<AllUsersType>([{ id: 0, name: '', age: 0, isToggle: true }])
     const [deleteID, setDeleteID] = useState<number | string>(0)
 
     const [updateID, setUpdateID] = useState<number | string>(0)
@@ -43,8 +43,20 @@ const JsonServerPage = () => {
             console.error('User not found');
         }
     }
-
-    // RETURN ================================================================================================================================================
+    // TOGGLE  ====================================================================================================================================================
+    function toggleHandler(ID: number | string) {
+        return () => {
+            const user = users.find(user => user.id == ID); // Find the user object
+            if (user) {
+                axios.put(`http://localhost:4000/users/${ID}`, { id: user.id, name: user.name, age: user.age, isToggle: !user.isToggle }) // Spread the existing user object and update the age
+                    .then(() => router.reload())
+                    .catch(err => console.error('Error updating user:', err));
+            } else {
+                console.error('User not found');
+            }
+        }
+    }
+    // RETURN ====================================================================================================================================================
     return (
         <div>
             <div>
@@ -52,11 +64,15 @@ const JsonServerPage = () => {
                 <div className='flex flex-wrap items-center justify-center gap-10 p-5'>
                     {users.length ?
                         users.map((user) => (
-                            <Link href={`/json-server/${user.id}`} className=' w-[20rem] h-[12rem]  mx-auto p-4 bg-zinc-900 border text-cyan-500 rounded-md hover:-translate-y-2 duration-300' key={user.id}>
-                                <h1 className='w-full text-center bg-black text-white font-bold'>{user.id}</h1>
-                                <h2 className='tracking-tighter text-center font-black mt-2 '>{user.name}</h2>
-                                <p className='text-center w-full mt-2 text-3xl font-black'>{user.age}</p>
-                            </Link>
+                            <div className='flex flex-col'>
+                                <Link href={`/json-server/${user.id}`} className=' w-[20rem] h-[18rem]  mx-auto p-4 bg-zinc-900 border text-cyan-500 rounded-md hover:-translate-y-2 duration-300' key={user.id}>
+                                    <h1 className='w-full text-center bg-black text-white font-bold'>{user.id}</h1>
+                                    <h2 className='tracking-tighter text-center font-black mt-2 '>{user.name}</h2>
+                                    <p className='text-center w-full mt-2 text-3xl font-black'>{user.age}</p>
+                                    <p className='text-center py-3 -translate-y-4 text-4xl'>{user.isToggle ? "🟩" : "🟥"}</p>
+                                </Link>
+                                <button className='btn btn-warning mx-auto w-fit -translate-y-8 font-extrabold' onClick={toggleHandler(user.id)}>TOGGLE</button>
+                            </div>
                         ))
                         :
                         'Loading...'
