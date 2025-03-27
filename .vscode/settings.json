@@ -19,7 +19,7 @@
     "terminal.integrated.fontWeight": "900",
     "terminal.integrated.fontLigatures": true,
     "editor.linkedEditing": true,
-    "editor.lineHeight": 1.4,
+    "editor.lineHeight": 1.5,
     "editor.fontSize": 12,
     "breadcrumbs.icons": true,
     "terminal.integrated.mouseWheelZoom": true,
