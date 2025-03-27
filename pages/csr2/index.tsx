@@ -1,4 +1,5 @@
 //^ CSR2 =============================================================================================================================================
+import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 type SingleTodoType = { id: number, title: string, completed: boolean }
 
@@ -20,11 +21,11 @@ const CSR2 = () => {
             <div className='flex flex-wrap items-center justify-center gap-4 p-5'>
                 {todos.length ?
                     todos.map((todo: SingleTodoType) => (
-                        <div className='card w-[20rem] h-[20rem]  mx-auto p-4 bg-zinc-800 text-cyan-500 rounded-md' key={todo.id}>
+                        <Link href={`/csr2/${todo.id}`} className='card w-[20rem] h-[20rem]  mx-auto p-4 bg-zinc-800 text-cyan-500 rounded-md' key={todo.id}>
                             <h1 className='w-full text-center bg-black text-white font-bold'>{todo.id}</h1>
                             <h2 className='tracking-tighter '>{todo.title.slice(0, 20)}</h2>
                             <p className='text-center w-full mt-2'>{todo.completed ? <span className='text-green-900 font-bold text-xl'>COMPLETED</span> : <span className='text-red-900 font-bold text-xl'>NOT COMPLETED</span>}</p>
-                        </div>
+                        </Link>
                     ))
                     :
                     'Loading...'
