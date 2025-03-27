@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import { useRouter as USEROUTER } from "next/navigation"
+import SingleTodoComponent from './SingleTodoComponent'
 type AllUsersType = [{ id: number, name: string, age: number, isToggle: boolean }]
 
 interface UserProps { id: number, name: string, age: number, isToggle: boolean }
@@ -71,15 +72,7 @@ const JsonServerPage: React.FC<UserProps> = ({ id, age, name, isToggle }) => {
                 <div className='flex flex-wrap items-center justify-center gap-10 p-5'>
                     {users.length ?
                         users.map((user) => (
-                            <div className='flex flex-col'>
-                                <Link href={`/json-server/${user.id}`} className=' w-[20rem] h-[18rem]  mx-auto p-4 bg-zinc-900 border text-cyan-500 rounded-md hover:-translate-y-2 duration-300' key={user.id}>
-                                    <h1 className='w-full text-center bg-black text-white font-bold'>{user.id}</h1>
-                                    <h2 className='tracking-tighter text-center font-black mt-2 '>{user.name}</h2>
-                                    <p className='text-center w-full mt-2 text-3xl font-black'>{user.age}</p>
-                                    <p className='text-center py-3 -translate-y-4 text-4xl'>{user.isToggle ? "🟩" : "🟥"}</p>
-                                </Link>
-                                <button className='btn btn-warning mx-auto w-fit -translate-y-8 font-extrabold' onClick={toggleHandler(user.id)}>TOGGLE</button>
-                            </div>
+                            <SingleTodoComponent key={user.id} id={user.id} name={user.name} age={user.age} isToggle={user.isToggle} />
                         ))
                         :
                         'Loading...'
