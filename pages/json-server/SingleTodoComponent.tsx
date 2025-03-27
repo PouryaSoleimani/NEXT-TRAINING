@@ -6,10 +6,9 @@ interface SingleTodo { id: number, name: string, age: number, isToggle: boolean 
 
 //  COMPONENT ================================================================================================================================================
 const SingleTodoComponent: React.FC<SingleTodo> = ({ id, name, age, isToggle }) => {
+
     const ROUTER = USEROUTER()
     const [user, setUser] = useState({ id: id, name: name, age: age, isToggle: isToggle })
-
-
 
     function toggleHandler(ID: number | string) {
         return () => {
