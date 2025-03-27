@@ -37,28 +37,27 @@
     },
     {
       "id": "8",
-      "name": "amir",
+      "name": "Mahdi",
       "age": 24
     },
     {
       "id": "9",
-      "name": "mohammad",
+      "name": "Mohammad",
       "age": 21
     },
     {
       "id": "10",
-      "name": "reza",
+      "name": "Reza",
       "age": 24
     },
     {
       "id": "11",
-      "name": "amin",
+      "name": "Amin",
       "age": 29
     },
     {
       "id": "12",
-      "name": "",
-      "age": 25
+      "age": 30
     }
   ]
 }

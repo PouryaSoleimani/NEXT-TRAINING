@@ -35,8 +35,9 @@ const JsonServerPage = () => {
     }
 
     function userAgeUpdater(id: number, age: number) {
-        const name = users.filter(user => user.id === id)[0].name
-        axios.put(`http://localhost:4000/users/${Number(id)}`, { id: id, name: name, age: Number(age) }).then(data => router.reload())
+        const userName = users.filter(user => user.id === id)[0]?.name
+        console.info(userName)
+        axios.put(`http://localhost:4000/users/${Number(id)}`, { id: id, name: userName, age: Number(age) }).then(data => router.reload())
     }
 
     // RETURN ================================================================================================================================================
@@ -65,7 +66,9 @@ const JsonServerPage = () => {
                     <button type='submit' className='btn btn-danger'>DELETE</button>
                 </form>
                 <form className='flex flex-col justify-center items-center gap-2 bg-zinc-800 p-5 w-fit mx-auto my-10 rounded-lg' onSubmit={e => { e.preventDefault(); userAgeUpdater(Number(updateID), Number(updateAge)) }}>
+                    <h2 className='text-white text-start my-0 leading-3 font-bold'>User ID :</h2>
                     <input type="text" value={updateID} onChange={e => setUpdateID(e.target.value)} className='p-1 my-1 rounded-lg font-semibold outline-none text-xl' />
+                    <h2 className='text-white text-start my-0 leading-3 font-bold'> User Age :</h2>
                     <input type="text" value={updateAge} onChange={e => setUpdateAge(e.target.value)} className='p-1 my-1 rounded-lg font-semibold outline-none text-xl' />
                     <button type='submit' className='btn btn-success w-full font-bold' onClick={() => userAgeUpdater(Number(updateID), Number(updateAge))}>Update</button>
                 </form>
