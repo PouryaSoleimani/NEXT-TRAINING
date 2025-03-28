@@ -13,7 +13,8 @@ const FormPage = () => {
   //^FUNCTIONS
   function submitHandler(event: React.FormEvent<HTMLFormElement>) { //POST METHOD
     event.preventDefault()
-    axios.post('/api/review/requestBody', { username, password }).then(response => { console.log(response.data) })
+    // axios.post('/api/review/requestBody', { username, password }).then(response => { console.log(response.data) })
+    console.info(username , password)
     setUsername('')
     setPassword('')
   }
