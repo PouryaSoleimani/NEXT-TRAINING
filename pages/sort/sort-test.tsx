@@ -28,6 +28,7 @@ const SortTest: NextPage<props> = ({ products }) => {
   return (
     <div >
       <h1 className='text-3xl text-center py-2 bg-lime-500 font-extrabold'>SORT TEST</h1>
+      
       <div id="SortingButtons" className='bg-zinc-800 px-10 py-3 flex items-center justify-center space-x-5'>
         <button onClick={sortAscending} className='bg-black font-bold p-2 rounded-md hover:bg-zinc-800 duration-300 text-white'>Cheapest</button>
         <button onClick={sortDescending} className='bg-white text-black font-bold p-2 rounded-md hover:bg-zinc-300 duration-300'>Most Expensive</button>
