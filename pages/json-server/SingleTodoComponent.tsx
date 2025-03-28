@@ -25,17 +25,17 @@ const SingleTodoComponent: React.FC<SingleTodo> = ({ id, name, age, isToggle }) 
                     <h1 className='text-white font-bold text-3xl rounded-md'>{`ID: ${user.id}`}</h1>
                 </div>
 
-                <h2 className='text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 text-center mt-4 mb-2'> {user.name}</h2>
+                <h2 className='text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 text-center mt-4 mb-2'> {user.name}</h2>
 
                 <div className='bg-black/30 rounded-xl p-3 mb-3'>
-                    <p className='text-center text-5xl font-black text-white/90'>{user.age} <span className='text-xl font-normal text-white/60'>years old</span></p>
+                    <p className='text-center text-2xl font-black text-white/90'>{user.age} <span className='text-xl font-normal text-white/60'>years old</span></p>
                 </div>
 
                 <div className='relative flex items-center justify-center mb-4'>2
                     <p className={`text-5xl transition-transform duration-300 ${isToggle ? 'scale-110' : 'scale-90'}`}> {user.isToggle ? "🟩" : "🟥"}</p>
                 </div>
 
-                <button className='bg-orange-500 p-3 rounded-xl text-white mx-auto -translate-y-8 font-bold w-full' onClick={toggleHandler(id)}>TOGGLE</button>
+                <button className='bg-orange-500 p-3 rounded-xl text-white mx-auto -translate-y-1 font-bold w-full' onClick={toggleHandler(id)}>TOGGLE</button>
 
             </div >
         </>
