@@ -31,7 +31,7 @@ const SingleTodoComponent: React.FC<SingleTodo> = ({ id, name, age, isToggle }) 
 
                 <div className='bg-black/30 rounded-xl p-3 mb-3'>
                     <p className='text-center text-5xl font-black text-white/90'>
-                        {user.age} <span className='text-xl font-normal text-white/60'>years</span>
+                        {user.age} <span className='text-xl font-normal text-white/60'>years old</span>
                     </p>
                 </div>
 
