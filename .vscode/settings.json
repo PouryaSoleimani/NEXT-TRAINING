@@ -1381,7 +1381,7 @@
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.horizontal": "hidden",
     "editor.overviewRulerBorder": false,
-    "editor.cursorWidth": 4,
+    "editor.cursorWidth": 3,
     "editor.cursorSmoothCaretAnimation": "explicit",
     "editor.cursorStyle": "line",
     "editor.colorDecoratorsLimit": 800,
