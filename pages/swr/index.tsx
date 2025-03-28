@@ -1,28 +1,35 @@
 //^ SWR PAGE ================================================================================================================================================
+import useSWR from 'swr'
 import { NextPage } from 'next'
 import Link from 'next/link'
-import useSWR from 'swr'
 
-interface Props { }
+interface Props { users: [{ id: number, name: string, age: number | string, isToggle: boolean }] }
+type SingleUserType = { id: number, name: string, age: number | string, isToggle: boolean }
+
 
 const SWR: NextPage<Props> = ({ }) => {
 
-  const fetcher = () => fetch('http://localhost:4000/products').then(result => result.json())
+  const fetcher = () => {
+    return fetch('http://localhost:4000/users')
+      .then(result => result.json())
+  }
 
-  const { data, error, isLoading } = useSWR('products', fetcher)
+  const { data, error, isLoading } = useSWR('/users', fetcher)
 
+  if (error) { console.error(error); return <h1>ERROR</h1> }
+  if (isLoading) return <h1>IS LOADING</h1>
 
   //RETURN ===============================================================================================================================================
   return (
     <div>
       <h1 className='text-amber-700 p-2 font-bold text-4xl text-center border-b-8'>SWR PAGE</h1>
-      <div className='bg-zinc-900 p-8 font-bold flex flex-col items-start justify-center space-y-42 text-2xl'>
-        {isLoading ? <h1 className='text-sky-900'>IS LOADING</h1> : error ? (<h1 className='text-red-700 font-extrabold bg-red-400 p-6'>ERROR</h1>) : (
-          data.map((product: { id: number, title: string, price: number }) => (
-            <Link key={product.id} href={`/swr/${product.id}`} className='hover:bg-black p-2' >
-              <h2> {product.id} - {product.title} || {product.price} $</h2>
+      <div className='bg-zinc-900 p-8 font-bold grid grid-cols-4 gap-5 text-2xl'>
+        {data ?
+          data.map((user: SingleUserType) => (
+            <Link key={user.id} href={`/swr/${user.id}`} className='text-center'>
+              <p className='bg-zinc-800 p-4 rounded-md hover:bg-zinc-700 text-white'>{user.name}</p>
             </Link>
-          )))}
+          )) : null}
       </div>
     </div >
   )
