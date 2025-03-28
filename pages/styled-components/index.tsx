@@ -41,8 +41,8 @@ const StyleComponentsPage = () => {
                 <ButtonOutline className='hover:border-red-700'>No</ButtonOutline>
             </div>
             <div className='flex item-center justify-center space-x-10 border-t-8 border-[#FABB14] p-10'>
-                <StyledFilledButton className='hover:grayscale'>تایید</StyledFilledButton>
-                <StyledOutLineButton className='hover:grayscale'>لغو</StyledOutLineButton>
+                <StyledFilledButton className='hover:-translate-y-2'>تایید</StyledFilledButton>
+                <StyledOutLineButton className='hover:-translate-y-2'>لغو</StyledOutLineButton>
             </div>
         </>
     )
