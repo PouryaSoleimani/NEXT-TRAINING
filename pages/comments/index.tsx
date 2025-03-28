@@ -44,7 +44,7 @@ const Index: NextPage<Props> = ({ comments }) => {
   )
 }
 
-//^ GET STATIC PROPS =>
+//^ GET STATIC PROPS ===========================================================================================>
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const req = axios.get('https://jsonplaceholder.typicode.com/comments')
   const comments = (await req).data
