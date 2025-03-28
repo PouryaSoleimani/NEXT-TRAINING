@@ -6,7 +6,7 @@ import Link from 'next/link'
 interface Props { users: [{ id: number, name: string, age: number | string, isToggle: boolean }] }
 type SingleUserType = { id: number, name: string, age: number | string, isToggle: boolean }
 
-
+//COMPONENT ===============================================================================================================================================
 const SWR: NextPage<Props> = ({ }) => {
 
   const fetcher = () => {
@@ -18,6 +18,7 @@ const SWR: NextPage<Props> = ({ }) => {
 
   if (error) { console.error(error); return <h1>ERROR</h1> }
   if (isLoading) return <h1>IS LOADING</h1>
+
 
   //RETURN ===============================================================================================================================================
   return (
