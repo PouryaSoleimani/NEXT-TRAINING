@@ -3,6 +3,8 @@ import { useRouter } from 'next/router'
 import useSWR from 'swr'
 
 type Props = {}
+
+// COMPONENT __________________________________________________________________________________________________________________________________________________________________________________________________
 const SwrSinglePage: NextPage<Props> = ({ }) => {
 
   const router = useRouter()
@@ -11,6 +13,9 @@ const SwrSinglePage: NextPage<Props> = ({ }) => {
   const fetcher = async () => await fetch(`http://localhost:4000/users/${productID}`).then(result => result.json())
   const { data, error, isLoading } = useSWR(`http://localhost:4000/users/${productID}`, fetcher)
 
+
+
+  // RETURN _______________________________________________________________________________________________________________________________________________________________________________________________________
   return (
     <div className='flex flex-col items-center justify-center bg-gradient-to-br from-gray-800 to-stone-700 text-white p-10 rounded-2xl shadow-lg w-[90%] max-w-3xl mx-auto mt-32'>
       {isLoading ? (
