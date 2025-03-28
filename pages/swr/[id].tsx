@@ -9,11 +9,11 @@ type Props = {}
 const SwrSinglePage: NextPage<Props> = ({ }) => {
 
   const router = useRouter()
-  const productID = router.query.id
+  const userID = router.query.id
 
-  const fetcher = async () => await fetch(`http://localhost:4000/users/${productID}`).then(result => result.json())
+  const fetcher = async () => await fetch(`http://localhost:4000/users/${userID}`).then(result => result.json())
 
-  const { data, error, isLoading } = useSWR(`http://localhost:4000/users/${productID}`, fetcher)
+  const { data, error, isLoading } = useSWR(`http://localhost:4000/users/${userID}`, fetcher)
 
 
 
