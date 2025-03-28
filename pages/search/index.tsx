@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 const index: React.FC = () => {
   // STATES   
-  const [PRODUCTS, setPRODUCTS] = useState([...db.products])
+  const [Users, setUsers] = useState([...db.users])
   const [searchInfo, setSearchInfo] = useState('')
   const [isShowError, setIsShowError] = useState(false)
   const router = useRouter()
@@ -13,9 +13,9 @@ const index: React.FC = () => {
 
   // FUNCTIONS 
   useEffect(() => {
-    const searchedProducts = db.products.filter((product) => product.title.toLowerCase().includes(searchInfo.toLowerCase()))
-    setPRODUCTS(searchedProducts)
-    !searchedProducts.length ? setIsShowError(true) : setIsShowError(false)
+    const searchedUsers = db.users.filter((user) => user.name.toLowerCase().includes(searchInfo.toLowerCase()))
+    setUsers(searchedUsers)
+    !searchedUsers.length ? setIsShowError(true) : setIsShowError(false)
   }, [searchInfo])
 
   const searchHandler = (event: React.ChangeEvent<HTMLInputElement>) => { event.preventDefault(); setSearchInfo(event.target.value) }
@@ -38,9 +38,9 @@ const index: React.FC = () => {
         {isShowError ? (
           <h1 className='text-4xl bg-red-900 text-red-200 font-bold text-center px-4 py-6 rounded-md border-2 border-red-800 h-fit w-screen'>NO PRODUCTS FOUND</h1>)
           : (
-            PRODUCTS.map(product => (
-              <div key={product.id} className='bg-black w-[12rem] py-8 px-4 font-bold text-2xl text-center rounded-md '>
-                <h2>{product.title}</h2>
+            Users.map(user => (
+              <div key={user.id} className='bg-black w-[12rem] py-8 px-4 font-bold text-2xl text-center rounded-md '>
+                <h2>{user.name}</h2>
               </div>
             ))
           )
