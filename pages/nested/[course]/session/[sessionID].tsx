@@ -3,8 +3,10 @@ import { useRouter } from 'next/router'
 import React from 'react'
 
 const DynamicNestedRoute = () => {
+
     const router = useRouter();
     const { course, sessionID } = router.query;
+
     return (
         <div className='w-screen h-screen flex flex-col gap-y-10 mt-10 items-center juftify-center bg-black text-white'>
             <h1 className='bg-zinc-800 w-screen py-6 text-center font-black text-5xl'>DYNAMIC NESTED ROUTE</h1>
