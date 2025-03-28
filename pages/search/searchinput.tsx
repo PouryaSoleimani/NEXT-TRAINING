@@ -29,8 +29,6 @@ const SearchInput: NextPage<Props> = ({ }) => {
 }
 
 
-
-
 export const getStaticProps: GetStaticProps = async (ctx) => {
   return {
     props: {},
