@@ -34,9 +34,9 @@ const index: React.FC = () => {
       <button onClick={goToSearchInput} className='bg-blue-900 text-white p-2 text-3xl font-bold ml-10 rounded-lg hover:bg-blue-400 mx-auto'>GO TO SEARCH INPUT</button>
 
 
-      <div className='my-10 bg-zinc-800 h-fit grid grid-cols-4 items-center gap-2 py-10 px-10 overflow-hidden'>
+      <div className=' w-full my-10 bg-zinc-800 h-fit grid grid-cols-4 justify-items-center items-center gap-2 py-10 px-10 overflow-hidden gridDIV'>
         {isShowError ? (
-          <h1 className='text-4xl bg-red-900 text-red-200 font-bold text-center px-4 py-6 rounded-md border-2 border-red-800 h-fit w-screen'>NO PRODUCTS FOUND</h1>)
+          <h1 className='text-4xl bg-red-900 text-red-200 font-bold text-center px-4 py-6 rounded-md border-2 border-red-800 h-fit '>NO PRODUCTS FOUND</h1>)
           : (
             Users.map(user => (
               <div key={user.id} className='bg-black w-[24rem] py-8 px-4 font-bold text-2xl text-center rounded-md hover:border box-content '>
