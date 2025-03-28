@@ -12,18 +12,18 @@ const Sort: React.FC = () => {
 
   //FUNCTIONS
   const sortAscending = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    const sortedProducts = __.sortBy(PRODUCTS, "price")
+    const sortedProducts = __.sortBy(PRODUCTS, "price") // USING SORT METHOD FROM LODASH
     setSort(`Ascending`)
     setPRODUCTS(sortedProducts)
   }
 
   const sortDescending = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    const sortedProducts = __.sortBy(PRODUCTS, "price").reverse()
+    const sortedProducts = __.sortBy(PRODUCTS, "price").reverse() // USING SORT METHOD FROM LODASH
     setSort(`Descending`)
     setPRODUCTS(sortedProducts)
   }
 
-  //RETURN
+  //RETURN __________________________________________________________________________________________________________________________________________________________________________________________________________________________
   return (
     <>
       <div className='w-full my-10 bg-zinc-300 h-fit grid place-items-center p-4 grid-cols-3 gap-y-10'>
