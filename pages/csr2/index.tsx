@@ -36,7 +36,7 @@ const CSR2 = () => {
                                 <h2 className='tracking-tighter '>{todo.title.slice(0, 20)}</h2>
                                 <p className='text-center w-full mt-2'>{todo.completed ? <span className='text-green-900 bg-green-300 p-2 font-bold text-xl'>COMPLETED</span> : <span className='text-red-900 bg-red-300 p-2 font-bold text-xl'>NOT COMPLETED</span>}</p>
                             </Link>
-                            <button className='btn btn-warning font-black' onClick={event => TodoCompleteToggler(todo.id)}>TOGGLE</button>
+                            <button className='btn btn-warning font-black' onClick={() => TodoCompleteToggler(todo.id)}>TOGGLE</button>
                         </div>
                     ))
                     :
