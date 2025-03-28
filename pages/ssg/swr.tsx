@@ -16,9 +16,9 @@ const Swr = () => {
   if (isLoading) return <div className='text-6xl text-zinc-500 flex items-center justify-center h-screen'>Loading...</div>
 
   if (data) return (
-    <div className='p-4 text-2xl font-bold flex flex-col space-y-4 bg-zinc-950'>
+    <div className='p-4 text-2xl font-bold flex flex-col space-y-2 bg-zinc-950 w-fit mx-auto mt-10 rounded-lg'>
       {data?.map((user: SingleUserType) =>
-        <p key={user.id} className='hover:bg-zinc-800 p-4 cursor-pointer duration-200 w-fit text-white'>{user.id} - {__.capitalize(user.name.firstname)} {__.capitalize(user.name.lastname)} : <span className='text-blue-400'>{user.email}</span></p>
+        <p key={user.id} className='hover:bg-zinc-800 p-4 cursor-pointer duration-200 w-fit text-white rounded-md'>{user.id} - {__.capitalize(user.name.firstname)} {__.capitalize(user.name.lastname)} : <span className='text-blue-400'>{user.email}</span></p>
       )}
     </div>
   )
