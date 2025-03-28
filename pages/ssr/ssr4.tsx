@@ -3,6 +3,8 @@ import { NextPage, GetServerSideProps } from 'next'
 interface Props { data: [{ id: number; name: string; username: string; email: string }] }
 type SingleUserType = { id: number; name: string; username: string; email: string }
 
+
+
 // COMPONENT ===================================================================================================================================
 const Ssr4: NextPage<Props> = ({ data }) => {
     return (
