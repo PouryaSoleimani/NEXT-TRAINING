@@ -11,7 +11,7 @@ type SortedArrayType = [{ id: number, title: string, price: number, image: strin
 const SortTest: NextPage<props> = ({ products }) => {
   const [PRODUCTS, setPRODUCTS] = useState(products)
 
-  //^FUNCTIONS 
+  //^ SORT FUNCTIONS  ______________________________________________________________________________________________________________________________________________________________________________
   function sortAscending() {
     const copy = [...PRODUCTS]
     const sortedArray: any = __.sortBy(copy, "price")
