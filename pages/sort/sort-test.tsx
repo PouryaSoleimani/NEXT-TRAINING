@@ -20,9 +20,10 @@ const SortTest: NextPage<props> = ({ products }) => {
 
   function sortDescending() {
     const copy = [...PRODUCTS]
-    const sortedArray: any = __.sortBy(copy, "price").reverse()
+    const sortedArray = __.sortBy(copy, "price").reverse()
     setPRODUCTS(sortedArray)
   }
+
 
   // RETURN __________________________________________________________________________________________________________________________________________________________________________________
   return (
