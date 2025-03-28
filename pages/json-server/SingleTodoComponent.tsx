@@ -36,11 +36,11 @@ const SingleTodoComponent: React.FC<SingleTodo> = ({ id, name, age, isToggle }) 
                 </div>
 
                 <div className='relative flex items-center justify-center mb-4'>2
-                    <p className={`text-5xl transition-transform duration-300 ${isToggle ? 'scale-110' : 'scale-90'}`}>
-                        {user.isToggle ? "🟩" : "🟥"}
-                    </p>
+                    <p className={`text-5xl transition-transform duration-300 ${isToggle ? 'scale-110' : 'scale-90'}`}> {user.isToggle ? "🟩" : "🟥"}</p>
                 </div>
+
                 <button className='bg-orange-500 p-3 rounded-xl text-white mx-auto -translate-y-8 font-bold w-full' onClick={toggleHandler(id)}>TOGGLE</button>
+
             </div >
         </>
     )
