@@ -26,8 +26,9 @@ const SWR: NextPage<Props> = ({ }) => {
       <div className='bg-zinc-900 p-8 font-bold grid grid-cols-4 gap-5 text-2xl'>
         {data ?
           data.map((user: SingleUserType) => (
-            <Link key={user.id} href={`/swr/${user.id}`} className='text-center'>
-              <p className='bg-zinc-800 p-4 rounded-md hover:bg-zinc-700 text-white'>{user.name}</p>
+            <Link key={user.id} href={`/swr/${user.id}`} className='text-center border-2 border-zinc-800 rounded-md hover:-translate-y-2 duration-300'>
+              <p className='bg-zinc-800 p-4 rounded-md text-white'>{user.name}</p>
+              <p className='bg-zinc-900 p-4 rounded-md text-white'>{user.age}</p>
             </Link>
           )) : null}
       </div>
