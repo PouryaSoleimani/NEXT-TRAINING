@@ -37,7 +37,7 @@ const JsonServerPage: React.FC<UserProps> = ({ id, age, name, isToggle }) => {
     // AXIOS.PUT  ====================================================================================================================================================
     function userUpdate(id: number, age: number) {
         const user = users.find(user => user.id == id); // Find the user object
-        if (user) { setMyUser(user); }
+        if (user) { setMyUser(user) }
         if (user) {
             axios.put(`http://localhost:4000/users/${id}`, { id: user.id, name: user.name, age: age }) // Spread the existing user object and update the age
                 .then(() => ROUTER.refresh())
