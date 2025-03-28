@@ -28,7 +28,7 @@ const SortTest: NextPage<props> = ({ products }) => {
   return (
     <div >
       <h1 className='text-3xl text-center py-2 bg-lime-500 font-extrabold'>SORT TEST</h1>
-      
+
       <div id="SortingButtons" className='bg-zinc-800 px-10 py-3 flex items-center justify-center space-x-5'>
         <button onClick={sortAscending} className='bg-black font-bold p-2 rounded-md hover:bg-zinc-800 duration-300 text-white'>Cheapest</button>
         <button onClick={sortDescending} className='bg-white text-black font-bold p-2 rounded-md hover:bg-zinc-300 duration-300'>Most Expensive</button>
@@ -40,7 +40,7 @@ const SortTest: NextPage<props> = ({ products }) => {
             <img src={item.image} alt="Product Image" className='w-16 h-16 rounded-xl' />
             <h1 className='capitalize text-xl font-bold text-center'>{item.title.slice(0, 10)}</h1>
             <p className='capitalize text-zinc-500/90'>{item.category}</p>
-            <p className='bg-lime-600/50 px-2 py-1 rounded-xl text-xl font-bold'>${item.price}</p>
+            <p className='bg-lime-500/50 px-2 py-1 rounded-xl text-xl font-bold text-white'>${item.price}</p>
           </div>
         ))}
 
