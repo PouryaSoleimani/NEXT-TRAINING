@@ -21,11 +21,11 @@ const Index: NextPage<Props> = ({ comments }) => {
   return (
     <>
       <div className='flex items-center justify-around px-2 py-3'>
-        <button onClick={event => filterCommentHandler(1)} className='border text-black font-bold text-xl border-black px-2 w-[10rem] bg-red-500'>1</button>
-        <button onClick={event => filterCommentHandler(2)} className='border text-black font-bold text-xl border-black px-2 w-[10rem] bg-blue-500'>2</button>
-        <button onClick={event => filterCommentHandler(3)} className='border text-black font-bold text-xl border-black px-2 w-[10rem] bg-green-500'>3</button>
-        <button onClick={event => filterCommentHandler(4)} className='border text-black font-bold text-xl border-black px-2 w-[10rem] bg-pink-500'>4</button>
-        <button onClick={event => filterCommentHandler(5)} className='border text-black font-bold text-xl border-black px-2 w-[10rem] bg-yellow-400'>5</button>
+        <button onClick={event => filterCommentHandler(1)} className='border rounded-md text-black font-bold text-xl border-black px-2 w-[10rem] bg-red-500'>1</button>
+        <button onClick={event => filterCommentHandler(2)} className='border rounded-md text-black font-bold text-xl border-black px-2 w-[10rem] bg-blue-500'>2</button>
+        <button onClick={event => filterCommentHandler(3)} className='border rounded-md text-black font-bold text-xl border-black px-2 w-[10rem] bg-green-500'>3</button>
+        <button onClick={event => filterCommentHandler(4)} className='border rounded-md text-black font-bold text-xl border-black px-2 w-[10rem] bg-pink-500'>4</button>
+        <button onClick={event => filterCommentHandler(5)} className='border rounded-md text-black font-bold text-xl border-black px-2 w-[10rem] bg-yellow-400'>5</button>
       </div>
 
       <div className='flex flex-wrap items-center justify-center p-4 gap-2'>
