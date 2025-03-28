@@ -34,6 +34,9 @@ const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
   // RETURN
   return (
     <section className='overflow-hidden'>
+
+
+      {/* USERS */}
       <div className='grid grid-cols-3 items-center gap-y-2 mt-10  place-items-center w-screen h-fit text-md'>
         {users.slice(0, 9).map((user: SingleUserType) => (
           <Link href={`/fakestore-users/${user.id}`} key={user.id}>
@@ -43,6 +46,8 @@ const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
           </Link>
         ))}
       </div>
+
+
       {/* FORM */}
       <form onSubmit={submitHandler} className="form w-fit mx-auto mt-16 border-2">
         <p id="heading">Login</p>
@@ -64,6 +69,8 @@ const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
         </div>
         <button className="button3">Forgot Password</button>
       </form>
+
+
     </section>
   )
 }
