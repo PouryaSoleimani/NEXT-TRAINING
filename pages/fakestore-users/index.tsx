@@ -34,11 +34,11 @@ const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
   // RETURN
   return (
     <section className='overflow-hidden'>
-      <div className='grid grid-cols-3 items-center gap-y-2 mt-10  place-items-center w-screen h-fit'>
+      <div className='grid grid-cols-3 items-center gap-y-2 mt-10  place-items-center w-screen h-fit text-md'>
         {users.slice(0, 9).map((user: SingleUserType) => (
           <Link href={`/fakestore-users/${user.id}`} key={user.id}>
-            <div className='bg-zinc-800 px-6 py-2 w-[15rem] rounded-md h-fit border-4 border-orange-400 hover:border-orange-600 duration-300 cursor-pointer'>
-              <h1 className='font-extrabold'>{user.id} - {user.name.firstname.toUpperCase()} {user.name.lastname.toUpperCase()}</h1>
+            <div className='bg-zinc-800 px-6 py-2 w-[20rem] rounded-md h-fit hover:translate-x-2 duration-300 cursor-pointer'>
+              <h4 className='font-extrabold text-white whitespace-nowrap'>{user.id} - {user.name.firstname.toUpperCase()} {user.name.lastname.toUpperCase()}</h4>
             </div>
           </Link>
         ))}
