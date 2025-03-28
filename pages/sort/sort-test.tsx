@@ -22,7 +22,7 @@ const SortTest: NextPage<props> = ({ products }) => {
     setPRODUCTS(sortedArray)
   }
 
-  //& RETURN
+  // RETURN __________________________________________________________________________________________________________________________________________________________________________________
   return (
     <div >
       <h1 className='text-3xl text-center py-2 bg-lime-500 font-extrabold'>SORT TEST</h1>
