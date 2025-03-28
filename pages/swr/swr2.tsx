@@ -4,9 +4,8 @@ import useSWR from 'swr'
 
 // COMPONENT =====================================================================================================================
 const swr2 = () => {
-    function fetcher() {
-        return fetch("http://localhost:4000/users").then((res) => res.json())
-    }
+    // SWR HOOK 
+    function fetcher() { return fetch("http://localhost:4000/users").then((res) => res.json()) }
 
     const { data, error, isLoading } = useSWR('http://localhost:4000/users', fetcher)
 
@@ -18,7 +17,7 @@ const swr2 = () => {
         <div className='grid grid-cols-3 gap-4 p-10'>
             {data.map((item: any) => (
                 <div key={item.id} className='bg-zinc-200 hover:bg-white text-black px-4 py-5 my-2 rounded-md w-[30rem]'>
-                    <h1 className='text-black'>{item.name}</h1>
+                    <h1 className='text-black text-lg font-black'>{item.name.toUpperCase()}</h1>
                 </div>
             ))}
         </div>
