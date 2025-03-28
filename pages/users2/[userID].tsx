@@ -26,12 +26,8 @@ const SingleUserComponent: NextPage<Props> = ({ user }) => {
       <div className='w-screen h-screen flex items-center justify-center flex-col gap-y-10 bg-gradient-to-br from-zinc-900 via-black to-zinc-800'>
          <Card size="small" style={{ width: 350, backgroundColor: "#1a1a1a36", border: "1px solid #333", color: "white", borderRadius: "12px", boxShadow: "0 4px 15px rgba(0, 0, 0, 0.5)", padding: "20px", }} className='backdrop-blur-xl hover:scale-105 duration-300'>
             <p className="text-3xl font-bold text-blue-400 border-b border-gray-700 pb-2">  ID: {user.id}  </p>
-            <p className="text-2xl font-semibold text-gray-300 border-b border-gray-700 pb-2">
-               Name: {user.name}
-            </p>
-            <p className="text-2xl font-medium text-gray-400">
-               Email: {user.email}
-            </p>
+            <p className="text-2xl font-semibold text-gray-300 border-b border-gray-700 pb-2">  Name: {user.name}  </p>
+            <p className="text-2xl font-medium text-gray-400">  Email: {user.email}   </p>
          </Card>
          <BackButton />
       </div>
