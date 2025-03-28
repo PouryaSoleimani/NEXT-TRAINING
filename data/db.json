@@ -51,14 +51,12 @@
     {
       "id": "9",
       "name": "Mohammad",
-      "age": 22,
-      "isToggle": true
+      "age": 23
     },
     {
       "id": "10",
       "name": "Reza",
-      "age": 26,
-      "isToggle": true
+      "age": 27
     },
     {
       "id": "11",

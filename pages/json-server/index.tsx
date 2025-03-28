@@ -49,7 +49,7 @@ const JsonServerPage: React.FC<UserProps> = ({ id, age, name, isToggle }) => {
     // TOGGLE  ====================================================================================================================================================
     function toggleHandler(ID: number | string) {
         return () => {
-            const user = users.find(user => user.id == ID);  //  Find the user object
+            const user = users.find(user => user.id == ID);  // Find the user object
             if (user) { setMyUser(user); }
             if (user) {
                 axios.put(`http://localhost:4000/users/${ID}`, { id: user.id, name: user.name, age: user.age, isToggle: !user.isToggle }) // Spread the existing user object and update the age
@@ -78,12 +78,12 @@ const JsonServerPage: React.FC<UserProps> = ({ id, age, name, isToggle }) => {
                 <form className='flex flex-col justify-center items-center gap-4 bg-gradient-to-br from-zinc-800 to-zinc-900 p-8 w-[380px] mx-auto my-10 rounded-2xl border border-zinc-700/30' onSubmit={e => { e.preventDefault(); userUpdate(Number(updateID), Number(updateAge)) }}   >
                     <div className="w-full space-y-6">
                         <div className="relative">
-                            <h2 className='absolute -top-3 left-4 px-2 bg-gradient-to-r from-zinc-800 to-zinc-900 text-cyan-400 text-sm font-medium'>User ID</h2>
+                            <h2 className='absolute -top-3 left-4 px-2 bg-gradient-to-r from-zinc-800 to-zinc-900 text-cyan-400 text-sm font-semibold'>User ID</h2>
                             <input type="text" value={updateID} onChange={e => setUpdateID(e.target.value)} className='w-full p-3 bg-zinc-800/50 rounded-xl border border-zinc-700/50 text-white font-medium outline-none focus:border-cyan-500/50 transition-all duration-300 shadow-inner' />
                         </div>
 
                         <div className="relative">
-                            <h2 className='absolute -top-3 left-4 px-2 bg-gradient-to-r from-zinc-800 to-zinc-900 text-cyan-400 text-sm font-medium'>User Age</h2>
+                            <h2 className='absolute -top-3 left-4 px-2 bg-gradient-to-r from-zinc-800 to-zinc-900 text-cyan-400 text-sm font-semibold'>User Age</h2>
                             <input type="text" value={updateAge} onChange={e => setUpdateAge(e.target.value)} className='w-full p-3 bg-zinc-800/50 rounded-xl border border-zinc-700/50 text-white font-medium outline-none focus:border-cyan-500/50 transition-all duration-300 shadow-inner' />
                         </div>
                     </div>
