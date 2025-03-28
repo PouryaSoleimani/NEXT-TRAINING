@@ -8,6 +8,7 @@ type SingleUserType = { id: number, email: string, username: string, name: { fir
 
 //COMPONENT
 const FakeStoreDynamicPage: NextPage<Props> = ({ user }) => {
+
   const router = useRouter()
   function backHandler() { router.back() }
 
@@ -27,7 +28,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   return {
     props: { user }
   }
-  
+
 }
 
 export default FakeStoreDynamicPage
