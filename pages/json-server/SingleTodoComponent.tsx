@@ -35,7 +35,7 @@ const SingleTodoComponent: React.FC<SingleTodo> = ({ id, name, age, isToggle }) 
                     </p>
                 </div>
 
-                <div className='relative flex items-center justify-center mb-4'>
+                <div className='relative flex items-center justify-center mb-4'>2
                     <p className={`text-5xl transition-transform duration-300 ${isToggle ? 'scale-110' : 'scale-90'}`}>
                         {user.isToggle ? "🟩" : "🟥"}
                     </p>
