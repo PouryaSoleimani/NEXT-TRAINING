@@ -50,8 +50,8 @@ const JsonServerPage: React.FC<UserProps> = ({ id, age, name, isToggle }) => {
     function toggleHandler(ID: number | string) {
         return () => {
             const user = users.find(user => user.id == ID);  // Find the user object
-            if (user) { setMyUser(user); }
-            if (user) {
+            if (user) { setMyUser(user); } // Set the user object
+            if (user) { // If the user object is found
                 axios.put(`http://localhost:4000/users/${ID}`, { id: user.id, name: user.name, age: user.age, isToggle: !user.isToggle }) // Spread the existing user object and update the age
                     .then(() => ROUTER.refresh())
                     .catch(err => console.error('Error updating user:', err));
