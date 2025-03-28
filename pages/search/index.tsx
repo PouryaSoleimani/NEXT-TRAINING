@@ -18,7 +18,9 @@ const index: React.FC = () => {
     !searchedUsers.length ? setIsShowError(true) : setIsShowError(false)
   }, [searchInfo])
 
-  const searchHandler = (event: React.ChangeEvent<HTMLInputElement>) => { event.preventDefault(); setSearchInfo(event.target.value) }
+  const searchHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+    event.preventDefault(); setSearchInfo(event.target.value)
+  }
 
   function goToSearchInput() { router.push('/search/searchinput') }
 
