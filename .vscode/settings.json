@@ -1,7 +1,7 @@
 {
     "editor.fontFamily": "",
-    "editor.fontWeight": "700",
-    
+    "editor.fontWeight": "600",
+    "editor.lightbulb.enabled": "on",
     "editor.letterSpacing": -0.1,
     "editor.lineNumbers": "on",
     "workbench.iconTheme": "material-icon-theme",
@@ -1318,7 +1318,7 @@
     "editor.wrappingIndent": "none",
     "editor.defaultColorDecorators": "auto",
     "editor.experimentalInlineEdit.backgroundColoring": true,
-    "workbench.preferredDarkColorTheme": "Next Dark Pro",
+    "workbench.preferredDarkColorTheme": "Min Dark",
     "[javascript]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
     "RainbowBrackets.depreciation-notice": false,
     "material-icon-theme.folders.color": "#a2773c",
