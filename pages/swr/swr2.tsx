@@ -4,12 +4,24 @@ import useSWR from 'swr'
 
 // COMPONENT =====================================================================================================================
 const swr2 = () => {
-    function fetcher() { axios.get("http://localhost:4000/users").then(res => res.data) }
+    function fetcher() {
+        return fetch("http://localhost:4000/users").then((res) => res.json())
+    }
+
     const { data, error, isLoading } = useSWR('http://localhost:4000/users', fetcher)
+
+    if (error) return <div className='bg-red-900 text-white p-3 font-black'>failed to load</div>
+    if (isLoading) return <div className='bg-blue-900 text-white p-3 font-black'>loading...</div>
 
     // RETURN
     return (
-        <div>swr2</div>
+        <div className='grid grid-cols-3 gap-4 p-10'>
+            {data.map((item: any) => (
+                <div key={item.id} className='bg-zinc-200 hover:bg-white text-black px-4 py-5 my-2 rounded-md w-[30rem]'>
+                    <h1 className='text-black'>{item.name}</h1>
+                </div>
+            ))}
+        </div>
     )
 }
 
