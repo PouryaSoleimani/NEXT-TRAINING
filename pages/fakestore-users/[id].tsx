@@ -23,9 +23,11 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const id = ctx.query.id
   const req = axios.get(`https://fakestoreapi.com/users/${id}`)
   const user = (await req).data
+
   return {
     props: { user }
   }
+  
 }
 
 export default FakeStoreDynamicPage
