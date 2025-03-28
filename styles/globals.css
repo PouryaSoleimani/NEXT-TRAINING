@@ -225,6 +225,6 @@ Link , a {
   animation: flowting 5s infinite;
 }
 
-h1 , a  , Link {
+h1 , h2, h3 , a  , Link {
   color: white !important;
 }
