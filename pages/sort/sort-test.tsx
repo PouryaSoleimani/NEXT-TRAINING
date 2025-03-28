@@ -40,7 +40,7 @@ const SortTest: NextPage<props> = ({ products }) => {
             <img src={item.image} alt="Product Image" className='w-16 h-16 rounded-xl' />
             <h1 className='capitalize text-xl font-bold text-center'>{item.title.slice(0, 10)}</h1>
             <p className='capitalize text-zinc-500/90'>{item.category}</p>
-            <p className='bg-lime-500/50 px-2 py-1 rounded-xl text-xl font-bold text-white'>${item.price}</p>
+            <p className='bg-lime-500/50 w-2/3 text-center px-2 py-1 rounded-md text-xl font-bold text-white'>${item.price}</p>
           </div>
         ))}
 
