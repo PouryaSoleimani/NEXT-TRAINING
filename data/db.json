@@ -12,5 +12,19 @@
         { "id": "10", "name": "Reza Abdi", "age": 28 },
         { "id": "11", "name": "Amin Goodarzi", "age": 22, "isToggle": true },
         { "id": "12", "name": "Pourya Soleimani", "age": 33, "isToggle": false }
+    ],
+    "usersFarsi": [
+        { "id": "1", "name": "شهریار", "age": 33, "isToggle": false },
+        { "id": "2", "name": "علی محمدی", "age": 30, "isToggle": false },
+        { "id": "3", "name": "رضا جعفری", "age": 35, "isToggle": false },
+        { "id": "4", "name": "مهدی اهل حق", "age": 40, "isToggle": false },
+        { "id": "5", "name": "حسین علیخانی", "age": 45, "isToggle": false },
+        { "id": "6", "name": "سعید سرخانی", "age": 50, "isToggle": true },
+        { "id": "7", "name": "اشکان حسین پور", "age": 55, "isToggle": false },
+        { "id": "8", "name": "مهدی حعفر نژاد", "age": 20, "isToggle": false },
+        { "id": "9", "name": "محمد یوسفی", "age": 24 },
+        { "id": "10", "name": "رضا عبدی", "age": 28 },
+        { "id": "11", "name": "امین گودرزی", "age": 22, "isToggle": true },
+        { "id": "12", "name": "پوریا سلیمانی", "age": 33, "isToggle": false }
     ]
 }
