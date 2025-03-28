@@ -9,6 +9,7 @@ type SingleUserType = { id: number, username: string, password: string }
 
 
 const DynamicApi: NextPage<Props> = ({ allUsers }) => {
+
     const [ID, setID] = useState("")
 
     function deleteUserHandler(event: FormEvent<HTMLFormElement>) {
