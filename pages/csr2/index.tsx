@@ -14,9 +14,10 @@ const CSR2 = () => {
             .then(json => setTodos(json))
     }, [])
 
+    // TODO TOGGLER FUNCTION ================================================================================================================================================
     function TodoCompleteToggler(ID: number) {
         const TODO = todos.find((todo: SingleTodoType) => todo.id == ID) // First we find the Todo we want to toggle
-        if (!TODO) return
+        if (!TODO) return // If the Todo is not found we return
         const NEW_TODO: SingleTodoType = { ...TODO, completed: !TODO.completed } // Then we create a new Todo with the opposite value of the completed property
         const NEW_TODOS: SingleTodoType[] = todos.map((todo: SingleTodoType) => todo.id == ID ? NEW_TODO : todo) // Then we map through the todos and replace the old Todo with the new one
         setTodos(NEW_TODOS) // Finally we set the new Todos
