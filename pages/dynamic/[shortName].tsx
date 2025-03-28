@@ -16,6 +16,8 @@ const products = () => {
   function pushHandler() { router.push('/courses') }
   // REPLACE
   function replaceHandler() { router.replace('/courses') }
+
+  
   // RETURN =====================================================================================================================================================================
   return (
     <>
