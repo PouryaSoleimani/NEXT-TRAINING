@@ -11,9 +11,9 @@ type SingleUserType = { id: number, name: string, email: string }
 const Users2Page: NextPage<Props> = ({ users }) => {
 
    return (
-      <div className='flex items-start justify-center h-screen gap-2 flex-wrap mt-10'>
+      <div className='grid grid-cols-4 place-items-center gap-3 px-16 mt-10'>
          {users.slice(0, 9).map((user: SingleUserType) => (
-            <Link className='bg-zinc-900 px-5 py-3 text-white rounded-xl w-[30rem] h-[15rem] flex flex-col justify-center items-center hover:-translate-y-2 duration-300 font-bold' href={`/users2/${user.id.toString()}`} key={user.id}   >
+            <Link className='bg-zinc-900 px-5 py-3 text-white border rounded-xl w-[30rem] h-[15rem] flex flex-col justify-center items-center hover:-translate-y-2 duration-300 font-bold' href={`/users2/${user.id.toString()}`} key={user.id}   >
                <h2>{user.id} . {user.name}</h2>
                <p>{user.email}</p>
             </Link>
