@@ -18,6 +18,7 @@ const swr2 = () => {
             {data.map((item: any) => (
                 <div key={item.id} className='bg-zinc-200 hover:bg-white text-black px-4 py-5 my-2 rounded-md w-[30rem]'>
                     <h1 className='text-black text-lg font-black'>{item.name.toUpperCase()}</h1>
+                    <h1 className='text-black text-lg font-black'>{item.age}</h1>
                 </div>
             ))}
         </div>

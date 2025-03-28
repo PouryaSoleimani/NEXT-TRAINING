@@ -1,74 +1,16 @@
 {
-  "users": [
-    {
-      "id": "1",
-      "name": "Shahriyar Reyhani",
-      "age": 33,
-      "isToggle": false
-    },
-    {
-      "id": "2",
-      "name": "Ali Mohammadi",
-      "age": 30,
-      "isToggle": false
-    },
-    {
-      "id": "3",
-      "name": "Reza Jafari",
-      "age": 35,
-      "isToggle": false
-    },
-    {
-      "id": "4",
-      "name": "Mehdi AhleHagh",
-      "age": 40,
-      "isToggle": false
-    },
-    {
-      "id": "5",
-      "name": "Hossein Alikhani",
-      "age": 45,
-      "isToggle": false
-    },
-    {
-      "id": "6",
-      "name": "Saeed Sarkhani",
-      "age": 50,
-      "isToggle": true
-    },
-    {
-      "id": "7",
-      "name": "AmirAshkan HoseinPour",
-      "age": 55,
-      "isToggle": false
-    },
-    {
-      "id": "8",
-      "name": "Mahdi JafarNezhad",
-      "age": 20,
-      "isToggle": false
-    },
-    {
-      "id": "9",
-      "name": "Mohammad Yousefi",
-      "age": 23
-    },
-    {
-      "id": "10",
-      "name": "Reza Abdi",
-      "age": 27
-    },
-    {
-      "id": "11",
-      "name": "Amin Goodarzi",
-      "age": 22,
-      "isToggle": true
-    },
-    {
-      "id": "12",
-      "name": "Pourya Soleimani",
-      "age": 33,
-      "isToggle": false
-    }
-  ]
+    "users": [
+        { "id": "1", "name": "Shahriyar Reyhani", "age": 33, "isToggle": false },
+        { "id": "2", "name": "Ali Mohammadi", "age": 30, "isToggle": false },
+        { "id": "3", "name": "Reza Jafari", "age": 35, "isToggle": false },
+        { "id": "4", "name": "Mehdi AhleHagh", "age": 40, "isToggle": false },
+        { "id": "5", "name": "Hossein Alikhani", "age": 45, "isToggle": false },
+        { "id": "6", "name": "Saeed Sarkhani", "age": 50, "isToggle": true },
+        { "id": "7", "name": "AmirAshkan HoseinPour", "age": 55, "isToggle": false },
+        { "id": "8", "name": "Mahdi JafarNezhad", "age": 20, "isToggle": false },
+        { "id": "9", "name": "Mohammad Yousefi", "age": 23 },
+        { "id": "10", "name": "Reza Abdi", "age": 28 },
+        { "id": "11", "name": "Amin Goodarzi", "age": 22, "isToggle": true },
+        { "id": "12", "name": "Pourya Soleimani", "age": 33, "isToggle": false }
+    ]
 }
