@@ -28,13 +28,13 @@
       "id": "5",
       "name": "Hossein",
       "age": 45,
-      "isToggle": true
+      "isToggle": false
     },
     {
       "id": "6",
       "name": "Saeed",
       "age": 50,
-      "isToggle": false
+      "isToggle": true
     },
     {
       "id": "7",
