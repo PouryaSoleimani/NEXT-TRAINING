@@ -11,8 +11,8 @@ const DataFetching = () => {
   return (
     <div>
       <h1 className='text-yellow-400 text-6xl font-bold text-center py-4'>DATA FETCHING PAGE</h1>
-      <div className='bg-zinc-700 flex flex-col px-10 py-5 space-y-5 text-2xl font-semibold'>
-        {data.map((item: SingleUserType) => <p key={item.id}>{item.name} - ${item.age}</p>)}
+      <div className='bg-zinc-950 text-white grid grid-cols-4 gap-6 p-5'>
+        {data.map((item: SingleUserType) => <p key={item.id} className='py-1 bg-black p-3 rounded-md border text-xl font-bold'>{item.name} - ${item.age}</p>)}
       </div>
     </div>
   )
