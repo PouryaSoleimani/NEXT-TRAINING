@@ -2,6 +2,7 @@ import axios from 'axios'
 import { GetStaticProps, NextPage } from 'next'
 import React, { useState } from 'react'
 import __ from 'lodash'
+
 interface props { products: [{ id: number, title: string, price: number, image: string, category: string }] }
 type SingleItemType = { id: number, title: string, price: number, image: string, category: string }
 type SortedArrayType = [{ id: number, title: string, price: number, image: string, category: string }]
