@@ -9,33 +9,32 @@ interface UserProps { id: number, name: string, age: number, isToggle: boolean }
 
 // COMPONENT ================================================================================================================================================
 const JsonServerPage: React.FC<UserProps> = ({ id, age, name, isToggle }) => {
+    const ROUTER = USEROUTER()
 
     const [myUser, setMyUser] = useState({ id: id, name: name, age: age, isToggle: isToggle })
-
-    const ROUTER = USEROUTER()
     const [users, setusers] = useState<AllUsersType>([{ id: 0, name: '', age: 0, isToggle: true }])
     const [deleteID, setDeleteID] = useState<number | string>(0)
     const [updateID, setUpdateID] = useState<number | string>(0)
     const [updateAge, setUpdateAge] = useState<number | string>(0)
 
-    // GET  ====================================================================================================================================================
+    // AXIOS.GET  ====================================================================================================================================================
     useEffect(() => {
         axios.get("http://localhost:4000/users")
             .then(data => setusers(data.data))
             .catch(err => console.error(err))
     }, [])
-    // POST  ===================================================================================================================================================
+    // AXIOS.POST  ===================================================================================================================================================
     function postApi() {
         axios.post("http://localhost:4000/users", { id: "12", name: "alireza", age: 32 }, { headers: { "Content-Type": "application/json" } })
             .then(data => { console.info(data); ROUTER.refresh() })
     }
-    // DELETE  =================================================================================================================================================
+    // AXIOS.DELETE  =================================================================================================================================================
     function userDelete(id: number) {
         axios.delete(`http://localhost:4000/users/${Number(id)}`)
             .then(data => { console.info(data); ROUTER.refresh() })
             .catch(err => console.error(err))
     }
-    // PUT  ====================================================================================================================================================
+    // AXIOS.PUT  ====================================================================================================================================================
     function userUpdate(id: number, age: number) {
         const user = users.find(user => user.id == id); // Find the user object
         if (user) { setMyUser(user); }
@@ -68,9 +67,7 @@ const JsonServerPage: React.FC<UserProps> = ({ id, age, name, isToggle }) => {
                 <h1 className='bg-zinc-800 text-cyan-500 text-3xl text-center font-bold p-4 w-full'>JSON SERVER</h1>
                 <div className='flex flex-wrap items-center justify-center gap-10 p-5'>
                     {users.length ?
-                        users.map((user) => (
-                            <SingleTodoComponent key={user.id} id={user.id} name={user.name} age={user.age} isToggle={user.isToggle} />
-                        ))
+                        users.map((user) => (<SingleTodoComponent key={user.id} id={user.id} name={user.name} age={user.age} isToggle={user.isToggle} />))
                         :
                         'Loading...'
                     }

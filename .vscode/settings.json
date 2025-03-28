@@ -947,6 +947,86 @@
                 }
             ]
         },
+        "[GitHub Dark Default]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "support.constant.property-value.css",
+                        "constant.numeric.css",
+                        "punctuation.definition.string.end.css",
+                        "source.json.comments"
+                    ],
+                    "settings": { "foreground": "#7EE787" }
+                },
+                { "scope": [ "support.class.component" ], "settings": { "foreground": "#ceb483" }},
+                {
+                    "scope": [
+                        "punctuation.definition.tag.begin.tsx",
+                        "punctuation.definition.tag.begin.jsx",
+                        "punctuation.definition.tag.begin.js",
+                        "punctuation.definition.tag.end.tsx",
+                        "punctuation.definition.tag.end.jsx",
+                        "punctuation.definition.tag.end.ts",
+                        "punctuation.definition.tag.begin.html",
+                        "punctuation.definition.tag.end.html",
+                        "text.html.derivative",
+                        "text.html.derivative",
+                        "constant.numeric.css",
+                        "support.constant.property-value.css",
+                        "support.constant.vendored.property-value.css"
+                    ],
+                    "settings": { "foreground": "#fff", "fontStyle": "" }
+                },
+                {
+                    "scope": [ "entity.other.attribute-name.class.css" ],
+                    "settings": { "foreground": "#7EE787", "fontStyle": "" }
+                },
+                { "scope": [ "support.type.property-name.css" ], "settings": { "foreground": "#79B8FF", "fontStyle": "" }},
+                { "scope": [ "entity.name.type.interface", "meta.selector.css" ], "settings": { "foreground": "#d2a8ff" }},
+                {
+                    "scope": [
+                        "entity.other.attribute-name.html",
+                        "entity.other.attribute-name.jsx",
+                        "entity.other.attribute-name.js",
+                        "entity.other.attribute-name.tsx"
+                    ],
+                    "settings": { "foreground": "#B392F0" }
+                },
+                {
+                    "scope": [
+                        "comment",
+                        "variable.parameter",
+                        "comment.line.double-slash.tsx",
+                        "entity.other.attribute-name.tsx",
+                        "comment.line.double-slash.js"
+                    ],
+                    "settings": { "fontStyle": "" }
+                },
+                {
+                    "scope": [
+                        "variable.other.constant.tsx",
+                        "variable.other.constant.jsx",
+                        "variable.other.constant",
+                        "support.constant.media.css",
+                        "support.type.property-name.media.css"
+                    ],
+                    "settings": { "foreground": "#A5D6FF", "fontStyle": "" }
+                },
+                {
+                    "scope": [
+                        "variable.other.property.tsx",
+                        "variable.other.property.jsx",
+                        "variable.other.property.js",
+                        "variable.other.property.ts"
+                    ],
+                    "settings": { "foreground": "#fafafa", "fontStyle": "" }
+                },
+                {
+                    "scope": [ "variable.other.constant.object.tsx" ],
+                    "settings": { "foreground": "#79b8ff", "fontStyle": "" }
+                }
+            ]
+        },
         "[GitHub Dark High Contrast]": {
             "textMateRules": [
                 {
