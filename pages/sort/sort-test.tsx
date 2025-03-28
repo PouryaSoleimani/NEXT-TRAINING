@@ -7,7 +7,7 @@ interface props { products: [{ id: number, title: string, price: number, image: 
 type SingleItemType = { id: number, title: string, price: number, image: string, category: string }
 type SortedArrayType = [{ id: number, title: string, price: number, image: string, category: string }]
 
-//COMPONENT
+//COMPONENT ______________________________________________________________________________________________________________________________________________________________________________
 const SortTest: NextPage<props> = ({ products }) => {
   const [PRODUCTS, setPRODUCTS] = useState(products)
 
