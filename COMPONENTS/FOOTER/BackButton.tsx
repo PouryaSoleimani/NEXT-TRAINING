@@ -9,7 +9,7 @@ const BackButton = () => {
 
    return (
       <Tooltip title="Back" >
-         <Button onClick={goBackHandler} type="primary" icon={<ArrowBigLeft  className='w-5 h-5' />} className='tracking-tighter font-bold'>BACK</Button>
+         <Button onClick={goBackHandler} type="primary" icon={<ArrowBigLeft className='w-10 h-10' />} className='tracking-tighter font-bold'>BACK</Button>
       </Tooltip>
    )
 }
