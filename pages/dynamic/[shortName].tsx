@@ -7,7 +7,9 @@ const products = () => {
   const router = useRouter()
   const shortName = router.query.shortName
 
-  useEffect(() => { shortName && console.log("%c THIS PAGE ROUTE IS ===> ", "font-size : 16px ; color : yellow ; font-weight : 900", router.query.shortName?.toLocaleString().toUpperCase()) }, [shortName])
+  useEffect(() => {
+    shortName && console.info("%c THIS PAGE ROUTE IS ===> ", "font-size : 16px ; color : yellow ; font-weight : 900", router.query.shortName?.toLocaleString().toUpperCase())
+  }, [shortName])
 
   //^ FUNCTIONS 
   // BACK
@@ -17,7 +19,7 @@ const products = () => {
   // REPLACE
   function replaceHandler() { router.replace('/courses') }
 
-  
+
   // RETURN =====================================================================================================================================================================
   return (
     <>
