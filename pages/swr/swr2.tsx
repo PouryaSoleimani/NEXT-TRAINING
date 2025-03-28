@@ -4,6 +4,7 @@ import useSWR from 'swr'
 
 // COMPONENT =====================================================================================================================
 const swr2 = () => {
+
     // SWR HOOK 
     function fetcher() { return fetch("http://localhost:4000/users").then((res) => res.json()) }
 
@@ -11,6 +12,7 @@ const swr2 = () => {
 
     if (error) return <div className='bg-red-900 text-white p-3 font-black'>failed to load</div>
     if (isLoading) return <div className='bg-blue-900 text-white p-3 font-black'>loading...</div>
+
 
     // RETURN
     return (
