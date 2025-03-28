@@ -12,7 +12,7 @@ const DynamicApiSingle: NextPage<Props> = ({ Mainuser }) => {
     return (
         <section className='flex items-center justify-center h-screen w-screen' >
             <div className='flex items-center justify-center bg-zinc-900 px-10 py-4 rounded-3xl border-8 border-zinc-200'>
-                <h1 className='text-9xl uppercase font-extrabold'>{Mainuser.id} - {Mainuser.username}</h1>
+                <h1 className='text-9xl uppercase font-extrabold'>{Mainuser.id} - {Mainuser.name}</h1>
             </div>
         </section >
     )
@@ -22,8 +22,8 @@ const DynamicApiSingle: NextPage<Props> = ({ Mainuser }) => {
 //^ GET STATIC PATHS
 export const getStaticPaths: GetStaticPaths = async () => {
 
-    const request = axios.get('http://localhost:3000/api/users');
-    const response = (await request).data.usersArray
+    const request = axios.get('http://localhost:4000/users');
+    const response = (await request).data
     const paths = response.map((item: { id: number }) => { return { params: { id: String(item.id) } } })
 
     return {
@@ -35,8 +35,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 //^ GET STATIC PROPS
 export const getStaticProps: GetStaticProps = async (ctx) => {
     const ID = ctx.params?.id
-    const request = axios.get(`http://localhost:3000/api/review/${ID}`)
-    const Mainuser = (await request).data.mainUser
+    const request = axios.get(`http://localhost:4000/users/${ID}`)
+    const Mainuser = (await request).data
 
     return { props: { Mainuser }, }
 }

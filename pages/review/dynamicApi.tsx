@@ -4,8 +4,8 @@ import { NextPage, GetStaticProps } from 'next'
 import Link from 'next/link'
 import { FormEvent, useState } from 'react'
 
-interface Props { allUsers: [{ id: number, username: string, password: string }] }
-type SingleUserType = { id: number, username: string, password: string }
+interface Props { allUsers: [{ id: number, name: string, age: number, isToggle?: boolean }] }
+type SingleUserType = { id: number, name: string, age: number, isToggle?: boolean }
 
 
 const DynamicApi: NextPage<Props> = ({ allUsers }) => {
