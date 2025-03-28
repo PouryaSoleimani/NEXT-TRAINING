@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import db from '@/data/db.json'
 import __ from 'lodash'
 
+
+// COMPONENT  _____________________________________________________________________________________________________________________________________________________________________________________________________________________
 const Sort: React.FC = () => {
   //STATES
   const [PRODUCTS, setPRODUCTS] = useState([...db.products])
