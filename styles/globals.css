@@ -224,3 +224,7 @@ Link , a {
 .flowting-particles {
   animation: flowting 5s infinite;
 }
+
+h1{
+  color: white !important;
+}
