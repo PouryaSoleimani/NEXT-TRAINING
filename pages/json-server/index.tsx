@@ -75,6 +75,8 @@ const JsonServerPage: React.FC<UserProps> = ({ id, age, name, isToggle }) => {
                 <div className='flex justify-center'>
                     <button onClick={postApi} className='bg-zinc-900 text-cyan-500 p-2 px-4 rounded-md hover:bg-zinc-800'>Add User</button>
                 </div>
+
+
                 <form className='flex flex-col justify-center items-center gap-4 bg-gradient-to-br from-zinc-800 to-zinc-900 p-8 w-[380px] mx-auto my-10 rounded-2xl border border-zinc-700/30' onSubmit={e => { e.preventDefault(); userUpdate(Number(updateID), Number(updateAge)) }}   >
                     <div className="w-full space-y-6">
                         <div className="relative">
@@ -92,6 +94,7 @@ const JsonServerPage: React.FC<UserProps> = ({ id, age, name, isToggle }) => {
                         Update User
                     </button>
                 </form>
+
 
                 <form onSubmit={(e) => { e.preventDefault(); userDelete(Number(deleteID)); }} className='flex flex-col justify-center items-center gap-2 bg-zinc-800 p-5 w-fit mx-auto my-10 rounded-lg'>
                     <input type="text" value={deleteID} onChange={(e) => { setDeleteID(Number(e.target.value)) }} className='p-2 border border-black rounded-xl' />
