@@ -16,11 +16,16 @@ const CSR2 = () => {
 
     // TODO TOGGLER FUNCTION ================================================================================================================================================
     function TodoCompleteToggler(ID: number) {
-        const TODO = todos.find((todo: SingleTodoType) => todo.id == ID) // First we find the Todo we want to toggle
-        if (!TODO) return // If the Todo is not found we return
-        const NEW_TODO: SingleTodoType = { ...TODO, completed: !TODO.completed } // Then we create a new Todo with the opposite value of the completed property
-        const NEW_TODOS: SingleTodoType[] = todos.map((todo: SingleTodoType) => todo.id == ID ? NEW_TODO : todo) // Then we map through the todos and replace the old Todo with the new one
-        setTodos(NEW_TODOS) // Finally we set the new Todos
+        // First we find the Todo we want to toggle
+        const TODO = todos.find((todo: SingleTodoType) => todo.id == ID)
+        // If the Todo is not found we return
+        if (!TODO) return
+        // Then we create a new Todo with the opposite value of the completed property
+        const NEW_TODO: SingleTodoType = { ...TODO, completed: !TODO.completed }
+        // Then we map through the todos and replace the old Todo with the new one
+        const NEW_TODOS: SingleTodoType[] = todos.map((todo: SingleTodoType) => todo.id == ID ? NEW_TODO : todo)
+        // Finally we set the new Todos
+        setTodos(NEW_TODOS)
     }
 
     // RETURN ================================================================================================================================================
