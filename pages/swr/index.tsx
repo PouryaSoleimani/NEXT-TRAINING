@@ -10,8 +10,7 @@ type SingleUserType = { id: number, name: string, age: number | string, isToggle
 const SWR: NextPage<Props> = ({ }) => {
 
   const fetcher = () => {
-    return fetch('http://localhost:4000/users')
-      .then(result => result.json())
+    return fetch('http://localhost:4000/users').then(result => result.json())
   }
 
   const { data, error, isLoading } = useSWR('/users', fetcher)
