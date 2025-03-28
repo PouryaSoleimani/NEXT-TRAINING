@@ -3,6 +3,8 @@ import { useRouter } from 'next/router'
 import React from 'react'
 import styled from 'styled-components';
 
+
+// COMPONENT  _____________________________________________________________________________________________________________________________________________________________________________________________________________________
 const Params = () => {
     const router = useRouter()
     const { params = [] } = router.query;
