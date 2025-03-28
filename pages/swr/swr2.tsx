@@ -18,9 +18,9 @@ const swr2 = () => {
     return (
         <div className='grid grid-cols-3 gap-4 p-10 swr2'>
             {data.map((item: any) => (
-                <div key={item.id} className='bg-zinc-200 hover:bg-white text-black px-4 py-5 my-2 rounded-md w-[30rem]'>
-                    <h1 className='text-black text-lg font-black'>{item.name.toUpperCase()}</h1>
-                    <h1 className='text-black text-lg font-black'>{item.age}</h1>
+                <div key={item.id} className='bg-white opacity-30 hover:opacity-100 text-end text-black px-4 py-5 my-2 rounded-md w-[30rem]'>
+                    <h5 className='text-black text-5xl'>{item.name.toUpperCase()}</h5>
+                    <h5 className='text-black text-2xl'>{item.age}</h5>
                 </div>
             ))}
         </div>
