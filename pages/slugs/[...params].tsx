@@ -20,7 +20,9 @@ const Params = () => {
       `
 
     function logger() { console.log("HELLO HELLO") }
-    // RETURN
+
+
+    // RETURN _____________________________________________________________________________________________________________________________________________________________________________________________________________________
     return (
         <>
             <div className='text-5xl bg-zinc-900 text-yellow-400 flex flex-col items-center justify-around font-bold p-10'>
