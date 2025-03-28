@@ -13,7 +13,7 @@ const DynamicApi: NextPage<Props> = ({ allUsers }) => {
 
     function deleteUserHandler(event: FormEvent<HTMLFormElement>) {
         event.preventDefault()
-        axios.delete(`http://localhost:3000/api/review/deleteuser/${ID}`)
+        axios.delete(`http://localhost:4000/users/${ID}`)
             .then(res => console.log(res))
             .catch(error => console.error("USER NOT FOUND"))
         setID("")
@@ -22,13 +22,13 @@ const DynamicApi: NextPage<Props> = ({ allUsers }) => {
 
 
     return (
-        <section id='FULL_PAGE_SECTION' className='w-screen h-screen pt-16 bg-zinc-300 flex flex-col space-y-10 items-center justify-center'>
+        <section id='FULL_PAGE_SECTION' className='w-screen h-screen pt-16 bg-zinc-900 flex flex-col space-y-10 items-center justify-center'>
             <div className='w-fit mx-auto p-4 rounded-xl flex flex-wrap items-center justify-center gap-2 bg-transparent'>
                 {allUsers.map((user: SingleUserType) => (
-                    <Link href={`/review/${user.id}`}>
+                    <Link href={`/review/${user.id}`} className='bg-zinc-900'>
                         <div key={user.id} className="card w-[17.2rem] mx-auto mt-10  hover:scale-110 duration-300 cursor-pointer">
                             <div className="card-overlay"></div>
-                            <div className="card-inner text-zinc-900">{user.username.toUpperCase()}<br /></div>
+                            <div className="card-inner text-zinc-900">{user.name.toUpperCase()}<br /></div>
                         </div>
                     </Link>
                 ))}
