@@ -67,7 +67,7 @@ const FakeStoreUserPage: NextPage<Props> = ({ users }) => {
           <button type='submit' className="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
           <button type='submit' className="button2">Sign Up</button>
         </div>
-        <button className="button3">Forgot Password</button>
+        <button className="button3 w-64 mx-auto">Forgot Password</button>
       </form>
 
 
