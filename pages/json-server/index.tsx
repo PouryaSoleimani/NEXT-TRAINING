@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import SingleTodoComponent from './SingleTodoComponent';
-import { useRouter as USEROUTER } from 'next/navigation';
+import { useRouter as USERouter } from 'next/navigation';
 
 type AllUsersType = [{ id: number, name: string, age: number, isToggle: boolean }]
 
@@ -9,7 +9,7 @@ interface UserProps { id: number, name: string, age: number, isToggle: boolean }
 
 // COMPONENT ================================================================================================================================================
 const JsonServerPage: React.FC<UserProps> = ({ id, age, name, isToggle }) => {
-    const ROUTER = USEROUTER()
+    const Router = USERouter()
 
     const [myUser, setMyUser] = useState({ id: id, name: name, age: age, isToggle: isToggle })
     const [users, setusers] = useState<AllUsersType>([{ id: 0, name: '', age: 0, isToggle: true }])
@@ -26,12 +26,12 @@ const JsonServerPage: React.FC<UserProps> = ({ id, age, name, isToggle }) => {
     // AXIOS.POST  ===================================================================================================================================================
     function postApi() {
         axios.post("http://localhost:4000/users", { id: "12", name: "alireza", age: 32 }, { headers: { "Content-Type": "application/json" } })
-            .then(data => { console.info(data); ROUTER.refresh() })
+            .then(data => { console.info(data); Router.refresh() })
     }
     // AXIOS.DELETE  =================================================================================================================================================
     function userDelete(id: number) {
         axios.delete(`http://localhost:4000/users/${Number(id)}`)
-            .then(data => { console.info(data); ROUTER.refresh() })
+            .then(data => { console.info(data); Router.refresh() })
             .catch(err => console.error(err))
     }
     // AXIOS.PUT  ====================================================================================================================================================
@@ -40,7 +40,7 @@ const JsonServerPage: React.FC<UserProps> = ({ id, age, name, isToggle }) => {
         if (user) { setMyUser(user) }
         if (user) {
             axios.put(`http://localhost:4000/users/${id}`, { id: user.id, name: user.name, age: age }) // Spread the existing user object and update the age
-                .then(() => ROUTER.refresh())
+                .then(() => Router.refresh())
                 .catch(err => console.error('Error updating user:', err));
         } else {
             console.error('User not found');
@@ -53,7 +53,7 @@ const JsonServerPage: React.FC<UserProps> = ({ id, age, name, isToggle }) => {
             if (user) { setMyUser(user); } // Set the user object
             if (user) { // If the user object is found
                 axios.put(`http://localhost:4000/users/${ID}`, { id: user.id, name: user.name, age: user.age, isToggle: !user.isToggle }) // Spread the existing user object and update the age
-                    .then(() => ROUTER.refresh())
+                    .then(() => Router.refresh())
                     .catch(err => console.error('Error updating user:', err));
             } else {
                 console.error('User not found');
