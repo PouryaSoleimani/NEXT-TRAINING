@@ -13,7 +13,7 @@ const SSR: NextPage<Props> = ({ Response }) => {
 
       {Response.map(item => (
         <Link key={item.id} href={`/ssr/${item.id}`} >
-          <h2 className='text-xl hover:bg-zinc-800'>{item.id}--{item.name}</h2>
+          <h2 className='text-xl hover:bg-zinc-800 p-2'>{item.id}--{item.name}</h2>
         </Link>
       ))}
 
