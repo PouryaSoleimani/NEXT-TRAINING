@@ -30,7 +30,8 @@ const SWR: NextPage<Props> = ({ }) => {
               <p className='bg-zinc-800 p-4 rounded-md text-white'>{user.name}</p>
               <p className='bg-zinc-900 p-4 rounded-md text-white'>{user.age}</p>
             </Link>
-          )) : null}
+          )) : <h1>NO DATA</h1>
+        }
       </div>
     </div >
   )
