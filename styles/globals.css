@@ -280,3 +280,7 @@ tbody {
 th, td {
 	padding: 10px;
 }
+
+ol {
+	list-style: decimal;
+}

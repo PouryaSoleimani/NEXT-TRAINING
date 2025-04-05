@@ -53,6 +53,7 @@ const HTMLCSSReviewComponent = () => {
             <hr />
             <h3 className='text-center font-bold'>MY TABLE</h3>
             <table className='w-1/2 mx-auto border' style={{ fontFamily: "BYekan+", fontSize: "16px ," }}>
+
                 <thead>
                     <tr className='border p-10 text-center'>
                         <th className='border'>#</th>
@@ -71,7 +72,18 @@ const HTMLCSSReviewComponent = () => {
 
             </table>
 
-
+            <ol type='1' start={10}>
+                <li>content</li>
+                <li>content</li>
+                <li>content</li>
+                <li>content</li>
+                <li>content</li>
+                <li>content</li>
+                <li>content</li>
+                <li>content</li>
+                <li>content</li>
+                <li>content</li>
+            </ol>
 
 
         </div >
