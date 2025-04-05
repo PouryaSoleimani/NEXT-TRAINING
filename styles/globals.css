@@ -247,5 +247,23 @@ h1 , h2, h3 , a  , Link {
 	font-size: 2rem !important;
 	font-weight: 800 !important;
 	text-align: center !important;
-  letter-spacing:5px !important;
+	letter-spacing: 5px !important;
+}
+
+@keyframes flowting {
+	0% {
+		transform: translateY(0);
+	}
+	
+	50% {
+		transform: translateY(10px);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.Animation {
+	animation: flowting 5s infinite;
 }
