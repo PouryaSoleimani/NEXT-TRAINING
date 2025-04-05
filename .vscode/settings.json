@@ -1936,7 +1936,7 @@
    "editor.wrappingIndent": "none",
    "editor.defaultColorDecorators": "auto",
    "editor.experimentalInlineEdit.backgroundColoring": true,
-   "workbench.preferredDarkColorTheme": "Min Dark",
+   "workbench.preferredDarkColorTheme": "Vercel (Dark)",
    "[javascript]": {
       "editor.defaultFormatter": "vscode.typescript-language-features"
    },
