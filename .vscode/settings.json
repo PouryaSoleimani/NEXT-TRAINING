@@ -2048,7 +2048,7 @@
       "editor.defaultFormatter": "vscode.typescript-language-features"
    },
    "editor.columnSelection": false,
-   "workbench.colorTheme": "GitHub Dark Default",
+   "workbench.colorTheme": "Vercel (Dark)",
    "terminal.integrated.fontLigatures.enabled": true,
    "gitlens.advanced.messages": {
       "suppressCreatePullRequestPrompt": true
