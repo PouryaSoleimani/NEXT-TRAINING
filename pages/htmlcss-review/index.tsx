@@ -41,13 +41,6 @@ const HTMLCSSReviewComponent = () => {
                 </button>
             </Link>
 
-            {/* <picture>
-                <source media='min-width:400px' srcSet="/NEW___PICS/404_page_cover.jpg" type="image/webp" />
-                <source media='min-width:600px' srcSet="/NEW___PICS/CARTOON____BG.jpg" type="image/webp" />
-                <source media='min-width:800px' srcSet="/NEW___PICS/not-found-bg.avif" type="image/jpeg" />
-                <img src="/NEW___PICS/not-found.png" alt="A sample image" />
-            </picture> */}
-
             <picture>
                 <source srcSet="/NEW___PICS/CARTOON____BG.jpg" type="image/webp" media="(min-width: 600px)" />
                 <source srcSet="/NEW___PICS/404_page_cover.jpg" type="image/webp" media="(min-width: 400px)" />
