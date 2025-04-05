@@ -20,7 +20,7 @@ const HTMLCSSReviewComponent = () => {
             <p className='text-center w-full bg-white text-black font-black text-3xl py-3'>Make sure to practice these concepts!</p>
             <h2>Resources</h2>
             <p><del className='text-red-900'>300/000</del> 200/000 </p>
-            
+
             <p>H<sub>2</sub>O</p>
             <p>H<sup>2</sup>O</p>
 
@@ -33,6 +33,11 @@ const HTMLCSSReviewComponent = () => {
                 </button>
             </Link>
 
+            <Link href="tel:+989375008682" title='CALL ME'>
+                <button className='bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded'>
+                    +989375008682
+                </button>
+            </Link>
 
         </div >
     )
