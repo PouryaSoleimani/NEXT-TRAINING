@@ -27,7 +27,7 @@ const HTMLCSSReviewComponent = () => {
             <p>H<sup>2</sup>O</p>
 
             <p>H<small>2</small>O</p>
-            <p>H<big>2</big>O</p> 
+            <p>H<big>2</big>O</p>
 
             <Link href="/NEW___PICS/CARTOON____BG.jpg" download target='_blank' rel="noopener noreferrer" title='DOWNLOAD THE IMAGE'>
                 <button className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded">
@@ -46,6 +46,13 @@ const HTMLCSSReviewComponent = () => {
                 <source srcSet="/NEW___PICS/404_page_cover.jpg" type="image/webp" media="(min-width: 400px)" />
                 <img src="/NEW___PICS/not-found.png" alt="Responsive image" />
             </picture>
+            {/* TABLE  */}
+            <table>
+                
+            </table>
+
+
+
 
         </div >
     )
