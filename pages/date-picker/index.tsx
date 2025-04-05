@@ -14,10 +14,6 @@ const DatePickerComponent = () => {
         setValue(event)
         console.info(value)
     }
-    useEffect(() => {
-        dateChangeHandler(value)
-    }, [value])
-
 
 
     return (
