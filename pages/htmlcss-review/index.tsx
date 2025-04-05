@@ -40,7 +40,14 @@ const HTMLCSSReviewComponent = () => {
                 </button>
             </Link>
 
+            <picture>
+                <source media="(min-width: 400px)" srcSet="/NEW___PICS/not-found.png" sizes="lg" />
+                <source media="(min-width: 500px)" srcSet="/NEW___PICS/CARTOON____BG.jpg" sizes="md" />
+                <source media="(min-width: 600px)" srcSet="/NEW___PICS/404_page_cover.jpg" sizes="sm" />
+                <source media="(min-width: 700px)" srcSet="/NEW___PICS/not-found.png" sizes="lg" />
+            </picture>
 
+            
         </div >
     )
 }
