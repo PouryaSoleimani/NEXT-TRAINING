@@ -22,7 +22,7 @@
     "terminal.integrated.mouseWheelZoom": true,
     "terminal.integrated.fontLigatures": true,
     "editor.linkedEditing": true,
-    "editor.lineHeight": 1.5,
+    "editor.lineHeight": 1.45,
     "editor.fontSize": 12,
     "breadcrumbs.icons": true,
     "workbench.colorCustomizations": {
