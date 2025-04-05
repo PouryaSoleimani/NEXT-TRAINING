@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// ^ HTML & CSS REVIEW =======================================================================================================================================================
 import Link from 'next/link'
 import React from 'react'
 
@@ -27,7 +27,7 @@ const HTMLCSSReviewComponent = () => {
             <p>H<sup>2</sup>O</p>
 
             <p>H<small>2</small>O</p>
-            <p>H<big>2</big>O</p>
+            <p>H<big>2</big>O</p> 
 
             <Link href="/NEW___PICS/CARTOON____BG.jpg" download target='_blank' rel="noopener noreferrer" title='DOWNLOAD THE IMAGE'>
                 <button className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded">
