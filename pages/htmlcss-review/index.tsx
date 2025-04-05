@@ -82,13 +82,6 @@ const HTMLCSSReviewComponent = () => {
                 <li>content</li>
                 <li>content</li>
                 <li>content</li>
-                <li>content</li>
-                <li>content</li>
-                <li>content</li>
-                <li>content</li>
-                <li>content</li>
-                <li>content</li>
-                <li>content</li>
             </ol>
 
 
