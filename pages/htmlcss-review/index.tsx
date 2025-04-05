@@ -12,7 +12,7 @@ const HTMLCSSReviewComponent = () => {
                 <li>HTML Elements</li>
                 <li>CSS Selectors</li>
                 <li>Flexbox</li>
-                <li>Grid Layout</li>
+                <li>Grid Layout</li> 
                 <li>Responsive Design</li>
             </ul> 
 
