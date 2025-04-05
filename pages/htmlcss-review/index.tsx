@@ -74,6 +74,7 @@ const HTMLCSSReviewComponent = () => {
 
             </table>
 
+            {/* LISTS */}
             <ol type='1' start={10}>
                 <li>content</li>
                 <li>content</li>
