@@ -56,6 +56,7 @@ const HTMLCSSReviewComponent = () => {
             {/* TABLE  */}
             <hr />
             <h3 className='text-center font-bold'>MY TABLE</h3>
+
             <table className='w-1/2 mx-auto border' style={{ fontFamily: "BYekan+", fontSize: "16px ," }}>
 
                 <thead>
