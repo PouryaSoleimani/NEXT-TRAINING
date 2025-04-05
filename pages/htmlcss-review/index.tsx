@@ -60,10 +60,10 @@ const HTMLCSSReviewComponent = () => {
             <table className='w-1/2 mx-auto border' style={{ fontFamily: "BYekan+", fontSize: "16px ," }}>
 
                 <thead>
-                    <tr className='border p-10 text-center'>
-                        <th className='border'>#</th>
-                        <th className='border'>NAME</th>
-                        <th className='border'>JOB</th>
+                    <tr>
+                        <th className='border text-center'>#</th>
+                        <th className='border text-center'>FIRST NAME</th>
+                        <th className='border text-center'>LAST NAME</th>
                     </tr>
                 </thead>
 
