@@ -54,6 +54,8 @@ const HTMLCSSReviewComponent = () => {
 
             <table className='table border' style={{ fontFamily: "BYekan+", fontSize: "16px ," }}>
 
+                <caption>MY TABLE</caption>
+
                 <thead>
                     <tr className='border p-10 text-center'>
                         <th className='border'>#</th>
