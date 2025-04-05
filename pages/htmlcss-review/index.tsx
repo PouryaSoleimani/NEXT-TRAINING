@@ -5,11 +5,11 @@ const HTMLCSSReviewComponent = () => {
     return (
         <div className='p-4 text-white'>
 
-            <h1 className='text-center mt-4 font-black' title='THIS IS THE PAGE TITLE'>HTML & CSS Review</h1>
-            <p className='text-orange-500 font-black text-2xl' title='THIS IS THE p TAG TITLE'>This is a review of HTML and CSS concepts.</p>
+            <h1 className='text-center mt-4' title='THIS IS THE PAGE TITLE'>HTML & CSS <strong>Review</strong></h1>
+            <p className='text-orange-500 font-black text-2xl text-center w-full' title='THIS IS THE p TAG TITLE '>This is a review of HTML and <i>CSS concepts.</i></p>
 
             <ul className='text-zinc-200'>
-                <li>HTML Elements</li>
+                <li><mark>HTML Elements</mark></li>
                 <li>CSS Selectors</li>
                 <li>Flexbox</li>
                 <li>Grid Layout</li>
@@ -20,7 +20,6 @@ const HTMLCSSReviewComponent = () => {
             <h2>Resources</h2>
 
         </div>
-    )
 }
 
 export default HTMLCSSReviewComponent
