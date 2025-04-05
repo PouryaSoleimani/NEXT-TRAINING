@@ -26,13 +26,11 @@ const HTMLCSSReviewComponent = () => {
             <p>H<small>2</small>O</p>
             <p>H<big>2</big>O</p>
 
-            <a href="/NEW___PICS/CARTOON____BG.jpg" download target='_blank' rel="noopener noreferrer" >
+            <Link href="/NEW___PICS/CARTOON____BG.jpg" download target='_blank' rel="noopener noreferrer" title='DOWNLOAD THE IMAGE'>
                 <button className="bg-blue-500 text-white px-4 py-2 rounded">
                     Download PDF
                 </button>
-            </a>
-
-
+            </Link>
         </div >
     )
 }
