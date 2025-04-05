@@ -84,6 +84,12 @@ const HTMLCSSReviewComponent = () => {
                 <li>content</li>
             </ol>
 
+            <details>
+                <summary className='btn btn-primary'>READ MORE</summary>
+                <p>WORLD Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ad quos est iste voluptas voluptatum accusamus tempore consequatur aliquid maxime reprehenderit, doloribus rem id enim earum voluptatem eius. Id, ipsum.</p>
+            </details>
+
+
         </div >
     )
 }
