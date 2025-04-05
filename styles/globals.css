@@ -272,3 +272,11 @@ source {
 	width: 20rem;
 	height: 20rem;
 }
+
+tbody {
+	background-color: rgb(33, 33, 33) !important;
+}
+
+th, td {
+	padding: 10px;
+}
