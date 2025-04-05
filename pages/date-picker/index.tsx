@@ -18,7 +18,9 @@ const DatePickerComponent = () => {
     function dateChangeHandler(event: Value) {
         setValue(event)
         console.info(value?.toString())
-        const notifyDate = () => toast(`تاریخ ثبت شده ${value?.toString()}`, { style: { background: "#000", color: "#fff", border: "2px solid #fff", fontSize: "1.5rem", fontFamily: "yekan" } });
+        const notifyDate = () => toast(`تاریخ ثبت شده ${value?.toString()}`,
+            { style: { background: "#000", color: "#fff", border: "2px solid #fff", fontSize: "1.5rem", fontFamily: "yekan" } }
+        );
         notifyDate()
     }
 
