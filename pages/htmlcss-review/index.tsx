@@ -1,7 +1,7 @@
 import React from 'react'
 
 const HTMLCSSReviewComponent = () => {
-    
+
     return (
         <div className='p-4 text-white'>
 
@@ -14,7 +14,7 @@ const HTMLCSSReviewComponent = () => {
                 <li>Flexbox</li>
                 <li>Grid Layout</li>
                 <li>Responsive Design</li>
-            </ul>
+            </ul> 
 
             <p className='text-center w-full bg-white text-black font-black text-3xl py-3'>Make sure to practice these concepts!</p>
             <h2>Resources</h2>
