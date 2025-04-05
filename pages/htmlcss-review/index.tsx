@@ -34,10 +34,11 @@ const HTMLCSSReviewComponent = () => {
             </Link>
 
             <Link href="tel:+989375008682" title='CALL ME'>
-                <button className='bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded'>
+                <button className='bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded mx-1'>
                     +989375008682
                 </button>
             </Link>
+
 
         </div >
     )
