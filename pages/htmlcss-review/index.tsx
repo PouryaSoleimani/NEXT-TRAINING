@@ -20,15 +20,17 @@ const HTMLCSSReviewComponent = () => {
             </ul>
 
             {/* TYPOGRAPHY */}
-            <p className='text-center w-full bg-white text-black font-black text-3xl py-3'>Make sure to practice these concepts!</p>
-            <h2>Resources</h2>
-            <p><del className='text-red-900'>300/000</del> 200/000 </p>
+            <div>
+                <p className='text-center w-full bg-white text-black font-black text-3xl py-3'>Make sure to practice these concepts!</p>
+                <h2>Resources</h2>
+                <p><del className='text-red-900'>300/000</del> 200/000 </p>
 
-            <p>H<sub>2</sub>O</p>
-            <p>H<sup>2</sup>O</p>
+                <p>H<sub>2</sub>O</p>
+                <p>H<sup>2</sup>O</p>
 
-            <p>H<small>2</small>O</p>
-            <p>H<big>2</big>O</p>
+                <p>H<small>2</small>O</p>
+                <p>H<big>2</big>O</p>
+            </div>
 
             {/*  DOWNLOAD */}
             <Link href="/NEW___PICS/CARTOON____BG.jpg" download target='_blank' rel="noopener noreferrer" title='DOWNLOAD THE IMAGE'>
