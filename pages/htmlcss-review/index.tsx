@@ -36,12 +36,14 @@ const HTMLCSSReviewComponent = () => {
                     Download PDF
                 </button>
             </Link>
+
             {/* PHONE NUMBER  */}
             <Link href="tel:+989375008682" title='CALL ME'>
                 <button className='bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded mx-1'>
                     +989375008682
                 </button>
             </Link>
+
             {/* PICTURE */}
             <picture>
                 <source srcSet="/NEW___PICS/CARTOON____BG.jpg" type="image/webp" media="(min-width: 600px)" />

@@ -22,7 +22,7 @@
     "terminal.integrated.mouseWheelZoom": true,
     "terminal.integrated.fontLigatures": true,
     "editor.linkedEditing": true,
-    "editor.lineHeight": 1.4,
+    "editor.lineHeight": 1.5,
     "editor.fontSize": 12,
     "breadcrumbs.icons": true,
     "workbench.colorCustomizations": {
@@ -1601,7 +1601,7 @@
         "erb"
     ],
     "tailwind-fold.autoFold": false,
-    "workbench.colorTheme": "Next Dark Pro",
+    "workbench.colorTheme": "GitHub Dark Default",
     "workbench.sideBar.location": "right",
     "workbench.activityBar.location": "top",
     "editor.accessibilityPageSize": 800,
