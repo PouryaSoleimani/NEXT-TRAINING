@@ -21,6 +21,8 @@ const HTMLCSSReviewComponent = () => {
             <p><del className='text-red-900'>300/000</del> 200/000 </p>
             <p>H<sub>2</sub>O</p>
             <p>H<sup>2</sup>O</p>
+
+
         </div>
     )
 }

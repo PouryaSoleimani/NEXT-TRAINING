@@ -2,7 +2,7 @@
     "editor.fontFamily": "Calibri",
     "editor.fontWeight": "600",
     "editor.lightbulb.enabled": "on",
-    "editor.letterSpacing": -0.1,
+    "editor.letterSpacing": 0.1,
     "editor.lineNumbers": "on",
     "workbench.iconTheme": "material-icon-theme",
     "editor.minimap.enabled": false,
@@ -1601,7 +1601,7 @@
         "erb"
     ],
     "tailwind-fold.autoFold": false,
-    "workbench.colorTheme": "Next Dark Pro",
+    "workbench.colorTheme": "GitHub Dark Default",
     "workbench.sideBar.location": "right",
     "workbench.activityBar.location": "top",
     "editor.accessibilityPageSize": 800,
