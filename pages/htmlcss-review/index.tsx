@@ -51,11 +51,8 @@ const HTMLCSSReviewComponent = () => {
 
             {/* TABLE  */}
             <hr />
-
-            <table className='table border' style={{ fontFamily: "BYekan+", fontSize: "16px ," }}>
-
-                <caption>MY TABLE</caption>
-
+            <h3 className='text-center font-bold'>MY TABLE</h3>
+            <table className='w-1/2 mx-auto border' style={{ fontFamily: "BYekan+", fontSize: "16px ," }}>
                 <thead>
                     <tr className='border p-10 text-center'>
                         <th className='border'>#</th>
