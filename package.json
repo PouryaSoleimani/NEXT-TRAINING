@@ -24,7 +24,7 @@
         "react": "^18",
         "react-dom": "^18",
         "react-element-popper": "^2.1.7",
-        "react-hot-toast": "^2.4.1",
+        "react-hot-toast": "^2.5.2",
         "react-multi-date-picker": "^4.5.2",
         "styled-components": "^6.1.13",
         "swr": "^2.2.5"
