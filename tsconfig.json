@@ -16,6 +16,6 @@
       "@/*": [ "./*" ]
     }
   },
-  "include": [ "next-env.d.ts", "**/*.ts", "**/*.tsx", "data/db.tsx" ],
+  "include": [ "next-env.d.ts", "**/*.ts", "**/*.tsx", "data/db.tsx", "pages/date-picker/index.jsx" ],
   "exclude": [ "node_modules" ]
 }
