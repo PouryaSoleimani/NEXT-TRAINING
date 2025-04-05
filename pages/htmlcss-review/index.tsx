@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const HTMLCSSReviewComponent = () => {
@@ -21,6 +22,15 @@ const HTMLCSSReviewComponent = () => {
             <p><del className='text-red-900'>300/000</del> 200/000 </p>
             <p>H<sub>2</sub>O</p>
             <p>H<sup>2</sup>O</p>
+
+            <p>H<small>2</small>O</p>
+            <p>H<big>2</big>O</p>
+
+            <a href="/NEW___PICS/CARTOON____BG.jpg" download>
+                <button className="bg-blue-500 text-white px-4 py-2 rounded">
+                    Download PDF
+                </button>
+            </a>
 
 
         </div>

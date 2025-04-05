@@ -1534,7 +1534,7 @@
     },
     "git.autofetch": true,
     "editor.tabSize": 4,
-    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.editor.editorActionsLocation": "titleBar",
     "[javascriptreact]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
     "editor.columnSelection": false,
     "terminal.integrated.fontLigatures.enabled": true,
