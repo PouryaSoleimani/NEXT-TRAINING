@@ -18,16 +18,12 @@ const DatePickerComponent = () => {
     function dateChangeHandler(event: Value) {
         setValue(event)
         console.info(value?.toString())
-        const notify = new Notification("تاریخ انتخاب شده", {
-            body: `تاریخ انتخاب شده: ${event?.toString()}`,
-            icon: "/images/icon.png",
-        })
         const notifyDate = () => toast(`تاریخ ثبت شده ${value?.toString()}`, { style: { background: "#000", color: "#fff", border: "2px solid #fff", fontSize: "1.5rem", fontFamily: "yekan" } });
         notifyDate()
     }
 
 
-    
+
     // RETURN=========================================================================================================================================================================
     return (
         <div className="flex flex-col space-y-2 items-center justify-center h-screen font-extrabold tracking-tighter text-3xl">
