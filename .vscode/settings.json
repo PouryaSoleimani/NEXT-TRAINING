@@ -2083,6 +2083,6 @@
    "github.copilot.chat.editor.temporalContext.enabled": true,
    "github.copilot.chat.edits.temporalContext.enabled": true,
    "explorer.sortOrder": "foldersNestsFiles",
-   "workbench.statusBar.visible": false,
+   "workbench.statusBar.visible": true,
    "editor.cursorSurroundingLinesStyle": "all"
 }
