@@ -97,9 +97,18 @@ const HTMLCSSReviewComponent = () => {
                 <input type="text" name="NAME" id="NAME" className='text-black p-2' />
                 <label htmlFor="EMAIL">EMAIL : </label>
                 <input type="text" name="NAME" id="EMAIL" className='text-black p-2' />
-                <input type="radio" name="" id="" />
-                <input type="radio" name="" id="" />
-                <input type="radio" name="" id="" />
+                <br />
+                {/* GENDER */}
+                <label htmlFor="male">male</label>
+                <input type="radio" name="gender" id="male" value="male" className='text-white' />
+                <br />
+                <label htmlFor="female">female</label>
+                <input type="radio" name="gender" id="female" value="female" className='text-white' />
+                <br />
+                <label htmlFor="prefer">prefer not to say</label>
+                <input type="radio" name="gender" id="prefer" value="prefer not to say" className='text-white' />
+
+
             </form>
 
         </div >
