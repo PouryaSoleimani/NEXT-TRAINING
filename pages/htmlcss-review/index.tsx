@@ -92,6 +92,16 @@ const HTMLCSSReviewComponent = () => {
             <abbr title="HELLO WORLD">HW</abbr>
 
 
+            <form>
+                <label htmlFor="NAME">NAME : </label>
+                <input type="text" name="NAME" id="NAME" className='text-black p-2' />
+                <label htmlFor="EMAIL">EMAIL : </label>
+                <input type="text" name="NAME" id="EMAIL" className='text-black p-2' />
+                <input type="radio" name="" id="" />
+                <input type="radio" name="" id="" />
+                <input type="radio" name="" id="" />
+            </form>
+
         </div >
     )
 }
