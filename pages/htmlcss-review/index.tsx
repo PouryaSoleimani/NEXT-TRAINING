@@ -4,6 +4,12 @@ import React from 'react'
 
 const HTMLCSSReviewComponent = () => {
 
+    function submitHandler(event: React.FormEvent<HTMLFormElement>) {
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
+        const selectedValue = formData.get('select'); // Access the value of the select box
+        console.info(selectedValue);
+    }
     return (
 
         <div className='p-4 bg-zinc-900 text-white'>
@@ -92,7 +98,7 @@ const HTMLCSSReviewComponent = () => {
             <abbr title="HELLO WORLD">HW</abbr>
 
 
-            <form>
+            <div>
                 <label htmlFor="NAME">NAME : </label>
                 <input type="text" name="NAME" id="NAME" className='text-black p-2' autoComplete='on' />
                 <label htmlFor="EMAIL">EMAIL : </label>
@@ -111,30 +117,32 @@ const HTMLCSSReviewComponent = () => {
 
 
                 {/* SELECT BOX */}
-                <select name="select" id="select" className='bg-black'>
-                    <option value="1" selected>Please Select one</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="3">3</option>
-                    <option value="3">3</option>
-                    <option value="3">3</option>
-                    <option value="3">3</option>
-                    <option value="3">3</option>
-                    <option value="3">3</option>
-                    <option value="3">3</option>
-                    <option value="3">3</option>
-                    <option value="3">3</option>
-                    <option value="3">3</option>
-                    <option value="3">3</option>
-                    <option value="3">3</option>
-                </select>
+                <form onSubmit={event => submitHandler(event)}>
+                    <select name="select" id="select" className='bg-black'>
+                        <option value="1" selected>Please Select one</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="3">3</option>
+                        <option value="3">3</option>
+                        <option value="3">3</option>
+                        <option value="3">3</option>
+                        <option value="3">3</option>
+                        <option value="3">3</option>
+                        <option value="3">3</option>
+                        <option value="3">3</option>
+                        <option value="3">3</option>
+                        <option value="3">3</option>
+                        <option value="3">3</option>
+                    </select>
+                    <button type="submit">SEND</button>
+                </form>
 
 
-            </form>
+            </div>
 
         </div >
     )
 }
 
-export default HTMLCSSReviewComponent 
+export default HTMLCSSReviewComponent
