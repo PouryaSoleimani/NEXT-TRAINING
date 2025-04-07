@@ -217,6 +217,9 @@ const HTMLCSSReviewComponent = () => {
 
                     <label>FILE</label>
                     <input type="file" />
+
+                    <label>HIDDEN</label>
+                    <input type="hidden" />
                 </form>
 
 
