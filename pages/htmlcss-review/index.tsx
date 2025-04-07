@@ -40,7 +40,7 @@ const HTMLCSSReviewComponent = () => {
                 <p>H<big>2</big>O</p>
             </div>
 
-            {/*  DOWNLOAD LINK ============================================================================================================================================== */}
+            {/*  DOWNLOAD LINK =================================================================================================================================================== */}
             <Link href="/NEW___PICS/CARTOON____BG.jpg" download target='_blank' rel="noopener noreferrer" title='DOWNLOAD THE IMAGE'>
                 <button className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded">
                     Download PDF
@@ -62,14 +62,14 @@ const HTMLCSSReviewComponent = () => {
                 <button className='px-4 py-2 rounded mx-4 text-white font-black my-5 bg-emerald-950 hover:bg-emerald-800'>CALL ME</button>
             </Link>
 
-            {/* PICTURE ==============================================================================================================================================*/}
+            {/* PICTURE ==========================================================================================================================================================*/}
             <picture>
                 <source srcSet="/NEW___PICS/CARTOON____BG.jpg" type="image/webp" media="(min-width: 600px)" />
                 <source srcSet="/NEW___PICS/404_page_cover.jpg" type="image/webp" media="(min-width: 400px)" />
                 <img src="/NEW___PICS/not-found.png" alt="Responsive image" />
             </picture>
 
-            {/* TABLE  ==============================================================================================================================================*/}
+            {/* TABLE  ============================================================================================================================================================*/}
             <hr />
             <h3 className='text-center font-bold'>MY TABLE</h3>
 
