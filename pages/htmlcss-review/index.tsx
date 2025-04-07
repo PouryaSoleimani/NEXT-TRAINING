@@ -3,6 +3,7 @@
 import React from 'react'
 import { Button } from '@chakra-ui/react'
 import Link from 'next/link'
+import UserIconComponent from '@/COMPONENTS/ICONS/UserIconComponent'
 
 const HTMLCSSReviewComponent = () => {
 
@@ -232,7 +233,11 @@ const HTMLCSSReviewComponent = () => {
 
                 {/* readonly  ----   disabled ----  maxlength ---- min & max ----- multiple (files) ---- placeholder ---- required ---- autofocus    */}
 
+                {/* SVG - HERO ICONS  ================================================================================================================================================*/}
 
+                <nav>
+                    <UserIconComponent />
+                </nav>
             </div>
 
         </div >
