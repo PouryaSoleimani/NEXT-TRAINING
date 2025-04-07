@@ -120,10 +120,12 @@ const HTMLCSSReviewComponent = () => {
 
             {/* AUTO COMPLETE ==============================================================================================================================================*/}
             <div>
-                <label htmlFor="NAME">NAME : </label>
-                <input type="text" name="NAME" id="NAME" className='text-black p-2' autoComplete='on' />
-                <label htmlFor="EMAIL">EMAIL : </label>
-                <input type="text" name="NAME" id="EMAIL" className='text-black p-2' />
+                <div className='flex flex-col w-fit p-4 border border-black rounded'>
+                    <label htmlFor="NAME">NAME : </label>
+                    <input type="text" name="NAME" id="NAME" autoComplete='on' className='text-black p-2' />
+                    <label htmlFor="EMAIL">EMAIL : </label>
+                    <input type="text" name="NAME" id="EMAIL" autoComplete='on' className='text-black p-2' />
+                </div>
                 <br />
                 {/* GENDER ==================================================================================================================================================*/}
                 <label htmlFor="male">male</label>
