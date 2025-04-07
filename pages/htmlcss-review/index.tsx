@@ -106,7 +106,6 @@ const HTMLCSSReviewComponent = () => {
                 <p>WORLD Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ad quos est iste voluptas voluptatum accusamus tempore consequatur aliquid maxime reprehenderit, doloribus rem id enim earum voluptatem eius. Id, ipsum.</p>
             </details>
 
-
             <details >
                 <summary className='btn btn-danger mt-5'>READ MORE</summary>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum voluptas iure consequatur porro eligendi sed minima mollitia corrupti eaque impedit quasi expedita, nihil quaerat aspernatur ea iste qui. Exercitationem, veritatis.</p>
@@ -129,7 +128,7 @@ const HTMLCSSReviewComponent = () => {
 
                 <hr />
 
-                {/* GENDER ==================================================================================================================================================*/}
+                {/* RADIO BUTTONS  ==================================================================================================================================================*/}
                 <div className='border-2 border-black w-fit p-3 rounded space-y-2 items-start justify-start'>
                     <label htmlFor="male">male</label>
                     <input type="radio" name="gender" id="male" value="male" className='text-white' />
@@ -144,7 +143,7 @@ const HTMLCSSReviewComponent = () => {
                 {/* name||| id ||| value ||| auto complete ||||| target="_blank" */}
 
                 {/* SELECT BOX ==============================================================================================================================================*/}
-                <form onSubmit={event => submitHandler(event)}>
+                <form onSubmit={event => submitHandler(event)} className='border-2 border-red-900 p-4 rounded'>
                     <select name="select" id="select" className='px-3 py-2 border border-black rounded mr-4' defaultValue={1}>
                         <option value="0">Please Select one</option>
                         <option value="HTML">HTML</option>
@@ -161,28 +160,39 @@ const HTMLCSSReviewComponent = () => {
                         <option value="GSAP">GSAP</option>
                     </select>
                     <button type="submit" className='btn btn-success'>SEND</button>
+                </form>
 
+                {/* FIELD SET AND LEGEND   ================================================================================================================================================*/}
+                <form className='border-2 my-4 border-blue-900 p-4 rounded'>
 
-                    {/* FIELDSET ================================================================================================================================================*/}
-                    <fieldset>
-                        <legend>TITLE</legend>
-                        <input type="text" name="" id="" className='mx-5 p-2 rounded my-4 border-s border-s-black' />
-                        <input type="text" name="" id="" className='mx-5 p-2 rounded my-4 border-s border-s-black' />
-                        <input type="text" name="" id="" className='mx-5 p-2 rounded my-4 border-s border-s-black' />
-                        <input type="text" name="" id="" className='mx-5 p-2 rounded my-4 border-s border-s-black' />
-                        <button>SEND</button>
+                    <fieldset className='border-2 border-blue-900 my-4'>
+                        <legend>TITLE 1</legend>
+                        <label htmlFor="fname">FIRST NAME</label>
+                        <input type="text" name="fname" id="" className='px-2 py-1 rounded mx-1 border-1 border-zinc-800' />
+                        <label htmlFor="lname">LAST NAME</label>
+                        <input type="text" name="lname" id="" className='px-2 py-1 rounded mx-1 border-1 border-zinc-800' />
+                        <button className='btn btn-success'>SEND</button>
+                    </fieldset>
+                    <fieldset className='border-2 border-blue-900 my-4'>
+                        <legend>TITLE 2</legend>
+                        <label htmlFor="fname">FIRST NAME</label>
+                        <input type="text" name="fname" id="" className='px-2 py-1 rounded mx-1 border-1 border-zinc-800' />
+                        <label htmlFor="lname">LAST NAME</label>
+                        <input type="text" name="lname" id="" className='px-2 py-1 rounded mx-1 border-1 border-zinc-800' />
+                        <button className='btn btn-success'>SEND</button>
                     </fieldset>
 
-
-                    {/* DATA LIST ================================================================================================================================================*/}
-                    <input type="text" list="listData" />
-                    <datalist id='listData'>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </datalist>
                 </form>
+
+                {/* DATA LIST ================================================================================================================================================*/}
+                <input type="text" list="listData" />
+                <datalist id='listData'>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </datalist>
+
 
 
             </div>
