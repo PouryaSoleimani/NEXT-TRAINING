@@ -109,7 +109,7 @@ const HTMLCSSReviewComponent = () => {
                 <input type="radio" name="gender" id="prefer" value="prefer not to say" className='text-white' />
 
 
-            </form>
+            </form> 
 
         </div >
     )
