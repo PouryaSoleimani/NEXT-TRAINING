@@ -4,6 +4,7 @@ import React from 'react'
 import { Button } from '@chakra-ui/react'
 import Link from 'next/link'
 import UserIconComponent from '@/COMPONENTS/ICONS/UserIconComponent'
+import SettingsIconComponent from '@/COMPONENTS/ICONS/SettingsIconComponent'
 
 const HTMLCSSReviewComponent = () => {
 
@@ -235,8 +236,9 @@ const HTMLCSSReviewComponent = () => {
 
                 {/* SVG - HERO ICONS  ================================================================================================================================================*/}
 
-                <nav>
+                <nav className='flex mt-10 border-2 p-1 border-zinc-500 rounded w-fit'>
                     <UserIconComponent />
+                    <SettingsIconComponent />
                 </nav>
             </div>
 
