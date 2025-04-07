@@ -225,7 +225,9 @@ const HTMLCSSReviewComponent = () => {
                     <input type="range" min="1000" max="2000" onChange={event => console.info("RANGE", event.target.value)} />
                 </form>
 
+                {/* INPUT ATTRIBUTES  ================================================================================================================================================*/}
 
+                {/* readonly  ----   disabled ----  maxlength ---- min & max -----   */}
 
 
 
