@@ -107,9 +107,14 @@ const HTMLCSSReviewComponent = () => {
                 <br />
                 <label htmlFor="prefer">prefer not to say</label>
                 <input type="radio" name="gender" id="prefer" value="prefer not to say" className='text-white' />
+                {/* name||| id ||| value ||| auto complete ||||| target="_blank" */}
 
-
-            </form> 
+                <select name="select" id="select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </form>
 
         </div >
     )
