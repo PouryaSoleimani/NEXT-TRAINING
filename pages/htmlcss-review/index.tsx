@@ -6,6 +6,8 @@ import Link from 'next/link'
 import UserIconComponent from '@/COMPONENTS/ICONS/UserIconComponent'
 import SettingsIconComponent from '@/COMPONENTS/ICONS/SettingsIconComponent'
 import InboxIconComponent from '@/COMPONENTS/ICONS/InboxIconComponent'
+import CartIconComponent from '@/COMPONENTS/ICONS/CartIconComponent'
+import { Image } from 'antd'
 
 const HTMLCSSReviewComponent = () => {
 
@@ -237,10 +239,14 @@ const HTMLCSSReviewComponent = () => {
 
                 {/* SVG - HERO ICONS  ================================================================================================================================================*/}
 
-                <nav className='flex mt-10 border-2 p-1 border-zinc-500 rounded w-fit'>
-                    <InboxIconComponent />
-                    <UserIconComponent />
-                    <SettingsIconComponent />
+                <nav className='flex items-center justify-between mt-10 border-2 p-1 border-zinc-500 rounded w-full px-6 bg-zinc-800'>
+                    <Image src='/next.svg' width={150} height={20}/>
+                    <div id="ICONS" className='flex'>
+                        <InboxIconComponent />
+                        <UserIconComponent />
+                        <SettingsIconComponent />
+                        <CartIconComponent />
+                    </div>
                 </nav>
             </div>
 
