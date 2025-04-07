@@ -109,6 +109,8 @@ const HTMLCSSReviewComponent = () => {
                 <input type="radio" name="gender" id="prefer" value="prefer not to say" className='text-white' />
                 {/* name||| id ||| value ||| auto complete ||||| target="_blank" */}
 
+
+                {/* SELECT BOX */}
                 <select name="select" id="select" size={5}>
                     <option value="1" selected>Please Select one</option>
                     <option value="1">1</option>
