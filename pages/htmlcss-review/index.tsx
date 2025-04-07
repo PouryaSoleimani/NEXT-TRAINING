@@ -14,7 +14,7 @@ const HTMLCSSReviewComponent = () => {
     // RETURN =================================================================================================================================================================
     return (
 
-        <div className='p-4 bg-zinc-900 text-white'>
+        <div className='p-10'>
 
             <h1 className='text-center mt-4' title='THIS IS THE PAGE TITLE'>HTML & CSS <strong>Review</strong></h1>
             <p className='text-orange-500 font-black text-2xl text-center w-full' title='THIS IS THE <p></p> TAG TITLE '>This is a review of HTML and <i>CSS concepts.</i></p>
@@ -46,12 +46,19 @@ const HTMLCSSReviewComponent = () => {
                     Download PDF
                 </button>
             </Link>
+            <Link href={"/next.svg"} download target='_blank' rel='noopener noreferrer' title='DOWNLOAD SVG'>
+                <button className='px-4 py-2 rounded mx-4 text-white font-black my-5 bg-red-950 hover:bg-red-800'>DOWNLOAD SVG</button>
+            </Link>
 
             {/* PHONE NUMBER  */}
             <Link href="tel:+989375008682" title='CALL ME'>
                 <button className='bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded mx-1'>
                     +989375008682
                 </button>
+            </Link>
+        
+            <Link href={"tel:+989375008682"}>
+                <button className='px-4 py-2 rounded mx-4 text-white font-black my-5 bg-emerald-950 hover:bg-emerald-800'>CALL ME</button>
             </Link>
 
             {/* PICTURE */}
@@ -120,8 +127,9 @@ const HTMLCSSReviewComponent = () => {
 
 
 
-                {/* SELECT BOX */}
                 <form onSubmit={event => submitHandler(event)}>
+
+                    {/* SELECT BOX */}
                     <select name="select" id="select" className='bg-black'>
                         <option value="1" selected>Please Select one</option>
                         <option value="1">1</option>
@@ -146,6 +154,10 @@ const HTMLCSSReviewComponent = () => {
                     <fieldset>
                         <legend>TITLE</legend>
                         <input type="text" name="" id="" />
+                        <input type="text" name="" id="" />
+                        <input type="text" name="" id="" />
+                        <input type="text" name="" id="" />
+                        <button>SEND</button>
                     </fieldset>
 
 
