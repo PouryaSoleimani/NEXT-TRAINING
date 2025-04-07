@@ -240,7 +240,6 @@ const HTMLCSSReviewComponent = () => {
                 {/* readonly  ----   disabled ----  maxlength ---- min & max ----- multiple (files) ---- placeholder ---- required ---- autofocus    */}
 
                 {/* SVG - HERO ICONS  ================================================================================================================================================*/}
-
                 <nav className='flex items-center justify-between mt-10 border-2 p-1 border-zinc-500 rounded w-full px-6 bg-zinc-200'>
                     <Image src='/next.svg' width={150} height={20} alt='logo' />
                     <div id="ICONS" className='flex'>
@@ -250,6 +249,8 @@ const HTMLCSSReviewComponent = () => {
                         <SettingsIconComponent />
                     </div>
                 </nav>
+
+
             </div>
 
         </div >
