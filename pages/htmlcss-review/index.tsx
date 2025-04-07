@@ -5,13 +5,11 @@ import React from 'react'
 const HTMLCSSReviewComponent = () => {
 
     function submitHandler(event: React.FormEvent<HTMLFormElement>) {
-        event.preventDefault();
-        const formData = new FormData(event.currentTarget);
-        const selectedValue = formData.get('select'); // Access the value of the select box
-        console.info(selectedValue);
+        event.preventDefault()
+        const formData = new FormData(event.currentTarget)
+        const selectedValue = formData.get('select');
+        console.info(selectedValue)
     }
-
-
 
     // RETURN =================================================================================================================================================================
     return (
@@ -55,7 +53,7 @@ const HTMLCSSReviewComponent = () => {
                     +989375008682
                 </button>
             </Link>
- 
+
             {/* PICTURE */}
             <picture>
                 <source srcSet="/NEW___PICS/CARTOON____BG.jpg" type="image/webp" media="(min-width: 600px)" />
