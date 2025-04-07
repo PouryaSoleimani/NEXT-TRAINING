@@ -1,6 +1,7 @@
 // ^ HTML & CSS REVIEW =======================================================================================================================================================
 import Link from 'next/link'
 import React from 'react'
+import { Button } from '@chakra-ui/react'
 
 const HTMLCSSReviewComponent = () => {
 
@@ -8,7 +9,7 @@ const HTMLCSSReviewComponent = () => {
         event.preventDefault()
         const formData = new FormData(event.currentTarget)
         const selectedValue = formData.get('select');
-        console.info("%c TECHNOLOGY  ===> ", "color:cornflowerblue ; font-size:14px ; line-height:1.2", selectedValue)
+        console.info("%c TECHNOLOGY  ===> ", "color:cornflowerblue ; font-size:14px ; line-height:1.2", selectedValue);
     }
 
 
@@ -186,8 +187,8 @@ const HTMLCSSReviewComponent = () => {
                 </form>
 
                 {/* DATA LIST ================================================================================================================================================*/}
-                <form className='bg-zinc-900 p-4 rounded  border-2 border-black'>
-                    <input type="text" list="listData" className='px-1 py-2 rounded bg-zinc-100 overflow-visible' />
+                <form className='bg-zinc-900 p-4 rounded flex items-center justify-center w-fit border-8 border-black'>
+                    <input type="text" list="listData" className='px-1 py-[8.8px] rounded bg-zinc-100 overflow-visible' />
                     <datalist id='listData'>
                         <option className='px-1 py-1 rounded bg-zinc-400' value="HTML">HTML</option>
                         <option className='px-1 py-1 rounded bg-zinc-400' value="CSS">CSS</option>
@@ -202,8 +203,10 @@ const HTMLCSSReviewComponent = () => {
                         <option className='px-1 py-1 rounded bg-zinc-400' value="NPM">NPM</option>
                         <option className='px-1 py-1 rounded bg-zinc-400' value="GSAP">GSAP</option>
                     </datalist>
-                    <button type="submit" className='btn btn-success'>SEND</button>
+                    <Button colorScheme='orange' size='lg'>   SEND   </Button>
                 </form>
+
+
 
 
 
