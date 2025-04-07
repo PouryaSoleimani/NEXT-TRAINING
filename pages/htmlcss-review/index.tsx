@@ -8,7 +8,7 @@ const HTMLCSSReviewComponent = () => {
         event.preventDefault()
         const formData = new FormData(event.currentTarget)
         const selectedValue = formData.get('select');
-        // console.info(selectedValue)
+        console.info("%c TECHNOLOGY  ===> ", "color:cornflowerblue ; font-size:14px ; line-height:1.2", selectedValue)
     }
 
 
@@ -120,44 +120,47 @@ const HTMLCSSReviewComponent = () => {
 
             {/* AUTO COMPLETE ==============================================================================================================================================*/}
             <div>
-                <div className='flex flex-col w-fit p-4 border border-black rounded'>
+                <div className='flex flex-col w-fit p-4 border-2 border-black rounded'>
                     <label htmlFor="NAME">NAME : </label>
                     <input type="text" name="NAME" id="NAME" autoComplete='on' className='text-black p-2' />
                     <label htmlFor="EMAIL">EMAIL : </label>
                     <input type="text" name="NAME" id="EMAIL" autoComplete='on' className='text-black p-2' />
                 </div>
-                <br />
+
+                <hr />
+
                 {/* GENDER ==================================================================================================================================================*/}
-                <label htmlFor="male">male</label>
-                <input type="radio" name="gender" id="male" value="male" className='text-white' />
+                <div className='border-2 border-black w-fit p-3 rounded space-y-2 items-start justify-start'>
+                    <label htmlFor="male">male</label>
+                    <input type="radio" name="gender" id="male" value="male" className='text-white' />
+                    <br />
+                    <label htmlFor="female">female</label>
+                    <input type="radio" name="gender" id="female" value="female" className='text-white' />
+                    <br />
+                    <label htmlFor="prefer">prefer not to say</label>
+                    <input type="radio" name="gender" id="prefer" value="prefer not to say" className='text-white' />
+                </div>
                 <br />
-                <label htmlFor="female">female</label>
-                <input type="radio" name="gender" id="female" value="female" className='text-white' />
-                <br />
-                <label htmlFor="prefer">prefer not to say</label>
-                <input type="radio" name="gender" id="prefer" value="prefer not to say" className='text-white' />
                 {/* name||| id ||| value ||| auto complete ||||| target="_blank" */}
 
                 {/* SELECT BOX ==============================================================================================================================================*/}
                 <form onSubmit={event => submitHandler(event)}>
-                    <select name="select" id="select" className='bg-black' defaultValue={1}>
-                        <option value="1">Please Select one</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="3">3</option>
-                        <option value="3">3</option>
-                        <option value="3">3</option>
-                        <option value="3">3</option>
-                        <option value="3">3</option>
-                        <option value="3">3</option>
-                        <option value="3">3</option>
-                        <option value="3">3</option>
-                        <option value="3">3</option>
-                        <option value="3">3</option>
-                        <option value="3">3</option>
+                    <select name="select" id="select" className='px-3 py-2 border border-black rounded mr-4' defaultValue={1}>
+                        <option value="0">Please Select one</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="BOOTSTRAP">BOOTSTRAP</option>
+                        <option value="TAILWIND">TAILWIND</option>
+                        <option value="JAVASCRIPT">JAVASCRIPT</option>
+                        <option value="TYPESCRIPT">TYPESCRIPT</option>
+                        <option value="REACT">REACT.JS</option>
+                        <option value="NEXT">NEXT.JS</option>
+                        <option value="GIT">GIT</option>
+                        <option value="GITHUB">GITHUB</option>
+                        <option value="NPM">NPM</option>
+                        <option value="GSAP">GSAP</option>
                     </select>
-                    <button type="submit">SEND</button>
+                    <button type="submit" className='btn btn-success'>SEND</button>
 
 
                     {/* FIELDSET ================================================================================================================================================*/}
