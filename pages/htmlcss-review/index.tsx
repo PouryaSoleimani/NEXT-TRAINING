@@ -5,6 +5,7 @@ import { Button } from '@chakra-ui/react'
 import Link from 'next/link'
 import UserIconComponent from '@/COMPONENTS/ICONS/UserIconComponent'
 import SettingsIconComponent from '@/COMPONENTS/ICONS/SettingsIconComponent'
+import InboxIconComponent from '@/COMPONENTS/ICONS/InboxIconComponent'
 
 const HTMLCSSReviewComponent = () => {
 
@@ -133,7 +134,7 @@ const HTMLCSSReviewComponent = () => {
                 <hr />
 
                 {/* RADIO BUTTONS  =====================================================================================================================================================*/}
-                <div className='border-2 border-black w-fit p-3 rounded space-y-2 items-start justify-start'>
+                <form className='border-2 border-black w-fit p-3 rounded space-y-2 items-start justify-start'>
                     <label htmlFor="male">male</label>
                     <input type="radio" name="gender" id="male" value="male" className='text-white' />
                     <br />
@@ -142,7 +143,7 @@ const HTMLCSSReviewComponent = () => {
                     <br />
                     <label htmlFor="prefer">prefer not to say</label>
                     <input type="radio" name="gender" id="prefer" value="prefer not to say" className='text-white' />
-                </div>
+                </form>
                 <br />
                 {/* name||| id ||| value ||| auto complete ||||| target="_blank" */}
 
@@ -237,6 +238,7 @@ const HTMLCSSReviewComponent = () => {
                 {/* SVG - HERO ICONS  ================================================================================================================================================*/}
 
                 <nav className='flex mt-10 border-2 p-1 border-zinc-500 rounded w-fit'>
+                    <InboxIconComponent />
                     <UserIconComponent />
                     <SettingsIconComponent />
                 </nav>
