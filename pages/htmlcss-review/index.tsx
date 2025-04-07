@@ -95,7 +95,7 @@ const HTMLCSSReviewComponent = () => {
 
             </table>
 
-            {/* LISTS ==============================================================================================================================================*/}
+            {/* LISTS ===============================================================================================================================================================*/}
             <ol type='1' start={10}>
                 <li>content</li>
                 <li>content</li>
@@ -113,12 +113,12 @@ const HTMLCSSReviewComponent = () => {
             </details>
             <hr />
 
-            {/* ABBREVIATION ==============================================================================================================================================*/}
+            {/* ABBREVIATION ======================================================================================================================================================*/}
             <abbr title="HELLO WORLD">HW</abbr>
             <abbr title="UNITED STATES OF AMERICA" className='block my-4 bg-black w-fit px-5 py-2 font-bold text-3xl rounded text-white'> USA </abbr>
 
 
-            {/* AUTO COMPLETE ==============================================================================================================================================*/}
+            {/* AUTO COMPLETE ======================================================================================================================================================*/}
             <div>
                 <div className='flex flex-col w-fit p-4 border-2 border-black rounded'>
                     <label htmlFor="NAME">NAME : </label>
@@ -129,7 +129,7 @@ const HTMLCSSReviewComponent = () => {
 
                 <hr />
 
-                {/* RADIO BUTTONS  ==================================================================================================================================================*/}
+                {/* RADIO BUTTONS  =====================================================================================================================================================*/}
                 <div className='border-2 border-black w-fit p-3 rounded space-y-2 items-start justify-start'>
                     <label htmlFor="male">male</label>
                     <input type="radio" name="gender" id="male" value="male" className='text-white' />
@@ -143,7 +143,7 @@ const HTMLCSSReviewComponent = () => {
                 <br />
                 {/* name||| id ||| value ||| auto complete ||||| target="_blank" */}
 
-                {/* SELECT BOX ==============================================================================================================================================*/}
+                {/* SELECT BOX ========================================================================================================================================================*/}
                 <form onSubmit={event => submitHandler(event)} className='border-2 border-red-900 p-4 rounded'>
                     <select name="select" id="select" className='px-3 py-2 border border-black rounded mr-4' defaultValue={1}>
                         <option value="0">Please Select one</option>
@@ -163,7 +163,7 @@ const HTMLCSSReviewComponent = () => {
                     <button type="submit" className='btn btn-success'>SEND</button>
                 </form>
 
-                {/* FIELD SET AND LEGEND   ================================================================================================================================================*/}
+                {/* FIELD SET AND LEGEND   ============================================================================================================================================*/}
                 <form className='border-2 my-4 border-blue-900 p-4 rounded'>
 
                     <fieldset className='border-2 border-blue-900 my-4'>
@@ -186,7 +186,7 @@ const HTMLCSSReviewComponent = () => {
 
                 </form>
 
-                {/* DATA LIST ================================================================================================================================================*/}
+                {/* DATA LIST ========================================================================================================================================================*/}
                 <form className='bg-zinc-900 p-4 rounded flex items-center justify-center w-fit border-8 border-black'>
                     <input type="text" list="listData" className='px-1 py-[8.8px] rounded bg-zinc-100 overflow-visible' />
                     <datalist id='listData'>
@@ -207,7 +207,7 @@ const HTMLCSSReviewComponent = () => {
                 </form>
 
 
-                {/* INPUT TYPES ================================================================================================================================================*/}
+                {/* INPUT TYPES ======================================================================================================================================================*/}
                 <form className='flex flex-col gap-y-4'>
                     <h2 className='text-2xl w-full bg-red-800 text-center py-3 rounded mt-3'> DIFFERENT INPUT TYPES </h2>
 
