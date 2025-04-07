@@ -11,6 +11,7 @@ const HTMLCSSReviewComponent = () => {
         // console.info(selectedValue)
     }
 
+
     // RETURN =================================================================================================================================================================
     return (
 
@@ -69,7 +70,7 @@ const HTMLCSSReviewComponent = () => {
                 <img src="/NEW___PICS/not-found.png" alt="Responsive image" />
             </picture>
 
-            {/* TABLE  ============================================================================================================================================================*/}
+            {/*TABLE  ============================================================================================================================================================*/}
             <hr />
             <h3 className='text-center font-bold'>MY TABLE</h3>
 
@@ -99,13 +100,23 @@ const HTMLCSSReviewComponent = () => {
                 <li>content</li>
                 <li>content</li>
             </ol>
-
+            {/* DETAILS AND SUMMARY ==============================================================================================================================================*/}
             <details>
                 <summary className='btn btn-primary'>READ MORE</summary>
                 <p>WORLD Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ad quos est iste voluptas voluptatum accusamus tempore consequatur aliquid maxime reprehenderit, doloribus rem id enim earum voluptatem eius. Id, ipsum.</p>
             </details>
 
+
+            <details >
+                <summary className='btn btn-danger mt-5'>READ MORE</summary>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum voluptas iure consequatur porro eligendi sed minima mollitia corrupti eaque impedit quasi expedita, nihil quaerat aspernatur ea iste qui. Exercitationem, veritatis.</p>
+            </details>
+            <hr />
+
+            {/* ABBREVIATION ==============================================================================================================================================*/}
             <abbr title="HELLO WORLD">HW</abbr>
+            <abbr title="UNITED STATES OF AMERICA" className='block my-4 bg-black w-fit px-5 py-2 font-bold text-3xl rounded text-white'> USA </abbr>
+
 
             {/* AUTO COMPLETE ==============================================================================================================================================*/}
             <div>
@@ -171,6 +182,8 @@ const HTMLCSSReviewComponent = () => {
 
             </div>
 
+
+            <h1>HELLOW WORLD</h1>
         </div >
     )
 }
