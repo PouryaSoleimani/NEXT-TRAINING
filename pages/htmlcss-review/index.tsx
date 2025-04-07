@@ -40,17 +40,18 @@ const HTMLCSSReviewComponent = () => {
                 <p>H<big>2</big>O</p>
             </div>
 
-            {/*  DOWNLOAD LINK */}
+            {/*  DOWNLOAD LINK ============================================================================================================================================== */}
             <Link href="/NEW___PICS/CARTOON____BG.jpg" download target='_blank' rel="noopener noreferrer" title='DOWNLOAD THE IMAGE'>
                 <button className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded">
                     Download PDF
                 </button>
             </Link>
+
             <Link href={"/next.svg"} download target='_blank' rel='noopener noreferrer' title='DOWNLOAD SVG'>
                 <button className='px-4 py-2 rounded mx-4 text-white font-black my-5 bg-red-950 hover:bg-red-800'>DOWNLOAD SVG</button>
             </Link>
 
-            {/* PHONE NUMBER LINK  */}
+            {/* PHONE NUMBER LINK  ==============================================================================================================================================*/}
             <Link href="tel:+989375008682" title='CALL ME'>
                 <button className='bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded mx-1'>
                     +989375008682
@@ -61,14 +62,14 @@ const HTMLCSSReviewComponent = () => {
                 <button className='px-4 py-2 rounded mx-4 text-white font-black my-5 bg-emerald-950 hover:bg-emerald-800'>CALL ME</button>
             </Link>
 
-            {/* PICTURE */}
+            {/* PICTURE ==============================================================================================================================================*/}
             <picture>
                 <source srcSet="/NEW___PICS/CARTOON____BG.jpg" type="image/webp" media="(min-width: 600px)" />
                 <source srcSet="/NEW___PICS/404_page_cover.jpg" type="image/webp" media="(min-width: 400px)" />
                 <img src="/NEW___PICS/not-found.png" alt="Responsive image" />
             </picture>
 
-            {/* TABLE  */}
+            {/* TABLE  ==============================================================================================================================================*/}
             <hr />
             <h3 className='text-center font-bold'>MY TABLE</h3>
 
@@ -92,7 +93,7 @@ const HTMLCSSReviewComponent = () => {
 
             </table>
 
-            {/* LISTS */}
+            {/* LISTS ==============================================================================================================================================*/}
             <ol type='1' start={10}>
                 <li>content</li>
                 <li>content</li>
@@ -113,7 +114,7 @@ const HTMLCSSReviewComponent = () => {
                 <label htmlFor="EMAIL">EMAIL : </label>
                 <input type="text" name="NAME" id="EMAIL" className='text-black p-2' />
                 <br />
-                {/* GENDER */}
+                {/* GENDER ==================================================================================================================================================*/}
                 <label htmlFor="male">male</label>
                 <input type="radio" name="gender" id="male" value="male" className='text-white' />
                 <br />
@@ -129,7 +130,7 @@ const HTMLCSSReviewComponent = () => {
 
                 <form onSubmit={event => submitHandler(event)}>
 
-                    {/* SELECT BOX */}
+                    {/* SELECT BOX ==============================================================================================================================================*/}
                     <select name="select" id="select" className='bg-black'>
                         <option value="1" selected>Please Select one</option>
                         <option value="1">1</option>
@@ -150,7 +151,7 @@ const HTMLCSSReviewComponent = () => {
                     <button type="submit">SEND</button>
 
 
-                    {/* FIELDSET */}
+                    {/* FIELDSET ================================================================================================================================================*/}
                     <fieldset>
                         <legend>TITLE</legend>
                         <input type="text" name="" id="" />
@@ -161,7 +162,7 @@ const HTMLCSSReviewComponent = () => {
                     </fieldset>
 
 
-                    {/* DATA LIST */}
+                    {/* DATA LIST ================================================================================================================================================*/}
                     <input type="text" list="listData" />
                     <datalist id='listData'>
                         <option value="1">1</option>
@@ -170,8 +171,6 @@ const HTMLCSSReviewComponent = () => {
                         <option value="4">4</option>
                     </datalist>
                 </form>
-
-
 
 
             </div>
