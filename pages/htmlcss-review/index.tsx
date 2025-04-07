@@ -138,7 +138,24 @@ const HTMLCSSReviewComponent = () => {
                         <option value="3">3</option>
                     </select>
                     <button type="submit">SEND</button>
+
+                    {/* FIELDSET */}
+                    <fieldset>
+                        <legend>TITLE</legend>
+                        <input type="text" name="" id="" />
+                    </fieldset>
+                    
+                    {/* DATA LIST */}
+                    <input type="text" list="listData" />
+                    <datalist id='listData'>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </datalist>
                 </form>
+
+
 
 
             </div>
