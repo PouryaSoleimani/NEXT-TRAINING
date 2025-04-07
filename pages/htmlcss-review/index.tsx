@@ -173,6 +173,7 @@ const HTMLCSSReviewComponent = () => {
                         <input type="text" name="lname" id="" className='px-2 py-1 rounded mx-1 border-1 border-zinc-800' />
                         <button className='btn btn-success'>SEND</button>
                     </fieldset>
+
                     <fieldset className='border-2 border-blue-900 my-4'>
                         <legend>TITLE 2</legend>
                         <label htmlFor="fname">FIRST NAME</label>
