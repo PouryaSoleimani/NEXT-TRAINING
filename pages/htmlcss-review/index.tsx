@@ -6,7 +6,7 @@ const HTMLCSSReviewComponent = () => {
 
     return (
 
-        <div className='p-4 text-white'>
+        <div className='p-4 bg-white'>
 
             <h1 className='text-center mt-4' title='THIS IS THE PAGE TITLE'>HTML & CSS <strong>Review</strong></h1>
             <p className='text-orange-500 font-black text-2xl text-center w-full' title='THIS IS THE <p></p> TAG TITLE '>This is a review of HTML and <i>CSS concepts.</i></p>
@@ -109,11 +109,26 @@ const HTMLCSSReviewComponent = () => {
                 <input type="radio" name="gender" id="prefer" value="prefer not to say" className='text-white' />
                 {/* name||| id ||| value ||| auto complete ||||| target="_blank" */}
 
-                <select name="select" id="select">
+                <select name="select" id="select" size={5}>
+                    <option value="1" selected>Please Select one</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
+                    <option value="3">3</option>
+                    <option value="3">3</option>
+                    <option value="3">3</option>
+                    <option value="3">3</option>
+                    <option value="3">3</option>
+                    <option value="3">3</option>
+                    <option value="3">3</option>
+                    <option value="3">3</option>
+                    <option value="3">3</option>
+                    <option value="3">3</option>
+                    <option value="3">3</option>
+                    <option value="3">3</option>
                 </select>
+
+
             </form>
 
         </div >
