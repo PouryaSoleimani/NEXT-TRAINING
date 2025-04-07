@@ -221,9 +221,8 @@ const HTMLCSSReviewComponent = () => {
                     <label>HIDDEN</label>
                     <input type="hidden" />
 
-
-
-                    
+                    <label>RANGE</label>
+                    <input type="range" min="1000" max="2000" onChange={event => console.info("RANGE", event.target.value)} />
                 </form>
 
 
