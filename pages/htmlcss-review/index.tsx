@@ -9,6 +9,7 @@ import InboxIconComponent from '@/COMPONENTS/ICONS/InboxIconComponent'
 import CartIconComponent from '@/COMPONENTS/ICONS/CartIconComponent'
 import { Image } from 'antd'
 
+
 const HTMLCSSReviewComponent = () => {
 
     function submitHandler(event: React.FormEvent<HTMLFormElement>) {
@@ -239,13 +240,13 @@ const HTMLCSSReviewComponent = () => {
 
                 {/* SVG - HERO ICONS  ================================================================================================================================================*/}
 
-                <nav className='flex items-center justify-between mt-10 border-2 p-1 border-zinc-500 rounded w-full px-6 bg-zinc-800'>
-                    <Image src='/next.svg' width={150} height={20}/>
+                <nav className='flex items-center justify-between mt-10 border-2 p-1 border-zinc-500 rounded w-full px-6 bg-zinc-200'>
+                    <Image src='/next.svg' width={150} height={20} alt='logo' />
                     <div id="ICONS" className='flex'>
                         <InboxIconComponent />
                         <UserIconComponent />
-                        <SettingsIconComponent />
                         <CartIconComponent />
+                        <SettingsIconComponent />
                     </div>
                 </nav>
             </div>
