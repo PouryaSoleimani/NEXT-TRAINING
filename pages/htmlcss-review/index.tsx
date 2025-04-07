@@ -75,7 +75,7 @@ const HTMLCSSReviewComponent = () => {
 
             <table className='w-1/2 mx-auto border' style={{ fontFamily: "BYekan+", fontSize: "16px ," }}>
 
-                <thead>
+                <thead className='text-white font-black'>
                     <tr>
                         <th className='border text-center'>#</th>
                         <th className='border text-center'>FIRST NAME</th>
@@ -83,7 +83,7 @@ const HTMLCSSReviewComponent = () => {
                     </tr>
                 </thead>
 
-                <tbody>
+                <tbody className='text-white'>
                     <tr className='border border-separate text-center'>
                         <td className='border'>1</td>
                         <td className='border'>POURYA</td>
