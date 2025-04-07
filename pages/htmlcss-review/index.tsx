@@ -40,7 +40,7 @@ const HTMLCSSReviewComponent = () => {
                 <p>H<big>2</big>O</p>
             </div>
 
-            {/*  DOWNLOAD */}
+            {/*  DOWNLOAD LINK */}
             <Link href="/NEW___PICS/CARTOON____BG.jpg" download target='_blank' rel="noopener noreferrer" title='DOWNLOAD THE IMAGE'>
                 <button className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded">
                     Download PDF
@@ -50,13 +50,13 @@ const HTMLCSSReviewComponent = () => {
                 <button className='px-4 py-2 rounded mx-4 text-white font-black my-5 bg-red-950 hover:bg-red-800'>DOWNLOAD SVG</button>
             </Link>
 
-            {/* PHONE NUMBER  */}
+            {/* PHONE NUMBER LINK  */}
             <Link href="tel:+989375008682" title='CALL ME'>
                 <button className='bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded mx-1'>
                     +989375008682
                 </button>
             </Link>
-        
+
             <Link href={"tel:+989375008682"}>
                 <button className='px-4 py-2 rounded mx-4 text-white font-black my-5 bg-emerald-950 hover:bg-emerald-800'>CALL ME</button>
             </Link>
