@@ -205,6 +205,8 @@ const HTMLCSSReviewComponent = () => {
                     </datalist>
                     <Button colorScheme='red' size='lg' type='reset'>   RESET   </Button>
                 </form>
+
+
                 {/* INPUT TYPES ================================================================================================================================================*/}
                 <form className='flex flex-col gap-y-4'>
                     <h2 className='text-2xl w-full bg-red-800 text-center py-3 rounded mt-3'> DIFFERENT INPUT TYPES </h2>
@@ -228,6 +230,7 @@ const HTMLCSSReviewComponent = () => {
                 {/* INPUT ATTRIBUTES  ================================================================================================================================================*/}
 
                 {/* readonly  ----   disabled ----  maxlength ---- min & max ----- multiple (files) ---- placeholder ---- required ---- autofocus    */}
+
 
 
 
