@@ -227,7 +227,7 @@ const HTMLCSSReviewComponent = () => {
 
                 {/* INPUT ATTRIBUTES  ================================================================================================================================================*/}
 
-                {/* readonly  ----   disabled ----  maxlength ---- min & max -----   */}
+                {/* readonly  ----   disabled ----  maxlength ---- min & max ----- multiple (files) ---- placeholder ---- required ---- autofocus    */}
 
 
 
