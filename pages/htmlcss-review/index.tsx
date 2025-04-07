@@ -203,7 +203,7 @@ const HTMLCSSReviewComponent = () => {
                         <option className='px-1 py-1 rounded bg-zinc-400' value="NPM">NPM</option>
                         <option className='px-1 py-1 rounded bg-zinc-400' value="GSAP">GSAP</option>
                     </datalist>
-                    <Button colorScheme='orange' size='lg'>   SEND   </Button>
+                    <Button colorScheme='red' size='lg' type='reset'>   RESET   </Button>
                 </form>
 
 
@@ -214,8 +214,6 @@ const HTMLCSSReviewComponent = () => {
 
             </div>
 
-
-            <h1>HELLOW WORLD</h1>
         </div >
     )
 }
