@@ -1,13 +1,14 @@
 // ^ HTML & CSS REVIEW =======================================================================================================================================================
 
 import React from 'react'
-import { Button } from '@chakra-ui/react'
 import Link from 'next/link'
 import UserIconComponent from '@/COMPONENTS/ICONS/UserIconComponent'
 import SettingsIconComponent from '@/COMPONENTS/ICONS/SettingsIconComponent'
 import InboxIconComponent from '@/COMPONENTS/ICONS/InboxIconComponent'
 import CartIconComponent from '@/COMPONENTS/ICONS/CartIconComponent'
-import { Image } from 'antd'
+import { Image, ConfigProvider } from 'antd'
+import DownloadIconComponent from '@/COMPONENTS/ICONS/DonwloadIconComponent'
+import { Button } from '@chakra-ui/react'
 
 
 const HTMLCSSReviewComponent = () => {
@@ -16,7 +17,7 @@ const HTMLCSSReviewComponent = () => {
         event.preventDefault()
         const formData = new FormData(event.currentTarget)
         const selectedValue = formData.get('select');
-        console.info("%c TECHNOLOGY  ===> ", "color:cornflowerblue ; font-size:14px ; line-height:1.2", selectedValue);
+        console.info("%c TECHNOLOGY  ===> ", "colorScheme:cornflowerblue ; font-size:14px ; line-height:1.2", selectedValue);
     }
 
 
@@ -194,8 +195,8 @@ const HTMLCSSReviewComponent = () => {
                 </form>
 
                 {/* DATA LIST ========================================================================================================================================================*/}
-                <form className='bg-zinc-900 p-4 rounded flex items-center justify-center w-fit border-8 border-black'>
-                    <input type="text" list="listData" className='px-1 py-[8.8px] rounded bg-zinc-100 overflow-visible' />
+                <form className='bg-zinc-900 p-10 rounded flex items-center justify-center w-fit border-8 border-black'>
+                    <input type="text" list="listData" className='px-1 py-[8.8px] rounded-l rounded-r-none bg-zinc-100 overflow-visible' />
                     <datalist id='listData'>
                         <option className='px-1 py-1 rounded bg-zinc-400' value="HTML">HTML</option>
                         <option className='px-1 py-1 rounded bg-zinc-400' value="CSS">CSS</option>
@@ -210,7 +211,7 @@ const HTMLCSSReviewComponent = () => {
                         <option className='px-1 py-1 rounded bg-zinc-400' value="NPM">NPM</option>xxx
                         <option className='px-1 py-1 rounded bg-zinc-400' value="GSAP">GSAP</option>
                     </datalist>
-                    <Button colorScheme='red' size='lg' type='reset'>   RESET   </Button>
+                    <button className='bg-red-900 hover:bg-red-700 font-bold text-white text-xl p-2.5 rounded-r'>RESET</button>
                 </form>
 
 
@@ -218,8 +219,8 @@ const HTMLCSSReviewComponent = () => {
                 <form className='flex flex-col gap-y-4'>
                     <h2 className='text-2xl w-full bg-red-800 text-center py-3 rounded mt-3'> DIFFERENT INPUT TYPES </h2>
 
-                    <label>COLOR</label>
-                    <input type="color" />
+                    <label>colorScheme</label>
+                    <input type="colorScheme" />
 
                     <label>DATE</label>
                     <input type="date" />
