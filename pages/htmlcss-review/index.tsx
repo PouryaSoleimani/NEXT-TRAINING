@@ -8,13 +8,13 @@ const HTMLCSSReviewComponent = () => {
         event.preventDefault()
         const formData = new FormData(event.currentTarget)
         const selectedValue = formData.get('select');
-        console.info(selectedValue)
+        // console.info(selectedValue)
     }
 
     // RETURN =================================================================================================================================================================
     return (
 
-        <div className='p-10'>
+        <div className='p-24 bg-zinc-300'>
 
             <h1 className='text-center mt-4' title='THIS IS THE PAGE TITLE'>HTML & CSS <strong>Review</strong></h1>
             <p className='text-orange-500 font-black text-2xl text-center w-full' title='THIS IS THE <p></p> TAG TITLE '>This is a review of HTML and <i>CSS concepts.</i></p>
@@ -107,7 +107,7 @@ const HTMLCSSReviewComponent = () => {
 
             <abbr title="HELLO WORLD">HW</abbr>
 
-
+            {/* AUTO COMPLETE ==============================================================================================================================================*/}
             <div>
                 <label htmlFor="NAME">NAME : </label>
                 <input type="text" name="NAME" id="NAME" className='text-black p-2' autoComplete='on' />
@@ -125,14 +125,10 @@ const HTMLCSSReviewComponent = () => {
                 <input type="radio" name="gender" id="prefer" value="prefer not to say" className='text-white' />
                 {/* name||| id ||| value ||| auto complete ||||| target="_blank" */}
 
-
-
-
+                {/* SELECT BOX ==============================================================================================================================================*/}
                 <form onSubmit={event => submitHandler(event)}>
-
-                    {/* SELECT BOX ==============================================================================================================================================*/}
-                    <select name="select" id="select" className='bg-black'>
-                        <option value="1" selected>Please Select one</option>
+                    <select name="select" id="select" className='bg-black' defaultValue={1}>
+                        <option value="1">Please Select one</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
