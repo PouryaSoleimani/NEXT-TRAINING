@@ -186,12 +186,20 @@ const HTMLCSSReviewComponent = () => {
                 </form>
 
                 {/* DATA LIST ================================================================================================================================================*/}
-                <input type="text" list="listData" />
+                <input type="text" list="listData" className='px-1 py-2 rounded bg-zinc-100 overflow-visible' />
                 <datalist id='listData'>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
+                    <option className='px-1 py-2 rounded bg-zinc-400' value="HTML">HTML</option>
+                    <option className='px-1 py-2 rounded bg-zinc-400' value="CSS">CSS</option>
+                    <option className='px-1 py-2 rounded bg-zinc-400' value="BOOTSTRAP">BOOTSTRAP</option>
+                    <option className='px-1 py-2 rounded bg-zinc-400' value="TAILWIND">TAILWIND</option>
+                    <option className='px-1 py-2 rounded bg-zinc-400' value="JAVASCRIPT">JAVASCRIPT</option>
+                    <option className='px-1 py-2 rounded bg-zinc-400' value="TYPESCRIPT">TYPESCRIPT</option>
+                    <option className='px-1 py-2 rounded bg-zinc-400' value="REACT">REACT.JS</option>
+                    <option className='px-1 py-2 rounded bg-zinc-400' value="NEXT">NEXT.JS</option>
+                    <option className='px-1 py-2 rounded bg-zinc-400' value="GIT">GIT</option>
+                    <option className='px-1 py-2 rounded bg-zinc-400' value="GITHUB">GITHUB</option>
+                    <option className='px-1 py-2 rounded bg-zinc-400' value="NPM">NPM</option>
+                    <option className='px-1 py-2 rounded bg-zinc-400' value="GSAP">GSAP</option>
                 </datalist>
 
 
