@@ -111,7 +111,7 @@ const HTMLCSSReviewComponent = () => {
 
 
                 {/* SELECT BOX */}
-                <select name="select" id="select" size={5} className='bg-black'>
+                <select name="select" id="select" className='bg-black'>
                     <option value="1" selected>Please Select one</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
