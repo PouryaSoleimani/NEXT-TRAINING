@@ -1,7 +1,8 @@
 // ^ HTML & CSS REVIEW =======================================================================================================================================================
-import Link from 'next/link'
+
 import React from 'react'
 import { Button } from '@chakra-ui/react'
+import Link from 'next/link'
 
 const HTMLCSSReviewComponent = () => {
 
@@ -230,8 +231,6 @@ const HTMLCSSReviewComponent = () => {
                 {/* INPUT ATTRIBUTES  ================================================================================================================================================*/}
 
                 {/* readonly  ----   disabled ----  maxlength ---- min & max ----- multiple (files) ---- placeholder ---- required ---- autofocus    */}
-
-
 
 
             </div>
