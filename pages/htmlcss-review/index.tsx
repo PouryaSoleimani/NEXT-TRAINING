@@ -150,10 +150,10 @@ const HTMLCSSReviewComponent = () => {
                     {/* FIELDSET ================================================================================================================================================*/}
                     <fieldset>
                         <legend>TITLE</legend>
-                        <input type="text" name="" id="" />
-                        <input type="text" name="" id="" />
-                        <input type="text" name="" id="" />
-                        <input type="text" name="" id="" />
+                        <input type="text" name="" id="" className='mx-5 p-2 rounded my-4 border-s border-s-black' />
+                        <input type="text" name="" id="" className='mx-5 p-2 rounded my-4 border-s border-s-black' />
+                        <input type="text" name="" id="" className='mx-5 p-2 rounded my-4 border-s border-s-black' />
+                        <input type="text" name="" id="" className='mx-5 p-2 rounded my-4 border-s border-s-black' />
                         <button>SEND</button>
                     </fieldset>
 
