@@ -14,7 +14,7 @@ const CCSReviewComponent = () => {
             <p className={styles.text}>HELLO WOLRD</p>
 
             <div className='bg-zinc-800'>
-                <h1 className='myTitle'>Hello World</h1>
+                <h1 className={styles.myTitle}>Hello World</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
