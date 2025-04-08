@@ -301,7 +301,9 @@ ol {
   padding: 10px 20px;
   border-radius: 10px;
   text-align: justify;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 16px;
   line-height: 15px;
+  letter-spacing: -1px;
+  word-spacing: 2px;
 }
