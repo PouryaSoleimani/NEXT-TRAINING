@@ -1,3 +1,5 @@
-.text{
-    color : red;
+.text {
+	color: red;
+	font-size: 24px;
+	padding: 1rem;
 }
