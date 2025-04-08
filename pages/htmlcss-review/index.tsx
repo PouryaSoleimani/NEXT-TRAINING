@@ -6,9 +6,7 @@ import UserIconComponent from '@/COMPONENTS/ICONS/UserIconComponent'
 import SettingsIconComponent from '@/COMPONENTS/ICONS/SettingsIconComponent'
 import InboxIconComponent from '@/COMPONENTS/ICONS/InboxIconComponent'
 import CartIconComponent from '@/COMPONENTS/ICONS/CartIconComponent'
-import { Image, ConfigProvider } from 'antd'
-import DownloadIconComponent from '@/COMPONENTS/ICONS/DonwloadIconComponent'
-import { Button } from '@chakra-ui/react'
+import { Image } from 'antd'
 
 
 const HTMLCSSReviewComponent = () => {
