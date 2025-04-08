@@ -29,7 +29,7 @@ const CCSReviewComponent = () => {
                     <h2 className='text-center bg-slate-700 w-full'>TEXT INDENT</h2>
                     <br />
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium mollitia deserunt commodi eligendi in ut vero, nobis quaerat, libero illum magnam non blanditiis neque ipsa exercitationem! Officiis itaque sit iusto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur eaque culpa obcaecati explicabo nisi repellat temporibus, suscipit quia impedit aperiam velit voluptatum officiis laboriosam. Enim dignissimos ut natus odio laborum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ex blanditiis, nesciunt voluptas rem assumenda unde adipisci minima ullam quasi tempore doloremque aspernatur sunt explicabo aliquam, molestias numquam fugit odio!
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
                     </p>
                 </div>
             </main>

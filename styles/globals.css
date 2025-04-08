@@ -10,6 +10,16 @@
   src: url("/fonts/Lalezar-Regular.ttf") format("opentype") tech(color-COLRv1);
 }
 
+@font-face {
+  font-family: "yekan";
+  src: url("/fonts/YekanBakhBold.woff") format("woff") tech(color-COLRv1);
+}
+
+@font-face {
+  font-family: "Baloo";
+  src: url("/fonts/BALOOBHAI-REGULAR.TTF") format("opentype") tech(color-COLRv1);
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: #000;
@@ -303,9 +313,17 @@ ol {
   text-align: justify;
   font-weight: 600;
   font-size: 16px;
-  line-height: 15px;
+  line-height: 22px;
   letter-spacing: -1px;
   word-spacing: 2px;
   box-shadow: 3px 3px 10px rgba(255, 250, 240, 0.384),
     -3px -3px 10px rgb(36, 33, 70);
+}
+#TEXT__INDENT > h2 {
+  font-family: "Baloo";
+}
+
+#TEXT__INDENT p {
+  font-family: "yekan";
+  direction: rtl;
 }
