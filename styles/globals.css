@@ -7,7 +7,8 @@
 /*! FONTS */
 @font-face {
   font-family: "LALEZAR";
-  src: url("/fonts/Lalezar-Regular.ttf") format("opentype") tech(color-COLRv1);
+  src: local("lalezar"), local("Lalezar-Regular"),
+    url("/fonts/Lalezar-Regular.ttf") format("opentype") tech(color-COLRv1);
 }
 
 @font-face {
