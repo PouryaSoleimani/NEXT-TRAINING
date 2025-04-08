@@ -1,5 +1,10 @@
 .text {
-	color: red;
-	font-size: 24px;
-	padding: 1rem;
+  color: red;
+  font-size: 24px;
+  padding: 1rem;
+}
+.myTitle {
+  color: blue;
+  font-size: 46px;
+  padding: 1rem;
 }
