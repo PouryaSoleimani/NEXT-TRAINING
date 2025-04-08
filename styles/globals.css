@@ -301,4 +301,7 @@ ol {
   padding: 10px 20px;
   border-radius: 10px;
   text-align: justify;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5rem;
 }
