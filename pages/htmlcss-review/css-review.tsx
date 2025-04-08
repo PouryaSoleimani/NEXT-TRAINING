@@ -16,6 +16,7 @@ const CCSReviewComponent = () => {
         { title: 'Media Queries', description: 'Build responsive designs for all devices' }
     ]
 
+    // RETURN ============================================================================================================================================================
     return (
         <div className='min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white'>
 
