@@ -19,9 +19,7 @@ const CCSReviewComponent = () => {
     return (
         <div className='min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white'>
             <motion.header initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} className='bg-black/80 backdrop-blur-lg p-6 sticky top-0 z-50 border-b border-gray-800' >
-                <h1 className='text-4xl font-black text-white text-center'>
-                    CSS Mastery
-                </h1>
+                <h1 className='text-4xl font-black text-white text-center'> CSS REVIEW </h1>
             </motion.header>
 
             <main className='container mx-auto px-4 py-12'>
