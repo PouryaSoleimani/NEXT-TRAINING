@@ -306,4 +306,6 @@ ol {
   line-height: 15px;
   letter-spacing: -1px;
   word-spacing: 2px;
+  box-shadow: 3px 3px 10px rgba(255, 250, 240, 0.384),
+    -3px -3px 10px rgb(36, 33, 70);
 }
