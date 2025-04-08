@@ -294,3 +294,6 @@ ol {
   font-size: 30px;
   color: red;
 }
+#TEXT__INDENT {
+  text-indent: 24px;
+}
