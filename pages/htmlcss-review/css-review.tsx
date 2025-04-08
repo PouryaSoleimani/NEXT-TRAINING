@@ -33,7 +33,13 @@ const CCSReviewComponent = () => {
                     </p>
                 </div>
             </main>
-
+            <ul className='myOL flex flex-col gap-y-1'>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
         </div>
     )
 }

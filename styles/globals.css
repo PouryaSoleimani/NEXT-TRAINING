@@ -328,3 +328,7 @@ ol {
   font-family: "LALEZAR";
   direction: rtl;
 }
+.myOL {
+  list-style-image: url("https://icongr.am/fontawesome/certificate.svg?size=14&color=ffffff");
+  list-style-position: outside;
+}
