@@ -4,7 +4,7 @@
 
 @tailwind utilities;
 
-/*! LALEZAR FONT */
+/*! FONTS */
 @font-face {
   font-family: "LALEZAR";
   src: url("/fonts/Lalezar-Regular.ttf") format("opentype") tech(color-COLRv1);
@@ -324,6 +324,6 @@ ol {
 }
 
 #TEXT__INDENT p {
-  font-family: "yekan";
+  font-family: "LALEZAR";
   direction: rtl;
 }
