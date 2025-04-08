@@ -6,9 +6,7 @@ import type { DocumentContext } from 'next/document';
 
 const MyDocument = () => (
   <Html lang="en" className='bg-black'>
-    <Head>
-      <link rel="shortcut icon" href="NEW___PICS/favicon/favicon-32x32.png" type="image/x-icon" />
-    </Head>
+    <Head></Head>
     <body className='bg-black'>
       <Main />
       <NextScript />
