@@ -15,13 +15,6 @@ const CCSReviewComponent = () => {
             <div className='bg-zinc-800'>
                 <h1 className='myTitle'>Hello World</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
             </div>
         </div>
 
