@@ -6,7 +6,7 @@ import useSWR from 'swr'
 const swr2 = () => {
 
     // SWR HOOK 
-    function fetcher() { return fetch("http://localhost:4000/usersFarsi").then((res) => res.json()) }
+    async function fetcher() { return fetch("http://localhost:4000/usersFarsi").then((res) => res.json()) }
 
     const { data, error, isLoading } = useSWR('http://localhost:4000/usersFarsi', fetcher)
 
