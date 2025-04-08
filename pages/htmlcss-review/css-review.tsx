@@ -23,7 +23,13 @@ const CCSReviewComponent = () => {
             </motion.header>
 
             <main className='container mx-auto px-4 py-12'>
-                <p id="TEXT__INDENT"></p>
+                <div id="TEXT__INDENT">
+                    <h2 className='text-center bg-slate-700 w-full'>TEXT INDENT</h2>
+                    <br />
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium mollitia deserunt commodi eligendi in ut vero, nobis quaerat, libero illum magnam non blanditiis neque ipsa exercitationem! Officiis itaque sit iusto. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur eaque culpa obcaecati explicabo nisi repellat temporibus, suscipit quia impedit aperiam velit voluptatum officiis laboriosam. Enim dignissimos ut natus odio laborum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ex blanditiis, nesciunt voluptas rem assumenda unde adipisci minima ullam quasi tempore doloremque aspernatur sunt explicabo aliquam, molestias numquam fugit odio!
+                    </p>
+                </div>
 
 
 
