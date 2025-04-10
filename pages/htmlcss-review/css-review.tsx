@@ -1,3 +1,5 @@
+import { CgInbox } from "react-icons/cg"; 
+import { BsFillInboxFill } from "react-icons/bs";
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { MessageCircle, MessageCircleIcon, Phone, Star } from 'lucide-react'
@@ -6,6 +8,9 @@ import InboxIconComponent from '@/COMPONENTS/ICONS/InboxIconComponent'
 import UserIconComponent from '@/COMPONENTS/ICONS/UserIconComponent'
 import CartIconComponent from '@/COMPONENTS/ICONS/CartIconComponent'
 import SettingsIconComponent from '@/COMPONENTS/ICONS/SettingsIconComponent'
+
+
+
 
 const CCSReviewComponent = () => {
     const [activeCard, setActiveCard] = useState<number | null>(null)
@@ -88,13 +93,12 @@ const CCSReviewComponent = () => {
                     <li className="item">ITEM</li>
                     <li className="item">ITEM</li>
                     <li className="item">ITEM</li>
-                </ul>*6
+                </ul>
 
 
 
 
-
-
+ 
 
                 <div className="OVERLAY"></div>
             </div>

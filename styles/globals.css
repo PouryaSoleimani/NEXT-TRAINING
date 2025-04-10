@@ -457,7 +457,7 @@ ol {
   letter-spacing: 2px;
   display: none;
 }
-
+/* NOT */
 .item:not(.item-delete) {
   font-size: 40px;
   color: blue;
