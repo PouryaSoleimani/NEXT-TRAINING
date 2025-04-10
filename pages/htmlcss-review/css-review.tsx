@@ -108,7 +108,7 @@ const CCSReviewComponent = () => {
 
                 {/* BEFORE AND AFTER */}
                 <div id="BOX1"></div>
-
+                <div id="BOX2"></div>
                 <div className="OVERLAY"></div>
             </div>
         </div>

@@ -514,6 +514,7 @@ ol {
   left: 0;
   top: -1rem;
 }
+
 #BOX1::after {
   content: "";
   width: 100%;
@@ -524,4 +525,8 @@ ol {
   position: absolute;
   left: 0;
   bottom: -1rem;
+}
+
+#BOX1{
+  
 }
