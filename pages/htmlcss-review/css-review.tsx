@@ -21,7 +21,11 @@ const CCSReviewComponent = () => {
         { title: 'Animations', description: 'Bring your website to life with smooth transitions' },
         { title: 'Media Queries', description: 'Build responsive designs for all devices' }
     ]
+
+
     const [isShow, setIsShow] = useState(false)
+
+    
     // RETURN ============================================================================================================================================================
     return (
         <div className='min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white'>
