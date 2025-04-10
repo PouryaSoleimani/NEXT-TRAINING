@@ -24,7 +24,7 @@ const ProductBoxes = () => {
                 </ul>
             </div>
 
-            {/* PRODUCT BOXES===================================================================================================================================== */}
+            {/* PRODUCT BOXES====================================================================================================================================== */}
             <div className='w-screen h-screen flex items-center justify-center'>
                 <div className="container bg-zinc-600/30 my-10 rounded-2xl h-fit flex flex-wrap items-center justify-center gap-3 p-5">
 
@@ -88,7 +88,6 @@ const ProductBoxes = () => {
                             </div>
                         </div>
                     </div>
-
 
                 </div>
             </div>
