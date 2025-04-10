@@ -593,7 +593,7 @@ input[type="email"] {
   background-color: red;
 }
 [href$=".com"] {
-  background-color: blue;
+  background-color: #193cb8;
 }
 [href="#"] {
   background-color: yellow;

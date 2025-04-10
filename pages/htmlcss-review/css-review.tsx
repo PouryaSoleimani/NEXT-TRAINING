@@ -119,7 +119,7 @@ const CCSReviewComponent = () => {
                     <a href="https://github.com">GITHUB</a>
                     <a href="https://linkedin.com">LINKEDIN</a>
                     <a href="google.com">GOOGLE</a>
-                    <a href="google.com">متن تستی</a>
+                    <a href="google.com">عنوان</a>
                 </div>
 
 
