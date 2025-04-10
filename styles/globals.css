@@ -356,3 +356,27 @@ ol {
   background-color: cornflowerblue;
   color: white;
 }
+.RELATIVE {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(61, 4, 4);
+  position: relative;
+  left: calc(45%);
+  top: 0;
+}
+.ABSOLUTE {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(129, 106, 2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: calc(50%-50px);
+  top: calc(50%-50px);
+}
