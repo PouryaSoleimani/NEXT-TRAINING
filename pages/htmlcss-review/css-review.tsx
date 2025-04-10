@@ -30,7 +30,7 @@ const CCSReviewComponent = () => {
                 <h1 className='text-4xl font-black text-white text-center'> CSS REVIEW </h1>
             </motion.header>
 
-
+            {/* STICKY DIV   */}
             <div className="STICKY">
                 <nav className='flex items-center justify-between mt-10 border-2 p-1 border-zinc-500 rounded w-full px-6 bg-zinc-200'>
                     <Image src='/next.svg' width={150} height={20} alt='logo' />
