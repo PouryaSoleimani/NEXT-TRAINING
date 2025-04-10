@@ -99,7 +99,7 @@ const CCSReviewComponent = () => {
                     <li className="item">ITEM</li>
                     <li className="item">ITEM</li>
                     <li className="item">ITEM</li>
-                    <li className="item">ITEM</li>
+                    <li className="item">ITEM تومان</li>
                 </ul>
 
                 <div className="flex items-center justify-center">
@@ -109,7 +109,15 @@ const CCSReviewComponent = () => {
                 {/* BEFORE AND AFTER */}
                 <div id="BOX1"></div>
                 <div id="BOX2"><p id="PRICE">230/000</p></div>
-                <div className="OVERLAY">230/000 تومان</div>
+                <div className="flex flex-col gap-y-4 w-fit">
+                    <input type="text" name="" id="" />
+                    <input type="text" name="" id="" />
+                    <input type="text" name="" id="" />
+                    <input type="email" name="" id="" />
+                </div>
+
+
+                <div className="OVERLAY"></div>
             </div>
         </div>
     )

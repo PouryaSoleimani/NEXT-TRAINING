@@ -579,3 +579,11 @@ ol {
   top: 47%;
   rotate: -5deg;
 }
+/*  ATTRIBUTE SELECTORS ============================================================================================================================= */
+input[type="text"] {
+  background-color: red;
+}
+
+input[type="email"] {
+  background-color: yellow;
+}
