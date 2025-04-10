@@ -16,7 +16,7 @@ const CCSReviewComponent = () => {
         { title: 'Animations', description: 'Bring your website to life with smooth transitions' },
         { title: 'Media Queries', description: 'Build responsive designs for all devices' }
     ]
-
+    const [isShow, setIsShow] = useState(false)
     // RETURN ============================================================================================================================================================
     return (
         <div className='min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white'>
@@ -40,6 +40,7 @@ const CCSReviewComponent = () => {
                 <li>3</li>
                 <li>4</li>
                 <li>5</li>
+                <button className='px-4 py-2 rounded bg-red-900 text-4xl font-bold z-50 border w-fit mx-auto' onClick={() => setIsShow(prev => !prev)}>{!isShow ? "SHOW" : "HIDE"}</button>
             </ul>
 
             <div id="POSITION">
@@ -48,6 +49,9 @@ const CCSReviewComponent = () => {
                 </div>
                 <div className="MESSAGE"><MessageCircleIcon /></div>
                 <div className="PHONE"><Phone /></div>
+                <div className={` ${!isShow ? "hidden" : "ADDVERTISEMENT"}`}>
+                    <div className="ADDVERSTSEMENT__BOX">THIS IS A MESSAGE</div>
+                </div>
                 <div className="OVERLAY"></div>
             </div>
         </div>
