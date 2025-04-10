@@ -420,5 +420,11 @@ ol {
   width: 40%;
   height: 20%;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 900;
 }
