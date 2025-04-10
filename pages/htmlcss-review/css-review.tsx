@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import { Phone } from 'lucide-react'
 
 const CCSReviewComponent = () => {
     const [activeCard, setActiveCard] = useState<number | null>(null)
@@ -40,6 +41,12 @@ const CCSReviewComponent = () => {
                 <li>4</li>
                 <li>5</li>
             </ul>
+
+            <div id="POSITION">
+                <div className="OVERLAY"></div>
+                <div className="BOX1"><Phone/></div>
+                <div className="BOX2"></div>
+            </div>
         </div>
     )
 }
