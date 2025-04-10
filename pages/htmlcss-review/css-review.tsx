@@ -76,6 +76,10 @@ const CCSReviewComponent = () => {
                 <div className={` ${!isShow ? "hidden" : "ADDVERTISEMENT"}`}>
                     <div className="ADDVERSTSEMENT__BOX">THIS IS A MESSAGE</div>
                 </div>
+                <div className='w-full flex flex-col gap-y-5 items-center justify-center mt-10'>
+                    <input type="checkbox" className='CHECKBOX mx-auto' />
+                    <p className='CHECKBOX__P'>ITEM CHECKED</p>
+                </div>
                 <div className="OVERLAY"></div>
             </div>
         </div>
