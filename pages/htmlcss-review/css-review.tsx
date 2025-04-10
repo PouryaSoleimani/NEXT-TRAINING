@@ -106,8 +106,8 @@ const CCSReviewComponent = () => {
                     <input type="email" id="INPUT" required placeholder="INPUT" className="px-3 py-2 rounded mx-auto text-2xl text-black" />
                 </div>
 
-
-
+                {/* BEFORE AND AFTER */}
+                <div id="BOX1"></div>
 
                 <div className="OVERLAY"></div>
             </div>
