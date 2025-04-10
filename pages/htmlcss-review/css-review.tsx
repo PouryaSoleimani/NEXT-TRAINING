@@ -80,6 +80,22 @@ const CCSReviewComponent = () => {
                     <input type="checkbox" className='CHECKBOX mx-auto' />
                     <p className='CHECKBOX__P'>ITEM CHECKED</p>
                 </div>
+
+                <ul>
+                    <li className="item">ITEM</li>
+                    <li className="item item-delete">ITEM</li>
+                    <li className="item">ITEM</li>
+                    <li className="item">ITEM</li>
+                    <li className="item">ITEM</li>
+                    <li className="item">ITEM</li>
+                </ul>*6
+
+
+
+
+
+
+
                 <div className="OVERLAY"></div>
             </div>
         </div>
