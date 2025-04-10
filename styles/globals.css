@@ -551,7 +551,7 @@ ol {
 #BOX2::after {
   content: "";
   height: 100%;
-  width: 40px;
+  width: 40px;  
   position: absolute;
   right: 0;
   bottom: 0;
