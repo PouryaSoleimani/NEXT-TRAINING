@@ -49,6 +49,11 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+::selection {
+  background-color: #ff00aa;
+  color: white;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

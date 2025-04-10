@@ -13,6 +13,7 @@ import SettingsIconComponent from '@/COMPONENTS/ICONS/SettingsIconComponent'
 
 
 const CCSReviewComponent = () => {
+
     const [activeCard, setActiveCard] = useState<number | null>(null)
 
     const concepts = [
