@@ -109,7 +109,7 @@ const CCSReviewComponent = () => {
                 {/* BEFORE AND AFTER */}
                 <div id="BOX1"></div>
                 <div id="BOX2"><p id="PRICE">230/000</p></div>
-                <div className="OVERLAY"></div>
+                <div className="OVERLAY">230/000 تومان</div>
             </div>
         </div>
     )
