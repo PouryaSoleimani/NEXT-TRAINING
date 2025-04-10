@@ -46,9 +46,9 @@ const CCSReviewComponent = () => {
                 <div className="RELATIVE">
                     <div className="ABSOLUTE"><Star /></div>
                 </div>
-                <div className="BOX2"><MessageCircleIcon /></div>
+                <div className="MESSAGE"><MessageCircleIcon /></div>
+                <div className="PHONE"><Phone /></div>
                 <div className="OVERLAY"></div>
-                <div className="BOX1"><Phone /></div>
             </div>
         </div>
     )
