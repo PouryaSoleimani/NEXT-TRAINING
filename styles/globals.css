@@ -580,6 +580,7 @@ ol {
   rotate: -5deg;
 }
 /*  ATTRIBUTE SELECTORS ============================================================================================================================= */
+
 input[type="text"] {
   background-color: red;
 }
@@ -590,6 +591,9 @@ input[type="email"] {
 [href^="https://"]
 {
   background-color: red;
+}
+[href$=".com"] {
+  background-color: blue;
 }
 [href="#"] {
   background-color: yellow;
