@@ -547,3 +547,15 @@ ol {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
+#BOX2::after {
+  content: "";
+  height: 100%;
+  width: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #3f3a3a;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
