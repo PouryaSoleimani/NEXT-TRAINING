@@ -25,7 +25,7 @@ const CCSReviewComponent = () => {
 
     const [isShow, setIsShow] = useState(false)
 
-    
+
     // RETURN ============================================================================================================================================================
     return (
         <div className='min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white'>

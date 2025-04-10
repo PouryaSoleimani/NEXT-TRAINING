@@ -1,6 +1,8 @@
+import React, { useState } from 'react'
 import { Rate } from 'antd'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import { FaCartArrowDown, FaInbox, FaUser } from "react-icons/fa";
+import { IoMdLogOut, IoMdSettings } from "react-icons/io";
 
 const ProductBoxes = () => {
 
@@ -9,74 +11,88 @@ const ProductBoxes = () => {
 
 
     return (
-        <div className='w-screen h-screen flex justify-center items-center bg-gradient-to-br from-zinc-900 via-zinc-950 to-black' dir='rtl'>
+        <div className='w-screen h-screen  flex flex-col justify-between items-center bg-gradient-to-br from-zinc-900 via-zinc-950 to-black' dir='rtl'>
+            {/* NAVBAR =====================================================================================================================================*/}
+            <div dir='ltr' id="NAVBAR" className='w-full bg-white/10 h-auto p-4 flex items-center justify-between py-3 sticky top-0 left-0'>
+                <Image src='/next.svg' width={150} height={50} alt='logo' />
 
-            <div className="container bg-zinc-600/30 my-10 rounded-2xl h-fit flex flex-wrap items-center justify-center gap-3 p-5">
-
-                {/* PRODUCT BOXES */}
-                <div className="flex flex-col p-3 items-center justify-start gap-3 h-[35rem] pt-3 rounded bg-zinc-950/70">
-                    <Image src="/NEW___PICS/PRODUCTS/product___1.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
-                    <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-2 w-full text-center  font-bold'>PRODUCT TITLE</h2>
-
-                    <div className='flex bg-zinc-900/80 p-2 rounded items-center justify-between w-full'>
-                        <div className='flex flex-col items-start justify-start'>
-                            <del className='text-red-900/80 text-lg'>320/000 تومان</del>
-                            <p className='font-black text-white text-2xl'>210/000 تومان</p>
-                        </div>
-                        <div>
-                            <Rate tooltips={desc} onChange={setValue} value={value} style={{ scale: "0.8" }} />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="flex flex-col p-3 items-center justify-start gap-3 h-[35rem] pt-3 rounded bg-zinc-950/70">
-                    <Image src="/NEW___PICS/PRODUCTS/product___2.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
-                    <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-2 w-full text-center  font-bold'>PRODUCT TITLE</h2>
-
-                    <div className='flex bg-zinc-900/80 p-2 rounded items-center justify-between w-full'>
-                        <div className='flex flex-col items-start justify-start'>
-                            <del className='text-red-900/80 text-lg'>320/000 تومان</del>
-                            <p className='font-black text-white text-2xl'>210/000 تومان</p>
-                        </div>
-                        <div>
-                            <Rate tooltips={desc} onChange={setValue} value={value} style={{ scale: "0.8" }} />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="flex flex-col p-3 items-center justify-start gap-3 h-[35rem] pt-3 rounded bg-zinc-950/70">
-                    <Image src="/NEW___PICS/PRODUCTS/product___3.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
-                    <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-2 w-full text-center  font-bold'>PRODUCT TITLE</h2>
-
-                    <div className='flex bg-zinc-900/80 p-2 rounded items-center justify-between w-full'>
-                        <div className='flex flex-col items-start justify-start'>
-                            <del className='text-red-900/80 text-lg'>320/000 تومان</del>
-                            <p className='font-black text-white text-2xl'>210/000 تومان</p>
-                        </div>
-                        <div>
-                            <Rate tooltips={desc} onChange={setValue} value={value} style={{ scale: "0.8" }} />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="flex flex-col p-3 items-center justify-start gap-3 h-[35rem] pt-3 rounded bg-zinc-950/70">
-                    <Image src="/NEW___PICS/PRODUCTS/product___4.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
-                    <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-2 w-full text-center  font-bold'>PRODUCT TITLE</h2>
-
-                    <div className='flex bg-zinc-900/80 p-2 rounded items-center justify-between w-full'>
-                        <div className='flex flex-col items-start justify-start'>
-                            <del className='text-red-900/80 text-lg'>320/000 تومان</del>
-                            <p className='font-black text-white text-2xl'>210/000 تومان</p>
-                        </div>
-                        <div>
-                            <Rate tooltips={desc} onChange={setValue} value={value} style={{ scale: "0.8" }} />
-                        </div>
-                    </div>
-                </div>
-
-
+                <ul className='flex items-center gap-x-2'>
+                    <li className="bg-black text-white text-2xl font-black p-2 rounded"><FaInbox className='w-8 h-8' /></li>
+                    <li className="bg-black text-white text-2xl font-black p-2 rounded"><FaCartArrowDown className='w-8 h-8' /></li>
+                    <li className="bg-black text-white text-2xl font-black p-2 rounded"><FaUser className='w-8 h-8' /></li>
+                    <li className="bg-black text-white text-2xl font-black p-2 rounded"><IoMdSettings className='w-8 h-8' /></li>
+                    <li className="bg-black text-white text-2xl font-black p-2 rounded"><IoMdLogOut className='w-8 h-8' /></li>
+                </ul>
             </div>
 
+            {/* PRODUCT BOXES===================================================================================================================================== */}
+            <div className='w-screen h-screen flex items-center justify-center'>
+                <div className="container bg-zinc-600/30 my-10 rounded-2xl h-fit flex flex-wrap items-center justify-center gap-3 p-5">
+
+                    {/* PRODUCT BOXES */}
+                    <div className="flex flex-col p-3 items-center justify-start gap-3 h-[35rem] pt-3 rounded bg-zinc-950/70">
+                        <Image src="/NEW___PICS/PRODUCTS/product___1.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
+                        <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-2 w-full text-center  font-bold'>PRODUCT TITLE</h2>
+
+                        <div className='flex bg-zinc-900/80 p-2 rounded items-center justify-between w-full'>
+                            <div className='flex flex-col items-start justify-start'>
+                                <del className='text-red-900/80 text-lg'>320/000 تومان</del>
+                                <p className='font-black text-white text-2xl'>210/000 تومان</p>
+                            </div>
+                            <div>
+                                <Rate tooltips={desc} onChange={setValue} value={value} style={{ scale: "0.8" }} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col p-3 items-center justify-start gap-3 h-[35rem] pt-3 rounded bg-zinc-950/70">
+                        <Image src="/NEW___PICS/PRODUCTS/product___2.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
+                        <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-2 w-full text-center  font-bold'>PRODUCT TITLE</h2>
+
+                        <div className='flex bg-zinc-900/80 p-2 rounded items-center justify-between w-full'>
+                            <div className='flex flex-col items-start justify-start'>
+                                <del className='text-red-900/80 text-lg'>320/000 تومان</del>
+                                <p className='font-black text-white text-2xl'>210/000 تومان</p>
+                            </div>
+                            <div>
+                                <Rate tooltips={desc} onChange={setValue} value={value} style={{ scale: "0.8" }} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col p-3 items-center justify-start gap-3 h-[35rem] pt-3 rounded bg-zinc-950/70">
+                        <Image src="/NEW___PICS/PRODUCTS/product___3.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
+                        <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-2 w-full text-center  font-bold'>PRODUCT TITLE</h2>
+
+                        <div className='flex bg-zinc-900/80 p-2 rounded items-center justify-between w-full'>
+                            <div className='flex flex-col items-start justify-start'>
+                                <del className='text-red-900/80 text-lg'>320/000 تومان</del>
+                                <p className='font-black text-white text-2xl'>210/000 تومان</p>
+                            </div>
+                            <div>
+                                <Rate tooltips={desc} onChange={setValue} value={value} style={{ scale: "0.8" }} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col p-3 items-center justify-start gap-3 h-[35rem] pt-3 rounded bg-zinc-950/70">
+                        <Image src="/NEW___PICS/PRODUCTS/product___4.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
+                        <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-2 w-full text-center  font-bold'>PRODUCT TITLE</h2>
+
+                        <div className='flex bg-zinc-900/80 p-2 rounded items-center justify-between w-full'>
+                            <div className='flex flex-col items-start justify-start'>
+                                <del className='text-red-900/80 text-lg'>320/000 تومان</del>
+                                <p className='font-black text-white text-2xl'>210/000 تومان</p>
+                            </div>
+                            <div>
+                                <Rate tooltips={desc} onChange={setValue} value={value} style={{ scale: "0.8" }} />
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
     )
 }
