@@ -29,14 +29,14 @@ const ProductBoxes = () => {
                 <div className="container bg-zinc-600/30 my-10 rounded-2xl h-fit flex flex-wrap items-center justify-center gap-3 p-5">
 
                     {/* PRODUCT BOXES */}
-                    <div className="flex flex-col p-3 items-center justify-start gap-3 h-[35rem] pt-3 rounded bg-zinc-950/70">
+                    <div className="flex flex-col p-3 items-end justify-between  h-[35rem] pt-3 rounded-lg bg-zinc-950/70">
                         <Image src="/NEW___PICS/PRODUCTS/product___1.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
-                        <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-2 w-full text-center  font-bold'>PRODUCT TITLE</h2>
+                        <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-4 mt-2 w-full text-center  font-black tracking-wider'>PRODUCT TITLE</h2>
 
                         <div className='flex bg-zinc-900/80 p-2 rounded items-center justify-between w-full'>
                             <div className='flex flex-col items-start justify-start'>
                                 <del className='text-red-900/80 text-lg'>320/000 تومان</del>
-                                <p className='font-black text-white text-2xl'>210/000 تومان</p>
+                                <p className='font-black text-white text-2xl'>210/000 <span className='text-zinc-300 text-sm'>تومان</span></p>
                             </div>
                             <div>
                                 <Rate tooltips={desc} onChange={setValue} value={value} style={{ scale: "0.8" }} />
@@ -44,14 +44,14 @@ const ProductBoxes = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col p-3 items-center justify-start gap-3 h-[35rem] pt-3 rounded bg-zinc-950/70">
+                    <div className="flex flex-col p-3 items-end justify-between  h-[35rem] pt-3 rounded-lg bg-zinc-950/70">
                         <Image src="/NEW___PICS/PRODUCTS/product___2.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
-                        <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-2 w-full text-center  font-bold'>PRODUCT TITLE</h2>
+                        <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-4 mt-2 w-full text-center  font-black tracking-wider'>PRODUCT TITLE</h2>
 
                         <div className='flex bg-zinc-900/80 p-2 rounded items-center justify-between w-full'>
                             <div className='flex flex-col items-start justify-start'>
                                 <del className='text-red-900/80 text-lg'>320/000 تومان</del>
-                                <p className='font-black text-white text-2xl'>210/000 تومان</p>
+                                <p className='font-black text-white text-2xl'>210/000 <span className='text-zinc-300 text-sm'>تومان</span></p>
                             </div>
                             <div>
                                 <Rate tooltips={desc} onChange={setValue} value={value} style={{ scale: "0.8" }} />
@@ -59,14 +59,14 @@ const ProductBoxes = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col p-3 items-center justify-start gap-3 h-[35rem] pt-3 rounded bg-zinc-950/70">
+                    <div className="flex flex-col p-3 items-end justify-between  h-[35rem] pt-3 rounded-lg bg-zinc-950/70">
                         <Image src="/NEW___PICS/PRODUCTS/product___3.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
-                        <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-2 w-full text-center  font-bold'>PRODUCT TITLE</h2>
+                        <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-4 mt-2 w-full text-center  font-black tracking-wider'>PRODUCT TITLE</h2>
 
                         <div className='flex bg-zinc-900/80 p-2 rounded items-center justify-between w-full'>
                             <div className='flex flex-col items-start justify-start'>
                                 <del className='text-red-900/80 text-lg'>320/000 تومان</del>
-                                <p className='font-black text-white text-2xl'>210/000 تومان</p>
+                                <p className='font-black text-white text-2xl'>210/000 <span className='text-zinc-300 text-sm'>تومان</span></p>
                             </div>
                             <div>
                                 <Rate tooltips={desc} onChange={setValue} value={value} style={{ scale: "0.8" }} />
@@ -74,14 +74,14 @@ const ProductBoxes = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col p-3 items-center justify-start gap-3 h-[35rem] pt-3 rounded bg-zinc-950/70">
+                    <div className="flex flex-col p-3 items-end justify-between  h-[35rem] pt-3 rounded-lg bg-zinc-950/70">
                         <Image src="/NEW___PICS/PRODUCTS/product___4.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
-                        <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-2 w-full text-center  font-bold'>PRODUCT TITLE</h2>
+                        <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-4 mt-2 w-full text-center  font-black tracking-wider'>PRODUCT TITLE</h2>
 
                         <div className='flex bg-zinc-900/80 p-2 rounded items-center justify-between w-full'>
                             <div className='flex flex-col items-start justify-start'>
                                 <del className='text-red-900/80 text-lg'>320/000 تومان</del>
-                                <p className='font-black text-white text-2xl'>210/000 تومان</p>
+                                <p className='font-black text-white text-2xl'>210/000 <span className='text-zinc-300 text-sm'>تومان</span></p>
                             </div>
                             <div>
                                 <Rate tooltips={desc} onChange={setValue} value={value} style={{ scale: "0.8" }} />
