@@ -29,7 +29,7 @@ const ProductBoxes = () => {
                 <div className="container bg-zinc-600/30 my-10 rounded-2xl h-fit flex flex-wrap items-center justify-center gap-3 p-5">
 
                     {/* PRODUCT BOXES */}
-                    <div className="flex flex-col p-3 items-end justify-between  h-[35rem] pt-3 rounded-lg bg-zinc-950/70">
+                    <div className="flex flex-col p-3 items-end justify-between  h-[35rem] pt-3 rounded-lg bg-zinc-950 hover:scale-105 duration-300 cursor-pointer">
                         <Image src="/NEW___PICS/PRODUCTS/product___1.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
                         <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-4 mt-2 w-full text-center  font-black tracking-wider'>PRODUCT TITLE</h2>
 
@@ -44,7 +44,7 @@ const ProductBoxes = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col p-3 items-end justify-between  h-[35rem] pt-3 rounded-lg bg-zinc-950/70">
+                    <div className="flex flex-col p-3 items-end justify-between  h-[35rem] pt-3 rounded-lg bg-zinc-950 hover:scale-105 duration-300 cursor-pointer">
                         <Image src="/NEW___PICS/PRODUCTS/product___2.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
                         <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-4 mt-2 w-full text-center  font-black tracking-wider'>PRODUCT TITLE</h2>
 
@@ -59,7 +59,7 @@ const ProductBoxes = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col p-3 items-end justify-between  h-[35rem] pt-3 rounded-lg bg-zinc-950/70">
+                    <div className="flex flex-col p-3 items-end justify-between  h-[35rem] pt-3 rounded-lg bg-zinc-950 hover:scale-105 duration-300 cursor-pointer">
                         <Image src="/NEW___PICS/PRODUCTS/product___3.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
                         <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-4 mt-2 w-full text-center  font-black tracking-wider'>PRODUCT TITLE</h2>
 
@@ -74,7 +74,7 @@ const ProductBoxes = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col p-3 items-end justify-between  h-[35rem] pt-3 rounded-lg bg-zinc-950/70">
+                    <div className="flex flex-col p-3 items-end justify-between  h-[35rem] pt-3 rounded-lg bg-zinc-950 hover:scale-105 duration-300 cursor-pointer">
                         <Image src="/NEW___PICS/PRODUCTS/product___4.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
                         <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-4 mt-2 w-full text-center  font-black tracking-wider'>PRODUCT TITLE</h2>
 
