@@ -527,6 +527,23 @@ ol {
   bottom: -1rem;
 }
 
-#BOX1{
-  
+#BOX2 {
+  width: 300px;
+  height: 300px;
+  background-color: #000;
+  border-radius: 20px;
+  margin: 2rem auto;
+  position: relative;
+}
+
+#BOX2::before {
+  content: "";
+  height: 100%;
+  width: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: gray;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
