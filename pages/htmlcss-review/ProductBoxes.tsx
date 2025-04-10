@@ -12,6 +12,7 @@ const ProductBoxes = () => {
         <div className='w-screen h-screen flex justify-center items-center bg-gradient-to-br from-zinc-900 via-zinc-950 to-black' dir='rtl'>
             <div className="container bg-zinc-800/50 my-10 rounded-2xl h-fit flex flex-wrap items-center justify-center gap-3 p-5">
 
+                {/* PRODUCT BOXES */}
                 <div className="flex flex-col p-3 items-center justify-start gap-3 h-[35rem] pt-3 rounded bg-zinc-950/70">
                     <Image src="/NEW___PICS/PRODUCTS/product___1.webp" width={190} height={250} alt='product__image' className='rounded-md w-full' />
                     <h2 className='bg-black/30 text-[16px] rounded bg-zinc-800 px-6 py-2 w-full text-center  font-bold'>PRODUCT TITLE</h2>
