@@ -394,8 +394,8 @@ ol {
   justify-content: center;
   border-radius: 100%;
   position: fixed;
-  right: 50px;
-  bottom: 30px;
+  right: 30px;
+  bottom: 40px;
   transition: all 300ms ease-in-out;
   font-weight: 900;
 }
@@ -412,14 +412,14 @@ ol {
   background-color: #000000f5;
   display: flex;
   align-items: start;
-  padding-top: 10rem;
+  padding-top: 15rem;
   justify-content: center;
 }
 
 .ADDVERSTSEMENT__BOX {
   width: 40%;
   height: 20%;
-  background-color: #fff;
+  background-color: #9eb8df;
   border-radius: 10px;
   color: black;
   display: flex;
@@ -427,4 +427,18 @@ ol {
   justify-content: center;
   font-size: 50px;
   font-weight: 900;
+}
+
+.STICKY {
+  width: 100%;
+  background-color: #fff;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  padding: 0;
+  font-weight: bold;
+  position: sticky;
+  left: 0;
+  top: 6rem;
+  z-index: 100;
 }

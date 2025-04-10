@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { MessageCircle, MessageCircleIcon, Phone, Star } from 'lucide-react'
+import Image from 'next/image'
+import InboxIconComponent from '@/COMPONENTS/ICONS/InboxIconComponent'
+import UserIconComponent from '@/COMPONENTS/ICONS/UserIconComponent'
+import CartIconComponent from '@/COMPONENTS/ICONS/CartIconComponent'
+import SettingsIconComponent from '@/COMPONENTS/ICONS/SettingsIconComponent'
 
 const CCSReviewComponent = () => {
     const [activeCard, setActiveCard] = useState<number | null>(null)
@@ -25,6 +30,19 @@ const CCSReviewComponent = () => {
                 <h1 className='text-4xl font-black text-white text-center'> CSS REVIEW </h1>
             </motion.header>
 
+
+            <div className="STICKY">
+                <nav className='flex items-center justify-between mt-10 border-2 p-1 border-zinc-500 rounded w-full px-6 bg-zinc-200'>
+                    <Image src='/next.svg' width={150} height={20} alt='logo' />
+                    <div id="ICONS" className='flex'>
+                        <InboxIconComponent />
+                        <UserIconComponent />
+                        <CartIconComponent />
+                        <SettingsIconComponent />
+                    </div>
+                </nav>
+            </div>
+
             <main className='container mx-auto px-4 py-12'>
                 <div id="TEXT__INDENT">
                     <h2 className='text-center bg-slate-700 w-full rounded'>TEXT INDENT</h2>
@@ -40,8 +58,10 @@ const CCSReviewComponent = () => {
                 <li>3</li>
                 <li>4</li>
                 <li>5</li>
-                <button className='px-4 py-2 rounded bg-red-900 text-4xl font-bold z-50 border w-fit mx-auto' onClick={() => setIsShow(prev => !prev)}>{!isShow ? "SHOW" : "HIDE"}</button>
+                <button className='px-4 py-2 rounded bg-red-900 text-4xl font-bold z-20 border w-fit mx-auto' onClick={() => setIsShow(prev => !prev)}>{!isShow ? "SHOW" : "HIDE"}</button>
             </ul>
+
+
 
             <div id="POSITION">
                 <div className="RELATIVE">
