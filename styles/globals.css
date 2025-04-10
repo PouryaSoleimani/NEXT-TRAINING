@@ -563,7 +563,7 @@ ol {
   border-bottom-right-radius: 10px;
 }
 #PRICE {
-  color: darkgray;
+  color: rgb(94, 83, 83);
   font-size: 39px;
   letter-spacing: -2px;
   position: relative;
