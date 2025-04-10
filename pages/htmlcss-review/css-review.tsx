@@ -114,6 +114,11 @@ const CCSReviewComponent = () => {
                     <input type="text" name="" id="" />
                     <input type="text" name="" id="" />
                     <input type="email" name="" id="" />
+
+                    <a href="#">HOME</a>
+                    <a href="https://github.com">GITHUB</a>
+                    <a href="https://linkedin.com">LINKEDIN</a>
+                    <a href="google.com">GOOGLE</a>
                 </div>
 
 

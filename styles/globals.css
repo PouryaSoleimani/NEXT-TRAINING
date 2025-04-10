@@ -587,3 +587,11 @@ input[type="text"] {
 input[type="email"] {
   background-color: yellow;
 }
+[href^="https://"]
+{
+  background-color: red;
+}
+[href="#"] {
+  background-color: yellow;
+  color: black !important;
+}
