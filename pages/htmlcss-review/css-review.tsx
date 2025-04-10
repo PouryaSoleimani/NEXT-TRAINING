@@ -1,3 +1,4 @@
+import { FaUserAlt } from "react-icons/fa";
 // ^ CSS REVIEW PAGE ============================================================================================================================================================================================
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
@@ -88,6 +89,8 @@ const CCSReviewComponent = () => {
                     <input type="checkbox" className='CHECKBOX mx-auto' />
                     <p className='CHECKBOX__P'>ITEM CHECKED</p>
                 </div>
+
+
                 {/* PSEUDO CLASSES */}
                 <ul>
                     <li className="item">ITEM</li>
@@ -97,6 +100,7 @@ const CCSReviewComponent = () => {
                     <li className="item">ITEM</li>
                     <li className="item">ITEM</li>
                 </ul>
+
                 <div className="flex items-center justify-center">
                     <input type="email" id="INPUT" required placeholder="INPUT" className="px-3 py-2 rounded mx-auto text-2xl text-black" />
                 </div>
