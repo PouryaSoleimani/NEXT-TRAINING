@@ -13,15 +13,14 @@ const ProductBoxes = () => {
     return (
         <div className='w-screen h-screen  flex flex-col justify-between items-center bg-gradient-to-br from-zinc-900 via-zinc-950 to-black' dir='rtl'>
             {/* NAVBAR =====================================================================================================================================*/}
-            <div dir='ltr' id="NAVBAR" className='w-full bg-white/10 h-auto p-4 flex items-center justify-between py-3 sticky top-0 left-0'>
-                <Image src='/next.svg' width={150} height={50} alt='logo' />
-
-                <ul className='flex items-center gap-x-2'>
-                    <li className="bg-black text-white text-2xl font-black p-2 rounded"><FaInbox className='w-8 h-8' /></li>
-                    <li className="bg-black text-white text-2xl font-black p-2 rounded"><FaCartArrowDown className='w-8 h-8' /></li>
-                    <li className="bg-black text-white text-2xl font-black p-2 rounded"><FaUser className='w-8 h-8' /></li>
-                    <li className="bg-black text-white text-2xl font-black p-2 rounded"><IoMdSettings className='w-8 h-8' /></li>
-                    <li className="bg-black text-white text-2xl font-black p-2 rounded"><IoMdLogOut className='w-8 h-8' /></li>
+            <div dir='ltr' id="NAVBAR" className='w-full bg-white/10 h-auto  flex items-center justify-between pr-6 sticky top-0 left-0'>
+                <Image src='/next.svg' width={150} height={50} alt='logo' className='bg-white/30 p-3 rounded' />
+                <ul className='flex items-center gap-x-2 justify-center h-full m-0'>
+                    <li className="hover:bg-black duration-300 cursor-pointer text-white text-2xl font-black p-2 rounded"><FaInbox className='w-8 h-8' /></li>
+                    <li className="hover:bg-black duration-300 cursor-pointer text-white text-2xl font-black p-2 rounded"><FaCartArrowDown className='w-8 h-8' /></li>
+                    <li className="hover:bg-black duration-300 cursor-pointer text-white text-2xl font-black p-2 rounded"><FaUser className='w-8 h-8' /></li>
+                    <li className="hover:bg-black duration-300 cursor-pointer text-white text-2xl font-black p-2 rounded"><IoMdSettings className='w-8 h-8' /></li>
+                    <li className="hover:bg-black duration-300 cursor-pointer text-white text-2xl font-black p-2 rounded"><IoMdLogOut className='w-8 h-8' /></li>
                 </ul>
             </div>
 
