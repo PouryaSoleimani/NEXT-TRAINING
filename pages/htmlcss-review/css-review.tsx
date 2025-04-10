@@ -1,5 +1,4 @@
-import { CgInbox } from "react-icons/cg"; 
-import { BsFillInboxFill } from "react-icons/bs";
+// ^ CSS REVIEW PAGE ============================================================================================================================================================================================
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { MessageCircle, MessageCircleIcon, Phone, Star } from 'lucide-react'
@@ -71,21 +70,25 @@ const CCSReviewComponent = () => {
             </ul>
 
 
-
+            {/* MESSAGE AND PHONE */}
             <div id="POSITION">
                 <div className="RELATIVE">
                     <div className="ABSOLUTE"><Star /></div>
                 </div>
                 <div className="MESSAGE"><MessageCircleIcon /></div>
                 <div className="PHONE"><Phone /></div>
+
+                {/* MESSAGE BOX */}
                 <div className={` ${!isShow ? "hidden" : "ADDVERTISEMENT"}`}>
                     <div className="ADDVERSTSEMENT__BOX">THIS IS A MESSAGE</div>
                 </div>
+
+                {/* CHECKBOX */}
                 <div className='w-full flex flex-col gap-y-5 items-center justify-center mt-10'>
                     <input type="checkbox" className='CHECKBOX mx-auto' />
                     <p className='CHECKBOX__P'>ITEM CHECKED</p>
                 </div>
-
+                {/* PSEUDO CLASSES */}
                 <ul>
                     <li className="item">ITEM</li>
                     <li className="item item-delete">ITEM</li>
@@ -94,11 +97,12 @@ const CCSReviewComponent = () => {
                     <li className="item">ITEM</li>
                     <li className="item">ITEM</li>
                 </ul>
+                <div className="flex items-center justify-center">
+                    <input type="email" id="INPUT" required placeholder="INPUT" className="px-3 py-2 rounded mx-auto text-2xl text-black" />
+                </div>
 
 
 
-
- 
 
                 <div className="OVERLAY"></div>
             </div>
