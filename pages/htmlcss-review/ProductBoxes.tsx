@@ -1,8 +1,13 @@
 import { Rate } from 'antd'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 
 const ProductBoxes = () => {
+
+    const desc = ['terrible', 'bad', 'normal', 'good', 'wonderful'];
+    const [value, setValue] = useState(3);
+
+
     return (
         <div className='w-screen h-screen flex justify-center item-center bg-gradient-to-br from-zinc-900 via-zinc-950 to-black'>
             <div className="container bg-zinc-800/50 my-10 rounded-2xl border h-fit flex items-center justify-around gap-6 p-5">
@@ -16,7 +21,9 @@ const ProductBoxes = () => {
                             <del className='text-red-900/80'>320/000 تومان</del>
                             <p className='font-black'>210/000 تومان</p>
                         </div>
-                        <div> <Rate /> </div>
+                        <div>
+                            <Rate tooltips={desc} onChange={setValue} value={value} />
+                        </div>
                     </div>
                 </div>
 
@@ -29,7 +36,7 @@ const ProductBoxes = () => {
                             <p className='font-black'>210/000 تومان</p>
                         </div>
                         <div>
-                            <Rate />
+                            <Rate tooltips={desc} onChange={setValue} value={value} />
                         </div>
                     </div>
                 </div>
@@ -43,7 +50,7 @@ const ProductBoxes = () => {
                             <p className='font-black'>210/000 تومان</p>
                         </div>
                         <div>
-                            <Rate />
+                            <Rate tooltips={desc} onChange={setValue} value={value} />
                         </div>
                     </div>
                 </div>
@@ -57,7 +64,7 @@ const ProductBoxes = () => {
                             <p className='font-black'>210/000 تومان</p>
                         </div>
                         <div>
-                            <Rate />
+                            <Rate tooltips={desc} onChange={setValue} value={value} />
                         </div>
                     </div>
                 </div>
