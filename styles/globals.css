@@ -445,10 +445,12 @@ ol {
   top: 6rem;
   z-index: 100;
 }
-.CHECKBOX:checked + .CHECKBOX__P{
+
+/* CHECKBOX ===========================================================================================================================================*/
+.CHECKBOX:checked + .CHECKBOX__P {
   display: block;
 }
-.CHECKBOX__P{
+.CHECKBOX__P {
   color: red;
   font-weight: 900;
   font-size: 30px;
