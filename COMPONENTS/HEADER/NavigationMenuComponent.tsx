@@ -56,7 +56,7 @@ export function NavigationMenuComponent() {
                         <ul className="grid gap-3 p-1 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                             <li className="row-span-3">
                                 <NavigationMenuLink>
-                                    <a className="flex h-full w-full hover:bg-zinc-800 duration-300 select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-3 no-underline outline-none focus:shadow-md" href="/"  >
+                                    <a className="flex h-full w-full hover:bg-zinc-800 duration-300 select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-2 no-underline outline-none focus:shadow-md" href="/"  >
                                         <div className="mb-2 mt-4 text-lg font-medium flex items-center justify-start gap-x-1">
                                             <IoLogoApple className="w-6 h-6" />  shadcn/ui
                                         </div>
