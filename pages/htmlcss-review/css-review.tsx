@@ -122,7 +122,9 @@ const CCSReviewComponent = () => {
                     <a href="google.com">عنوان</a>
                 </div>
 
-
+                <div id="TEXT__WRAPPER">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sapiente, corrupti officiis tempore illo asperiores error quasi, amet soluta consectetur explicabo eaque animi rerum suscipit ipsum! Eaque magnam qui sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident maxime fugiat ipsa laboriosam quo totam assumenda possimus minima dolorum aspernatur. Fuga incidunt earum nulla quisquam odit voluptatem, distinctio est officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas praesentium inventore mollitia quae sequi saepe alias eos odio minima et! Adipisci perspiciatis aperiam placeat! Harum ab placeat illo autem quos?</p>
+                </div>
                 <div className="OVERLAY"></div>
             </div>
         </div>

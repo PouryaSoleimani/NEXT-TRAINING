@@ -599,3 +599,18 @@ input[type="email"] {
   background-color: yellow;
   color: black !important;
 }
+
+#TEXT__WRAPPER {
+  width: 200px;
+  height: 200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: #555555;
+}
+
+#TEXT__WRAPPER p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
