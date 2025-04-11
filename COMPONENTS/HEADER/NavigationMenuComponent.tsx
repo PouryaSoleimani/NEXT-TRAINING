@@ -36,7 +36,7 @@ export function NavigationMenuComponent() {
                 <NavigationMenuItem>
                     <NavigationMenuTrigger> Getting started</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid gap-3 p-1 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                        <ul className="grid gap-3 p-1 md:w-[300px] lg:w-[400px] lg:grid-cols-[.75fr_1fr]">
                             <li className="row-span-3">
                                 <NavigationMenuLink>
                                     <a className="flex h-full w-full hover:bg-zinc-800 duration-300 select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-2 no-underline outline-none focus:shadow-md" href="/"  >
