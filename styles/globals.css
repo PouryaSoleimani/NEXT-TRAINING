@@ -6,242 +6,241 @@
 
 /*! FONTS */
 @font-face {
-  font-family: "LALEZAR";
-  src: local("lalezar"), local("Lalezar-Regular"),
-    url("/fonts/Lalezar-Regular.ttf") format("opentype") tech(color-COLRv1);
+	font-family: "LALEZAR";
+	src: local("lalezar"), local("Lalezar-Regular"),
+		url("/fonts/Lalezar-Regular.ttf") format("opentype") tech(color-COLRv1);
 }
 
 @font-face {
-  font-family: "yekan";
-  src: url("/fonts/YekanBakhBold.woff") format("woff") tech(color-COLRv1);
+	font-family: "yekan";
+	src: url("/fonts/YekanBakhBold.woff") format("woff") tech(color-COLRv1);
 }
 
 @font-face {
-  font-family: "Baloo";
-  src: url("/fonts/BALOOBHAI-REGULAR.TTF") format("opentype") tech(color-COLRv1);
+	font-family: "Baloo";
+	src: url("/fonts/BALOOBHAI-REGULAR.TTF") format("opentype") tech(color-COLRv1);
 }
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: #000;
-  --background-end-rgb: #000;
+	--foreground-rgb: 255, 255, 255;
+	--background-start-rgb: #000;
+	--background-end-rgb: #000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-    --blue: #155dfc;
-    --red: #e7000b;
-  }
+@media (prefers-color-scheme:dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+		--blue: #155dfc;
+		--red: #e7000b;
+	}
 }
-
 
 html {
-  background-color: black;
+	background-color: black;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(
+	to bottom,
+	transparent,
+	rgb(var(--background-end-rgb))
+	)
+	rgb(var(--background-start-rgb));
 }
 
 ::selection {
-  background-color: #ff00aa;
-  color: white;
+	background-color: #ff00aa;
+	color: white;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
 
 #stylingTitle {
-  color: red;
-  font-size: 120px;
-  font-weight: 900;
-  text-align: center;
-  text-decoration: underline rgb(34, 34, 34) 30px;
+	color: red;
+	font-size: 120px;
+	font-weight: 900;
+	text-align: center;
+	text-decoration: underline rgb(34, 34, 34) 30px;
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-bottom: 0.4em;
-  background-color: #171717;
-  border-radius: 25px;
-  transition: 0.4s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 0.4em;
+	background-color: #171717;
+	border-radius: 25px;
+	transition: 0.4s ease-in-out;
 }
 
 #heading {
-  text-align: center;
-  margin: 2em;
-  color: rgb(255, 255, 255);
-  font-size: 1.2em;
+	text-align: center;
+	margin: 2em;
+	color: rgb(255, 255, 255);
+	font-size: 1.2em;
 }
 
 .field {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
-  border-radius: 25px;
-  padding: 0.6em;
-  border: none;
-  outline: none;
-  color: white;
-  background-color: #171717;
-  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5em;
+	border-radius: 25px;
+	padding: 0.6em;
+	border: none;
+	outline: none;
+	color: white;
+	background-color: #171717;
+	box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
 }
 
 .input-icon {
-  height: 1.3em;
-  width: 1.3em;
-  fill: white;
+	height: 1.3em;
+	width: 1.3em;
+	fill: white;
 }
 
 .input-field {
-  background: none;
-  border: none;
-  outline: none;
-  width: 100%;
-  color: #d3d3d3;
+	background: none;
+	border: none;
+	outline: none;
+	width: 100%;
+	color: #d3d3d3;
 }
 
 .form .btn {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  margin-top: 2.5em;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin-top: 2.5em;
 }
 
 .button1 {
-  padding: 0.5em;
-  padding-left: 1.1em;
-  padding-right: 1.1em;
-  border-radius: 5px;
-  margin-right: 0.5em;
-  border: none;
-  outline: none;
-  transition: 0.4s ease-in-out;
-  background-color: #252525;
-  color: white;
+	padding: 0.5em;
+	padding-left: 1.1em;
+	padding-right: 1.1em;
+	border-radius: 5px;
+	margin-right: 0.5em;
+	border: none;
+	outline: none;
+	transition: 0.4s ease-in-out;
+	background-color: #252525;
+	color: white;
 }
 
 .button1:hover {
-  background-color: black;
-  color: white;
+	background-color: black;
+	color: white;
 }
 
 .button2 {
-  padding: 0.5em;
-  padding-left: 2.3em;
-  padding-right: 2.3em;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  transition: 0.4s ease-in-out;
-  background-color: #252525;
-  color: white;
+	padding: 0.5em;
+	padding-left: 2.3em;
+	padding-right: 2.3em;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	transition: 0.4s ease-in-out;
+	background-color: #252525;
+	color: white;
 }
 
 .button2:hover {
-  background-color: black;
-  color: white;
+	background-color: black;
+	color: white;
 }
 
 .button3 {
-  margin-bottom: 3em;
-  padding: 0.5em;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  transition: 0.4s ease-in-out;
-  background-color: #252525;
-  color: white;
+	margin-bottom: 3em;
+	padding: 0.5em;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	transition: 0.4s ease-in-out;
+	background-color: #252525;
+	color: white;
 }
 
 .button3:hover {
-  background-color: red;
-  color: white;
+	background-color: red;
+	color: white;
 }
 
 /*^^ CARD ^^*/
 .card {
-  --bg: #e8e8e8;
-  --contrast: #e2e0e0;
-  --grey: #93a1a1;
-  position: relative;
-  padding: 9px;
-  background-color: var(--bg);
-  border-radius: 35px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	--bg: #e8e8e8;
+	--contrast: #e2e0e0;
+	--grey: #93a1a1;
+	position: relative;
+	padding: 9px;
+	background-color: var(--bg);
+	border-radius: 35px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+		rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .card-overlay {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  /* background: repeating-conic-gradient(var(--bg) 0.0000001%, var(--grey) 0.000104%) 60% 60%/600% 600%; */
-  filter: opacity(10%) contrast(105%);
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	/* background: repeating-conic-gradient(var(--bg) 0.0000001%, var(--grey) 0.000104%) 60% 60%/600% 600%; */
+	filter: opacity(10%) contrast(105%);
 }
 
 .card-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 190px;
-  height: 254px;
-  background-color: var(--contrast);
-  border-radius: 30px;
-  /*& Content style */
-  font-size: 30px;
-  font-weight: 900;
-  color: #3b3a3a;
-  text-align: center;
-  font-family: monospace;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	width: 190px;
+	height: 254px;
+	background-color: var(--contrast);
+	border-radius: 30px;
+	/*& Content style */
+	font-size: 30px;
+	font-weight: 900;
+	color: #3b3a3a;
+	text-align: center;
+	font-family: monospace;
 }
 
 .ant-card-body {
-  padding: 8px !important;
+	padding: 8px !important;
 }
 
 Link,
 a {
-  text-decoration: none !important;
+	text-decoration: none !important;
 }
 
 @keyframes flowting {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
+	0% {
+		transform: translateY(0);
+	}
+	
+	50% {
+		transform: translateY(10px);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
 }
 
 .flowting-particles {
-  animation: flowting 5s infinite;
+	animation: flowting 5s infinite;
 }
 
 h1,
@@ -249,427 +248,444 @@ h2,
 h3,
 a,
 Link {
-  color: white;
+	color: white;
 }
 
 .gridDIV {
-  place-items: center;
+	place-items: center;
 }
 
 .swr2 {
-  font-family: LALEZAR;
+	font-family: LALEZAR;
 }
 
 .rmdp-input {
-  padding: 2rem 1rem !important;
-  border-radius: 0.5rem !important;
-  background-color: #171717 !important;
-  color: #fff !important;
-  border: none !important;
-  box-shadow: inset 2px 5px 10px rgb(5, 5, 5) !important;
-  font-size: 2rem !important;
-  font-weight: 800 !important;
-  text-align: center !important;
-  letter-spacing: 5px !important;
+	padding: 2rem 1rem !important;
+	border-radius: 0.5rem !important;
+	background-color: #171717 !important;
+	color: #fff !important;
+	border: none !important;
+	box-shadow: inset 2px 5px 10px rgb(5, 5, 5) !important;
+	font-size: 2rem !important;
+	font-weight: 800 !important;
+	text-align: center !important;
+	letter-spacing: 5px !important;
 }
 
 @keyframes flowting {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
+	0% {
+		transform: translateY(0);
+	}
+	
+	50% {
+		transform: translateY(10px);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
 }
 
 .Animation {
-  animation: flowting 5s infinite;
+	animation: flowting 5s infinite;
 }
 
 source {
-  width: 20rem;
-  height: 20rem;
+	width: 20rem;
+	height: 20rem;
 }
 
 tbody {
-  background-color: rgb(33, 33, 33) !important;
+	background-color: rgb(33, 33, 33) !important;
 }
 
 th,
 td {
-  padding: 10px;
+	padding: 10px;
 }
 
 ol {
-  list-style: decimal;
+	list-style: decimal;
 }
 /* CSS REVIEW ================================================================================================================================================================================================= */
 .myTitle {
-  font-size: 30px;
-  color: red;
+	font-size: 30px;
+	color: red;
 }
+
 #TEXT__INDENT {
-  text-indent: 24px;
-  width: 550px;
-  border: 3px solid #fafafa10;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin: 0 auto;
-  text-align: justify;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: -1px;
-  word-spacing: 2px;
-  box-shadow: 3px 3px 10px rgba(255, 250, 240, 0.384),
-    -3px -3px 10px rgb(36, 33, 70);
+	text-indent: 24px;
+	width: 550px;
+	border: 3px solid #fafafa10;
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin: 0 auto;
+	text-align: justify;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: -1px;
+	word-spacing: 2px;
+	box-shadow: 3px 3px 10px rgba(255, 250, 240, 0.384),
+		-3px -3px 10px rgb(36, 33, 70);
 }
+
 #TEXT__INDENT > h2 {
-  font-family: "Baloo";
+	font-family: "Baloo";
 }
 
 #TEXT__INDENT p {
-  font-family: "LALEZAR";
-  direction: rtl;
+	font-family: "LALEZAR";
+	direction: rtl;
 }
+
 .myOL {
-  list-style-image: url("https://icongr.am/fontawesome/certificate.svg?size=14&color=ffffff");
-  list-style-position: outside;
+	list-style-image: url("https://icongr.am/fontawesome/certificate.svg?size=14&color=ffffff");
+	list-style-position: outside;
 }
+
 .OVERLAY {
-  height: 3000px;
+	height: 3000px;
 }
 /* POSITIONS ============================================================================================== */
 .RELATIVE {
-  width: 300px;
-  height: 300px;
-  border-radius: 5%;
-  margin-top: 10rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(61, 4, 4);
-  position: relative;
-  left: calc(50vw - 150px);
-  top: 0;
+	width: 300px;
+	height: 300px;
+	border-radius: 5%;
+	margin-top: 10rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(61, 4, 4);
+	position: relative;
+	left: calc(50vw - 150px);
+	top: 0;
 }
 
 .ABSOLUTE {
-  width: 100px;
-  height: 100px;
-  background-color: rgb(129, 106, 2);
-  border-radius: 6%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: calc(50%-50px);
-  top: calc(50%-50px);
+	width: 100px;
+	height: 100px;
+	background-color: rgb(129, 106, 2);
+	border-radius: 6%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: calc(50%-50px);
+	top: calc(50%-50px);
 }
 
 .PHONE {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fafafa;
-  color: black;
-  padding: 0rem;
-  font-size: 100%;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 50px;
-  left: 40px;
-  z-index: 999;
-  transition: all 300ms ease-in-out;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fafafa;
+	color: black;
+	padding: 0rem;
+	font-size: 100%;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 50px;
+	left: 40px;
+	z-index: 999;
+	transition: all 300ms ease-in-out;
 }
+
 .PHONE:hover {
-  background-color: cornflowerblue;
-  color: white;
+	background-color: cornflowerblue;
+	color: white;
 }
 
 .MESSAGE {
-  width: 60px;
-  height: 60px;
-  background-color: #3b3a3a;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  position: fixed;
-  right: 30px;
-  bottom: 40px;
-  transition: all 300ms ease-in-out;
-  font-weight: 900;
+	width: 60px;
+	height: 60px;
+	background-color: #3b3a3a;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	position: fixed;
+	right: 30px;
+	bottom: 40px;
+	transition: all 300ms ease-in-out;
+	font-weight: 900;
 }
 
 .MESSAGE:hover {
-  background-color: black;
+	background-color: black;
 }
 
 .ADDVERTISEMENT {
-  width: 100%;
-  height: 100vw;
-  position: absolute;
-  inset: 0; /* TO GET ALL THE PAGE*/
-  z-index: 10;
-  background-color: #000000f5;
-  display: flex;
-  align-items: start;
-  padding-top: 15rem;
-  justify-content: center;
+	width: 100%;
+	height: 100vw;
+	position: absolute;
+	inset: 0;
+	/* TO GET ALL THE PAGE*/
+	z-index: 10;
+	background-color: #000000f5;
+	display: flex;
+	align-items: start;
+	padding-top: 15rem;
+	justify-content: center;
 }
 
 .ADDVERSTSEMENT__BOX {
-  width: 40%;
-  height: 20%;
-  background-color: #9eb8df;
-  border-radius: 10px;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  font-weight: 900;
+	width: 40%;
+	height: 20%;
+	background-color: #9eb8df;
+	border-radius: 10px;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	font-weight: 900;
 }
 
 .STICKY {
-  width: 100%;
-  background-color: #fff;
-  color: black;
-  font-size: 40px;
-  text-align: center;
-  padding: 0;
-  font-weight: bold;
-  position: sticky;
-  left: 0;
-  top: 6rem;
-  z-index: 100;
+	width: 100%;
+	background-color: #fff;
+	color: black;
+	font-size: 40px;
+	text-align: center;
+	padding: 0;
+	font-weight: bold;
+	position: sticky;
+	left: 0;
+	top: 6rem;
+	z-index: 100;
 }
 
 /*//^ PSEUDO CLASSES =============================================================================================================================================================*/
 /* CHECKED */
 .CHECKBOX:checked + .CHECKBOX__P {
-  display: block;
+	display: block;
 }
+
 .CHECKBOX__P {
-  color: red;
-  font-weight: 900;
-  font-size: 30px;
-  letter-spacing: 2px;
-  display: none;
+	color: red;
+	font-weight: 900;
+	font-size: 30px;
+	letter-spacing: 2px;
+	display: none;
 }
 
 /* NOT */
 .item:not(.item-delete) {
-  font-size: 40px;
-  color: blue;
+	font-size: 40px;
+	color: blue;
 }
+
 .item-delete {
-  color: red;
-  font-size: 40px;
+	color: red;
+	font-size: 40px;
 }
 
 /* INPUT */
 #INPUT {
-  outline: none;
+	outline: none;
 }
+
 #INPUT:enabled {
-  border: 8px groove green;
+	border: 8px groove green;
 }
+
 #INPUT:disabled {
-  border: 8px groove red;
+	border: 8px groove red;
 }
+
 #INPUT:focus {
-  border: 8px groove blue;
+	border: 8px groove blue;
 }
+
 #INPUT:required {
-  border: 8px groove orange;
+	border: 8px groove orange;
 }
+
 #INPUT:user-invalid {
-  border: 8px groove darkolivegreen;
+	border: 8px groove darkolivegreen;
 }
 
 /*//^ BEFORE AND AFTER =============================================================================================================================================================*/
 #BOX1 {
-  width: 300px;
-  height: 300px;
-  background-color: #93a1a1;
-  margin: 5rem auto;
-  border-radius: 10px;
-  position: relative;
+	width: 300px;
+	height: 300px;
+	background-color: #93a1a1;
+	margin: 5rem auto;
+	border-radius: 10px;
+	position: relative;
 }
+
 #BOX1::before {
-  content: "";
-  width: 100%;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  height: 60px;
-  background-color: red;
-  position: absolute;
-  left: 0;
-  top: -1rem;
+	content: "";
+	width: 100%;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	height: 60px;
+	background-color: red;
+	position: absolute;
+	left: 0;
+	top: -1rem;
 }
 
 #BOX1::after {
-  content: "";
-  width: 100%;
-  height: 60px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: blue;
-  position: absolute;
-  left: 0;
-  bottom: -1rem;
+	content: "";
+	width: 100%;
+	height: 60px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: blue;
+	position: absolute;
+	left: 0;
+	bottom: -1rem;
 }
 
 #BOX2 {
-  width: 300px;
-  height: 300px;
-  background-color: #000000;
-  border-radius: 20px;
-  margin: 2rem auto;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	width: 300px;
+	height: 300px;
+	background-color: #000000;
+	border-radius: 20px;
+	margin: 2rem auto;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #BOX2::before {
-  content: "";
-  height: 100%;
-  width: 40px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: gray;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+	content: "";
+	height: 100%;
+	width: 40px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: gray;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 
 #BOX2::after {
-  content: "";
-  height: 100%;
-  width: 40px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background-color: #3f3a3a;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+	content: "";
+	height: 100%;
+	width: 40px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: #3f3a3a;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
+
 #PRICE {
-  color: rgb(94, 83, 83);
-  font-size: 39px;
-  letter-spacing: -2px;
-  position: relative;
+	color: rgb(94, 83, 83);
+	font-size: 39px;
+	letter-spacing: -2px;
+	position: relative;
 }
 
 #PRICE::before {
-  content: "";
-  width: 130%;
-  height: 8px;
-  position: absolute;
-  background-color: rgba(255, 0, 0, 0.527);
-  left: -15%;
-  top: 47%;
-  rotate: -5deg;
+	content: "";
+	width: 130%;
+	height: 8px;
+	position: absolute;
+	background-color: rgba(255, 0, 0, 0.527);
+	left: -15%;
+	top: 47%;
+	rotate: -5deg;
 }
 /*  ATTRIBUTE SELECTORS ============================================================================================================================= */
 
 input[type="text"] {
-  background-color: red;
+	background-color: red;
 }
 
 input[type="email"] {
-  background-color: yellow;
+	background-color: yellow;
 }
-[href^="https://"]
-{
-  background-color: red;
+
+[href^="https://"] {
+	background-color: red;
 }
+
 [href$=".com"] {
-  background-color: #193cb8;
+	background-color: #193cb8;
 }
+
 [href="#"] {
-  background-color: yellow;
-  color: black !important;
+	background-color: yellow;
+	color: black !important;
 }
 
 /*  TEXT EFFECTS ================================================================================================================= */
 #TEXT__WRAPPER {
-  box-sizing: border-box;
-  width: clamp(100px, 300px, 800px);
-  height: 100px;
-  margin: 2rem auto;
-  padding: 0.5rem;
-  border-radius: 10px;
-  background-color: #1f1e1e;
-  transition: all 300ms ease-in;
+	box-sizing: border-box;
+	width: clamp(100px, 300px, 800px);
+	height: 100px;
+	margin: 2rem auto;
+	padding: 0.5rem;
+	border-radius: 10px;
+	background-color: #1f1e1e;
+	transition: all 300ms ease-in;
 }
 
 #TEXT__WRAPPER:hover {
-  width: 300px;
-  background-color: #000;
+	width: 300px;
+	background-color: #000;
 }
 
 #TEXT__WRAPPER p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  /* writing-mode: vertical-rl; */
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	/* writing-mode: vertical-rl; */
 }
 /*  CSS VARIABLES ========================================================================================================================================================= */
 
 .CLAMP {
-  font-size: clamp(1rem, 2.5vw, 2.5rem);
-  color: var(--blue);
+	font-size: clamp(1rem, 2.5vw, 2.5rem);
+	color: var(--blue);
 }
 
 .RED {
-  color: var(--red);
-  font-size: 32px;
-  letter-spacing: -2px;
-  padding: 1rem;
+	color: var(--red);
+	font-size: 32px;
+	letter-spacing: -2px;
+	padding: 1rem;
 }
 
 /*  CSS GRADIENTS ========================================================================================================================================================= */
 
 #GRADIENT____BOX {
-  width: 200px;
-  height: 200px;
-  background: #833ab4;
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
-  border-radius: 59px;
-  margin: 5rem auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 250ms linear;
-  box-shadow: 10px 10px 1px black;
+	width: 200px;
+	height: 200px;
+	background: #833ab4;
+	background: linear-gradient(
+	90deg,
+	rgba(131, 58, 180, 1) 0%,
+	rgba(253, 29, 29, 1) 50%,
+	rgba(252, 176, 69, 1) 100%
+	);
+	border-radius: 59px;
+	margin: 5rem auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 250ms linear;
+	box-shadow: 10px 10px 1px black;
 }
 
 #GRADIENT____BOX:hover {
-  scale: 0.9;
+	scale: 0.9;
 }
 
 /*  MEDIA QUERIES ========================================================================================================================================================= */
 
-@media screen and (max-width: 780px) {
-  .RED {
-    text-decoration: underline;
-    font-size: 16px;
-  }
+@media screen and (max-width:780px) {
+	.RED {
+		text-decoration: underline;
+		font-size: 16px;
+	}
 }

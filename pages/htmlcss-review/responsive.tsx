@@ -1,3 +1,4 @@
+//^ RESPONSIVE PAGE =====================================================================================================================================
 import NavBarComponent from "@/COMPONENTS/HEADER/NavBarComponent"
 import React from 'react'
 
