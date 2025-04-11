@@ -7,8 +7,6 @@ import { NavigationMenuComponent } from './NavigationMenuComponent'
 // COMPONENT ================================================================================================================
 function NavBarComponent() {
 
-    const [isScroll, setIsScroll] = useState(false)
-
 
 
     return (
