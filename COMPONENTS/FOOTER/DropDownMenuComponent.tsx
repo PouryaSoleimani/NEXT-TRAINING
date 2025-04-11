@@ -7,7 +7,7 @@ function DropDownMenuComponent() {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <Button variant="secondary" className="rounded p-3"><BiMenu /></Button>
+                <Button variant="secondary" className="rounded px-3 py-2 bg-black text-white"><BiMenu /></Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56">
                 <DropdownMenuLabel className="text-white bg-zinc-700">My Account</DropdownMenuLabel>
