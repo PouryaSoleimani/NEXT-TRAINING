@@ -4,7 +4,7 @@ import NavBarComponent from "@/COMPONENTS/HEADER/NavBarComponent"
 import React, { useEffect, useState } from 'react'
 
 
-
+// COMPONENT==== =====================================================================================================================================
 function responsivePage() {
 
     return (

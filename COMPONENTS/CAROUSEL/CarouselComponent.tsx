@@ -12,7 +12,7 @@ export function CarouselComponent() {
     return (
 
         <section className="w-full">
-            <Carousel opts={{ align: "start", loop: true , }} className="w-full p-5 sm:p-3 max-w-max mx-auto">
+            <Carousel opts={{ align: "start", loop: true, }} className="w-full p-5 sm:p-3 max-w-max mx-auto">
                 <CarouselContent>
 
                     {Array.from({ length: 4 }).map((_, index) => (
