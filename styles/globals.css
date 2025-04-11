@@ -645,14 +645,15 @@ input[type="email"] {
     rgba(253, 29, 29, 1) 50%,
     rgba(252, 176, 69, 1) 100%
   );
-  border-radius: 42px;
+  border-radius: 59px;
   margin: 5rem auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 350ms linear;
-  }
+  transition: all 250ms linear;
+  box-shadow: 10px 10px 1px black;
+}
 
 #GRADIENT____BOX:hover {
-  scale: 0.8;
+  scale: 0.9;
 }
