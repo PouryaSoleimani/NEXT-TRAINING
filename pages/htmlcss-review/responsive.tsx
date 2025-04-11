@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react'
 function responsivePage() {
 
     return (
-        <div className='w-full min-h-screen relative z-0 overflow-x-hidden'>
+        <div className='w-full min-h-screen relative z-0'>
             <NavBarComponent />
             <div id="OVERLAY" className="h-[2000px] w-full"></div>
         </div>

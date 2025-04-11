@@ -78,7 +78,7 @@ export function NavigationMenuComponent() {
 
                 <NavigationMenuItem>
                     <Link href="/htmlcss-review/css-review" legacyBehavior passHref className="font-bold">
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>  Documentation  </NavigationMenuLink>
+                        <NavigationMenuLink className={navigationMenuTriggerStyle()} >  Documentation  </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
 
