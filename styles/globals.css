@@ -633,4 +633,5 @@ input[type="email"] {
   color: var(--red);
   font-size: 32px;
   letter-spacing: -2px;
+  padding: 1rem;
 }
