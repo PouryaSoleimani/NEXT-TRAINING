@@ -1,6 +1,5 @@
 import * as React from "react"
 import { cn } from "@/lib/utils"
-import { useMediaQuery } from "@/hooks/use-media-query"
 import { Button } from "@/COMPONENTS/ui/button"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger, } from "@/COMPONENTS/ui/dialog"
 import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger, } from "@/COMPONENTS/ui/drawer"
@@ -12,9 +11,9 @@ import { Label } from "@/COMPONENTS/ui/label"
 // COMPONENT ===============================================================================================================================
 export function DrawerComponent() {
     const [open, setOpen] = React.useState(false)
-    const isDesktop = useMediaQuery("(min-width: 768px)")
 
-    if (isDesktop) {
+
+    if (true) {
         return (
             <Dialog open={open} onOpenChange={setOpen}>
                 <DialogTrigger asChild>
