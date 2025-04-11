@@ -601,19 +601,19 @@ input[type="email"] {
 }
 /*  TEXT EFFECTS ================================================================================================================= */
 #TEXT__WRAPPER {
-  width: 200px;
-  height: 200px;
+  box-sizing: border-box;
+  width: clamp(100px, 300px, 800px);
+  height: 100px;
   margin: 2rem auto;
   padding: 0.5rem;
   border-radius: 10px;
   background-color: #1f1e1e;
-  transition: all 500ms ease-in;
+  transition: all 300ms ease-in;
 }
 
 #TEXT__WRAPPER:hover {
   width: 300px;
-  rotate: -45deg;
-  transform: skew(45deg);
+  background-color: #000;
 }
 
 #TEXT__WRAPPER p {
@@ -621,4 +621,8 @@ input[type="email"] {
   white-space: nowrap;
   text-overflow: ellipsis;
   /* writing-mode: vertical-rl; */
+}
+
+.CLAMP {
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
 }
