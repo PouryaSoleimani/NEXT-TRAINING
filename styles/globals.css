@@ -599,7 +599,7 @@ input[type="email"] {
   background-color: yellow;
   color: black !important;
 }
-
+/*  TEXT EFFECTS ================================================================================================================= */
 #TEXT__WRAPPER {
   width: 200px;
   height: 200px;
@@ -610,6 +610,7 @@ input[type="email"] {
 }
 
 #TEXT__WRAPPER p {
+  writing-mode: vertical-rl;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
