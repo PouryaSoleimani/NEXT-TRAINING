@@ -601,6 +601,7 @@ input[type="email"] {
   background-color: yellow;
   color: black !important;
 }
+
 /*  TEXT EFFECTS ================================================================================================================= */
 #TEXT__WRAPPER {
   box-sizing: border-box;
@@ -624,17 +625,22 @@ input[type="email"] {
   text-overflow: ellipsis;
   /* writing-mode: vertical-rl; */
 }
+/*  CSS VARIABLES ========================================================================================================================================================= */
 
 .CLAMP {
   font-size: clamp(1rem, 2.5vw, 2.5rem);
   color: var(--blue);
 }
+
 .RED {
   color: var(--red);
   font-size: 32px;
   letter-spacing: -2px;
   padding: 1rem;
 }
+
+/*  CSS GRADIENTS ========================================================================================================================================================= */
+
 #GRADIENT____BOX {
   width: 200px;
   height: 200px;
