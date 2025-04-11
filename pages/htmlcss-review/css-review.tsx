@@ -73,7 +73,7 @@ const CCSReviewComponent = () => {
 
 
             {/* MESSAGE AND PHONE */}
-            <div id="POSITION">
+            <div id="POSITION" className="p-10">
                 <div className="RELATIVE">
                     <div className="ABSOLUTE"><Star /></div>
                 </div>
