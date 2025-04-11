@@ -10,35 +10,21 @@ function DropDownMenuComponent() {
                 <Button variant="secondary" className="rounded p-3"><BiMenu /></Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56">
-                <DropdownMenuLabel className="text-white">My Account</DropdownMenuLabel>
-                <DropdownMenuSeparator />
+                <DropdownMenuLabel className="text-white bg-zinc-700">My Account</DropdownMenuLabel>
+                <DropdownMenuSeparator className="bg-blue-900" />
+
                 <DropdownMenuGroup>
-                    <DropdownMenuItem>
-                        Profile
-                        <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                        Billing
-                        <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                        Settings
-                        <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                        Keyboard shortcuts
-                        <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
-                    </DropdownMenuItem>
+                    <DropdownMenuItem>  Profile  </DropdownMenuItem>
+                    <DropdownMenuItem> Billing </DropdownMenuItem>
+                    <DropdownMenuItem> Settings  </DropdownMenuItem>
+                    <DropdownMenuItem> Keyboard shortcuts </DropdownMenuItem>
                 </DropdownMenuGroup>
-                <DropdownMenuSeparator />
+
+                <DropdownMenuSeparator className="bg-blue-900" />
                 <DropdownMenuItem>GitHub</DropdownMenuItem>
                 <DropdownMenuItem>Support</DropdownMenuItem>
-                <DropdownMenuItem disabled>API</DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>
-                    Log out
-                    <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
-                </DropdownMenuItem>
+                <DropdownMenuSeparator className="bg-blue-900" />
+                <DropdownMenuItem>    Log out  </DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>
     )
