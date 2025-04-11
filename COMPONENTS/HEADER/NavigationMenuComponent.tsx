@@ -33,22 +33,21 @@ export function NavigationMenuComponent() {
     return (
         <NavigationMenu className="hidden sm:block">
             <NavigationMenuList>
+
                 <NavigationMenuItem>
                     <NavigationMenuTrigger> Getting started</NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid gap-3 p-1 md:w-[300px] lg:w-[400px] lg:grid-cols-[.75fr_1fr]">
                             <li className="row-span-3">
-                                <NavigationMenuLink>
-                                    <a className="flex h-full w-full hover:bg-zinc-800 duration-300 select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-2 no-underline outline-none focus:shadow-md" href="/"  >
-                                        <div className="mb-2 mt-4 text-lg font-medium flex items-center justify-start gap-x-1">
-                                            <IoLogoApple className="w-6 h-6" />  shadcn/ui
-                                        </div>
-                                        <p className="text-sm leading-tight text-muted-foreground">
-                                            Beautifully designed components built with Radix UI and
-                                            Tailwind CSS.
-                                        </p>
-                                    </a>
-                                </NavigationMenuLink>
+                                <a className="flex h-full w-full hover:bg-zinc-800 duration-300 select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-2 no-underline outline-none focus:shadow-md" href="/"  >
+                                    <div className="mb-2 mt-4 text-lg font-medium flex items-center justify-start gap-x-1">
+                                        <IoLogoApple className="w-6 h-6" />  Shadcn/ui
+                                    </div>
+                                    <p className="text-sm leading-tight text-muted-foreground">
+                                        Beautifully designed components built with Radix UI and
+                                        Tailwind CSS.
+                                    </p>
+                                </a>
                             </li>
                             <ListItem href="/docs" title="Introduction">
                                 Re-usable components built using Radix UI and Tailwind CSS.
@@ -62,6 +61,7 @@ export function NavigationMenuComponent() {
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
+
 
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>Components</NavigationMenuTrigger>
@@ -77,7 +77,7 @@ export function NavigationMenuComponent() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <Link href="/htmlcss-review/css-review" legacyBehavior passHref className="font-bold">
+                    <Link href="/htmlcss-review/css-review" passHref className="font-bold hover:bg-zinc-900 rounded py-1 duration-300 flex items-center justify-center">
                         <NavigationMenuLink className={navigationMenuTriggerStyle()} >  Documentation  </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
