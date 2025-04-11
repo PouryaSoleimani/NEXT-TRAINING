@@ -19,7 +19,7 @@ export function CarouselComponent() {
                             <div className="p-1">
                                 <Card>
                                     <CardContent className="flex aspect-square items-center justify-center p-0">
-                                        <Image width={200} height={200} src={`/NEW___PICS/PRODUCTS/product___${index + 1}.webp`} alt="product--image" />
+                                        <Image width={230} height={230} src={`/NEW___PICS/PRODUCTS/product___${index + 1}.webp`} alt="product--image" className="rounded" />
                                     </CardContent>
                                 </Card>
                             </div>
