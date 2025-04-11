@@ -14,6 +14,7 @@ export function CarouselComponent() {
         <section className="w-full">
             <Carousel opts={{ align: "start", loop: true }} className="w-full p-3 sm:p-5 max-w-3xl mx-auto">
                 <CarouselContent>
+
                     {Array.from({ length: 4 }).map((_, index) => (
                         <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/4">
                             <div className="p-1">
@@ -25,6 +26,7 @@ export function CarouselComponent() {
                             </div>
                         </CarouselItem>
                     ))}
+                    
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />
