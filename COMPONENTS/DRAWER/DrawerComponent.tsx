@@ -1,72 +1,26 @@
-import * as React from "react"
-import { cn } from "@/lib/utils"
+'use client';
+import React from 'react'
+import { Drawer } from 'vaul';
 import { Button } from "@/COMPONENTS/ui/button"
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger, } from "@/COMPONENTS/ui/dialog"
-import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger, } from "@/COMPONENTS/ui/drawer"
-import { Input } from "@/COMPONENTS/ui/input"
-import { Label } from "@/COMPONENTS/ui/label"
 
 
-
-// COMPONENT ===============================================================================================================================
-export function DrawerComponent() {
-    const [open, setOpen] = React.useState(false)
-
-
-    if (true) {
-        return (
-            <Dialog open={open} onOpenChange={setOpen}>
-                <DialogTrigger asChild>
-                    <Button variant="outline">Edit Profile</Button>
-                </DialogTrigger>
-                <DialogContent className="sm:max-w-[425px]">
-                    <DialogHeader>
-                        <DialogTitle>Edit profile</DialogTitle>
-                        <DialogDescription>
-                            Make changes to your profile here. Click save when you're done.
-                        </DialogDescription>
-                    </DialogHeader>
-                    <ProfileForm />
-                </DialogContent>
-            </Dialog>
-        )
-    }
-
+function DrawerComponent() {
     return (
-        <Drawer open={open} onOpenChange={setOpen}>
-            <DrawerTrigger asChild>
-                <Button variant="outline">Edit Profile</Button>
-            </DrawerTrigger>
-            <DrawerContent>
-                <DrawerHeader className="text-left">
-                    <DrawerTitle>Edit profile</DrawerTitle>
-                    <DrawerDescription>
-                        Make changes to your profile here. Click save when you're done.
-                    </DrawerDescription>
-                </DrawerHeader>
-                <ProfileForm className="px-4" />
-                <DrawerFooter className="pt-2">
-                    <DrawerClose asChild>
-                        <Button variant="outline">Cancel</Button>
-                    </DrawerClose>
-                </DrawerFooter>
-            </DrawerContent>
-        </Drawer>
+        <Drawer.Root>
+            <Drawer.Trigger className='w-full'>
+                <Button type='submit' variant="secondary" className='font-semibold text-xl rounded text-white py-4'>Open Drawer</Button>
+            </Drawer.Trigger>
+            <Drawer.Portal>
+                <Drawer.Overlay className="fixed inset-0 bg-black/90" />
+                <Drawer.Content className="bg-zinc-900 h-[25rem] fixed bottom-0 left-0 right-0 outline-none">
+                    <div className=" py-2 border-t-2 border-zinc-800 text-center flex items-center justify-center bg-black">
+                        <p className='mt-2 text-3xl font-bold text-zinc-200'>FORM</p>
+                    </div>
+
+                </Drawer.Content>
+            </Drawer.Portal>
+        </Drawer.Root>
     )
 }
 
-function ProfileForm({ className }: React.ComponentProps<"form">) {
-    return (
-        <form className={cn("grid items-start gap-4", className)}>
-            <div className="grid gap-2">
-                <Label htmlFor="email">Email</Label>
-                <Input type="email" id="email" defaultValue="shadcn@example.com" />
-            </div>
-            <div className="grid gap-2">
-                <Label htmlFor="username">Username</Label>
-                <Input id="username" defaultValue="@shadcn" />
-            </div>
-            <Button type="submit">Save changes</Button>
-        </form>
-    )
-}
+export default DrawerComponent

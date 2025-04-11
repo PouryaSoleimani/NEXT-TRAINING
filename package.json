@@ -25,6 +25,7 @@
         "axios": "^1.6.8",
         "babel-plugin-styled-components": "^2.1.4",
         "bootstrap": "^5.3.3",
+        "bunx": "^0.1.0",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
         "drawer": "^0.0.2",
