@@ -248,7 +248,7 @@ h2,
 h3,
 a,
 Link {
-  color: white !important;
+  color: white;
 }
 
 .gridDIV {
@@ -665,8 +665,10 @@ input[type="email"] {
 }
 
 /*  MEDIA QUERIES ========================================================================================================================================================= */
-@media only screen and (max-width: 780px) {
+
+@media screen and (max-width: 780px) {
   .RED {
     text-decoration: underline;
+    font-size: 16px;
   }
 }
