@@ -17,9 +17,9 @@ export function CarouselComponent() {
                     {Array.from({ length: 4 }).map((_, index) => (
                         <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/4">
                             <div className="p-1">
-                                <Card>
-                                    <CardContent className="flex aspect-square items-center justify-center p-0">
-                                        <Image width={230} height={230} src={`/NEW___PICS/PRODUCTS/product___${index + 1}.webp`} alt="product--image" className="rounded" />
+                                <Card className="w-full h-full">
+                                    <CardContent className="flex aspect-square items-center justify-center p-0 w-full h-full">
+                                        <Image width={800} height={800} src={`/NEW___PICS/PRODUCTS/product___${index + 1}.webp`} alt="product--image" className="rounded w-full h-full object-cover" />
                                     </CardContent>
                                 </Card>
                             </div>
