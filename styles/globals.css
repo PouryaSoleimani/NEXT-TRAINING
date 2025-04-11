@@ -604,14 +604,21 @@ input[type="email"] {
   width: 200px;
   height: 200px;
   margin: 2rem auto;
-  padding: 1rem;
-  border-radius: 20px;
-  background-color: #555555;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: #1f1e1e;
+  transition: all 500ms ease-in;
+}
+
+#TEXT__WRAPPER:hover {
+  width: 300px;
+  rotate: -45deg;
+  transform: skew(45deg);
 }
 
 #TEXT__WRAPPER p {
-  writing-mode: vertical-rl;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  /* writing-mode: vertical-rl; */
 }
