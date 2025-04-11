@@ -1,4 +1,5 @@
 //^ RESPONSIVE PAGE =====================================================================================================================================
+import CarouselComponent from "@/COMPONENTS/CAROUSEL/CarouselComponent"
 import NavBarComponent from "@/COMPONENTS/HEADER/NavBarComponent"
 import React, { useEffect, useState } from 'react'
 
