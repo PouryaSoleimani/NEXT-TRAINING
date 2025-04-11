@@ -40,6 +40,7 @@
         "react": "^18",
         "react-dom": "^18",
         "react-element-popper": "^2.1.7",
+        "react-hook-form": "^7.55.0",
         "react-hot-toast": "^2.5.2",
         "react-icons": "^5.5.0",
         "react-multi-date-picker": "^4.5.2",
