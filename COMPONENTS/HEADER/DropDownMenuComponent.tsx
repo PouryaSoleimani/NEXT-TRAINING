@@ -9,7 +9,7 @@ function DropDownMenuComponent() {
             <DropdownMenuTrigger asChild className="sm:hidden">
                 <Button variant="secondary" className="rounded px-3 py-2 bg-black text-white"><BiMenu /></Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56">
+            <DropdownMenuContent className="w-56 mr-3 rounded ">
                 <DropdownMenuLabel className="text-white bg-zinc-700">My Account</DropdownMenuLabel>
                 <DropdownMenuSeparator className="bg-blue-900" />
 

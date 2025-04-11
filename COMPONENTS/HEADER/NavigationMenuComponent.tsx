@@ -66,7 +66,7 @@ export function NavigationMenuComponent() {
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>Components</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="flex flex-col w-[300px] gap-3 p-3 md:w-[300px] md:grid-cols-2 lg:w-[300px] ">
+                        <ul className="flex flex-col w-[300px] gap-3 p-1 md:w-[300px] lg:w-[300px] ">
                             {components.map((component) => (
                                 <ListItem key={component.title} title={component.title} href={component.href}    >
                                     {component.description}
