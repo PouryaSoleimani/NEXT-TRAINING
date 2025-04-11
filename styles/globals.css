@@ -32,6 +32,8 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --blue: #155dfc;
+    --red: #e7000b;
   }
 }
 
@@ -625,4 +627,10 @@ input[type="email"] {
 
 .CLAMP {
   font-size: clamp(1rem, 2.5vw, 2.5rem);
+  color: var(--blue);
+}
+.RED {
+  color: var(--red);
+  font-size: 32px;
+  letter-spacing: -2px;
 }

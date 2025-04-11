@@ -10,6 +10,7 @@ const swr2 = () => {
 
     const { data, error, isLoading } = useSWR('http://localhost:4000/usersFarsi', fetcher)
 
+
     if (error) return <div className='bg-red-900 text-white p-3 font-black'>failed to load</div>
     if (isLoading) return <div className='bg-blue-900 text-white p-3 font-black'>loading...</div>
 
