@@ -1,5 +1,5 @@
-import BackButton from '@/COMPONENTS/FOOTER/BackButton';
-import GlassMorphismCard from '@/COMPONENTS/FOOTER/GlassMorphismCard';
+import BackButton from '@/COMPONENTS/BackButton';
+import GlassMorphismCard from '@/COMPONENTS/GlassMorphismCard';
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import { SingleProductType } from '.';
 import { useRouter } from 'next/router';

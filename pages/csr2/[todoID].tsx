@@ -1,4 +1,4 @@
-import BackButton from '@/COMPONENTS/FOOTER/BackButton'
+import BackButton from '@/COMPONENTS/BackButton'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 type SingleTodoType = { id: number, title: string, completed: boolean }

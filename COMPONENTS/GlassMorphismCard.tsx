@@ -1,7 +1,7 @@
 import { Button, Tooltip } from "antd";
 import { ShoppingBasket } from "lucide-react";
 import Image from "next/image";
-import SuccessAlert from "../SuccessAlert";
+import SuccessAlert from "./SuccessAlert";
 import { useRef, useState } from "react";
 
 interface GlassmorphismCardProps { product: { id: number; title: string; price: string; image: string }; }

@@ -1,4 +1,4 @@
-import DropDownMenuComponent from "@/COMPONENTS/FOOTER/DropDownMenuComponent"
+import DropDownMenuComponent from "@/COMPONENTS/HEADER/DropDownMenuComponent"
 import { Button } from "@/COMPONENTS/ui/button"
 
 import Image from 'next/image'

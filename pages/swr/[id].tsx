@@ -1,4 +1,4 @@
-import BackButton from '@/COMPONENTS/FOOTER/BackButton'
+import BackButton from '@/COMPONENTS/BackButton'
 import { NextPage } from 'next'
 import { useRouter } from 'next/router'
 import useSWR from 'swr'

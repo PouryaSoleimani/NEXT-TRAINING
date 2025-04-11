@@ -6,7 +6,7 @@ import { Button } from '../ui/button'
 function DropDownMenuComponent() {
     return (
         <DropdownMenu>
-            <DropdownMenuTrigger asChild>
+            <DropdownMenuTrigger asChild className="sm:hidden">
                 <Button variant="secondary" className="rounded px-3 py-2 bg-black text-white"><BiMenu /></Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56">

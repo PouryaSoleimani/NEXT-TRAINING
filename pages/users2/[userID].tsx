@@ -1,5 +1,5 @@
 //^  SINGLE USER COMPONENT =====================================================================================================================================
-import BackButton from '@/COMPONENTS/FOOTER/BackButton'
+import BackButton from '@/COMPONENTS/BackButton'
 import { Card, Spin } from 'antd'
 import { NextPage, GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
