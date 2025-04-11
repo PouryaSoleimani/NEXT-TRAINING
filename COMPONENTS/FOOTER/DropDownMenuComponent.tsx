@@ -10,7 +10,7 @@ function DropDownMenuComponent() {
                 <Button variant="secondary" className="rounded p-3"><BiMenu /></Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56">
-                <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                <DropdownMenuLabel className="text-white">My Account</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup>
                     <DropdownMenuItem>
