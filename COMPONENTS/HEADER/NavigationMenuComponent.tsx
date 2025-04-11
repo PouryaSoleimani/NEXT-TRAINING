@@ -13,7 +13,7 @@ import {
 
 function NavigationMenuComponent() {
     return (
-        <NavigationMenu>
+        <NavigationMenu className='hidden sm:block z-50'>
             <NavigationMenuList>
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>Item One</NavigationMenuTrigger>

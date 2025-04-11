@@ -1,4 +1,5 @@
 import DropDownMenuComponent from "@/COMPONENTS/HEADER/DropDownMenuComponent"
+import NavigationMenuComponent from "@/COMPONENTS/HEADER/NavigationMenuComponent"
 import { Button } from "@/COMPONENTS/ui/button"
 
 import Image from 'next/image'
@@ -15,6 +16,7 @@ function responsive() {
                 <Image src="/next.svg" width={60} height={50} alt="logo" />
                 <h1 id="HEADER___TITLE" className='text-lg text-white font-bold tracking-tighter leading-10 m-0 hidden sm:block'>RESPONSIVE DESIGN</h1>
                 <DropDownMenuComponent />
+                <NavigationMenuComponent />
             </nav>
         </div>
     )
