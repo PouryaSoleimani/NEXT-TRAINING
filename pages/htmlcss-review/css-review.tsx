@@ -1,8 +1,11 @@
+import { AiFillPhone } from "react-icons/ai";
+import { AiFillMessage } from "react-icons/ai";
+import { AiTwotoneStar } from "react-icons/ai";
 import { FaInstagram, FaUserAlt } from "react-icons/fa";
 // ^ CSS REVIEW PAGE ============================================================================================================================================================================================
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Instagram, MessageCircleIcon, Phone, Star } from 'lucide-react'
+import { Instagram } from 'lucide-react'
 import Image from 'next/image'
 import InboxIconComponent from '@/COMPONENTS/ICONS/InboxIconComponent'
 import UserIconComponent from '@/COMPONENTS/ICONS/UserIconComponent'
@@ -75,10 +78,10 @@ const CCSReviewComponent = () => {
             {/* MESSAGE AND PHONE */}
             <div id="POSITION" className="p-10">
                 <div className="RELATIVE">
-                    <div className="ABSOLUTE"><Star /></div>
+                    <div className="ABSOLUTE"><AiTwotoneStar /></div>
                 </div>
-                <div className="MESSAGE"><MessageCircleIcon /></div>
-                <div className="PHONE"><Phone /></div>
+                <div className="MESSAGE"><AiFillMessage /></div>
+                <div className="PHONE"><AiFillPhone /></div>
 
                 {/* MESSAGE BOX */}
                 <div className={` ${!isShow ? "hidden" : "ADDVERTISEMENT"}`}>
