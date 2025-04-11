@@ -663,3 +663,10 @@ input[type="email"] {
 #GRADIENT____BOX:hover {
   scale: 0.9;
 }
+
+/*  MEDIA QUERIES ========================================================================================================================================================= */
+@media only screen and (max-width: 780px) {
+  .RED {
+    text-decoration: underline;
+  }
+}
