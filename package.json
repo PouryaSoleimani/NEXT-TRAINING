@@ -17,6 +17,7 @@
         "@chakra-ui/react": "^2.10.7",
         "@emotion/react": "^11.14.0",
         "@emotion/styled": "^11.14.0",
+        "@radix-ui/react-dropdown-menu": "^2.1.6",
         "antd": "^5.19.0",
         "axios": "^1.6.8",
         "babel-plugin-styled-components": "^2.1.4",
