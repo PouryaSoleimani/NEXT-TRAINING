@@ -79,6 +79,7 @@ export function NavigationMenuComponent() {
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
+
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>Components</NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -91,13 +92,15 @@ export function NavigationMenuComponent() {
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
+
                 <NavigationMenuItem>
-                    <Link href="/docs" legacyBehavior passHref>
+                    <Link href="/docs" legacyBehavior passHref className="font-bold">
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                             Documentation
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
+
             </NavigationMenuList>
         </NavigationMenu>
     )
