@@ -1,8 +1,8 @@
-import { FaUserAlt } from "react-icons/fa";
+import { FaInstagram, FaUserAlt } from "react-icons/fa";
 // ^ CSS REVIEW PAGE ============================================================================================================================================================================================
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { MessageCircleIcon, Phone, Star } from 'lucide-react'
+import { Instagram, MessageCircleIcon, Phone, Star } from 'lucide-react'
 import Image from 'next/image'
 import InboxIconComponent from '@/COMPONENTS/ICONS/InboxIconComponent'
 import UserIconComponent from '@/COMPONENTS/ICONS/UserIconComponent'
@@ -127,6 +127,18 @@ const CCSReviewComponent = () => {
                 </div>
                 <p className="CLAMP">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, beatae aliquam. Temporibus modi consequuntur eaque animi obcaecati molestiae possimus nisi, optio voluptate expedita eligendi voluptatem, velit, ullam adipisci ab accusantium? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis officia, obcaecati impedit, quis placeat, quos atque ducimus illo adipisci beatae sequi. Illum sequi unde quasi! Eius rerum reprehenderit commodi accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum reiciendis voluptatibus distinctio veritatis, deserunt cumque sequi eius nisi corrupti, quo consequuntur ipsum, neque repellat consectetur at assumenda? Temporibus, dxxicta alias!</p>
                 <p className="RED">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi distinctio rerum sunt consectetur doloremque maiores? Enim qui debitis consequatur vero sequi at facere nam perspiciatis iusto, atque explicabo minus accusamus.</p>
+
+                <div id="GRADIENT____BOX"><FaInstagram className="w-64 h-64" /></div>
+
+
+
+
+
+
+
+
+
+
                 <div className="OVERLAY"></div>
             </div>
         </div>
