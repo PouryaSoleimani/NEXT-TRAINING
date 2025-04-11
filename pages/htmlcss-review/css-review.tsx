@@ -2,7 +2,7 @@ import { FaUserAlt } from "react-icons/fa";
 // ^ CSS REVIEW PAGE ============================================================================================================================================================================================
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { MessageCircle, MessageCircleIcon, Phone, Star } from 'lucide-react'
+import { MessageCircleIcon, Phone, Star } from 'lucide-react'
 import Image from 'next/image'
 import InboxIconComponent from '@/COMPONENTS/ICONS/InboxIconComponent'
 import UserIconComponent from '@/COMPONENTS/ICONS/UserIconComponent'
