@@ -8,14 +8,11 @@ import { NavigationMenuComponent } from './NavigationMenuComponent'
 function NavBarComponent() {
 
     useEffect(() => {
-        const handleScroll = () => {
-            const currentScroll = window.scrollY;
-        };
+        const handleScroll = () => { const currentScroll = window.scrollY; };
 
-        window.addEventListener('scroll', handleScroll); // Add scroll event listener
-        return () => {
-            window.removeEventListener('scroll', handleScroll); // Cleanup on unmount
-        };
+        window.addEventListener('scroll', handleScroll);
+        return () => { window.removeEventListener('scroll', handleScroll); };
+
     }, []);
 
 
