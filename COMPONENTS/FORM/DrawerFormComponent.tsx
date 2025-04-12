@@ -1,13 +1,10 @@
-import React from 'react'
-import { useForm, SubmitHandler } from "react-hook-form"
+import React from 'react';
+import {useForm, SubmitHandler} from 'react-hook-form';
 
-type Inputs = { name: string, email: string }
-
+type Inputs = {example: string; exampleRequired: string};
 
 function DrawerFormComponent() {
-    return (
-        <></>
-    )
+  return <></>;
 }
 
-export default DrawerFormComponent
+export default DrawerFormComponent;
