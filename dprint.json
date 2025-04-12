@@ -1,0 +1,9 @@
+{
+  "includes": ["src/**/*.ts", "src/**/*.tsx"],
+  "plugins": ["https://plugins.dprint.dev/typescript-0.91.2.wasm"],
+  "typescript": {
+    "lineWidth": 120,
+    "preferHanging": false,
+    "nextControlFlowPosition": "sameLine"
+  }
+}
