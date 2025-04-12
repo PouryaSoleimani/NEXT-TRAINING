@@ -1,14 +1,13 @@
 'use client';
 import React from 'react'
-import { Drawer } from 'vaul';
-import { Button } from "@/COMPONENTS/ui/button"
+import { Drawer } from "vaul"
 
 
 function DrawerComponent() {
     return (
         <Drawer.Root>
             <Drawer.Trigger className='w-full'>
-                <Button type='submit' variant="secondary" className='font-semibold text-xl rounded text-white py-4 bg-zinc-900 border border-1-zinc-800'>Open Drawer</Button>
+                <span className='font-semibold text-xl rounded text-white p-4 bg-zinc-900 border border-1-zinc-800'>Open Drawer</span>
             </Drawer.Trigger>
             <Drawer.Portal>
                 <Drawer.Overlay className="fixed inset-0 bg-black/90" />
