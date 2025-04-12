@@ -14,7 +14,7 @@ export function PopOverComponent() {
                 <PopoverTrigger asChild>
                     <Button variant="secondary" className="text-white rounded bg-zinc-900 hover:bg-zinc-800 duration-300 focus:bg-zinc-700 active:bg-zinc-600">Open popover</Button>
                 </PopoverTrigger>
-                <PopoverContent className="w-80 text-white rounded mt-1">
+                <PopoverContent className="w-80 text-white rounded mt-1 bg-black/70 backdrop-blur-md">
                     <div className="grid gap-4">
 
                         <div className="space-y-2">

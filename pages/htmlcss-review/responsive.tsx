@@ -24,6 +24,7 @@ function responsivePage() {
       <TabsComponent />
       <PaginationComponent />
       <PopOverComponent />
+      <PopOverComponent />
       <div id="OVERLAY" className="h-[1500px] w-full"></div>
     </section>
   );
