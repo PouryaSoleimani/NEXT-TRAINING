@@ -12,7 +12,7 @@ function SwitchComponent() {
 
     function darkThemeHandler() {
         setIsDark(prev => !prev)
-        console.info("HELLO")
+        console.info(isDark)
         toast.success("Theme Changed")
     }
 
