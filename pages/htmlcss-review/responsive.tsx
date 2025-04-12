@@ -8,6 +8,7 @@ import ProductsWrapperComponent from "@/COMPONENTS/PRODUCTS/ProductsWrapperCompo
 import RadioGroupComponent from "@/COMPONENTS/RADIOGROUP/RadioGroupComponent";
 import SelectComponent from "@/COMPONENTS/SELECT/SelectComponent";
 import SonnerComponent from "@/COMPONENTS/SONNER/SonnerComponent";
+import SwitchComponent from "@/COMPONENTS/SWITCH/SwitchComponent";
 import { TabsComponent } from "@/COMPONENTS/TABS/TabsComponent";
 import { Separator } from "@radix-ui/react-dropdown-menu";
 import React from "react";
@@ -29,6 +30,7 @@ function responsivePage() {
       <PopOverComponent />
       <RadioGroupComponent />
       <SelectComponent />
+      <SwitchComponent/>
       <div id="OVERLAY" className="h-[1500px] w-full"></div>
     </section>
   );
