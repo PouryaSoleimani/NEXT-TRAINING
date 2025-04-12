@@ -3,6 +3,7 @@ import { CarouselComponent } from "@/COMPONENTS/CAROUSEL/CarouselComponent";
 import DrawerComponent from "@/COMPONENTS/DRAWER/DrawerComponent";
 import NavBarComponent from "@/COMPONENTS/HEADER/NavBarComponent";
 import { PaginationComponent } from "@/COMPONENTS/PAGINATION/PaginationComponent";
+import { PopOverComponent } from "@/COMPONENTS/POPOVER/PopOverComponent";
 import ProductsWrapperComponent from "@/COMPONENTS/PRODUCTS/ProductsWrapperComponent";
 import SonnerComponent from "@/COMPONENTS/SONNER/SonnerComponent";
 import { TabsComponent } from "@/COMPONENTS/TABS/TabsComponent";
@@ -22,6 +23,7 @@ function responsivePage() {
       <SonnerComponent />
       <TabsComponent />
       <PaginationComponent />
+      <PopOverComponent />
       <div id="OVERLAY" className="h-[1500px] w-full"></div>
     </section>
   );
