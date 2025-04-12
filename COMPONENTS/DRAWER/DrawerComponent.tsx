@@ -1,6 +1,7 @@
 'use client';
 import React from 'react'
 import { Drawer } from "vaul"
+import DrawerFormComponent from '../FORM/DrawerFormComponent';
 
 
 function DrawerComponent() {
@@ -15,6 +16,7 @@ function DrawerComponent() {
                     <div className=" py-2 border-t-2 border-zinc-800 text-center flex items-center justify-center bg-black">
                         <p className='mt-2 text-3xl font-bold text-zinc-200'>FORM</p>
                     </div>
+                    <DrawerFormComponent />
                 </Drawer.Content>
             </Drawer.Portal>
         </Drawer.Root>
