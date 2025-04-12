@@ -2,6 +2,7 @@ import React from 'react';
 import { createCache, extractStyle, StyleProvider } from '@ant-design/cssinjs';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 import type { DocumentContext } from 'next/document';
+import { Toaster } from 'sonner';
 
 
 const MyDocument = () => (
@@ -9,6 +10,7 @@ const MyDocument = () => (
     <Head></Head>
     <body className='bg-black'>
       <Main />
+      <Toaster />
       <NextScript />
     </body>
   </Html>
