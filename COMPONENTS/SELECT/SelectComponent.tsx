@@ -11,7 +11,7 @@ function SelectComponent() {
                 </SelectTrigger>
                 <SelectContent className="text-white bg-black/70 backdrop-blur-md">
                     <SelectGroup>
-                        <SelectLabel className="bg-zinc-900 border-b text-center font-semibold">Fruits</SelectLabel>
+                        <SelectLabel className="bg-zinc-900 border-b text-center font-semibold py-3">Fruits</SelectLabel>
                         <SelectItem value="apple">Apple</SelectItem>
                         <SelectItem value="banana">Banana</SelectItem>
                         <SelectItem value="blueberry">Blueberry</SelectItem>
