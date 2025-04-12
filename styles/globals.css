@@ -613,8 +613,8 @@ input[type="email"] {
   background-color: gray;
   color: black !important;
   font-weight: 900;
-  font-size: 15px;
-  padding: 1rem;
+  font-size: 11px;
+  padding: 0.2rem;
   border-radius: 3px;
 }
 [href="#"]:hover {

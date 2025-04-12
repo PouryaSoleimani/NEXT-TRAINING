@@ -5,13 +5,13 @@ import { cn } from "@/lib/utils";
 import { ButtonProps, buttonVariants } from "@/COMPONENTS/ui/button";
 
 const Pagination = ({ className, ...props }: React.ComponentProps<"nav">) => (
-  <nav role="navigation" aria-label="pagination" className={cn("mx-auto flex w-full justify-center", className)}    {...props} />
+  <nav role="navigation" aria-label="pagination" className={cn("mx-auto flex items-center w-fit justify-center", className)}    {...props} />
 );
 Pagination.displayName = "Pagination";
 
 const PaginationContent = React.forwardRef<HTMLUListElement, React.ComponentProps<"ul">>(
   ({ className, ...props }, ref) => (
-    <ul ref={ref} className={cn("flex flex-row items-center gap-1", className)} {...props} />
+    <ul ref={ref} className={cn("flex justify-center w-fit mx-auto items-center p-0 gap-1", className)} {...props} />
   )
 );
 PaginationContent.displayName = "PaginationContent";
