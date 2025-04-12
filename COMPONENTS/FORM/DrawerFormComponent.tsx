@@ -3,12 +3,13 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
-type Inputs = { name: string; email: string };
+type Inputs = { name: string; email: string; };
 
 function DrawerFormComponent() {
-    const { register, handleSubmit, watch, formState: { errors }, } = useForm<Inputs>();
-    const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
 
+    const schema = yup.object().shape({ name: yup.string().required(), email: yup.string().email().required(), }).required();
+    const { register, handleSubmit, watch, formState: { errors }, } = useForm<Inputs>({ resolver: yupResolver(schema), });
+    const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
