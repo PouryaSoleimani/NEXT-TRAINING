@@ -15,7 +15,8 @@ function DrawerFormComponent() {
     }
 
     return (
-        <div className="w-fit bg-black flex flex-col p-4 items-center justify-center mx-auto mt-10 rounded-lg border-1 border-zinc-800 ">
+        <div className="w-fit bg-black flex flex-col h-2/3 px-4 items-center justify-evenly mx-auto mt-10 rounded-lg border-1 border-zinc-800 ">
+            <h2 className="text-white text-5xl font-bold">SIGN IN</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-3">
                 <input defaultValue="" {...register("name")} className="px-2 py-1 outline-none w-64 text-xl font-semibold border-none shadow-lg shadow-white/40 m-0" />
                 {errors.name && <span className="bg-red-950/50 text-red-400 p-1 rounded m-0">This field is required</span>}
