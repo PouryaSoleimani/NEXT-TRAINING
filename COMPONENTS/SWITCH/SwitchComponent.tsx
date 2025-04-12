@@ -7,6 +7,7 @@ import { toast } from 'sonner'
 
 
 function SwitchComponent() {
+    
     const [isDark, setIsDark] = useState(false)
 
     function darkThemeHandler() {
