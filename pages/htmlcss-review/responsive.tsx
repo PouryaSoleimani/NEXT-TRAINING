@@ -20,7 +20,7 @@ function responsivePage() {
             <Separator className='text-white bg-zinc-800 h-0.5 w-2/3 mx-auto my-5' />
             <ProductsWrapperComponent />
             <SonnerComponent />
-            <div id="OVERLAY" className="h-[2000px] w-full"></div>
+            <div id="OVERLAY" className="h-[1500px] w-full"></div>
         </div>
     )
 }
