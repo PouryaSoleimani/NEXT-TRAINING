@@ -4,7 +4,7 @@ import DrawerComponent from "@/COMPONENTS/DRAWER/DrawerComponent"
 import NavBarComponent from "@/COMPONENTS/HEADER/NavBarComponent"
 import ProductsWrapperComponent from "@/COMPONENTS/PRODUCTS/ProductsWrapperComponent"
 import { Separator } from "@radix-ui/react-dropdown-menu"
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 
 // COMPONENT==== =====================================================================================================================================
