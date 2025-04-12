@@ -2,6 +2,7 @@ import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import Image from "next/image";
 
 type Inputs = { name: string; email: string; };
 
@@ -15,14 +16,14 @@ function DrawerFormComponent() {
     }
 
     return (
-        <div className="w-fit bg-black flex flex-col h-2/3 px-4 items-center justify-evenly mx-auto mt-10 rounded-lg border-1 border-zinc-800 ">
-            <h2 className="text-white text-5xl font-bold">SIGN IN</h2>
-            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-3">
-                <input defaultValue="" {...register("name")} className="px-2 py-1 outline-none w-64 text-xl font-semibold border-none shadow-lg shadow-white/40 m-0" />
-                {errors.name && <span className="bg-red-950/50 text-red-400 p-1 rounded m-0">This field is required</span>}
-                <input {...register("email")} className="px-2 py-1 outline-none w-64 text-xl font-semibold border-none shadow-lg shadow-white/40 m-0" />
-                {errors.email && <span className="bg-red-950/50 text-red-400 p-1 rounded m-0">This field is required</span>}
-                < input type="submit" className="btn btn-success font-bold" />
+        <div className="w-fit bg-zinc-100 flex flex-col h-2/3 px-4 items-center justify-evenly mx-auto mt-10 rounded-lg border-1 border-zinc-800 ">
+            <Image src="/next.svg" width={150} height={50} alt="logo" />
+            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-2">
+                <input defaultValue="" {...register("name")} className="px-2 py-1 outline-none w-64 text-xl font-semibold border-none shadow-lg shadow-white/40 m-0 bg-zinc-400" />
+                {errors.name && <span className="text-red-900 px-2 py-0 m-0">This field is required</span>}
+                <input {...register("email")} className="px-2 py-1 outline-none w-64 text-xl font-semibold border-none shadow-lg shadow-white/40 m-0 bg-zinc-400" />
+                {errors.email && <span className="text-red-900 px-2 py-0 m-0">This field is required</span>}
+                < input type="submit" className="btn btn-success font-bold" value="SIGN IN" />
             </form>
         </div>
     );
