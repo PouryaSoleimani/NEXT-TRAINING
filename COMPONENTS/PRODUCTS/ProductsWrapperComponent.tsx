@@ -9,7 +9,7 @@ function ProductsWrapperComponent() {
         {Array.from({length: 12})
           .fill("")
           .map((item: any) => (
-            <SkeletonComponent />
+            <SkeletonComponent key={item.index + 1} />
           ))}
       </div>
     </>
