@@ -1,5 +1,5 @@
 import React from 'react'
-import { Skeleton } from "@/COMPONENTS/ui/skeleton"
+import Skeleton from "@/COMPONENTS/ui/skeleton"
 
 
 function SkeletonComponent() {

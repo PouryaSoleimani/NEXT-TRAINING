@@ -2,6 +2,7 @@
 import { CarouselComponent } from "@/COMPONENTS/CAROUSEL/CarouselComponent"
 import DrawerComponent from "@/COMPONENTS/DRAWER/DrawerComponent"
 import NavBarComponent from "@/COMPONENTS/HEADER/NavBarComponent"
+import ProductsWrapperComponent from "@/COMPONENTS/PRODUCTS/ProductsWrapperComponent"
 import React, { useEffect, useState } from 'react'
 
 
@@ -13,6 +14,7 @@ function responsivePage() {
             <NavBarComponent />
             <CarouselComponent />
             <DrawerComponent />
+            <ProductsWrapperComponent />
             <div id="OVERLAY" className="h-[2000px] w-full"></div>
         </div>
     )
