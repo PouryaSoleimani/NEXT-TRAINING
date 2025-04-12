@@ -1,7 +1,8 @@
 import React from 'react'
 import SkeletonComponent from '../SKELETON/SkeletonComponent'
-import { Separator } from '@radix-ui/react-dropdown-menu'
 
+
+// COMPONENT
 function ProductsWrapperComponent() {
     return (
         <>
