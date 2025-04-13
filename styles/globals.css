@@ -692,7 +692,7 @@ input[type="email"] {
 }
 /*  DROP DOWN :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-/* #DROPDOWN___CONTENT {
+#DROPDOWN___CONTENT {
 	visibility: hidden;
 	opacity: 0;
 }
@@ -700,4 +700,4 @@ input[type="email"] {
 #WRAPPER:hover #DROPDOWN___CONTENT {
 	visibility: visible !important;
 	opacity: 1;
-} */
+}
