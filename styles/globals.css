@@ -703,26 +703,28 @@ input[type="email"] {
 	transition: all 200ms ease-in;
 }
 
+#WRAPPER {
+	transition: all 200ms ease-in;
+	transition-delay: 89ms;
+	padding: 0.5rem 0;
+}
+
 #DROPDOWN___CONTENT {
+  width: 100%;
+	padding: 4px 0;
 	display: flex;
 	flex-direction: column;
+	margin-top: 6px;
 	background-color: #fafafa;
 	text-align: center;
 	row-gap: 1rem;
 	border-radius: 5px;
 	position: absolute;
-	width: 100%;
-	opacity: 0;
 	visibility: hidden;
-	margin-top: 6px;
+	opacity: 0;
 	transition: all 200ms ease-in 110ms;
 	transform: translateY(-5px);
 	pointer-events: none;
-}
-
-#WRAPPER {
-	transition: all 200ms ease-in;
-	transition-delay: 89ms;
 }
 
 #WRAPPER:hover #DROPDOWN___CONTENT {
