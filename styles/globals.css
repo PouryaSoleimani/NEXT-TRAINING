@@ -702,6 +702,15 @@ input[type="email"] {
 	opacity: 1;
 }
 
+#FLEX____CONTAINER {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
 .FLEX____ITEM {
 	font-size: 40px;
 	color: white;
@@ -709,5 +718,7 @@ input[type="email"] {
 	background-color: cornflowerblue;
 	border-radius: 10px;
 	width: fit-content;
-	height: fit-content;
+	text-align: center;
+	max-width: 25rem;
+	min-width: 10rem;
 }
