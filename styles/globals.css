@@ -721,3 +721,20 @@ input[type="email"] {
 	border-radius: 10px;
 	text-align: center;
 }
+
+#FLEX____CONTAINER2 {
+	display: flex;
+	height: 40rem;
+	flex-wrap: wrap;
+	gap: 1rem;
+	align-content: start;
+}
+
+.FLEX____ITEM2 {
+	padding: 2rem;
+	font-size: 40px;
+	color: white;
+	background-color: rgb(0, 0, 0);
+	border-radius: 10px;
+	text-align: center;
+}
