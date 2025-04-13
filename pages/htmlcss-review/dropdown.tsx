@@ -11,11 +11,11 @@ function DropDownPage() {
                     Toggle
                     <ChevronDown id='DROPDOWN____CHEVRON' className='translate-y-0.5' />
                 </button>
-                <div id='DROPDOWN___CONTENT' className='dropdown__container'>
-                    <Link href="#" className='hover:bg-zinc-400 p-1 w-full'>About</Link>
-                    <Link href="#" className='hover:bg-zinc-400 p-1 w-full'>Gallery</Link>
-                    <Link href="#" className='hover:bg-zinc-400 p-1 w-full'>Products</Link>
-                    <Link href="#" className='hover:bg-zinc-400 p-1 w-full'>Account</Link>
+                <div id='DROPDOWN___CONTENT' className='bg-white flex flex-col items-center justify-center gap-y-3 text-center py-2 absolute text-lg w-full top-16 rounded invisible opacity-0 duration-200 ease-in-out'>
+                    <Link href="#" className='hover:bg-zinc-400 p-2 font-semibold tracking-tight w-full'>About</Link>
+                    <Link href="#" className='hover:bg-zinc-400 p-2 font-semibold tracking-tight w-full'>Gallery</Link>
+                    <Link href="#" className='hover:bg-zinc-400 p-2 font-semibold tracking-tight w-full'>Products</Link>
+                    <Link href="#" className='hover:bg-zinc-400 p-2 font-semibold tracking-tight w-full'>Account</Link>
                 </div>
             </div>
 

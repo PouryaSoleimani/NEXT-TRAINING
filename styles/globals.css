@@ -691,45 +691,8 @@ input[type="email"] {
 	}
 }
 /*  DROP DOWN :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-#DROPDOWN____BTN {
-	transition: all 200ms ease-in 80ms;
-}
 
-#DROPDOWN____BTN:hover #DROPDOWN____CHEVRON {
-	rotate: 180deg;
-}
-
-#DROPDOWN____CHEVRON {
-	transition: all 200ms ease-in;
-}
-
-#WRAPPER {
-	transition: all 200ms ease-in;
-	transition-delay: 89ms;
-	padding: 0.5rem 0;
-}
-
-#DROPDOWN___CONTENT {
-  width: 100%;
-	padding: 4px 0;
-	display: flex;
-	flex-direction: column;
-	margin-top: 6px;
-	background-color: #fafafa;
-	text-align: center;
-	row-gap: 1rem;
-	border-radius: 5px;
-	position: absolute;
-	visibility: hidden;
-	opacity: 0;
-	transition: all 200ms ease-in 110ms;
-	transform: translateY(-5px);
-	pointer-events: none;
-}
-
-#WRAPPER:hover #DROPDOWN___CONTENT {
-	opacity: 1;
-	visibility: inherit !important;
-	transform: translateY(0);
-	pointer-events: auto;
-}
+#WRAPPER:hover #DROPDOWN___CONTENT{
+  visibility: unset;
+  opacity: 1;
+} 
