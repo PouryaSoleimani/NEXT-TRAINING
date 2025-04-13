@@ -18,6 +18,7 @@ function FlexBox() {
                 <div className="FLEX____ITEM2">CART</div>
                 <div className="FLEX____ITEM2">LOGOUT</div>
             </div>
+            
             {/* GROW AND SIZE */}
             <div id="FLEX____CONTAINER3" className='w-[95%] py-16 bg-zinc-700 mx-auto mt-16 flex'>
                 <div className="FLEX____ITEM3 size-44 grow-[5]">1</div>
