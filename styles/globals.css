@@ -691,21 +691,13 @@ input[type="email"] {
 	}
 }
 /*  DROP DOWN :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-#DROPDOWN____CHEVRON {
-	transition: all 200ms ease-in-out;
-}
 
 #DROPDOWN___CONTENT {
 	visibility: hidden;
 	opacity: 0;
-	transition: all 200ms ease-in-out;
 }
 
 #WRAPPER:hover #DROPDOWN___CONTENT {
 	visibility: visible !important;
 	opacity: 1;
-}
-
-#WRAPPER:hover #DROPDOWN____CHEVRON {
-	rotate: 180deg;
 }
