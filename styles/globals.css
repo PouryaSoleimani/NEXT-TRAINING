@@ -712,12 +712,11 @@ input[type="email"] {
 }
 
 .FLEX____ITEM {
+	width: 25rem;
+	padding: 2rem;
 	font-size: 40px;
 	color: white;
-	padding: 2rem;
 	background-color: rgb(0, 0, 0);
 	border-radius: 10px;
-	width: fit-content;
 	text-align: center;
-	width: 25rem;
 }
