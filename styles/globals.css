@@ -706,8 +706,8 @@ input[type="email"] {
 #FLEX____CONTAINER {
 	display: flex;
 	flex-wrap: wrap;
-	align-content: center;
 	gap: 1rem;
+	align-content: center;
 	justify-content: center;
 	align-items: center;
 }
