@@ -701,3 +701,11 @@ input[type="email"] {
 	visibility: visible !important;
 	opacity: 1;
 }
+
+.FLEX____ITEM {
+	font-size: 40px;
+	color: white;
+	padding: 1rem;
+	background-color: cornflowerblue;
+	border-radius: 10px;
+}
