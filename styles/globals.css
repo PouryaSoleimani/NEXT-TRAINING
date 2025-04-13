@@ -739,3 +739,27 @@ input[type="email"] {
 	border-radius: 10px;
 	text-align: center;
 }
+
+#FLEX____CONTAINER3 {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5rem 0.5rem;
+}
+
+.FLEX____ITEM3 {
+	padding: .5rem;
+	font-size: 40px;
+	color: white;
+	background-color: rgb(0, 0, 0);
+	border-radius: 10px;
+	text-align: center;
+	line-height: 11rem;
+}
+
+.itemgrow {
+	flex-grow: 4;
+}
