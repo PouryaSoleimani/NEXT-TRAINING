@@ -705,7 +705,9 @@ input[type="email"] {
 .FLEX____ITEM {
 	font-size: 40px;
 	color: white;
-	padding: 1rem;
+	padding: 3rem;
 	background-color: cornflowerblue;
 	border-radius: 10px;
+	width: fit-content;
+	height: fit-content;
 }
