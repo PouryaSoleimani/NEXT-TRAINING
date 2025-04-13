@@ -690,6 +690,7 @@ input[type="email"] {
     font-size: 16px;
   }
 }
+
 #DROPDOWN____BTN {
   transition: all 300ms ease-in 80ms;
 }
@@ -704,8 +705,7 @@ input[type="email"] {
 #DROPDOWN___CONTENT {
   display: flex;
   flex-direction: column;
-  background-color: #fafafa90;
-  backdrop-filter: blur(10px);
+  background-color: #fafafa;
   text-align: center;
   row-gap: 1rem;
   border-radius: 5px;
@@ -713,12 +713,15 @@ input[type="email"] {
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  margin-top: 4px;
-  transition: all 200ms ease-in 80ms;
+  margin-top: 6px;
+  transition: all 200ms ease-in 110ms;
   transform: translateY(-5px);
   pointer-events: none;
 }
-
+#WRAPPER {
+  transition: all 200ms ease-in;
+  transition-delay: 89ms;
+}
 #WRAPPER:hover #DROPDOWN___CONTENT {
   opacity: 1;
   visibility: inherit !important;
