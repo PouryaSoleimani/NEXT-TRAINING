@@ -1,6 +1,6 @@
+'use client';
 import { RiLoginBoxFill } from "react-icons/ri";
 import { FaSignInAlt } from "react-icons/fa";
-'use client';
 import React from 'react'
 import { Drawer } from "vaul"
 import DrawerFormComponent from '../FORM/DrawerFormComponent';
@@ -8,6 +8,7 @@ import DrawerFormComponent from '../FORM/DrawerFormComponent';
 
 function DrawerComponent() {
     return (
+
         <Drawer.Root>
             <Drawer.Trigger className='w-full'>
                 <h3 className='font-semibold text-4xl rounded text-emerald-700 hover:bg-emerald-900 hover:text-white duration-300 p-2  bg-zinc-900 border border-1-zinc-800 w-64 mx-auto flex items-center justify-center gap-2'><RiLoginBoxFill />LOGIN</h3>
