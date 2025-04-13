@@ -5,8 +5,8 @@ function FlexBox() {
         <>
             <div id='FLEX____CONTAINER' className='w-[95%] h-[59ren] py-16 bg-zinc-800 mx-auto mt-16'>
                 <div className="FLEX____ITEM">ABOUT</div>
-                <div className="FLEX____ITEM">GALLERY</div>
-                <div className="FLEX____ITEM">CART</div>
+                <div className="FLEX____ITEM order-1 sm:order-2">GALLERY</div>
+                <div className="FLEX____ITEM order-2 sm:order-1">CART</div>
                 <div className="FLEX____ITEM">LOGOUT</div>
             </div>
 
