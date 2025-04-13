@@ -30,7 +30,7 @@ function responsivePage() {
       <PopOverComponent />
       <RadioGroupComponent />
       <SelectComponent />
-      <SwitchComponent/>
+      <SwitchComponent />
       <div id="OVERLAY" className="h-[1500px] w-full"></div>
     </section>
   );
