@@ -11,7 +11,7 @@ function DropDownPage() {
                     Toggle
                     <ChevronDown id='DROPDOWN____CHEVRON' className='translate-y-0.5 duration-200  ease-in-out peer-hover:rotate-180 group-hover:rotate-180' />
                 </button>
-                <div id='DROPDOWN___CONTENT' className='bg-white peer-hover:bg-black flex flex-col items-center justify-center gap-y-3 text-center py-2 absolute text-lg w-full top-16 rounded duration-200 ease-in-out  '>
+                <div id='DROPDOWN___CONTENT' className='bg-white flex flex-col items-center justify-center gap-y-3 text-center py-2 absolute text-lg w-full top-16 rounded duration-200 ease-in-out  '>
                     <Link href="#" className='hover:bg-zinc-400 p-2 font-semibold tracking-tight w-full'>About</Link>
                     <Link href="#" className='hover:bg-zinc-400 p-2 font-semibold tracking-tight w-full'>Gallery</Link>
                     <Link href="#" className='hover:bg-zinc-400 p-2 font-semibold tracking-tight w-full'>Products</Link>
