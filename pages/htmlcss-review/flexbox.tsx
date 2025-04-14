@@ -38,14 +38,14 @@ function FlexBox() {
             </div>
 
             {/* 4 - FLEX BASIS */}
-            <div id="FLEX____CONTAINER4" className='w-[95%] py-2 md:py-3 bg-zinc-600/30 backdrop-blur-2xl mx-auto mt-16 border-t-2 flex px-3 md:px-6 gap-4 rounded-xl justify-between'>
+            <div id="FLEX____CONTAINER4" className='w-[95%] py-2 md:py-3 bg-zinc-600/30 backdrop-blur-2xl mx-auto mt-16 border-t-2 flex px-2.5 md:px-6 gap-4 rounded-xl justify-between'>
 
                 {/* MOBILE */}
                 <div id='NAVBAR___MOBILE' className='flex md:hidden items-center justify-between w-full'>
-                    <div className="FLEX____ITEM4 basis-1/3 border">
-                        <IoLogoGithub className="size-16" />
+                    <div className="FLEX____ITEM4 basis-1/3">
+                        <IoLogoGithub className="size-16 -translate-x-2" />
                     </div>
-                    <div className="FLEX____ITEM4 p-0  basis-2/3 justify-end gap-2 px-0 py-2  border">
+                    <div className="FLEX____ITEM4 p-0  basis-2/3 justify-end gap-2 px-0 py-2 ">
                         <LogIn className='bg-black p-2 rounded w-12 h-12' />
                         <Settings className='bg-black p-2 rounded w-12 h-12' />
                     </div>
