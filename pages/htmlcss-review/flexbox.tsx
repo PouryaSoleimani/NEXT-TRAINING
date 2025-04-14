@@ -46,8 +46,8 @@ function FlexBox() {
                         <IoLogoGithub className="size-16 -translate-x-2" />
                     </div>
                     <div className="FLEX____ITEM4 p-0  basis-2/3 justify-end gap-2 px-0 py-2 ">
-                        <LogIn className='bg-black p-2 rounded w-12 h-12' />
-                        <Settings className='bg-black p-2 rounded w-12 h-12' />
+                        <LogIn className='bg-black hover:text-blue-900 duration-300 rounded w-14 h-14 p-2.5' />
+                        <Settings className='bg-black hover:text-blue-900 duration-300 rounded w-14 h-14 p-2.5' />
                     </div>
                 </div>
 
