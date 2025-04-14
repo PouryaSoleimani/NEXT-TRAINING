@@ -45,17 +45,20 @@ function FlexBox() {
                     <div className="FLEX____ITEM4 basis-1/3">
                         <IoLogoGithub className="size-16" />
                     </div>
-                    <div className="FLEX____ITEM4 p-0  basis-2/3 justify-end "><LogIn className='bg-black p-2 rounded w-12 h-12' /><Settings className='bg-black p-2 rounded w-12 h-12' /></div>
+                    <div className="FLEX____ITEM4 p-0  basis-2/3 justify-end gap-2 px-0 ">
+                        <LogIn className='bg-black p-2 rounded w-12 h-12' />
+                        <Settings className='bg-black p-2 rounded w-12 h-12' />
+                    </div>
                 </div>
 
                 <div id='NAVBAR___DESKTOP' className='hidden md:flex items-center justify-between w-full'>
                     <div className="FLEX____ITEM4 basis-1/4">
                         <IoLogoGithub className="size-16" />
-                    </div> 
+                    </div>
                     <div className="FLEX____ITEM4 flexitem basis-2/4 text-3xl font-bold flex gap-4 items-end justify-center">
-                        <p className='hover:underline duration-200 cursor-pointer decoration-red-900 decoration-4'>Getting Started</p>
-                        <p className='hover:underline duration-200 cursor-pointer decoration-red-900 decoration-4'>Products</p>
-                        <p className='hover:underline duration-200 cursor-pointer decoration-red-900 decoration-4'>Docs</p>
+                        <p className='hover:underline duration-200 cursor-pointer decoration-blue-900 decoration-4'>Getting Started</p>
+                        <p className='hover:underline duration-200 cursor-pointer decoration-blue-900 decoration-4'>Products</p>
+                        <p className='hover:underline duration-200 cursor-pointer decoration-blue-900 decoration-4'>Docs</p>
                     </div>
                     <div className="FLEX____ITEM4 basis-1/4 order-1"><LogIn className='bg-black p-2 rounded w-12 h-12' />
                         <Settings className='bg-black p-2 rounded w-12 h-12' />
