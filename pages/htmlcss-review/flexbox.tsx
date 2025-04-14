@@ -43,7 +43,7 @@ function FlexBox() {
                 {/* MOBILE */}
                 <div id='NAVBAR___MOBILE' className='flex md:hidden items-center justify-between w-full'>
                     <div className="FLEX____ITEM4 basis-1/3">
-                        <IoLogoGithub className="size-16 -translate-x-2" />
+                        <IoLogoGithub className="size-16 -translate-x-2 hover:scale-105 duration-300" />
                     </div>
                     <div className="FLEX____ITEM4 p-0  basis-2/3 justify-end gap-2 px-0 py-2 ">
                         <LogIn className='bg-black hover:text-blue-900 duration-300 rounded w-14 h-14 p-2.5' />
