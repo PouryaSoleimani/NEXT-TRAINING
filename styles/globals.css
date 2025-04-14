@@ -759,7 +759,3 @@ input[type="email"] {
 	text-align: center;
 	line-height: 11rem;
 }
-
-.itemgrow {
-	flex-grow: 4;
-}
