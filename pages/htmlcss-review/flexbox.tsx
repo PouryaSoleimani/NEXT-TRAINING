@@ -54,15 +54,16 @@ function FlexBox() {
                 {/* DESKTOP */}
                 <div id='NAVBAR___DESKTOP' className='hidden md:flex items-center justify-between w-full'>
                     <div className="FLEX____ITEM4 basis-1/4">
-                        <IoLogoGithub className="size-16" />
+                        <IoLogoGithub className="size-16 -translate-x-2 hover:scale-105 duration-300" />
                     </div>
                     <div className="FLEX____ITEM4 flexitem basis-2/4 text-3xl font-bold flex gap-4 items-end justify-center">
                         <p className='hover:underline duration-200 cursor-pointer decoration-blue-900 decoration-4'>Getting Started</p>
                         <p className='hover:underline duration-200 cursor-pointer decoration-blue-900 decoration-4'>Products</p>
                         <p className='hover:underline duration-200 cursor-pointer decoration-blue-900 decoration-4'>Docs</p>
                     </div>
-                    <div className="FLEX____ITEM4 basis-1/4 order-1"><LogIn className='bg-black p-2 rounded w-12 h-12' />
-                        <Settings className='bg-black p-2 rounded w-12 h-12' />
+                    <div className="FLEX____ITEM4 basis-1/4 order-1 gap-2">
+                        <LogIn className='bg-black hover:text-blue-900 duration-300 p-2 rounded w-12 h-12' />
+                        <Settings className='bg-black hover:text-blue-900 duration-300 p-2 rounded w-12 h-12' />
                     </div>
                 </div>
 
