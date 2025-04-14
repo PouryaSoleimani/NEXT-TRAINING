@@ -16,7 +16,7 @@ function FlexBox() {
 
 
             {/* ALIGN CONTENT */}
-            <div id="FLEX____CONTAINER2" className='w-[95%] bg-zinc-950 mx-auto mt-16'>
+            <div id="FLEX____CONTAINER2" className='w-[95%] bg-zinc-950 mx-auto mt-16 content-between'>
                 <div className="FLEX____ITEM2">ABOUT</div>
                 <div className="FLEX____ITEM2">GALLERY</div>
                 <div className="FLEX____ITEM2">CART</div>

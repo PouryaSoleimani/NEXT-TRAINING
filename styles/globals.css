@@ -728,8 +728,6 @@ input[type="email"] {
 	height: 40rem;
 	flex-wrap: wrap;
 	gap: 1rem;
-	/* ALIGN CONTENT*/
-	align-content: center;
 }
 
 .FLEX____ITEM2 {
