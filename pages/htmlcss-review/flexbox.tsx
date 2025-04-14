@@ -51,7 +51,7 @@ function FlexBox() {
                 <div id='NAVBAR___DESKTOP' className='hidden md:flex items-center justify-between w-full'>
                     <div className="FLEX____ITEM4 basis-1/4">
                         <IoLogoGithub className="size-16" />
-                    </div>
+                    </div> 
                     <div className="FLEX____ITEM4 flexitem basis-2/4 text-3xl font-bold flex gap-4 items-end justify-center">
                         <p className='hover:underline duration-200 cursor-pointer decoration-red-900 decoration-4'>Getting Started</p>
                         <p className='hover:underline duration-200 cursor-pointer decoration-red-900 decoration-4'>Products</p>
