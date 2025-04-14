@@ -16,7 +16,7 @@ function FlexBox() {
 
 
             {/* ALIGN CONTENT */}
-            <div id="FLEX____CONTAINER2" className='w-[95%] bg-zinc-950 mx-auto mt-16 content-between'>
+            <div id="FLEX____CONTAINER2" className='w-[95%] bg-zinc-950 mx-auto mt-16 py-3 content-between '>
                 <div className="FLEX____ITEM2">ABOUT</div>
                 <div className="FLEX____ITEM2">GALLERY</div>
                 <div className="FLEX____ITEM2">CART</div>
@@ -25,7 +25,7 @@ function FlexBox() {
 
 
             {/* GROW AND SIZE */}
-            <div id="FLEX____CONTAINER3" className='w-[95%] py-16 bg-zinc-700 mx-auto mt-16 flex'>
+            <div id="FLEX____CONTAINER3" className='w-[95%] py-16 bg-zinc-700 mx-auto mt-16 border-t-4 rounded-t-xl flex'>
                 <div className="FLEX____ITEM3 size-44 grow">1</div>
                 <div className="FLEX____ITEM3 size-44 grow">2</div>
                 <div className="FLEX____ITEM3 size-44 grow">3</div>
