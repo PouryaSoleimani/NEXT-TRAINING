@@ -777,17 +777,15 @@ input[type="email"] {
 .FLEX____ITEM4:last-child {
 	justify-content: end;
 	gap: 25px;
-	padding-right: 20px;
+	/* padding-right: 20px; */
 }
 
-.FLEX____ITEM4:nth-child(2) {
-	justify-content: center;
-	align-items: end;
-	gap: 25px;
-	padding-right: 20px;
+.flexitem {
 	font-size: 20px;
-	font-weight: 600;
-	line-height: 3px;
+	align-items: end;
+	justify-content: center;
+	transform: translateY(3px);
+	order: 0;
 }
 
 .FLEX____ITEM4:nth-child(3) {
