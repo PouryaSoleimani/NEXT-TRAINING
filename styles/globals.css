@@ -759,3 +759,23 @@ input[type="email"] {
 	text-align: center;
 	line-height: 11rem;
 }
+
+.FLEX____ITEM4 {
+	padding: .5rem;
+	font-size: 40px;
+	color: white;
+	background-color: transparent;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	padding: .2rem 4px;
+}
+
+.FLEX____ITEM4:last-child {
+	justify-content: end;
+	gap: 25px;
+	padding-right: 20px;
+}
