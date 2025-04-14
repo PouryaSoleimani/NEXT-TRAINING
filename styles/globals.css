@@ -703,7 +703,7 @@ input[type="email"] {
 }
 
 /* FLEX ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-#FLEX____CONTAINER {
+#FLEX____CONTAINER1 {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;
@@ -712,7 +712,7 @@ input[type="email"] {
 	align-items: center;
 }
 
-.FLEX____ITEM {
+.FLEX____ITEM1 {
 	width: 25rem;
 	padding: 2rem;
 	font-size: 40px;
