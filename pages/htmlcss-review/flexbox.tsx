@@ -6,8 +6,8 @@ import React from 'react'
 function FlexBox() {
     return (
         <>
+            {/* 1 -  ORDER */}
             <div id='FLEX____CONTAINER1' className='w-[95%] py-16 bg-zinc-800 mx-auto mt-16 flex'>
-                {/* ORDER */}
                 <div className="FLEX____ITEM1 sm:order-4">1</div>
                 <div className="FLEX____ITEM1 sm:order-3">2</div>
                 <div className="FLEX____ITEM1 sm:order-2">3</div>
@@ -15,7 +15,7 @@ function FlexBox() {
             </div>
 
 
-            {/* ALIGN CONTENT */}
+            {/* 2 - ALIGN CONTENT */}
             <div id="FLEX____CONTAINER2" className='w-[95%] bg-zinc-950 mx-auto mt-16 py-3 content-between '>
                 <div className="FLEX____ITEM2">ABOUT</div>
                 <div className="FLEX____ITEM2">GALLERY</div>
@@ -24,7 +24,7 @@ function FlexBox() {
             </div>
 
 
-            {/* SIZE AND FLEX-GROW */}
+            {/* 3 - SIZE AND FLEX-GROW */}
             <div id="FLEX____CONTAINER3" className='w-[95%] py-16 bg-zinc-700 mx-auto mt-16 border-t-4 rounded-t-xl flex'>
                 <div className="FLEX____ITEM3 size-52 grow">1</div>
                 <div className="FLEX____ITEM3 size-52 grow">2</div>
@@ -37,8 +37,8 @@ function FlexBox() {
                 <div className="FLEX____ITEM3 size-52 grow">10</div>
             </div>
 
-            {/* FLEX BASIS */}
-            <div id="FLEX____CONTAINER4" className='w-[95%] py-4 bg-zinc-600/30 backdrop-blur-2xl mx-auto mt-16 flex px-6 gap-4 rounded-xl justify-between'>
+            {/* 4 - FLEX BASIS */}
+            <div id="FLEX____CONTAINER4" className='w-[95%] py-2 md:py-3 bg-zinc-600/30 backdrop-blur-2xl mx-auto mt-16 border-t-2 flex px-3 md:px-6 gap-4 rounded-xl justify-between'>
 
                 <div id='NAVBAR___MOBILE' className='flex md:hidden items-center justify-between w-full'>
                     <div className="FLEX____ITEM4 basis-1/3">
