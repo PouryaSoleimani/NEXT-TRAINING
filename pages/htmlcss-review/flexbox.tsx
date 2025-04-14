@@ -40,6 +40,7 @@ function FlexBox() {
             {/* 4 - FLEX BASIS */}
             <div id="FLEX____CONTAINER4" className='w-[95%] py-2 md:py-3 bg-zinc-600/30 backdrop-blur-2xl mx-auto mt-16 border-t-2 flex px-3 md:px-6 gap-4 rounded-xl justify-between'>
 
+                {/* MOBILE */}
                 <div id='NAVBAR___MOBILE' className='flex md:hidden items-center justify-between w-full'>
                     <div className="FLEX____ITEM4 basis-1/3">
                         <IoLogoGithub className="size-16" />
@@ -50,6 +51,7 @@ function FlexBox() {
                     </div>
                 </div>
 
+                {/* DESKTOP */}
                 <div id='NAVBAR___DESKTOP' className='hidden md:flex items-center justify-between w-full'>
                     <div className="FLEX____ITEM4 basis-1/4">
                         <IoLogoGithub className="size-16" />
