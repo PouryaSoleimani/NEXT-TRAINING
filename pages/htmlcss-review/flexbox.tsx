@@ -7,7 +7,6 @@ function FlexBox() {
     return (
         <>
             <div id='FLEX____CONTAINER1' className='w-[95%] py-16 bg-zinc-800 mx-auto mt-16 flex'>
-
                 {/* ORDER */}
                 <div className="FLEX____ITEM1 sm:order-4">1</div>
                 <div className="FLEX____ITEM1 sm:order-3">2</div>
