@@ -26,15 +26,15 @@ function FlexBox() {
 
             {/* SIZE AND FLEX-GROW */}
             <div id="FLEX____CONTAINER3" className='w-[95%] py-16 bg-zinc-700 mx-auto mt-16 border-t-4 rounded-t-xl flex'>
-                <div className="FLEX____ITEM3 size-44 grow">1</div>
-                <div className="FLEX____ITEM3 size-44 grow">2</div>
-                <div className="FLEX____ITEM3 size-44 grow">3</div>
-                <div className="FLEX____ITEM3 size-44 grow">5</div>
-                <div className="FLEX____ITEM3 size-44 grow">6</div>
-                <div className="FLEX____ITEM3 size-44 grow">7</div>
-                <div className="FLEX____ITEM3 size-44 grow">8</div>
-                <div className="FLEX____ITEM3 size-44 grow">9</div>
-                <div className="FLEX____ITEM3 size-44 grow">10</div>
+                <div className="FLEX____ITEM3 size-52 grow">1</div>
+                <div className="FLEX____ITEM3 size-52 grow">2</div>
+                <div className="FLEX____ITEM3 size-52 grow">3</div>
+                <div className="FLEX____ITEM3 size-52 grow">5</div>
+                <div className="FLEX____ITEM3 size-52 grow">6</div>
+                <div className="FLEX____ITEM3 size-52 grow">7</div>
+                <div className="FLEX____ITEM3 size-52 grow">8</div>
+                <div className="FLEX____ITEM3 size-52 grow">9</div>
+                <div className="FLEX____ITEM3 size-52 grow">10</div>
             </div>
 
             {/* FLEX BASIS */}
