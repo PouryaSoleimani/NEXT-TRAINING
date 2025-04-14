@@ -46,9 +46,15 @@ function FlexBox() {
                 </div>
 
                 <div id='NAVBAR___DESKTOP' className='hidden md:flex items-center justify-between w-full'>
-                    <div className="FLEX____ITEM4 basis-1/4"><Image src="/vercel.svg" width={120} height={200} alt='logo' /></div>
-                    <div className="FLEX____ITEM4 flexitem basis-2/4 text-3xl font-bold flex gap-4 items-end justify-center"><p>Getting Started</p> <p>Products</p> <p>Docs</p></div>
-                    <div className="FLEX____ITEM4 basis-1/4 order-1"><LogIn className='bg-black p-2 rounded w-12 h-12' /><Settings className='bg-black p-2 rounded w-12 h-12' /></div>
+                    <div className="FLEX____ITEM4 basis-1/4">
+                        <Image src="/vercel.svg" width={120} height={200} alt='logo' />
+                    </div>
+                    <div className="FLEX____ITEM4 flexitem basis-2/4 text-3xl font-bold flex gap-4 items-end justify-center">
+                        <p>Getting Started</p> <p>Products</p> <p>Docs</p>
+                    </div>
+                    <div className="FLEX____ITEM4 basis-1/4 order-1"><LogIn className='bg-black p-2 rounded w-12 h-12' />
+                        <Settings className='bg-black p-2 rounded w-12 h-12' />
+                    </div>
                 </div>
 
             </div>
