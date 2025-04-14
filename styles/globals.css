@@ -767,7 +767,6 @@ input[type="email"] {
 	background-color: transparent;
 	border-radius: 10px;
 	text-align: center;
-	line-height: 4px;
 	display: flex;
 	align-items: center;
 	justify-content: start;
