@@ -42,10 +42,10 @@ function FlexBox() {
 
                 {/* MOBILE */}
                 <div id='NAVBAR___MOBILE' className='flex md:hidden items-center justify-between w-full'>
-                    <div className="FLEX____ITEM4 basis-1/3">
+                    <div className="FLEX____ITEM4 basis-1/3 border">
                         <IoLogoGithub className="size-16" />
                     </div>
-                    <div className="FLEX____ITEM4 p-0  basis-2/3 justify-end gap-2 px-0 ">
+                    <div className="FLEX____ITEM4 p-0  basis-2/3 justify-end gap-2 px-0 py-2  border">
                         <LogIn className='bg-black p-2 rounded w-12 h-12' />
                         <Settings className='bg-black p-2 rounded w-12 h-12' />
                     </div>
