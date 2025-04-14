@@ -39,7 +39,7 @@ function FlexBox() {
             </div>
 
             {/* FLEX BASIS */}
-            <div id="FLEX____CONTAINER4" className='w-[95%] py-4 bg-zinc-600/30 backdrop-blur-2xl mx-auto mt-16 flex px-6 gap-4 rounded justify-between'>
+            <div id="FLEX____CONTAINER4" className='w-[95%] py-4 bg-zinc-600/30 backdrop-blur-2xl mx-auto mt-16 flex px-6 gap-4 rounded-xl justify-between'>
 
                 <div id='NAVBAR___MOBILE' className='flex md:hidden items-center justify-between w-full'>
                     <div className="FLEX____ITEM4 basis-1/3">
