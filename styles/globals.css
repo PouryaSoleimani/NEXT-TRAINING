@@ -762,7 +762,7 @@ input[type="email"] {
 
 .FLEX____ITEM4 {
 	padding: .5rem;
-	font-size: 40px;
+	font-size: 10px;
 	color: white;
 	background-color: transparent;
 	border-radius: 10px;
@@ -771,11 +771,25 @@ input[type="email"] {
 	display: flex;
 	align-items: center;
 	justify-content: start;
-	padding: .2rem 4px;
+	padding: 0rem 4px;
 }
 
 .FLEX____ITEM4:last-child {
 	justify-content: end;
 	gap: 25px;
 	padding-right: 20px;
+}
+
+.FLEX____ITEM4:nth-child(2) {
+	justify-content: center;
+	align-items: end;
+	gap: 25px;
+	padding-right: 20px;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 3px;
+}
+
+.FLEX____ITEM4:nth-child(3) {
+	justify-content: end;
 }
