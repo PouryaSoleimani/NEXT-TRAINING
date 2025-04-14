@@ -24,7 +24,7 @@ function FlexBox() {
             </div>
 
 
-            {/* GROW AND SIZE */}
+            {/* SIZE AND FLEX-GROW */}
             <div id="FLEX____CONTAINER3" className='w-[95%] py-16 bg-zinc-700 mx-auto mt-16 border-t-4 rounded-t-xl flex'>
                 <div className="FLEX____ITEM3 size-44 grow">1</div>
                 <div className="FLEX____ITEM3 size-44 grow">2</div>
