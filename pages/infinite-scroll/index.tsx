@@ -54,7 +54,7 @@ const InfiniteScroll = () => {
 
 
     return (
-        <div className='w-screen flex flex-col items-center justify-center gap-10 p-20  overflow-x-hidden'>
+        <div className='w-screen flex flex-col items-center justify-center gap-10 p-20  overflow-x-hidden pb-32'>
             <CommentListComponent commentsData={commentsData} />
             {loading && <Audio height="80" width="80" color="blue" ariaLabel="three-dots-loading" wrapperStyle={{}} wrapperClass='' />}
         </div>
