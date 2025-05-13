@@ -2,18 +2,12 @@
 "use client"
 import CommentListComponent from '@/COMPONENTS/COMMENT__LIST/CommentListComponent'
 import axios from 'axios'
-import React, { CSSProperties, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ClipLoader } from "react-spinners";
 
-// const override: CSSProperties = {
-//     display: "block",
-//     margin: "0 auto",
-//     borderColor: "red",
-// };
 interface Comment { postId: number; id: number; name: string; email: string; body: string; }
 //COMPONENT
 const InfiniteScroll = () => {
-    const [color, setColor] = useState("#ffffff");
     const [commentsData, setCommentsData] = useState<Comment[]>([])
     const [page, setPage] = useState(1)
     const [loading, setLoading] = useState(true)
@@ -22,7 +16,9 @@ const InfiniteScroll = () => {
         axios.get(`https://jsonplaceholder.typicode.com/comments?_page=${page}&_limit=8`).then(data => {
             console.info("COINS DATA ===>", data.data)
             setCommentsData((prev) => [...prev, ...data.data])
-            setLoading(false)
+            setTimeout(() => {
+                setLoading(false)
+            }, 1500);
         })
     }
 
@@ -59,13 +55,7 @@ const InfiniteScroll = () => {
     return (
         <div className='w-screen flex flex-col items-center justify-center gap-10 p-20  overflow-x-hidden'>
             <CommentListComponent commentsData={commentsData} />
-            {loading && <ClipLoader
-                color={color}
-                loading={loading}
-                size={350}
-                aria-label="Loading Spinner"
-                data-testid="loader"
-            />}
+            {loading && <ClipLoader color="#FFF" loading={loading} size={350} aria-label="Loading Spinner" data-testid="loader" />}
         </div>
     )
 }
