@@ -22,8 +22,9 @@ const InfiniteScroll = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            console.log("SCROLL HEIGHT →", document.documentElement.scrollHeight);
-            console.log("SCROLL TOP →", document.documentElement.scrollTop);
+            console.log("HEIGHT →", document.documentElement.scrollHeight);
+            console.log("TOP →", document.documentElement.scrollTop);
+            console.log("WINDOW →", window.innerHeight);
         };
 
         if (typeof window !== 'undefined') {
