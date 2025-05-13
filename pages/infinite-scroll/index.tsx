@@ -6,25 +6,25 @@ import React, { useEffect, useState } from 'react'
 
 const InfiniteScroll = () => {
     const [commentsData, setCommentsData] = useState([])
-    const [_page, _setPage] = useState(1)
-
+    const [page, _setPage] = useState(1)
 
     const fetchCommentsData = () => {
-        axios.get(`https://jsonplaceholder.typicode.com/posts?_page=${_page}&_limit=100`).then(data => {
+        axios.get(`https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=100`).then(data => {
             console.info("COINS DATA ===>", data.data)
             setCommentsData(data.data)
         })
     }
-    useEffect(() => { fetchCommentsData() }, [_page])
+
+    useEffect(() => { fetchCommentsData() }, [page])
 
     const handleScroll = () => {
-        console.log("HEIGHT +++++>", document.documentElement.scrollHeight)
+        console.log("HEIGHT ------>", document.documentElement.scrollHeight)
         console.log(_setPage)
     }
 
     useEffect(() => {
-        window.addEventListener("scroll", handleScroll)
-    }, [])
+        window?.addEventListener("scroll", handleScroll)
+    }, [page])
 
     return (
         <div className='w-screen h-screen flex items-center justify-center gap-10 p-20  overflow-x-hidden'>
