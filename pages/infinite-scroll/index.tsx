@@ -1,3 +1,4 @@
+"use client"
 import CommentListComponent from '@/COMPONENTS/COMMENT__LIST/CommentListComponent'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
@@ -9,7 +10,7 @@ const InfiniteScroll = () => {
     const [page, _setPage] = useState(1)
 
     const fetchCommentsData = () => {
-        axios.get(`https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=100`).then(data => {
+        axios.get(`https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=50`).then(data => {
             console.info("COINS DATA ===>", data.data)
             setCommentsData(data.data)
         })
@@ -18,12 +19,20 @@ const InfiniteScroll = () => {
     useEffect(() => { fetchCommentsData() }, [page])
 
     const handleScroll = () => {
-        console.log("HEIGHT ------>", document.documentElement.scrollHeight)
-        console.log(_setPage)
+        if (typeof window !== 'undefined') {
+            console.log("HEIGHT ------>", document.documentElement.scrollHeight)
+            console.log(_setPage)
+            console.log("Current page ------>", page);
+        }
     }
 
     useEffect(() => {
-        window?.addEventListener("scroll", handleScroll)
+        if (typeof window !== 'undefined') {
+            window?.addEventListener("scroll", handleScroll)
+        }
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
     }, [page])
 
     return (
