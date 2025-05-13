@@ -16,7 +16,7 @@ const InfiniteScroll = () => {
     useEffect(() => { fetchCommentsData() }, [])
 
     return (
-        <div className='w-screen h-screen flex flex-wrap gap-10 p-20 items-center justify-around'>
+        <div className='w-screen h-screen flex flex-wrap gap-10 p-20 items-center justify-around overflow-x-hidden'>
             <CommentListComponent  commentsData={commentsData}/> 
         </div>
     )
