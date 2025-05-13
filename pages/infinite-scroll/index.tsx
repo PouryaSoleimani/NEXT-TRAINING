@@ -8,7 +8,7 @@ const InfiniteScroll = () => {
     const [commentsData, setCommentsData] = useState([])
 
     const fetchCommentsData = () => {
-        axios.get("https://jsonplaceholder.typicode.com/comments").then(data => {
+        axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false').then(data => {
             console.info("COINS DATA ===>", data.data)
             setCommentsData(data.data)
         })
@@ -17,7 +17,7 @@ const InfiniteScroll = () => {
 
     return (
         <div className='w-screen h-screen flex flex-wrap gap-10 p-20 items-center justify-around overflow-x-hidden'>
-            <CommentListComponent  commentsData={commentsData}/> 
+            <CommentListComponent commentsData={commentsData} />
         </div>
     )
 }
