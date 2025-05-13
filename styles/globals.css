@@ -43,8 +43,7 @@ html {
 
 body {
 	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
-	rgb(var(--background-start-rgb));
+	background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 ::selection {
@@ -224,11 +223,11 @@ a {
 	0% {
 		transform: translateY(0);
 	}
-	
+
 	50% {
 		transform: translateY(10px);
 	}
-	
+
 	100% {
 		transform: translateY(0);
 	}
@@ -271,11 +270,11 @@ Link {
 	0% {
 		transform: translateY(0);
 	}
-	
+
 	50% {
 		transform: translateY(10px);
 	}
-	
+
 	100% {
 		transform: translateY(0);
 	}
@@ -302,6 +301,7 @@ td {
 ol {
 	list-style: decimal;
 }
+
 /* CSS REVIEW ================================================================================================================================================================================================= */
 .myTitle {
 	font-size: 30px;
@@ -324,7 +324,7 @@ ol {
 	box-shadow: 3px 3px 10px rgba(255, 250, 240, 0.384), -3px -3px 10px rgb(36, 33, 70);
 }
 
-#TEXT__INDENT > h2 {
+#TEXT__INDENT>h2 {
 	font-family: "Baloo";
 }
 
@@ -341,6 +341,7 @@ ol {
 .OVERLAY {
 	height: 3000px;
 }
+
 /* POSITIONS ============================================================================================== */
 .RELATIVE {
 	width: 300px;
@@ -365,8 +366,8 @@ ol {
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	left: calc(50%-50px);
-	top: calc(50%-50px);
+	left: calc(50% - 50px);
+	top: calc(50% - 50px);
 }
 
 .PHONE {
@@ -455,7 +456,7 @@ ol {
 
 /*//^ PSEUDO CLASSES =============================================================================================================================================================*/
 /* CHECKED */
-.CHECKBOX:checked + .CHECKBOX__P {
+.CHECKBOX:checked+.CHECKBOX__P {
 	display: block;
 }
 
@@ -590,6 +591,7 @@ ol {
 	top: 47%;
 	rotate: -5deg;
 }
+
 /*  ATTRIBUTE SELECTORS ============================================================================================================================= */
 
 input[type="text"] {
@@ -620,6 +622,7 @@ input[type="email"] {
 [href="#"]:hover {
 	background-color: white !important;
 }
+
 /*  TEXT EFFECTS ================================================================================================================= */
 #TEXT__WRAPPER {
 	box-sizing: border-box;
@@ -643,6 +646,7 @@ input[type="email"] {
 	text-overflow: ellipsis;
 	/* writing-mode: vertical-rl; */
 }
+
 /*  CSS VARIABLES ========================================================================================================================================================= */
 
 .CLAMP {
@@ -663,12 +667,10 @@ input[type="email"] {
 	width: 200px;
 	height: 200px;
 	background: #833ab4;
-	background: linear-gradient(
-	90deg,
-	rgba(131, 58, 180, 1) 0%,
-	rgba(253, 29, 29, 1) 50%,
-	rgba(252, 176, 69, 1) 100%
-	);
+	background: linear-gradient(90deg,
+			rgba(131, 58, 180, 1) 0%,
+			rgba(253, 29, 29, 1) 50%,
+			rgba(252, 176, 69, 1) 100%);
 	border-radius: 59px;
 	margin: 5rem auto;
 	display: flex;
@@ -690,6 +692,7 @@ input[type="email"] {
 		font-size: 16px;
 	}
 }
+
 /*  DROP DOWN :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 #DROPDOWN___CONTENT {
@@ -721,6 +724,7 @@ input[type="email"] {
 	border-radius: 10px;
 	text-align: center;
 }
+
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 #FLEX____CONTAINER2 {
 	display: flex;
