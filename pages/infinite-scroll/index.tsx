@@ -1,8 +1,8 @@
-import Card from 'antd/es/card/Card'
+import CommentListComponent from '@/COMPONENTS/COMMENT__LIST/CommentListComponent'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
-type SingleCoinType = { id: string, symbol: string, name: string }
+
 
 const InfiniteScroll = () => {
     const [commentsData, setCommentsData] = useState([])
@@ -17,9 +17,7 @@ const InfiniteScroll = () => {
 
     return (
         <div className='w-screen h-screen flex flex-wrap gap-10 p-20 items-center justify-around'>
-            {commentsData.map((item: SingleCoinType) => (
-                <Card key={item.id} className='size-32 flex items-center justify-center text-2xl font-bold'>{item.name}</Card>
-            ))}
+            <CommentListComponent  commentsData={commentsData}/> 
         </div>
     )
 }
