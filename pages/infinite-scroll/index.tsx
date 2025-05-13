@@ -11,7 +11,7 @@ const InfiniteScroll = () => {
     const [page, setPage] = useState(1)
 
     const fetchCommentsData = () => {
-        axios.get(`https://fakestoreapi.com/products?_page=${page}&_limit=12`).then(data => {
+        axios.get(`https://jsonplaceholder.typicode.com/comments?_page=${page}&_limit=8`).then(data => {
             console.info("COINS DATA ===>", data.data)
             setCommentsData(data.data)
         })
