@@ -10,7 +10,7 @@ const InfiniteScroll = () => {
 
 
     const fetchCommentsData = () => {
-        axios.get(`https://jsonplaceholder.typicode.com/posts?_page=${_page}&_limit=12`).then(data => {
+        axios.get(`https://jsonplaceholder.typicode.com/posts?_page=${_page}&_limit=100`).then(data => {
             console.info("COINS DATA ===>", data.data)
             setCommentsData(data.data)
         })
@@ -18,7 +18,8 @@ const InfiniteScroll = () => {
     useEffect(() => { fetchCommentsData() }, [_page])
 
     const handleScroll = () => {
-        console.info("HEIGHT +++++>", document.documentElement.scrollHeight)
+        console.log("HEIGHT +++++>", document.documentElement.scrollHeight)
+        console.log(_setPage)
     }
 
     useEffect(() => {
