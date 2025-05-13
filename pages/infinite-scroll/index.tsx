@@ -15,7 +15,7 @@ const InfiniteScroll = () => {
             setCommentsData(data.data)
         })
     }
-    useEffect(() => { fetchCommentsData() }, [])
+    useEffect(() => { fetchCommentsData() }, [page])
 
     return (
         <div className='w-screen h-screen flex flex-wrap gap-10 p-20 items-center justify-around overflow-x-hidden'>
