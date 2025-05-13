@@ -1,7 +1,6 @@
 import React from 'react'
 interface CommentsProps { commentsData: { id: number; name: string }[]; }
 type SingleCoinType = { id: number, name: string }
-import { Card } from '@/COMPONENTS/ui/card'
 
 const CommentListComponent: React.FC<CommentsProps> = ({ commentsData }) => {
     return (
