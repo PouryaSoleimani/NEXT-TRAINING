@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react'
 import { Audio } from 'react-loader-spinner'
 
 interface Comment { postId: number; id: number; name: string; email: string; body: string; }
+
 //COMPONENT
 const InfiniteScroll = () => {
     const [commentsData, setCommentsData] = useState<Comment[]>([])
