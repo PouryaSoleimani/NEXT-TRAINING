@@ -3,7 +3,7 @@
 import CommentListComponent from '@/COMPONENTS/COMMENT__LIST/CommentListComponent'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { ClipLoader } from "react-spinners";
+import { Audio } from 'react-loader-spinner'
 
 interface Comment { postId: number; id: number; name: string; email: string; body: string; }
 //COMPONENT
@@ -12,50 +12,51 @@ const InfiniteScroll = () => {
     const [page, setPage] = useState(1)
     const [loading, setLoading] = useState(true)
 
-    const fetchCommentsData = () => {
-        axios.get(`https://jsonplaceholder.typicode.com/comments?_page=${page}&_limit=6`).then(data => {
-            console.info("COINS DATA ===>", data.data)
-            setCommentsData((prev) => [...prev, ...data.data])
-            setTimeout(() => {
-                setLoading(false)
-            }, 1500);
-        })
-    }
+    useEffect(() => {
+        setTimeout(async () => {
 
-    useEffect(() => { fetchCommentsData() }, [page])
+            const response = await axios.get(`https://jsonplaceholder.typicode.com/comments?_page=${page}&_limit=6`);
+
+            setCommentsData((prev) => { return [...prev, ...response.data]; });
+
+            setLoading(false);
+
+        }, 1500);
+    }, [page]);
 
 
     useEffect(() => {
-        const handleScroll = () => {
-            const HEIGHT = document.documentElement.scrollHeight
-            const TOP = document.documentElement.scrollTop
-            const INNERHEIGHT = window.innerHeight
 
-            console.log("HEIGHT →", HEIGHT);
-            console.log("TOP →", TOP);
-            console.log("INNERHEIGHT →", INNERHEIGHT);
+        const HEIGHT = document.documentElement.scrollHeight
+        const TOP = document.documentElement.scrollTop
+        const INNERHEIGHT = window.innerHeight
 
-            if (INNERHEIGHT + TOP + 1 >= HEIGHT) {
-                setLoading(true)
-                setPage(prev => prev + 1)
-            }
+        console.log("HEIGHT →", HEIGHT);
+        console.log("TOP →", TOP);
+        console.log("INNERHEIGHT →", INNERHEIGHT);
 
-        };
+        window.addEventListener("scroll", handleScroll);
 
-        if (typeof window !== 'undefined') {
-            window.addEventListener("scroll", handleScroll);
-            return () => { window.removeEventListener("scroll", handleScroll) }
-        }
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+
+    const handleScroll = async () => {
+        if (
+            window.innerHeight + document.documentElement.scrollTop + 1 >=
+            document.documentElement.scrollHeight
+        ) {
+            setLoading(true);
+            setPage((prev) => prev + 1);
+        }
+    };
+
+
 
     return (
         <div className='w-screen flex flex-col items-center justify-center gap-10 p-20  overflow-x-hidden'>
             <CommentListComponent commentsData={commentsData} />
-            {loading && <ClipLoader color="#FFF" loading={loading} size={350} aria-label="Loading Spinner" data-testid="loader" />}
+            {loading && <Audio height="80" width="80" color="green" ariaLabel="three-dots-loading" wrapperStyle={{}} wrapperClass='' />}
         </div>
     )
 }
