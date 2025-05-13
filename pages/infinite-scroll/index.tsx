@@ -13,7 +13,7 @@ const InfiniteScroll = () => {
     const [loading, setLoading] = useState(true)
 
     const fetchCommentsData = () => {
-        axios.get(`https://jsonplaceholder.typicode.com/comments?_page=${page}&_limit=8`).then(data => {
+        axios.get(`https://jsonplaceholder.typicode.com/comments?_page=${page}&_limit=6`).then(data => {
             console.info("COINS DATA ===>", data.data)
             setCommentsData((prev) => [...prev, ...data.data])
             setTimeout(() => {
