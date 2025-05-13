@@ -29,6 +29,8 @@ const InfiniteScroll = () => {
             console.log("HEIGHT →", HEIGHT);
             console.log("TOP →", TOP);
             console.log("WINDOW →", WINDOW);
+
+            
         };
 
         if (typeof window !== 'undefined') {
