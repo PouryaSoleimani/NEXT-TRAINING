@@ -15,7 +15,7 @@ const InfiniteScroll = () => {
     useEffect(() => {
         setTimeout(async () => {
 
-            const response = await axios.get(`https://jsonplaceholder.typicode.com/comments?_page=${page}&_limit=6`);
+            const response = await axios.get(`https://jsonplaceholder.typicode.com/comments?_page=${page}&limit=6`);
 
             setCommentsData((prev) => { return [...prev, ...response.data]; });
 
@@ -56,7 +56,7 @@ const InfiniteScroll = () => {
     return (
         <div className='w-screen flex flex-col items-center justify-center gap-10 p-20  overflow-x-hidden'>
             <CommentListComponent commentsData={commentsData} />
-            {loading && <Audio height="80" width="80" color="green" ariaLabel="three-dots-loading" wrapperStyle={{}} wrapperClass='' />}
+            {loading && <Audio height="80" width="80" color="blue" ariaLabel="three-dots-loading" wrapperStyle={{}} wrapperClass='' />}
         </div>
     )
 }
