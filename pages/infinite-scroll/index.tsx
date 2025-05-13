@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+ 
 "use client"
 import CommentListComponent from '@/COMPONENTS/COMMENT__LIST/CommentListComponent'
 import axios from 'axios'
@@ -8,7 +8,7 @@ import React, { useEffect, useState } from 'react'
 
 const InfiniteScroll = () => {
     const [commentsData, setCommentsData] = useState([])
-    const [page, _setPage] = useState(1)
+    const [page, setPage] = useState(1)
 
     const fetchCommentsData = () => {
         axios.get(`https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=50`).then(data => {
@@ -29,8 +29,8 @@ const InfiniteScroll = () => {
             console.log("HEIGHT →", HEIGHT);
             console.log("TOP →", TOP);
             console.log("WINDOW →", WINDOW);
+            if (WINDOW + TOP + 1 >= HEIGHT) { setPage(prev => prev + 1) }
 
-            
         };
 
         if (typeof window !== 'undefined') {
