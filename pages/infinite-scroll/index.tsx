@@ -16,7 +16,7 @@ const InfiniteScroll = () => {
     useEffect(() => {
         setTimeout(async () => {
 
-            const response = await axios.get(`https://jsonplaceholder.typicode.com/comments?_page=12?page=${page}&limit=3`);
+            const response = await axios.get(`https://jsonplaceholder.typicode.com/comments?_page=6?page=${page}&limit=1`);
 
             setCommentsData((prev) => { return [...prev, ...response.data]; });
 
