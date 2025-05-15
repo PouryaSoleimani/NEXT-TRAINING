@@ -798,3 +798,60 @@ input[type="email"] {
 
 /* CSS GRID****************************************************************************************************************************************** */
 
+.grid__container {
+	background-color: cornflowerblue;
+	padding: 1rem;
+	width: 90%;
+	margin: 300px auto;
+	border-radius: 20px;
+	display: grid;
+	gap: 5px;
+	/* grid-template-columns: repeat(auto-fit, minmax(100px, auto)); */
+	grid-template-areas:
+		'item__1 item__1 item__1 item__1'
+		'item__2 item__2 item__3 item__3'
+		'item__4 item__4 item__5 item__6'
+		'item__4 item__4 item__7 item__8'
+	;
+}
+
+.grid__item {
+	background-color: coral;
+	text-align: center;
+	padding: 20px;
+	border-radius: 8px;
+	font-size: 34px;
+	font-weight: bold;
+}
+
+.item__1 {
+	grid-area: item__1;
+}
+
+.item__2 {
+	grid-area: item__2;
+}
+
+.item__3 {
+	grid-area: item__3;
+}
+
+.item__4 {
+	grid-area: item__4;
+}
+
+.item__5 {
+	grid-area: item__5;
+}
+
+.item__6 {
+	grid-area: item__6;
+}
+
+.item__7 {
+	grid-area: item__7;
+}
+
+.item__8 {
+	grid-area: item__8;
+}
