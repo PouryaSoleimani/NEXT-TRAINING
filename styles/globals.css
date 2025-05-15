@@ -806,13 +806,13 @@ input[type="email"] {
 	border-radius: 20px;
 	display: grid;
 	gap: 5px;
-	/* grid-template-columns: repeat(auto-fit, minmax(100px, auto)); */
-	grid-template-areas:
+	/* grid-template-areas:
 		'item__1 item__1 item__1 item__1'
 		'item__2 item__2 item__3 item__3'
 		'item__4 item__4 item__5 item__6'
 		'item__4 item__4 item__7 item__8'
-	;
+	; */
+	grid-template-columns: repeat(auto-fit, minmax(100px, auto));
 }
 
 .grid__item {
@@ -824,7 +824,8 @@ input[type="email"] {
 	font-weight: bold;
 }
 
-.item__1 {
+
+/* .item__1 {
 	grid-area: item__1;
 }
 
@@ -854,4 +855,4 @@ input[type="email"] {
 
 .item__8 {
 	grid-area: item__8;
-}
+} */
